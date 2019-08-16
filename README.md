@@ -20,7 +20,7 @@ sudo apt install python-rosinstall python-rosinstall-generator python-wstool bui
 sudo apt install rosbash
 ```
 
-Install MAVROS
+### MAVROS
 
 ```
 sudo apt-get install ros-melodic-mavros ros-melodic-mavros-extras
@@ -29,8 +29,9 @@ chmod +x install_geographiclib_datasets.sh
 sudo ./install_geographiclib_datasets.sh
 sudo apt install python-prettytable
 ```
+### PX4 Firmware
 
-For the simulation install the PX4 firmaware
+For the simulation install the PX4 firmware
 
 ```
 git clone https://github.com/vvannini/Firmware.git
@@ -41,5 +42,3 @@ sudo update-alternatives --config java # choose 8
 rm -rf Tools/jMAVSim/out
 sudo sed -i -e '/^assistive_technologies=/s/^/#/' /etc/java-*-openjdk/accessibility.properties
 ```
-
-Others 
