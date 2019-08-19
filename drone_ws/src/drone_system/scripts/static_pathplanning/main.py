@@ -1,16 +1,17 @@
 #!/usr/bin/env python
+# cd /mnt/c/Projetos/path-planning
+
 import rospy
-
-import pandas as pd
-
 from drone_system.srv import *
 
 
-# import argparse
+import pandas as pd
+
 import sys
 import os
 
-import PathPlanning as pp 
+import pathplanning as pp 
+import presetbuilds as presets
 
 obj_parameters = {
         'drone': ['name', 'weight', 'min_battery', 'max_battery', 'max_velocity', 'efficient_velocity'],
@@ -21,12 +22,14 @@ obj_parameters = {
 
 def handle_square_path(req):
     #args = sys.argv
+    #print(args)
+
     arg = req.option
 
     #iter_args = iter(args)
 
     #for arg in iter_args:
-        #print(arg)
+    print(arg)
     if arg == '--new':
         value = next(iter_args)
 
@@ -34,41 +37,19 @@ def handle_square_path(req):
         for obj in obj_parameters[value]:
             res.append(input(obj+": "))
 
-    if (arg == '--pathplanning'):
+    if arg == '--pathplanning':
         print(extract_df(get('drone', 0)))
 
-        drone = pp.Drone(
-            743.0, 
-            10.0, 
-            18.9, 
-            65.0, 
-            32.5
-        )
-
         
-        camera = pp.Camera(
-            (78.8, 59.1),
-            (4000.0, 3000.0), 
-            1, 
-            1.0 / 8000.0, 
-            12.0, 
-            5.0, 
-            200.0, 
-            (6.17, 4.5), 
-            28.0
-        )
-
-
+        #drone = presets.build_drone_MavicProI()
+        drone = presets.build_drone_Phatom4Pro()
         
-        geo_home = pp.GeoPoint((-48.45255874975791, -27.43338368181769, 0))
+        camera = presets.build_camera_MavicProI()
 
-        points = ((-48.45257490160673, -27.43336038312699, 1), (-48.45235131274588, -27.43329678596995, 1), (-48.45239011279272, -27.43319913253362, 4), (-48.45261463110952, -27.43325291267052, 4))
-        geo_points = [pp.GeoPoint(i) for i in points]
+        area = presets.build_area_C2()
 
-        area = pp.Area(geo_home, geo_points)
         path_return = ''
         path_return = run_pathplanning(drone, camera, area)
-
 
         print ("Returning path: %s "%(path_return))
         return path_msgResponse(path_return)
@@ -134,7 +115,6 @@ def get(obj, index):
     df = pd.DataFrame()
 
     filename = 'database/' + obj + 's.csv'
-	
 
     with open(filename, 'r') as file:
         df = pd.read_csv(file, index_col=0)
@@ -198,6 +178,9 @@ def load_presets():
 
 
 
+
+
+#main()
 
 def square_path_server():
     rospy.init_node('square_path_server')

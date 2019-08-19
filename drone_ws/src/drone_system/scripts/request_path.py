@@ -12,7 +12,9 @@ def square_path_client(option):
         resp1 = square_path(option)
         print(resp1)
         return resp1.path
-    except(rospy.ServiceException, e):
+    #except(rospy.ServiceException as e):
+    except (rospy.ServiceException, rospy.ROSException), e:
+
         print ("Service call failed: %s"%e)
 
 def usage():

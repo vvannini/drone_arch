@@ -1,6 +1,7 @@
-import math
-import os
+from collections import namedtuple
 
+import os
+import math
 
 path='' # ToDo: melhorar
 verbose = False # flag to print heading calculation
@@ -12,7 +13,7 @@ class Area():
         self.geo_home = geo_home
         self.geo_points = geo_points
         self.home = Controller.to_cartesian(geo_home, geo_home) # ToDo: ???
-        self.points = Controller.to_cartesians(geo_points, geo_home) # points = [p1, p2, p3, p4]
+        self.points = Controller.to_cartesians(geo_points, geo_home) # points = [p1, p2, p3, p4] # point order not verified # ToDo: verify order
         self.hypotenuse = self.calc_hypotenuse(self.points)
         self.base_lenght = self.calc_base_lenght(self.points)
 
@@ -28,19 +29,23 @@ class Area():
         h2 = points[0].minus(points[1])
 
         return max(h1.norm(), h2.norm())
-    '''
-    private static double calcHipotenusa(CartesianPoint p1, CartesianPoint p2, CartesianPoint p3, CartesianPoint p4) {
-        CartesianPoint h1 = p4.minus(p1)
-        CartesianPoint h2 = p3.minus(p2)
-        return Math.max(h1.norm(), h2.norm())
-    }
 
-    private double calcComprimentoBase(CartesianPoint p1, CartesianPoint p2, CartesianPoint p3, CartesianPoint p4) {
-        CartesianPoint h1 = p4.minus(p3)
-        CartesianPoint h2 = p1.minus(p2)
-        return Math.max(h1.norm(), h2.norm())
-    }
-    '''
+    def get_edges(self):
+        edges = []
+
+        edge = namedtuple('edge', 'A B')
+
+        qtd = len(self.points)
+
+        for i in range(qtd-1):
+            e = edge(self.points[i], self.points[i+1])
+            edges.append(e)
+
+        e = edge(self.points[qtd], self.points[0])
+        edges.append(e)
+
+        return edges
+
 
 
 class Camera():
@@ -103,7 +108,7 @@ class CartesianPoint():
 
     '''
     Adiciona no ponto atual com um outro ponto multiplicado por um
-     * coeficiente. P3 = P1 + coef * P2 P3 eh o resultado a ser retornado P1 eh o
+     * coeficiente. P3 = P1 + coef * P2 P3 eh o resultado a ser retornado P1 e o
      * objeto atual ao qual foi chamado a funcao P2 eh o objeto passado como
      * parametro.
     '''
@@ -242,7 +247,7 @@ class Controller():
     /**
      * Transforma os pontos geograficos da missao em pontos cartesianos em
      * metros para efetuar o calculo da rota. Apos isso, eh calculado os pontos
-     * da rota que o drone irah fazer com base no numero de voltas para fazer o
+     * da rota que o drone ira fazer com base no numero de voltas para fazer o
      * mapeamento completo da area. Entao eh transformado de pontos cartesianos
      * da rota em metros para pontos geograficos e adionados na lista final.
      *
@@ -402,7 +407,6 @@ class Controller():
         count = 1
         path = os.path.join(os.path.expanduser('~'), 'Missions')
 
-
         for route in routes:
             with open(path + 'mavros' + str(count) + '.wp', 'w+') as file: # ToDo: definir path 
                 #file.write("latitude,longitude,altitude(m),heading(deg),curvesize(m),rotationdir,gimbalmode,gimbalpitchangle,actiontype1,actionparam1,actiontype2,actionparam2,actiontype3,actionparam3,actiontype4,actionparam4,actiontype5,actionparam5,actiontype6,actionparam6,actiontype7,actionparam7,actiontype8,actionparam8,actiontype9,actionparam9,actiontype10,actionparam10,actiontype11,actionparam11,actiontype12,actionparam12,actiontype13,actionparam13,actiontype14,actionparam14,actiontype15,actionparam15,altitudemode,speed(m/s),poi_latitude,poi_longitude,poi_altitude(m),poi_altitudemode,photo_timeinterval\n")
@@ -427,6 +431,7 @@ class Controller():
                     current_waypoint = 0
                     i+=1
         return (path+'/' + 'mavros' + str(count) + '.wp')
+
 
 
     def save_kml_point(file, point, name):
@@ -513,8 +518,8 @@ class Controller():
 
 
     def calc_heading_geo(p1, p2, home):
-        c1 = Controller.to_cartesian(p1, home)
-        c2 = Controller.to_cartesian(p2, home)
+        c1 = to_cartesian(p1, home)
+        c2 = to_cartesian(p2, home)
 
         heading = math.atan2((c2.y - c1.y), (c2.x - c1.x)) * 180 / math.pi + 90 # ToDo: verificar
         return heading
