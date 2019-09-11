@@ -1,0 +1,83 @@
+<number of batchs>
+1
+<Version>
+0
+<Run>
+4
+<Models>
+4
+<UAV-Approach>
+1
+<Vehicle>
+0
+<Mission>
+2
+<Instance Reader>
+3
+<State Bound>
+0
+<Control Bound>
+0
+<Dynamic>
+0
+<Specific>
+0
+<oFull>
+0
+<Number of Executions>
+1
+<Threads>
+1
+<TiLim>
+3600.0
+<HistoryTime>
+0
+<ItLim>
+1000000000
+<EpGap>
+1.0E-3
+<WorkMem(MB)>
+128.0
+<NodeSel>
+2
+<RootAlg>
+0
+<MIPEmphasis>
+0
+<warning>
+0
+<output>
+1
+<Avoid-N-risk>
+12
+<Delta>
+0.001
+<std-position-xy>
+3.0
+<std-height-z>
+1.0
+<inc-factor>
+1.0
+<Enable plot>
+0
+<resolution>
+2.5
+<Waypoints>
+30
+<time horizon>
+30.0
+<Max-velocity>
+30.0
+<Max-control>
+5.0
+<Configuration for PPCCS 3D>
+1
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact2/;PPCCSconfig3D.sgl;
+<Map for PPCCS 3D half>
+6
+1;/media/jesimar/Workspace/Trabalho/USP/Repositorio/Instances/Mapas-Random-Sem-Intersecao-NewName/;I1PPDCP_018.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/Repositorio/Instances/Mapas-Random-Sem-Intersecao-NewName/;I2PPDCP_013.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/Repositorio/Instances/Mapas-Random-Sem-Intersecao-NewName/;I3PPDCP_008.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/Repositorio/Instances/Mapas-Random-Sem-Intersecao-NewName/;I4PPDCP_020.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/Repositorio/Instances/Mapas-Random-Sem-Intersecao-NewName/;I5PPDCP_024.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/Repositorio/Instances/Mapas-Random-Sem-Intersecao-NewName/;I6PPDCP_031.sgl;

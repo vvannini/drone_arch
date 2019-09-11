@@ -1,0 +1,24 @@
+﻿--------------- P0 --------------
+10.0
+--------------- G (depende da velocidade melhorar)---------------
+0.0008
+--------------- dt ---------------
+1
+--------------- Xinit' (px py)---------------
+0.0 0.0
+------- maximum velocity (metro/s) (discretization used is dt eq 1 s) -------
+250.0
+------- minimum velocity (metro/s) (discretization used is dt eq 1 s) -------
+83.0
+------- maximum leme (+30 grau valor em radianos (3º por segundo)) (discretization used is dt eq 1 s) -------
+0.2523598776
+------- minimum leme (-30 grau valor em radianos (-3º por segundo)) (discretization used is dt eq 1 s) -------
+-0.2523598776
+------- maximum aceleration (1 m/(s.s) ) (4hp/(4*120km/h) = pot /(massa * vterm)) -------
+5.0
+----------- precision of UAV position -----------
+0.001
+----------- time horizon (K, seconds) ---------
+180
+------ type of problem [0 - Sem Problema, 1 - Motor, 2 - Bateria, 3 - Girar Direita Somente, 4 - Girar Esquerda Somente]-----
+0

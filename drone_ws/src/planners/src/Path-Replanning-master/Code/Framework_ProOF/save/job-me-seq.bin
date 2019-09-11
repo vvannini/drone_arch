@@ -1,0 +1,97 @@
+<number of batchs>
+1
+<Version>
+0
+<Run>
+4
+<Models>
+4
+<UAV-Approach>
+1
+<Vehicle>
+0
+<Mission>
+2
+<Instance Reader>
+3
+<State Bound>
+0
+<Control Bound>
+0
+<Dynamic>
+0
+<Specific>
+0
+<oFull>
+0
+<Number of Executions>
+1
+<Threads>
+1
+<TiLim>
+3600.0
+<HistoryTime>
+0
+<ItLim>
+1000000000
+<EpGap>
+1.0E-4
+<WorkMem(MB)>
+128.0
+<NodeSel>
+2
+<RootAlg>
+0
+<MIPEmphasis>
+0
+<warning>
+0
+<output>
+1
+<Avoid-N-risk>
+12
+<Delta>
+0.001
+<std-position-xy>
+3.0
+<std-height-z>
+1.0
+<inc-factor>
+1
+<Enable plot>
+0
+<resolution>
+2.5
+<Waypoints>
+30
+<time horizon>
+30.0
+<Max-velocity>
+30.0
+<Max-control>
+5.0
+<Configuration for PPCCS 3D>
+20
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config01.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config02.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config03.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config04.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config05.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config06.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config07.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config08.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config09.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config10.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config11.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config12.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config13.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config14.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config15.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config16.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config17.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config18.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config19.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;config20.sgl;
+<Map for PPCCS 3D half>
+1
+1;/media/jesimar/Workspace/Trabalho/USP/RepositorioNovo/ProOFJava/in/inputExact3/;map_std.sgl;

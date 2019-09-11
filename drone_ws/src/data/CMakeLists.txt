@@ -213,3 +213,6 @@ include_directories(
 
 add_executable(data_controller src/data_controller.cpp)
 target_link_libraries(data_controller ${catkin_LIBRARIES})
+
+add_executable(data_acquisition src/data_acquisition.cpp)
+target_link_libraries(data_acquisition ${catkin_LIBRARIES})

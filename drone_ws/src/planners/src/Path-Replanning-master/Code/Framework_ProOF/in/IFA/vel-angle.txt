@@ -1,0 +1,2 @@
+﻿---(Velocidade [m/s] Angulo [radianos])---
+152.0	-0.75

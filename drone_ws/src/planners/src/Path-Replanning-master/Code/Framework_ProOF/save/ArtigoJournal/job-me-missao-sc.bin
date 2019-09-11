@@ -1,0 +1,81 @@
+<number of batchs>
+1
+<Version>
+0
+<Run>
+4
+<Models>
+4
+<UAV-Approach>
+1
+<Vehicle>
+0
+<Mission>
+2
+<Instance Reader>
+3
+<State Bound>
+0
+<Control Bound>
+0
+<Dynamic>
+0
+<Specific>
+0
+<oFull>
+0
+<Number of Executions>
+1
+<Threads>
+1
+<TiLim>
+3600.0
+<HistoryTime>
+0
+<ItLim>
+1000000000
+<EpGap>
+1.0E-4
+<WorkMem(MB)>
+128.0
+<NodeSel>
+2
+<RootAlg>
+0
+<MIPEmphasis>
+0
+<warning>
+0
+<output>
+1
+<Avoid-N-risk>
+12
+<Delta>
+0.001
+<std-position-xy>
+2.0
+<std-height-z>
+2.0
+<inc-factor>
+0
+<Enable plot>
+1
+<resolution>
+2.5
+<Waypoints>
+30
+<time horizon>
+30.0
+<Max-velocity>
+30.0
+<Max-control>
+5.0
+<Configuration for PPCCS 3D>
+4
+1;/media/jesimar/Workspace/Trabalho/USP/Repositorio/ReaderKML/mission/plim/;config-plim-final-falha-bat-1.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/Repositorio/ReaderKML/mission/plim/;config-plim-final-falha-bat-2.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/Repositorio/ReaderKML/mission/plim/;config-plim-final-falha-bat-3.sgl;
+1;/media/jesimar/Workspace/Trabalho/USP/Repositorio/ReaderKML/mission/plim/;config-plim-final-falha-bat-4.sgl;
+<Map for PPCCS 3D half>
+1
+1;/media/jesimar/Workspace/Trabalho/USP/Repositorio/ReaderKML/mission/plim/;map-plim-final.sgl;

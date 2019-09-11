@@ -211,3 +211,6 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+add_executable(risk_mitigation src/risk_mitigation.cpp)
+target_link_libraries(risk_mitigation ${catkin_LIBRARIES})

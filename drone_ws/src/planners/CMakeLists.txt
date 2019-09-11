@@ -61,11 +61,10 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+add_service_files(
+  FILES
+  JarPlanners.srv
+)
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -214,3 +213,12 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+add_executable(path_re_planning_client src/path_re_planning_client.cpp)
+add_dependencies(path_re_planning_client ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(path_re_planning_client ${catkin_LIBRARIES})
+
+
+add_executable(path_re_planning_server src/path_re_planning_server.cpp)
+add_dependencies(path_re_planning_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(path_re_planning_server ${catkin_LIBRARIES})

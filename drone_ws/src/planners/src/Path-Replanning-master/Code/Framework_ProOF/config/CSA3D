@@ -1,0 +1,304 @@
+<factorys number>
+11
+<node id>
+0
+<node type>
+2
+<node name>
+Run
+<node class name>
+ProOF.apl.factorys.fRun
+<chooses>
+29
+<node id>
+138
+<node type>
+2
+<node name>
+UAV-Approach
+<node class name>
+ProOF.apl.UAV.fUAVApproach
+<chooses>
+0
+<node id>
+383
+<node type>
+2
+<node name>
+Vehicle
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.fLinearVehicle
+<chooses>
+0
+<node id>
+386
+<node type>
+2
+<node name>
+Mission
+<node class name>
+ProOF.apl.UAV.gen.linear.mission.fLinearMission
+<chooses>
+1
+<node id>
+397
+<node type>
+2
+<node name>
+State Bound
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.parts.fLinearStateBound
+<chooses>
+0
+<node id>
+400
+<node type>
+2
+<node name>
+Control Bound
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.parts.fLinearControlBound
+<chooses>
+0
+<node id>
+403
+<node type>
+2
+<node name>
+Dynamic
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.parts.fLinearDynamic
+<chooses>
+0
+<node id>
+408
+<node type>
+2
+<node name>
+Specific
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.parts.fLinearSpecific
+<chooses>
+0
+<node id>
+410
+<node type>
+2
+<node name>
+Objective
+<node class name>
+ProOF.apl.UAV.gen.linear.mission.parts.fLinearObjective
+<chooses>
+1
+<node id>
+389
+<node type>
+2
+<node name>
+Blackmore Operators
+<node class name>
+ProOF.apl.UAV.gen.linear.mission.Blackmore.fBlackmoreOperator
+<chooses>
+6
+<node id>
+417
+<node type>
+2
+<node name>
+Blackmore Avoidance
+<node class name>
+ProOF.apl.UAV.gen.linear.mission.Blackmore.fBlackmoreAvoidance
+<chooses>
+3
+<nodes number>
+14
+<node id>
+30
+<node type>
+1
+<node name>
+AUV.CSA
+<node class name>
+ProOF.apl.UAV.CSA
+<parameters number>
+5
+3600.0
+1.0E-4
+1
+0
+0
+<node id>
+139
+<node type>
+0
+<node name>
+Blackmore
+<node class name>
+ProOF.apl.UAV.gen.linear.mission.Blackmore.BlackmoreApproach
+<parameters number>
+6
+1
+20
+0.001
+1.0
+3.0
+12
+<node id>
+140
+<node type>
+0
+<node name>
+Blackmore State Unc.
+<node class name>
+ProOF.apl.UAV.gen.linear.mission.Blackmore.BlackmoreStateUncertainty
+<parameters number>
+3
+0.05
+0.0
+1.0
+<node id>
+141
+<node type>
+0
+<node name>
+Instance-Blackmore
+<node class name>
+ProOF.apl.UAV.gen.linear.mission.Blackmore.BlackmoreInstance
+<parameters number>
+2
+config3D
+map
+<node id>
+142
+<node type>
+0
+<node name>
+Blackmore Plot
+<node class name>
+ProOF.apl.UAV.gen.linear.mission.Blackmore.BlackmorePlot
+<parameters number>
+2
+1
+2.5
+<node id>
+384
+<node type>
+0
+<node name>
+Parts
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.fLinearVehicle$PartsVehicle
+<parameters number>
+0
+<node id>
+388
+<node type>
+0
+<node name>
+Blackmore
+<node class name>
+ProOF.apl.UAV.gen.linear.mission.Blackmore.BlackmoreMission
+<parameters number>
+0
+<node id>
+398
+<node type>
+0
+<node name>
+DetNorm1(Vt)
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.parts.fLinearStateBound$DetNorm1VtUB
+<parameters number>
+0
+<node id>
+401
+<node type>
+0
+<node name>
+DetNorm1(Ut)
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.parts.fLinearControlBound$DetNorm1UtUB
+<parameters number>
+0
+<node id>
+404
+<node type>
+0
+<node name>
+Air-Free
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.parts.fLinearDynamic$AirFree
+<parameters number>
+1
+20.0
+<node id>
+409
+<node type>
+0
+<node name>
+Empty
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.parts.fLinearSpecific$Empty
+<parameters number>
+0
+<node id>
+412
+<node type>
+0
+<node name>
+aprox sqrt{u*u]
+<node class name>
+ProOF.apl.UAV.gen.linear.mission.parts.fLinearObjective$Norm2Ut2D
+<parameters number>
+0
+<node id>
+396
+<node type>
+0
+<node name>
+CSA3
+<node class name>
+ProOF.apl.UAV.gen.linear.mission.Blackmore.fBlackmoreOperator$CSA3
+<parameters number>
+0
+<node id>
+421
+<node type>
+0
+<node name>
+˅{ Z(t) ˄ Z(t-1) } = 1
+<node class name>
+ProOF.apl.UAV.gen.linear.mission.Blackmore.fBlackmoreAvoidance$Model6
+<parameters number>
+0
+---------- summarizing ----------
+Run;AUV.CSA
+UAV-Approach;Blackmore
+Vehicle;Parts
+Mission;Blackmore
+State Bound;DetNorm1(Vt)
+Control Bound;DetNorm1(Ut)
+Dynamic;Air-Free
+Specific;Empty
+Objective;aprox sqrt{u*u]
+Blackmore Operators;CSA3
+Blackmore Avoidance;˅{ Z(t) ˄ Z(t-1) } = 1
+Time;3600.0
+Gap Rel;1.0E-4
+Threads;1
+warning;false
+output;false
+Dimension;3D
+Waypoints;20
+Delta;0.001
+Max-control;1.0
+Max-velocity;3.0
+Avoid-N-risk;12
+std-position;0.12
+std-velocity;0.0
+inc-factor;1.0
+Configuration for Blackmore;Config3D.sgl
+Map for Blackmore;hard06.sgl
+Enable plot;true
+resolution;2.5
+time horizon;20.0

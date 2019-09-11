@@ -1,0 +1,19 @@
+#ignorar todos os diretorios listados abaixo em qualquer subdiretorio
+
+nbproject/private/
+build/
+test/
+
+#ignorar todos os arquivos por extensao
+
+*~
+*.class
+*.pyc
+*.log
+*.csv
+*.o
+*.err
+*.rar
+*.zip
+
+#ignorar todos os arquivos por nome e extensao
