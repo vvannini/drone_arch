@@ -1,0 +1,40 @@
+<factorys number>
+1
+<node id>
+0
+<node type>
+2
+<node name>
+Run
+<node class name>
+ProOF.apl.factorys.fRun
+<chooses>
+33
+<nodes number>
+2
+<node id>
+34
+<node type>
+1
+<node name>
+jAPSTD_PPCCS
+<node class name>
+ProOF.apl.jsa.method.apstd.APSTD
+<parameters number>
+0
+<node id>
+56
+<node type>
+0
+<node name>
+PPCCSInstance
+<node class name>
+ProOF.apl.jsa.problem.PPCCS.instance.InstanceProblem
+<parameters number>
+2
+~/drone_arch/drone_ws/src/planners/src/Path-Replanning-master/Instance-Maps/I1_007.sgl
+config.sgl
+---------- summarizing ----------
+Run;jAPSTD_PPCCS
+Map for jUAV;map.sgl
+Dinamic for jUAV;dynamic.sgl

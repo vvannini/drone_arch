@@ -218,6 +218,9 @@ target_link_libraries(init_Mission ${catkin_LIBRARIES})
 add_executable(decision_manager src/decision_manager.cpp)
 target_link_libraries(decision_manager ${catkin_LIBRARIES})
 
+add_executable(mission_goal_manager src/mission_goal_manager.cpp)
+target_link_libraries(mission_goal_manager ${catkin_LIBRARIES})
+
 #add_executable(create_Mission src/create_Mission.cpp)
 #target_link_libraries(create_Mission ${catkin_LIBRARIES})
 

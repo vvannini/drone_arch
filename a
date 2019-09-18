@@ -1,0 +1,176 @@
+[1mdiff --git a/drone_ws/src/decision_support/CMakeLists.txt b/drone_ws/src/decision_support/CMakeLists.txt[m
+[1mindex 797eb08..54e3ded 100644[m
+[1m--- a/drone_ws/src/decision_support/CMakeLists.txt[m
+[1m+++ b/drone_ws/src/decision_support/CMakeLists.txt[m
+[36m@@ -218,6 +218,9 @@[m [mtarget_link_libraries(init_Mission ${catkin_LIBRARIES})[m
+ add_executable(decision_manager src/decision_manager.cpp)[m
+ target_link_libraries(decision_manager ${catkin_LIBRARIES})[m
+ [m
+[32m+[m[32madd_executable(mission_goal_manager src/mission_goal_manager.cpp)[m
+[32m+[m[32mtarget_link_libraries(mission_goal_manager ${catkin_LIBRARIES})[m
+[32m+[m
+ #add_executable(create_Mission src/create_Mission.cpp)[m
+ #target_link_libraries(create_Mission ${catkin_LIBRARIES})[m
+ [m
+[1mdiff --git a/drone_ws/src/planners/CMakeLists.txt b/drone_ws/src/planners/CMakeLists.txt[m
+[1mindex cb5b562..1636bc3 100644[m
+[1m--- a/drone_ws/src/planners/CMakeLists.txt[m
+[1m+++ b/drone_ws/src/planners/CMakeLists.txt[m
+[36m@@ -222,3 +222,9 @@[m [mtarget_link_libraries(path_re_planning_client ${catkin_LIBRARIES})[m
+ add_executable(path_re_planning_server src/path_re_planning_server.cpp)[m
+ add_dependencies(path_re_planning_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})[m
+ target_link_libraries(path_re_planning_server ${catkin_LIBRARIES})[m
+[32m+[m
+[32m+[m
+[32m+[m[32madd_executable(create_instance_file src/create_instance_file.cpp)[m
+[32m+[m[32madd_dependencies(create_instance_file ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})[m
+[32m+[m[32mtarget_link_libraries(create_instance_file ${catkin_LIBRARIES})[m
+[41m+[m
+[1mdiff --git a/drone_ws/src/planners/src/Path-Replanning-master/DE4s/route.txt b/drone_ws/src/planners/src/Path-Replanning-master/DE4s/route.txt[m
+[1mindex 271305d..5c50afd 100644[m
+[1m--- a/drone_ws/src/planners/src/Path-Replanning-master/DE4s/route.txt[m
+[1m+++ b/drone_ws/src/planners/src/Path-Replanning-master/DE4s/route.txt[m
+[36m@@ -1,23 +1,23 @@[m
+ 0.0000 0.0000[m
+[31m--0.0000 -24.0103[m
+[31m--0.9585 -46.8009[m
+[31m-1.4353 -68.4018[m
+[31m-4.9284 -88.8860[m
+[31m-10.2690 -108.0622[m
+[31m-15.3358 -126.4657[m
+[31m-21.2368 -143.8317[m
+[31m-33.5438 -156.4428[m
+[31m-45.6642 -168.3010[m
+[31m-57.6631 -179.4093[m
+[31m-69.3913 -189.9821[m
+[31m-82.4282 -197.9060[m
+[31m-95.0660 -205.5357[m
+[31m-107.3180 -212.9220[m
+[31m-119.2044 -220.0817[m
+[31m-130.7743 -226.9742[m
+[31m-142.0011 -233.6853[m
+[31m-152.9193 -240.2111[m
+[31m-163.5428 -246.5681[m
+[31m-171.9399 -255.2303[m
+[31m-179.9406 -263.8570[m
+[31m-187.7361 -272.2713[m
+[32m+[m[32m-0.0000 -24.0122[m
+[32m+[m[32m0.8987 -46.7971[m
+[32m+[m[32m4.9751 -68.1129[m
+[32m+[m[32m9.9878 -88.2102[m
+[32m+[m[32m14.4569 -107.5216[m
+[32m+[m[32m21.2920 -125.2450[m
+[32m+[m[32m28.5861 -141.9551[m
+[32m+[m[32m35.5923 -158.0212[m
+[32m+[m[32m44.4428 -172.3987[m
+[32m+[m[32m53.5385 -185.9106[m
+[32m+[m[32m64.1922 -197.4847[m
+[32m+[m[32m76.4206 -206.5195[m
+[32m+[m[32m88.3438 -215.1525[m
+[32m+[m[32m99.8750 -223.5562[m
+[32m+[m[32m111.0869 -231.6574[m
+[32m+[m[32m122.0127 -239.4575[m
+[32m+[m[32m132.7074 -246.9367[m
+[32m+[m[32m143.4919 -253.6373[m
+[32m+[m[32m154.0157 -260.1029[m
+[32m+[m[32m164.7961 -265.4318[m
+[32m+[m[32m175.2187 -270.7912[m
+[32m+[m[32m185.5257 -275.7554[m
+[1mdiff --git a/drone_ws/src/planners/src/path_re_planning_client.cpp b/drone_ws/src/planners/src/path_re_planning_client.cpp[m
+[1mindex fa38ce0..71d6fc7 100644[m
+[1m--- a/drone_ws/src/planners/src/path_re_planning_client.cpp[m
+[1m+++ b/drone_ws/src/planners/src/path_re_planning_client.cpp[m
+[36m@@ -1,6 +1,6 @@[m
+ #include "ros/ros.h"[m
+ #include "planners/JarPlanners.h"[m
+[31m-//#include <string>[m
+[32m+[m[32m#include <string>[m
+ [m
+ [m
+ [m
+[36m@@ -11,20 +11,20 @@[m [mint main(int argc, char  *argv[])[m
+ 	ros::init(argc, argv,"path_re_planning_client"); //Initialize Node Name[m
+ 	ros::NodeHandle nh; //Node handle declaration for communication with ROS system[m
+ [m
+[31m-	//Declares service client server_planners[m
+[31m-	//using the SrvDemo service file in the ros_service_demo package[m
+[31m-	//The service name is "server_planners"[m
+[32m+[m	[32m//Declares service client service_planners_client[m
+[32m+[m	[32m//using the JarPlanners service file in the planners package[m
+[32m+[m	[32m//The service name is "service_planners_client"[m
+ [m
+[31m-	ros::ServiceClient server_planners = nh.serviceClient<planners::JarPlanners>("ros_service_demo");[m
+[32m+[m	[32mros::ServiceClient service_planners_client = nh.serviceClient<planners::JarPlanners>("planners");[m
+ [m
+[31m-	//Declares the srv service that uses the SrvDemo service file[m
+[32m+[m	[32m//Declares the srv service that uses the JarPlanners service file[m
+ 	planners::JarPlanners srv;[m
+ [m
+[31m-	if(server_planners.call(srv)){[m
+[32m+[m	[32mif(service_planners_client.call(srv)){[m
+ 		ROS_INFO("receive srv, srv.Response.result - replanejador escolhido: %s", (std::string)srv.response.result);[m
+ 	}[m
+ 	else{[m
+[31m-		ROS_ERROR("Failed to call service ros_service_demo");[m
+[32m+[m		[32mROS_ERROR("Failed to call service planners");[m
+ 		return 1;[m
+ 	}[m
+ 	return 0;[m
+[1mdiff --git a/drone_ws/src/planners/src/path_re_planning_server.cpp b/drone_ws/src/planners/src/path_re_planning_server.cpp[m
+[1mindex 7cf76fc..c8d73b3 100644[m
+[1m--- a/drone_ws/src/planners/src/path_re_planning_server.cpp[m
+[1m+++ b/drone_ws/src/planners/src/path_re_planning_server.cpp[m
+[36m@@ -1,7 +1,7 @@[m
+ #include "ros/ros.h"[m
+ #include "planners/JarPlanners.h"[m
+ //#include <string>[m
+[31m-[m
+[32m+[m[32musing namespace std;[m
+ [m
+ [m
+ bool replaners(planners::JarPlanners::Request &req, planners::JarPlanners::Response &res){[m
+[36m@@ -9,35 +9,36 @@[m [mbool replaners(planners::JarPlanners::Request &req, planners::JarPlanners::Respo[m
+ [m
+ 	req.pedido = 1;[m
+ 	if(req.pedido == 1){[m
+[31m-	std::system("cd Path-Replanning-master/DE4s && ./exec-replanner.sh");[m
+[32m+[m	[32msystem("cd Path-Replanning-master/DE4s && ./exec-replanner.sh");[m
+[32m+[m	[32msystem("cd Path-Replanning-master/DE4s && rosrun planners create_instance_file /Path-Replanning-master/DE4s");[m
+ 	res.result = "../replaners/Path-Replanning-master/DE4s";[m
+ 	}[m
+ 	if(req.pedido == 2){[m
+[31m-	std::system("cd Path-Replanning-master/APSTD4s && ./exec-replanner.sh");[m
+[32m+[m	[32msystem("cd Path-Replanning-master/APSTD4s && ./exec-replanner.sh");[m
+ 	res.result = "../replaners/Path-Replanning-master/APSTD4s";[m
+ 	}[m
+ 	if(req.pedido == 3){[m
+[31m-	std::system("cd Path-Replanning-master/GA4s && ./exec-replanner.sh");[m
+[32m+[m	[32msystem("cd Path-Replanning-master/GA4s && ./exec-replanner.sh");[m
+ 	res.result = "../replaners/Path-Replanning-master/GA4s";[m
+ 	}[m
+ 	if(req.pedido == 4){[m
+[31m-	std::system("cd Path-Replanning-master/GH4s && ./exec-replanner.sh");[m
+[32m+[m	[32msystem("cd Path-Replanning-master/GH4s && ./exec-replanner.sh");[m
+ 	res.result = "../replaners/Path-Replanning-master/GH4s";[m
+ 	}[m
+ 	if(req.pedido == 5){[m
+[31m-	std::system("cd Path-Replanning-master/MILP4s && ./exec-replanner.sh");[m
+[32m+[m	[32msystem("cd Path-Replanning-master/MILP4s && ./exec-replanner.sh");[m
+ 	res.result = "../replaners/Path-Replanning-master/MILP4s";[m
+ 	}[m
+ 	if(req.pedido == 6){[m
+[31m-	std::system("cd Path-Replanning-master/MPGA4s && ./exec-replanner.sh");[m
+[32m+[m	[32msystem("cd Path-Replanning-master/MPGA4s && ./exec-replanner.sh");[m
+ 	res.result = "../replaners/Path-Replanning-master/MPGA4s";[m
+ 	}[m
+ 	if(req.pedido == 7){[m
+[31m-	std::system("cd Path-Replanning-master/MS4s && ./exec-replanner.sh");[m
+[32m+[m	[32msystem("cd Path-Replanning-master/MS4s && ./exec-replanner.sh");[m
+ 	res.result = "../replaners/Path-Replanning-master/MS4s";[m
+ 	}[m
+ 	if(req.pedido == 8){[m
+[31m-	std::system("cd Path-Replanning-master/SGA4s && ./exec-replanner.sh");[m
+[32m+[m	[32msystem("cd Path-Replanning-master/SGA4s && ./exec-replanner.sh");[m
+ 	res.result = "../replaners/Path-Replanning-master/SGA4s";[m
+ 	}[m
+ 	if(req.pedido == 9){[m

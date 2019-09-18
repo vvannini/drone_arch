@@ -1,0 +1,5 @@
+config.sgl
+---------- summarizing ----------
+Run;jAPSTD_PPCCS
+Map for jUAV;map.sgl
+Dinamic for jUAV;dynamic.sgl

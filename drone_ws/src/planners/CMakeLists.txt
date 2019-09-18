@@ -222,3 +222,9 @@ target_link_libraries(path_re_planning_client ${catkin_LIBRARIES})
 add_executable(path_re_planning_server src/path_re_planning_server.cpp)
 add_dependencies(path_re_planning_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(path_re_planning_server ${catkin_LIBRARIES})
+
+
+add_executable(create_instance_file src/create_instance_file.cpp)
+add_dependencies(create_instance_file ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(create_instance_file ${catkin_LIBRARIES})
+
