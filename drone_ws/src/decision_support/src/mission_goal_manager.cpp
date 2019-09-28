@@ -81,6 +81,7 @@ return 0;
 #include <mavros_msgs/WaypointClear.h>
 #include <mavros_msgs/WaypointList.h>
 #include <mavros_msgs/CommandHome.h>
+#include <decision_support/newMission.h>
 
 // Boost includes for parsing QGC plan file (JSON)
 #include <boost/bind.hpp>
@@ -92,6 +93,8 @@ return 0;
 #include <iostream>
 #include <set>
 #include <string>
+using namespace std;
+
 
 // For parsing QGC Waypoint plan (JSON)
 namespace bpt = boost::property_tree;
@@ -162,10 +165,10 @@ int main(int argc, char **argv)
 	ros::init(argc,argv, "mission_goal_manager");
 
 	ros::NodeHandle n;
-	ros::Publisher chatter_pub = n.advertise<mavros_msgs::WaypointList>("newMission", 1000);
+	ros::Publisher chatter_pub = n.advertise<decision_support::newMission>("newMission", 1000);
 
 	ros::Rate loop_rate(10);
-	mavros_msgs::WaypointList wp_list;
+	decision_support::newMission mission;
 	mavros_msgs::Waypoint wp_msg;
 
 	wp_msg.frame = 3; // mavros_msgs::Waypoint::FRAME_GLOBAL;
@@ -180,15 +183,17 @@ int main(int argc, char **argv)
    	wp_msg.y_long = -47.93324770;
    	wp_msg.z_alt = 15.0;
 
-   	wp_list.waypoints.assign(1, wp_msg);
-   	wp_list.current_seq = 1;
+   	mission.waypoints.assign(1, wp_msg);
+   	mission.option = 1;
+   	mission.qtd = 1;
 
 	int count = 0;
 	while (ros::ok())
 	{
 		
 
-		chatter_pub.publish(wp_list);
+		chatter_pub.publish(mission);
+		//cout << mission << endl;
 
 		ros::spinOnce();
 
