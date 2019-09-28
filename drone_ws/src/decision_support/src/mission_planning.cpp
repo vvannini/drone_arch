@@ -10,6 +10,9 @@
 #include <mavros_msgs/WaypointReached.h>
 #include <mavros_msgs/CommandTOL.h>
 #include <mavros_msgs/SetMode.h>
+#include <decision_support/newMission.h>
+#include <new>
+//#include "newMission.h"
 
 using namespace std;
 
@@ -18,16 +21,21 @@ class Mission
 	public:		
 		int WPqtd; // waypoint qtd
 		bool Ended = false;
-		int HasNewMission = 0;
-		mavros_msgs::WaypointList new_wpList;
+		decision_support::newMission missionWP;
 		void send_mission();
 		void chatterCallback_wpqtd(const mavros_msgs::WaypointList::ConstPtr& msg);
 		void chatterCallback_current(const mavros_msgs::WaypointReached::ConstPtr& msg);
-		void chatterCallback_newMission(const mavros_msgs::WaypointList::ConstPtr& msg);
+		void chatterCallback_newMission(const decision_support::newMission::ConstPtr& msg);
+		Mission();
 
 
 	
 };
+Mission::Mission(void)
+{
+	missionWP.option = 0;
+}
+
 
 void Mission::chatterCallback_wpqtd(const mavros_msgs::WaypointList::ConstPtr& msg)
 {
@@ -39,22 +47,23 @@ void Mission::chatterCallback_current(const mavros_msgs::WaypointReached::ConstP
 	ROS_INFO("Waypoint: %i", msg->wp_seq);
 	if(WPqtd == msg->wp_seq)
 	{
-		ROS_INFO("ENTREI CARAIO");
+		//ROS_INFO("ENTREI CARAIO");
 		Ended = true;
 	}
 
 }
 
-void Mission::chatterCallback_newMission(const mavros_msgs::WaypointList::ConstPtr& msg)
+void Mission::chatterCallback_newMission(const decision_support::newMission::ConstPtr& msg)
 {
-	cout << msg <<endl;
-	HasNewMission = msg->current_seq;
-	new_wpList = msg;
+	missionWP.option = msg->option;
+	missionWP.qtd = msg->qtd;
+	for (int i = 0; i < missionWP.qtd; ++i)
+	{
+		missionWP.waypoints.assign(1, msg->waypoints[i]);
+	}
 }
 
-//bool Listener::Ended()
-//{
-//}
+
 void land()
 {
 	ros::NodeHandle n;
@@ -82,12 +91,13 @@ void set_loiter()
     mavros_msgs::SetMode srv_setMode;
     srv_setMode.request.base_mode = 0;
     srv_setMode.request.custom_mode = "AUTO.LOITER";
-    if(cl.call(srv_setMode)){
+    if(cl.call(srv_setMode))
+    {
         ROS_INFO("AUTO.LOITER");
-        //ROS_ERROR("setmode send ok %d value:", srv_setMode.response.success);
-    }else{
+    }
+    else
+    {
         ROS_ERROR("Failed SetMode");
-        //return -1;
     }
 }
 
@@ -98,34 +108,40 @@ void set_auto()
     mavros_msgs::SetMode srv_setMode;
     srv_setMode.request.base_mode = 0;
     srv_setMode.request.custom_mode = "AUTO.MISSION";
-    if(cl.call(srv_setMode)){
+    if(cl.call(srv_setMode))
+    {
         ROS_INFO("AUTO.MISSION");
-        //ROS_ERROR("setmode send ok %d value:", srv_setMode.response.success);
-    }else{
+    }
+    else
+    {
         ROS_ERROR("Failed SetMode");
     }
 }
 
-void Mission::send_mission(Mission mission)
+void Mission::send_mission()
 {
+	Ended =  false;
 	ros::NodeHandle p;
 	ros::ServiceClient wp_srv_client = p.serviceClient<mavros_msgs::WaypointPush>("mavros/mission/push");
 	mavros_msgs::WaypointPush wp_push_srv;
 
 
     wp_push_srv.request.start_index = 0;
-    cout << mission.new_wpList->waypoints <<endl;
-  	/*wp_push_srv.request.waypoints.push_back(new_wpList.waypoints);
+    for (int i = 0; i < missionWP.qtd; ++i)
+    {
+		wp_push_srv.request.waypoints.push_back(missionWP.waypoints[i]);
 
-  	if(wp_srv_client.call(wp_push_srv))
-  	{
- 	   ROS_INFO("Success:%d", (bool)wp_push_srv.response.success);
- 	}
- 	else
- 	{
-  	  ROS_ERROR("Waypoint couldn't been sent");
-  	  ROS_INFO("Success:%d", (bool)wp_push_srv.response.success);
-  	}*/
+	  	if(wp_srv_client.call(wp_push_srv))
+	  	{
+	 	   ROS_INFO("Success:%d", (bool)wp_push_srv.response.success);
+	 	} 
+	 	else
+	 	{
+	  	  ROS_ERROR("Waypoint couldn't been sent");
+	  	  ROS_INFO("Success:%d", (bool)wp_push_srv.response.success);
+	  	}    
+	}
+  	
 
 }
 
@@ -146,14 +162,15 @@ int main(int argc, char **argv)
 	{
 		ros::spinOnce();
 		if(mission.Ended)
-			if(!mission.HasNewMission)
+			if(mission.missionWP.option == 0)
 				land();
 			else
 			{
 				set_loiter();
-				ROS_INFO("VAMO PORRA");
-				mission.send_mission(mission);
+				mission.send_mission();
 				set_auto();
+				system("rosnode kill mission_goal_manager");
+				mission.missionWP.option = 0;
 			}
 
 
