@@ -11,7 +11,10 @@
 #include <mavros_msgs/CommandTOL.h>
 #include <mavros_msgs/SetMode.h>
 #include <decision_support/newMission.h>
+#include "drone_system/path_msg.h"
 #include <new>
+#include <bits/stdc++.h> 
+#include<cstdlib>
 //#include "newMission.h"
 
 using namespace std;
@@ -59,7 +62,7 @@ void Mission::chatterCallback_newMission(const decision_support::newMission::Con
 	missionWP.qtd = msg->qtd;
 	for (int i = 0; i < missionWP.qtd; ++i)
 	{
-		missionWP.waypoints.assign(1, msg->waypoints[i]);
+		missionWP.waypoints.push_back(msg->waypoints[i]);
 	}
 }
 
@@ -90,10 +93,12 @@ void set_loiter()
 	ros::ServiceClient cl = n.serviceClient<mavros_msgs::SetMode>("/mavros/set_mode");
     mavros_msgs::SetMode srv_setMode;
     srv_setMode.request.base_mode = 0;
-    srv_setMode.request.custom_mode = "AUTO.LOITER";
+    //srv_setMode.request.custom_mode = "AUTO.LOITER";
+    srv_setMode.request.custom_mode = "LOITER";
     if(cl.call(srv_setMode))
     {
-        ROS_INFO("AUTO.LOITER");
+        //ROS_INFO("AUTO.LOITER");
+        ROS_INFO("LOITER");
     }
     else
     {
@@ -107,10 +112,12 @@ void set_auto()
 	ros::ServiceClient cl = n.serviceClient<mavros_msgs::SetMode>("/mavros/set_mode");
     mavros_msgs::SetMode srv_setMode;
     srv_setMode.request.base_mode = 0;
-    srv_setMode.request.custom_mode = "AUTO.MISSION";
+    //srv_setMode.request.custom_mode = "AUTO.MISSION";
+    srv_setMode.request.custom_mode = "AUTO";
     if(cl.call(srv_setMode))
     {
-        ROS_INFO("AUTO.MISSION");
+        //ROS_INFO("AUTO.MISSION");
+        ROS_INFO("AUTO");
     }
     else
     {
@@ -158,19 +165,46 @@ int main(int argc, char **argv)
 	ros::Subscriber global = 	 n.subscribe("mavros/mission/waypoints", 	1, &Mission::chatterCallback_wpqtd, 	&mission);
 	ros::Subscriber current = 	 n.subscribe("mavros/mission/reached", 		1, &Mission::chatterCallback_current, 	&mission);
 	ros::Subscriber newMission = p.subscribe("newMission", 	1, &Mission::chatterCallback_newMission,&mission);
+
+	ros::ServiceClient static_cli = p.serviceClient<drone_system::path_msg>("square_path");
+	drone_system::path_msg static_srv;
+	
+
 	while(ros::ok())
 	{
 		ros::spinOnce();
 		if(mission.Ended)
 			if(mission.missionWP.option == 0)
 				land();
-			else
+			else if(mission.missionWP.option == 1)
 			{
+
 				set_loiter();
 				mission.send_mission();
 				set_auto();
+
 				system("rosnode kill mission_goal_manager");
 				mission.missionWP.option = 0;
+			}
+			else if (mission.missionWP.option==3)
+			{
+				set_loiter();
+				mission.Ended = false;
+				//execute static path
+				static_srv.request.option = "--pathplanning";
+				if(static_cli.call(static_srv))
+				{
+					//ROS_INFO("path at: %s", static_srv.response.path);
+					string command = "rosrun mavros mavwp load "+ static_srv.response.path;
+					system(command.c_str());
+				}
+				else
+				{
+					ROS_ERROR("FUDEU");
+				}
+				//send new path
+				set_auto();
+
 			}
 
 

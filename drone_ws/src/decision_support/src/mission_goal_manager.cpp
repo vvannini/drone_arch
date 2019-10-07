@@ -169,23 +169,42 @@ int main(int argc, char **argv)
 
 	ros::Rate loop_rate(10);
 	decision_support::newMission mission;
-	mavros_msgs::Waypoint wp_msg;
+	mavros_msgs::Waypoint wp_msg[2];
 
-	wp_msg.frame = 3; // mavros_msgs::Waypoint::FRAME_GLOBAL;
-  	wp_msg.command = 16;
-   	wp_msg.is_current = false;
-   	wp_msg.autocontinue = true;
-   	wp_msg.param1 = 0;
-   	wp_msg.param2 = 0;
-   	wp_msg.param3 = 0;
-   	wp_msg.param4 = 0;
-   	wp_msg.x_lat = 	-22.00164580;
-   	wp_msg.y_long = -47.93324770;
-   	wp_msg.z_alt = 15.0;
+	wp_msg[0].frame = 3; // mavros_msgs::Waypoint::FRAME_GLOBAL;
+  	wp_msg[0].command = 16;
+   	wp_msg[0].is_current = false;
+   	wp_msg[0].autocontinue = true;
+   	wp_msg[0].param1 = 0;
+   	wp_msg[0].param2 = 0;
+   	wp_msg[0].param3 = 0;
+   	wp_msg[0].param4 = 0;
+   	wp_msg[0].x_lat = 	-22.00164580;
+   	wp_msg[0].y_long = -47.93324770;
+   	wp_msg[0].z_alt = 15.0;
 
-   	mission.waypoints.assign(1, wp_msg);
-   	mission.option = 1;
-   	mission.qtd = 1;
+
+
+   	//mission.waypoints.assign(1, wp_msg[0]);
+
+	wp_msg[1].frame = 3; // mavros_msgs::Waypoint::FRAME_GLOBAL;
+  	wp_msg[1].command = 16;
+   	wp_msg[1].is_current = false;
+   	wp_msg[1].autocontinue = true;
+   	wp_msg[1].param1 = 0;
+   	wp_msg[1].param2 = 0;
+   	wp_msg[1].param3 = 0;
+   	wp_msg[1].param4 = 0;
+   	wp_msg[1].x_lat = 	-22.00229248;
+   	wp_msg[1].y_long = -47.93261492;
+   	wp_msg[1].z_alt = 15.0;
+
+   	mission.waypoints.push_back(wp_msg[0]);
+    mission.waypoints.push_back(wp_msg[1]);
+
+
+   	mission.option = 3;
+   	mission.qtd = 2;
 
 	int count = 0;
 	while (ros::ok())
@@ -193,7 +212,7 @@ int main(int argc, char **argv)
 		
 
 		chatter_pub.publish(mission);
-		//cout << mission << endl;
+		cout << mission << endl;
 
 		ros::spinOnce();
 

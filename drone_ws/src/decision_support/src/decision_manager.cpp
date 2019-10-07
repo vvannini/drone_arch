@@ -52,9 +52,11 @@ int main(int argc, char **argv)
             ros::ServiceClient cl = n.serviceClient<mavros_msgs::SetMode>("/mavros/set_mode");
             mavros_msgs::SetMode srv_setMode;
             srv_setMode.request.base_mode = 0;
-            srv_setMode.request.custom_mode = "AUTO.LOITER";
+            //srv_setMode.request.custom_mode = "AUTO.LOITER";
+            srv_setMode.request.custom_mode = "LOITER";
             if(cl.call(srv_setMode)){
-                ROS_INFO("AUTO.LOITER");
+                //ROS_INFO("AUTO.LOITER");
+                ROS_INFO("LOITER");
                 //ROS_ERROR("setmode send ok %d value:", srv_setMode.response.success);
             }else{
                 ROS_ERROR("Failed SetMode");
@@ -66,9 +68,11 @@ int main(int argc, char **argv)
             ros::ServiceClient cl = n.serviceClient<mavros_msgs::SetMode>("/mavros/set_mode");
             mavros_msgs::SetMode srv_setMode;
             srv_setMode.request.base_mode = 0;
-            srv_setMode.request.custom_mode = "AUTO.MISSION";
+            //srv_setMode.request.custom_mode = "AUTO.MISSION";
+            srv_setMode.request.custom_mode = "AUTO";
             if(cl.call(srv_setMode)){
-                ROS_INFO("AUTO.MISSION");
+                //ROS_INFO("AUTO.MISSION");
+                ROS_INFO("AUTO");
                 //ROS_ERROR("setmode send ok %d value:", srv_setMode.response.success);
             }else{
                 ROS_ERROR("Failed SetMode");

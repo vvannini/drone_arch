@@ -67,6 +67,7 @@ def build_area_jardimSenai():
 # C2 Atras do bloco do ICMC
 def build_area_C2():
     geo_home = pp.GeoPoint((-47.9328042, -22.0024053, 0))
+    #geo_home = pp.GeoPoint((-47.933528, -22.002526, 0))
 
     points = [
         (-47.932749, -22.002332, 7), 
@@ -74,6 +75,13 @@ def build_area_C2():
         (-47.932664, -22.002147, 13), 
         (-47.932612, -22.002306, 7)
     ]
+
+    #points = [
+    #    (-47.933463, -22.002382, 5), 
+    #    (-47.933463, -22.002382, 13), 
+    #    (-47.933385, -22.002634, 13), 
+    #    (-47.933385, -22.002634, 5)
+    #]
 
     geo_points = [pp.GeoPoint(i) for i in points]
 
