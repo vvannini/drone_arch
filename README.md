@@ -1,7 +1,5 @@
 # drone_arch 
-            One System to rule them all, One System to find them,
-            One System to bring them all and in the Safety bind them
-                                              -- Lord Of the Drones
+            
 
 ## Prerequisites
 
