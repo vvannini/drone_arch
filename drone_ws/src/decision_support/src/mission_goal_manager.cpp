@@ -203,7 +203,7 @@ int main(int argc, char **argv)
     mission.waypoints.push_back(wp_msg[1]);
 
 
-   	mission.option = 3;
+   	mission.option = 1;
    	mission.qtd = 2;
 
 	int count = 0;
