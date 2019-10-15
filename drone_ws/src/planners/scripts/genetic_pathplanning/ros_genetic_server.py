@@ -7,7 +7,7 @@ import argparse
 
 #from visualization import plot_map, plot_stats
 from genetic_v2_3 import Subject, Genetic
-from data_definitions import Mapa, CartesianPoint, Conversor
+from data_definitions import Mapa, CartesianPoint, Conversor, GeoPoint
 
 from file_manipulation import read_mapa
 
