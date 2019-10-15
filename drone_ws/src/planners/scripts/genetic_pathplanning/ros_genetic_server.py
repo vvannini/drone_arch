@@ -76,7 +76,7 @@ def run_genetic(req):
     cart_points = best.get_route()
 
     # Melhor rota encontrada : WPs em geográfico
-    geo_points = [ Conversor.list_cart_to_geo(cart_points, geo_home) ]
+    geo_points = [ Conversor.cart_to_geo(CartesianPoint(cart_point[0], cart_point[1]), geo_home) for cart_point in cart_points ]
 
 
 

@@ -66,7 +66,8 @@ class Conversor():
             return ((x * 90) / (10008000 * math.cos(lat_ * math.pi / 180))) + longi_
 
 
-        longitude_x = calc_longitude_x(home.latitude, home.longitude, cartesian_point.x)
-        latitude_y = calc_latitude_y(home.latitude, cartesian_point.y)
+        longitude_x = calc_longitude_x(geo_home.latitude, geo_home.longitude, cartesian_point.x)
+        latitude_y = calc_latitude_y(geo_home.latitude, cartesian_point.y)
 
-        return GeoPoint(longitude_x, latitude_y, cartesian_point.z)
+        #return GeoPoint(longitude_x, latitude_y, cartesian_point.z)
+        return GeoPoint(longitude_x, latitude_y, 10)
