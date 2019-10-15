@@ -9,7 +9,7 @@ import argparse
 from genetic_v2_3 import Subject, Genetic
 from data_definitions import Mapa, CartesianPoint, Conversor, GeoPoint
 
-from file_manipulation import read_mapa
+from file_manipulation import read_mapa, write_mavros
 
 def build_sample_map():
     # Função para criar um mapa de teste
