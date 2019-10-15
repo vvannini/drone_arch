@@ -4,6 +4,6 @@ float32 origin_alt
 float32 destination_lat
 float32 destination_long
 float32 destination_alt
-int32 mission_id
+int32 map_id
 ---
 string wp_path
