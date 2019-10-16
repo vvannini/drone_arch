@@ -11,7 +11,7 @@ def ga_path_client(origin_lat, origin_long, origin_alt, destination_lat, destina
         square_path = rospy.ServiceProxy('genetic', GA_Planner)
         resp1 = square_path(origin_lat, origin_long, origin_alt, destination_lat, destination_long, destination_alt, map_id)
         print(resp1)
-        return resp1.path
+        return resp1.wp_path
     
     except Exception as e :
     #except(rospy.ServiceException, e):
