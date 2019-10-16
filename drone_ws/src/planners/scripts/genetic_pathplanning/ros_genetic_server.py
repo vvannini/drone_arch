@@ -1,16 +1,15 @@
 # Versão do Algoritmo Genético: v2_3
 
 import rospy
-from GA_Planner.srv import *
+from planners.srv import *
 
 import argparse
 
-#from visualization import plot_map, plot_stats
-from genetic_v2_3 import Subject, Genetic, Gene, GeneDecoded, 
-from data_definitions import Mapa, CartesianPoint
 
-from file_manipulation import read_mission
+from genetic_v2_3 import Subject, Genetic
+from data_definitions import Mapa, CartesianPoint, Conversor, GeoPoint
 
+from file_manipulation import read_mapa, write_mavros
 
 ## Interface Gráfica
 from visualization import plot_map
@@ -47,13 +46,15 @@ def run_genetic(req):
     destination_lat  = req.destination_lat
     destination_long = req.destination_long
     destination_alt  = req.destination_alt
-    missao_id        = req.mission_id
+    map_id           = req.map_id
+
+    print(origin_lat)
 
     # Leitura do arquvio em DATA
-    geo_home, _, _, areas_n = read_mapa('~/Data/mapa.json', mapa_id)
+    geo_home, _, _, areas_n = read_mapa('/home/vannini/Data/mapa.json', map_id)
 
-    cart_origin      = geo_to_cart(GeoPoint(origin_lat, origin_long, origin_alt), geo_home)
-    cart_destination = geo_to_cart(GeoPoint(destination_lat, destination_long, destination_alt), geo_home)
+    cart_origin      = Conversor.geo_to_cart(GeoPoint(origin_lat, origin_long, origin_alt), geo_home)
+    cart_destination = Conversor.geo_to_cart(GeoPoint(destination_lat, destination_long, destination_alt), geo_home)
 
 
     mapa = Mapa(cart_origin, cart_destination, areas_n, inflation_rate=0.1)
@@ -70,11 +71,11 @@ def run_genetic(req):
         C_con=10,
         C_cur=0,
         C_t=0,
-        max_exec_time=1,
+        max_exec_time=60,
         T_max=20,
         px0=cart_origin.x,
         py0=cart_origin.y
-    )
+	)
 
     best = ag.run(info=True)
 
@@ -82,23 +83,24 @@ def run_genetic(req):
     cart_points = best.get_route()
 
     # Melhor rota encontrada : WPs em geográfico
-    geo_points = [ Conversor.list_cart_to_geo(cart_points, geo_home) ]
+    geo_points = [ Conversor.cart_to_geo(CartesianPoint(cart_point[0], cart_point[1]), geo_home) for cart_point in cart_points ]
+
 
 
     ## SAÍDA
 
     ## Interface Gráfica
-    plot_map(
-    mapa.areas_n_inf, 
-    ['n' for _ in range(len(mapa.areas_n_inf))], 
-    cart_origin, 
-    cart_destination, 
-    best.get_route(),
-    None
-    )
+	    plot_map(
+	    mapa.areas_n_inf, 
+	    ['n' for _ in range(len(mapa.areas_n_inf))], 
+	    cart_origin, 
+	    cart_destination, 
+	    best.get_route(),
+	    None
+	)
     ## /Interface Gráfica
 
-    output_filename = '~/Mission/path_from_ga_output.wp'
+    output_filename = '/home/vannini/Missions/path_from_ga_output.wp'
     write_mavros(output_filename, geo_points)
 
 
