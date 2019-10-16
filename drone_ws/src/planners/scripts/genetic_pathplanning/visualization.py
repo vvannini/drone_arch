@@ -79,8 +79,8 @@ def plot_map(areas, labels, origem, destino, waypoints, texts, wp_style='-x', **
     if 'title' in kwargs:
         plt.title(kwargs['title'])
     
-    plt.show()
-    
+    #plt.show()
+    plt.savefig('out.png')
 
 def plot_stats(ag_trace, normalize=True):
     dft = pd.DataFrame.from_dict(ag_trace)

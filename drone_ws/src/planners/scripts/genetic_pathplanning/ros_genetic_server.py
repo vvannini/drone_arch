@@ -67,15 +67,15 @@ def run_genetic(req):
         taxa_cross=1.0,
         population_size=80,
         C_d=1000,
-        C_obs=10000,
+        C_obs=1000000,
         C_con=10,
         C_cur=0,
         C_t=0,
-        max_exec_time=60,
+        max_exec_time=180,
         T_max=20,
         px0=cart_origin.x,
         py0=cart_origin.y
-	)
+    )
 
     best = ag.run(info=True)
 
@@ -90,14 +90,14 @@ def run_genetic(req):
     ## SAÍDA
 
     ## Interface Gráfica
-	    plot_map(
-	    mapa.areas_n_inf, 
-	    ['n' for _ in range(len(mapa.areas_n_inf))], 
-	    cart_origin, 
-	    cart_destination, 
-	    best.get_route(),
-	    None
-	)
+    plot_map(
+        mapa.areas_n_inf, 
+        ['n' for _ in range(len(mapa.areas_n_inf))], 
+        cart_origin, 
+        cart_destination, 
+        best.get_route(),
+        None
+    )
     ## /Interface Gráfica
 
     output_filename = '/home/vannini/Missions/path_from_ga_output.wp'
