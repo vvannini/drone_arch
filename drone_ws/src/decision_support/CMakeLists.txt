@@ -227,6 +227,9 @@ target_link_libraries(mission_goal_manager ${catkin_LIBRARIES})
 add_executable(mission_planning src/mission_planning.cpp)
 target_link_libraries(mission_planning ${catkin_LIBRARIES})
 
+add_executable(actions src/actions.cpp)
+target_link_libraries(actions ${catkin_LIBRARIES})
+
 #add_executable(create_Mission src/create_Mission.cpp)
 #target_link_libraries(create_Mission ${catkin_LIBRARIES})
 
