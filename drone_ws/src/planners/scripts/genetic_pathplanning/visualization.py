@@ -5,10 +5,9 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 from matplotlib.path import Path
 
-#import plotly.graph_objects as go
+import plotly.graph_objects as go
 
-#from sklearn import preprocessing
-
+from sklearn import preprocessing
 
 
 cor_area_nn    = '#25283d' # Yankees Blue
@@ -42,32 +41,61 @@ def new_shape(vertices, color='navajowhite', lw=.25):
     return patch
 
 
-def plot_map(areas, labels, origem, destino, waypoints, texts, wp_style='-x', **kwargs):
+def plot_map(wp_style='-x', **kwargs):
+    # Optional arguments:
+    # areas, labels, origem, destino, waypoints, texts
 
     fig, ax = plt.subplots(figsize=(8,8)) 
     
     # Plot areas
-    if areas and labels:
+    if 'areas' in kwargs and 'labels' in kwargs:
+        areas=kwargs['areas']
+        labels=kwargs['labels']
         patches = [ new_shape(vertice, color=label) for vertice, label in zip(areas, labels) ]
         for patch in patches:
             ax.add_patch(patch)
         
     # Plot origin and destination
-    if origem and destino:
+    if 'origem' in kwargs and 'destino' in kwargs:
+        origem=kwargs['origem']
+        destino=kwargs['destino']
         ax.plot([origem[0], destino[0]], [origem[1], destino[1]], 'o', color=cor_ori_dest)
     
     # Plot waypoints and route
-    if waypoints:
+    if 'waypoints' in kwargs:
+        waypoints=kwargs['waypoints']
         waypoints = list(map(list, zip(*waypoints)))
         ax.plot(waypoints[0], waypoints[1], wp_style, color=cor_waypoints, linewidth=2) #marker='x', linestyle='solid'
-        if texts:
-            for i, text in enumerate(texts):
+        if 'texts' in kwargs:
+            for i, text in enumerate(kwargs['texts']):
                 ax.annotate(text, (waypoints[0][i], waypoints[1][i]))
-                
-    # Plot segments
-    if 'segments' in kwargs:
-        for segment in kwargs['segments']:
-            pass
+    
+    if 'stress' in kwargs:
+        # Plot waypoints
+        if 'points' in kwargs:
+            for wp, text in zip(kwargs['points'], kwargs['texts']):
+                if text=='T':
+                    in_color=cor_area_b
+                else:
+                    in_color=cor_waypoints
+
+                ax.plot(wp[0], wp[1], wp_style, color=in_color, linewidth=2)
+                ax.annotate(text, (wp[0], wp[1]))
+
+        # Plot segments
+        if 'segments' in kwargs and 'texts' in kwargs:
+            i=0
+            for segment, text in zip(kwargs['segments'], kwargs['texts']):
+                X = [segment[0].x, segment[1].x]
+                Y = [segment[0].y, segment[1].y]
+
+                if text=='T':
+                    in_color=cor_area_b
+                else:
+                    in_color=cor_waypoints
+                ax.plot(X, Y, wp_style, color=in_color, linewidth=2)
+                ax.annotate(text+str(i), (X[0], Y[0]))
+                i+=1
     
     # Set size
     automin, automax = ax.get_xlim()

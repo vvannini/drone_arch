@@ -5,29 +5,44 @@ CartesianPoint = collections.namedtuple('CartesianPoint', 'x y')
 GeoPoint = collections.namedtuple('GeoPoint', 'latitude, longitude, altitude')
 
 class Mapa():
-    def __init__(self, origin, destination, areas_n, inflation_rate=0.1):
+    def __init__(self, origin, destination, areas_n, inflation_rate=0.1, mode='scalar'):
         self.origin = origin           # CartesianPoint : Define o ponto de partida da rota
         self.destination = destination # CartesianPoint : Define o ponto de destino da rota
-        #self.areas_n = areas_n        # [area, ...]
+        self.areas_n = areas_n         # [area, ...]
                                        # area = [CartesianPoint(),...]      
-        self.areas_n_inf = [ self._inflate_area(area, inflation_rate=inflation_rate) for area in areas_n ]
+        self.areas_n_inf = [ self._inflate_area(area, inflation_rate=inflation_rate, mode=mode) for area in areas_n ]
         
         
-    def _inflate_area(self, area, inflation_rate=0):
-        # Infla uma área retangular em uma porcentagem do tamanho, alterando os valores em x% de cada vértice
-        x = area[2].x - area[0].x
-        y = area[1].y - area[3].y
+    def _inflate_area(self, area, inflation_rate, mode):
+        if mode == 'percentage':
+            # Infla uma área retangular em uma porcentagem do tamanho, alterando os valores em x% de cada vértice
+            x = area[2].x - area[0].x
+            y = area[1].y - area[3].y
+
+            inc = (inflation_rate)
+            dec = -(inflation_rate)
+
+            new_area = [
+                CartesianPoint(area[0].x + dec * x, area[0].y + dec * y), # left,  bottom
+                CartesianPoint(area[1].x + dec * x, area[1].y + inc * y), # left,  top
+                CartesianPoint(area[2].x + inc * x, area[2].y + inc * y), # right, top
+                CartesianPoint(area[3].x + inc * x, area[3].y + dec * y)  # right, bottom
+            ]
+            new_area.append(new_area[0]) # Repetir primeiro ponto, para o ignore do shape na hora de plotar
         
-        inc = (inflation_rate)
-        dec = -(inflation_rate)
+        elif mode == 'scalar':
+            # Infla uma área retangular em uma quantidade fixa
+            inc = (inflation_rate)
+            dec = -(inflation_rate)
+
+            new_area = [
+                CartesianPoint(area[0].x + dec, area[0].y + dec), # left,  bottom
+                CartesianPoint(area[1].x + dec, area[1].y + inc), # left,  top
+                CartesianPoint(area[2].x + inc, area[2].y + inc), # right, top
+                CartesianPoint(area[3].x + inc, area[3].y + dec)  # right, bottom
+            ]
+            new_area.append(new_area[0]) # Repetir primeiro ponto, para o ignore do shape na hora de plotar
         
-        new_area = [
-            CartesianPoint(area[0].x + dec * x, area[0].y + dec * y), # left,  bottom
-            CartesianPoint(area[1].x + dec * x, area[1].y + inc * y), # left,  top
-            CartesianPoint(area[2].x + inc * x, area[2].y + inc * y), # right, top
-            CartesianPoint(area[3].x + inc * x, area[3].y + dec * y)  # right, bottom
-        ]
-        new_area.append(new_area[0]) # Repetir primeiro ponto, para o ignore do shape na hora de plotar
         
         return new_area
 

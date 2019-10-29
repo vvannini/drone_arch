@@ -14,6 +14,13 @@ def pairwise(iterable):
     next(b, None)
     return zip(a, b)
 
+def boundary(val, val_min, val_max):
+  if val<val_min:
+    return val_min
+  if val>val_max:
+    return val_max
+  return val
+
 # Ray Casting Algorithm
 # _________________________________________________________________________________________________
 epsilon = 0.00001  # Used on the Ray-Tracing Algorithm
@@ -90,24 +97,27 @@ def ray_intersects_segment(P, A, B):
 # Segment Intersection
 # _________________________________________________________________________________________________
 def segment_in_polygon(wp1, wp2, polygon):
-    count = 0
+    # count = 0
+    #print('Segment: {}-{}'.format(wp1,wp2))
 
     for vertex1, vertex2 in pairwise_circle(polygon):
-
-        if vertex1.y < vertex2.y:
-            A = vertex1
-            B = vertex2
-        else:
-            A = vertex2
-            B = vertex1
+        A = vertex1
+        B = vertex2
+        #if vertex1.y < vertex2.y:
+        #    A = vertex1
+        #    B = vertex2
+        #else:
+        #    A = vertex2
+        #    B = vertex1
+        #print('Polygon edge: {}-{}'.format(A, B))
 
         if segment_intersects_segment(wp1, wp2, A, B):
-            count += 1
-
-    if count > 1:
-        return True 
-    else:
-        return False 
+            return True
+    return False
+    # if count > 1:
+    #     return True 
+    # else:
+    #     return False 
     
 
 def segment_intersects_segment(p1, q1, p2, q2):
@@ -132,8 +142,9 @@ def segment_intersects_segment(p1, q1, p2, q2):
     o1 = orientation(p1, q1, p2) 
     o2 = orientation(p1, q1, q2) 
     o3 = orientation(p2, q2, p1) 
+    #print(p2, q2, p1, o3)
     o4 = orientation(p2, q2, q1) 
-    
+    #print(o1,o2,o3,o4)
     
     # 1. General case 
     if o1 != o2 and o3 != o4:
@@ -183,13 +194,14 @@ def orientation(p, q, r):
     # for details of below formula. 
       
     val =( (q.y - p.y) * (r.x - q.x) 
-         - (q.x - p.x) * (r.y - q.y))
-    
+         - ((q.x - p.x) * (r.y - q.y)))
+    #print('\n---\ndebug')
+    #print((q.y - p.y), (r.x - q.x), (q.x - p.x), (r.y - q.y))
+    #print(val)
     if val == 0:
         return 0         # colinear
 
     return (1 if val > 0 else 2)  # clock or counterclock wise
-
 
 
 
