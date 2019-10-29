@@ -1,3 +1,4 @@
+
 import collections
 import random
 import time
@@ -7,12 +8,13 @@ from math import cos, sin, sqrt, ceil
 
 from itertools import tee
 from utils import pairwise, point_in_polygon, segment_in_polygon
-
+from data_definitions import CartesianPoint, GeoPoint
 
 
 Gene           = collections.namedtuple('Gene', 'a e')
 GeneDecoded    = collections.namedtuple('GeneDecoded', 'x y v al')
-CartesianPoint = collections.namedtuple('CartesianPoint', 'x y')
+
+
 
 
 class Mapa():
@@ -43,7 +45,6 @@ class Mapa():
         
         return new_area
 
-
 class Subject():
     
     # codificação - u
@@ -60,7 +61,6 @@ class Subject():
     #         y  = : Posição do VANT no eixo y (aka py)
     #         v  = : Velocidade do VANT na horizontal
     #         al = : ângulo (direção) do VANT na horizontal
-    
     def __init__(
         self,
         px0=10.,
@@ -69,7 +69,7 @@ class Subject():
         al0=0,
         v_min=11.1,
         v_max=30.5,
-        e_min=-3,
+        e_min=-3,        
         e_max=3,
         a_min=-2.0,
         a_max=2.0,
@@ -123,7 +123,7 @@ class Subject():
     def spawn(self, mode):
         self.dna = [self._build_gene(mode) for _ in range(self.T) ]
         
-    def _build_gene(self, mode):
+    def _build_gene(self, mode='random'):
         # Inicialização aleatória gera valores com distribuição uniforme
         if mode == 'random':
             a = random.uniform(self.a_min, self.a_max)
@@ -226,10 +226,15 @@ class Subject():
         for gene1, gene2 in zip(dna1, dna2):
             a = self.__BLX_ALpha_select_gene(gene1.a, gene2.a)
             e = self.__BLX_ALpha_select_gene(gene1.e, gene2.e)
-            a = min(a, self.a_max)
-            a = max(a, self.a_min)
-            e = min(e, self.e_max)
-            e = max(e, self.e_min)
+            if a>self.a_max:
+              a=self.a_max
+            elif a < self.a_min:
+              a=self.a_min
+
+            if e>self.e_max:
+              e=self.e_max
+            elif e < self.e_min:
+              e=self.e_min            
             
             gene = Gene(a, e)
             dna.append(gene)
@@ -300,7 +305,7 @@ class Subject():
         # Insere UM gene aleatório no DNA em uma posição aleatória
         if len(dna) < self.T_max:
             i = random.randint(0, len(dna)-1)
-            gene = self._build_gene('random')
+            gene = self._build_gene()
             dna.insert(i, gene)
             return dna
         return None
@@ -325,8 +330,12 @@ class Subject():
         val = val * (1 + (mutation_rate * s))
 
         # Checa se não estoura os limites
-        val = max(val, min_val)
-        val = min(val, max_val)
+        if val>max_val:
+          val=max_val
+        elif val<min_val:
+          val=min_val
+        #val = max(val, min_val)
+        #val = min(val, max_val)
 
         return val
     
@@ -620,7 +629,7 @@ class Genetic():
             for j in range(k-1):
                 # Seleciona k individuos
                 a = random.choice(population)
-                if a.fitness > local_best.fitness:
+                if a.fitness < local_best.fitness:
                     local_best = a
                     
             parents.append(local_best)
