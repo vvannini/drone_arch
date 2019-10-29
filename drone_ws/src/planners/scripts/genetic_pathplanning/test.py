@@ -19,7 +19,8 @@ destination_alt  = 15
 mapa_id          = 0
 
 # Leitura do arquvio em DATA
-geo_home, _, _, areas_n = read_mapa('/mnt/c/Projetos/path-planning/data/mapa.json', mapa_id)
+geo_home, _, _, areas_n = read_mapa('/home/vannini/drone_arch/Data/mapa.json', mapa_id)
+print(geo_home)
 
 cart_origin      = Conversor.geo_to_cart(GeoPoint(origin_lat, origin_long, origin_alt), geo_home)
 cart_destination = Conversor.geo_to_cart(GeoPoint(destination_lat, destination_long, destination_alt), geo_home)

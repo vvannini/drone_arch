@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 from matplotlib.path import Path
 
-import plotly.graph_objects as go
+#import plotly.graph_objects as go
 
-from sklearn import preprocessing
+#from sklearn import preprocessing
 
 
 cor_area_nn    = '#25283d' # Yankees Blue

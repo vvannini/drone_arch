@@ -45,6 +45,7 @@ def upload_mapa(mapa_file, mapa_id):
             geo_points.append(Conversor.geo_to_cart(
                 GeoPoint(geo_point[1], geo_point[0], geo_point[2])
                 , geo_home))
+        geo_points.append(geo_points[0])
         areas_nao_navegaveis.append(geo_points)
 
 
@@ -70,6 +71,7 @@ def read_mapa(mapa_filename, mapa_id):
                 geo_points.append(Conversor.geo_to_cart(
                     GeoPoint(geo_point[1], geo_point[0], geo_point[2])
                     , geo_home))
+            geo_points.append(geo_points[0])
             areas_nao_navegaveis.append(geo_points)
 
 
@@ -96,8 +98,8 @@ def write_mavros(filename, geo_points): #throws FileNotFoundException
                 str(i) + '\t'
                 + str(current_waypoint) + '\t' 
                 + '3\t16\t3\t0\t0\t0\t'
-                + '{:10.8f}'.format(geo_point.latitude) + '\t' 
-                + '{:10.8f}'.format(geo_point.longitude) + '\t'
+                + '{:10.8f}'.format(geo_point.longitude) + '\t' 
+                + '{:10.8f}'.format(geo_point.latitude) + '\t'
                 + '{:10.8f}'.format(geo_point.altitude) + '\t'
                 + '1'
                 + '\n'
