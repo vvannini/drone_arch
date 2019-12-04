@@ -1,6 +1,11 @@
 (cl:defpackage planners-srv
   (:use )
   (:export
+   "GA_PLANNER"
+   "<GA_PLANNER-REQUEST>"
+   "GA_PLANNER-REQUEST"
+   "<GA_PLANNER-RESPONSE>"
+   "GA_PLANNER-RESPONSE"
    "JARPLANNERS"
    "<JARPLANNERS-REQUEST>"
    "JARPLANNERS-REQUEST"

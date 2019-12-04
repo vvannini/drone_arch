@@ -16,26 +16,26 @@
 
 (defclass decision_support::newMission
   :super ros::object
-  :slots (_option _nWaypoints _waypoints ))
+  :slots (_option _qtd _waypoints ))
 
 (defmethod decision_support::newMission
   (:init
    (&key
     ((:option __option) 0)
-    ((:nWaypoints __nWaypoints) 0)
+    ((:qtd __qtd) 0)
     ((:waypoints __waypoints) (let (r) (dotimes (i 0) (push (instance mavros_msgs::Waypoint :init) r)) r))
     )
    (send-super :init)
    (setq _option (round __option))
-   (setq _nWaypoints (round __nWaypoints))
+   (setq _qtd (round __qtd))
    (setq _waypoints __waypoints)
    self)
   (:option
    (&optional __option)
    (if __option (setq _option __option)) _option)
-  (:nWaypoints
-   (&optional __nWaypoints)
-   (if __nWaypoints (setq _nWaypoints __nWaypoints)) _nWaypoints)
+  (:qtd
+   (&optional __qtd)
+   (if __qtd (setq _qtd __qtd)) _qtd)
   (:waypoints
    (&rest __waypoints)
    (if (keywordp (car __waypoints))
@@ -48,7 +48,7 @@
    (+
     ;; uint8 _option
     1
-    ;; uint32 _nWaypoints
+    ;; uint32 _qtd
     4
     ;; mavros_msgs/Waypoint[] _waypoints
     (apply #'+ (send-all _waypoints :serialization-length)) 4
@@ -59,8 +59,8 @@
               (make-string-output-stream (send self :serialization-length)))))
      ;; uint8 _option
        (write-byte _option s)
-     ;; uint32 _nWaypoints
-       (write-long _nWaypoints s)
+     ;; uint32 _qtd
+       (write-long _qtd s)
      ;; mavros_msgs/Waypoint[] _waypoints
      (write-long (length _waypoints) s)
      (dolist (elem _waypoints)
@@ -72,8 +72,8 @@
    (buf &optional (ptr- 0))
    ;; uint8 _option
      (setq _option (sys::peek buf ptr- :char)) (incf ptr- 1)
-   ;; uint32 _nWaypoints
-     (setq _nWaypoints (sys::peek buf ptr- :integer)) (incf ptr- 4)
+   ;; uint32 _qtd
+     (setq _qtd (sys::peek buf ptr- :integer)) (incf ptr- 4)
    ;; mavros_msgs/Waypoint[] _waypoints
    (let (n)
      (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4)
@@ -85,11 +85,11 @@
    self)
   )
 
-(setf (get decision_support::newMission :md5sum-) "1625ea9210013ed87a1752191f2182af")
+(setf (get decision_support::newMission :md5sum-) "203930edbac7cfe89e04eaa6af94e628")
 (setf (get decision_support::newMission :datatype-) "decision_support/newMission")
 (setf (get decision_support::newMission :definition-)
       "uint8 option
-uint32 nWaypoints
+uint32 qtd
 mavros_msgs/Waypoint[] waypoints
 ================================================================================
 MSG: mavros_msgs/Waypoint
@@ -126,6 +126,6 @@ float64 z_alt
 
 
 
-(provide :decision_support/newMission "1625ea9210013ed87a1752191f2182af")
+(provide :decision_support/newMission "203930edbac7cfe89e04eaa6af94e628")
 
 

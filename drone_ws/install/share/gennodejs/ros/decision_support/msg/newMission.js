@@ -20,7 +20,7 @@ class newMission {
     if (initObj === null) {
       // initObj === null is a special case for deserialization where we don't initialize fields
       this.option = null;
-      this.nWaypoints = null;
+      this.qtd = null;
       this.waypoints = null;
     }
     else {
@@ -30,11 +30,11 @@ class newMission {
       else {
         this.option = 0;
       }
-      if (initObj.hasOwnProperty('nWaypoints')) {
-        this.nWaypoints = initObj.nWaypoints
+      if (initObj.hasOwnProperty('qtd')) {
+        this.qtd = initObj.qtd
       }
       else {
-        this.nWaypoints = 0;
+        this.qtd = 0;
       }
       if (initObj.hasOwnProperty('waypoints')) {
         this.waypoints = initObj.waypoints
@@ -49,8 +49,8 @@ class newMission {
     // Serializes a message object of type newMission
     // Serialize message field [option]
     bufferOffset = _serializer.uint8(obj.option, buffer, bufferOffset);
-    // Serialize message field [nWaypoints]
-    bufferOffset = _serializer.uint32(obj.nWaypoints, buffer, bufferOffset);
+    // Serialize message field [qtd]
+    bufferOffset = _serializer.uint32(obj.qtd, buffer, bufferOffset);
     // Serialize message field [waypoints]
     // Serialize the length for message field [waypoints]
     bufferOffset = _serializer.uint32(obj.waypoints.length, buffer, bufferOffset);
@@ -66,8 +66,8 @@ class newMission {
     let data = new newMission(null);
     // Deserialize message field [option]
     data.option = _deserializer.uint8(buffer, bufferOffset);
-    // Deserialize message field [nWaypoints]
-    data.nWaypoints = _deserializer.uint32(buffer, bufferOffset);
+    // Deserialize message field [qtd]
+    data.qtd = _deserializer.uint32(buffer, bufferOffset);
     // Deserialize message field [waypoints]
     // Deserialize array length for message field [waypoints]
     len = _deserializer.uint32(buffer, bufferOffset);
@@ -91,14 +91,14 @@ class newMission {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '1625ea9210013ed87a1752191f2182af';
+    return '203930edbac7cfe89e04eaa6af94e628';
   }
 
   static messageDefinition() {
     // Returns full string definition for message
     return `
     uint8 option
-    uint32 nWaypoints
+    uint32 qtd
     mavros_msgs/Waypoint[] waypoints
     ================================================================================
     MSG: mavros_msgs/Waypoint
@@ -147,11 +147,11 @@ class newMission {
       resolved.option = 0
     }
 
-    if (msg.nWaypoints !== undefined) {
-      resolved.nWaypoints = msg.nWaypoints;
+    if (msg.qtd !== undefined) {
+      resolved.qtd = msg.qtd;
     }
     else {
-      resolved.nWaypoints = 0
+      resolved.qtd = 0
     }
 
     if (msg.waypoints !== undefined) {
