@@ -11,7 +11,7 @@
 #include <mavros_msgs/CommandTOL.h>
 #include <mavros_msgs/SetMode.h>
 #include <decision_support/newMission.h>
-#include "drone_system/path_msg.h"
+//#include "drone_system/path_msg.h"
 #include <new>
 #include <bits/stdc++.h> 
 #include<cstdlib>
@@ -166,8 +166,8 @@ int main(int argc, char **argv)
 	ros::Subscriber current = 	 n.subscribe("mavros/mission/reached", 		1, &Mission::chatterCallback_current, 	&mission);
 	ros::Subscriber newMission = p.subscribe("newMission", 	1, &Mission::chatterCallback_newMission,&mission);
 
-	ros::ServiceClient static_cli = p.serviceClient<drone_system::path_msg>("square_path");
-	drone_system::path_msg static_srv;
+	//ros::ServiceClient static_cli = p.serviceClient<drone_system::path_msg>("square_path");
+	//drone_system::path_msg static_srv;
 	
 
 	while(ros::ok())
@@ -188,10 +188,10 @@ int main(int argc, char **argv)
 			}
 			else if (mission.missionWP.option==3)
 			{
-				set_loiter();
+				/*set_loiter();
 				mission.Ended = false;
 				//execute static path
-				static_srv.request.option = "--pathplanning";
+				/*static_srv.request.option = "--pathplanning";
 				if(static_cli.call(static_srv))
 				{
 					//ROS_INFO("path at: %s", static_srv.response.path);
@@ -203,7 +203,7 @@ int main(int argc, char **argv)
 					ROS_ERROR("FUDEU");
 				}
 				//send new path
-				set_auto();
+				set_auto();*/
 
 			}
 

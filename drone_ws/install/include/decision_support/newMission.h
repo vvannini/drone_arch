@@ -26,12 +26,12 @@ struct newMission_
 
   newMission_()
     : option(0)
-    , nWaypoints(0)
+    , qtd(0)
     , waypoints()  {
     }
   newMission_(const ContainerAllocator& _alloc)
     : option(0)
-    , nWaypoints(0)
+    , qtd(0)
     , waypoints(_alloc)  {
   (void)_alloc;
     }
@@ -41,8 +41,8 @@ struct newMission_
    typedef uint8_t _option_type;
   _option_type option;
 
-   typedef uint32_t _nWaypoints_type;
-  _nWaypoints_type nWaypoints;
+   typedef uint32_t _qtd_type;
+  _qtd_type qtd;
 
    typedef std::vector< ::mavros_msgs::Waypoint_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::mavros_msgs::Waypoint_<ContainerAllocator> >::other >  _waypoints_type;
   _waypoints_type waypoints;
@@ -125,12 +125,12 @@ struct MD5Sum< ::decision_support::newMission_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "1625ea9210013ed87a1752191f2182af";
+    return "203930edbac7cfe89e04eaa6af94e628";
   }
 
   static const char* value(const ::decision_support::newMission_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x1625ea9210013ed8ULL;
-  static const uint64_t static_value2 = 0x7a1752191f2182afULL;
+  static const uint64_t static_value1 = 0x203930edbac7cfe8ULL;
+  static const uint64_t static_value2 = 0x9e04eaa6af94e628ULL;
 };
 
 template<class ContainerAllocator>
@@ -150,7 +150,7 @@ struct Definition< ::decision_support::newMission_<ContainerAllocator> >
   static const char* value()
   {
     return "uint8 option\n"
-"uint32 nWaypoints\n"
+"uint32 qtd\n"
 "mavros_msgs/Waypoint[] waypoints\n"
 "================================================================================\n"
 "MSG: mavros_msgs/Waypoint\n"
@@ -201,7 +201,7 @@ namespace serialization
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
       stream.next(m.option);
-      stream.next(m.nWaypoints);
+      stream.next(m.qtd);
       stream.next(m.waypoints);
     }
 
@@ -223,8 +223,8 @@ struct Printer< ::decision_support::newMission_<ContainerAllocator> >
   {
     s << indent << "option: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.option);
-    s << indent << "nWaypoints: ";
-    Printer<uint32_t>::stream(s, indent + "  ", v.nWaypoints);
+    s << indent << "qtd: ";
+    Printer<uint32_t>::stream(s, indent + "  ", v.qtd);
     s << indent << "waypoints[]" << std::endl;
     for (size_t i = 0; i < v.waypoints.size(); ++i)
     {
