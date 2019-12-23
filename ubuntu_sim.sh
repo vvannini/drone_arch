@@ -34,4 +34,4 @@ sudo apt-get install libgazebo9-dev -y
 
 
 # Go to the firmware directory
-cd $clone_dir/Firmware
+#cd $clone_dir/Firmware
