@@ -7,7 +7,14 @@ WORKDIR /home
 COPY ./ /home
 
 
-# Intall requirements
+# Install requirements
+
+# Python 3.8
+RUN apt-get update \
+    && apt-get install -qq -y --no-install-recommends \
+        python3.8 \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 # MAVROS
 RUN apt-get update \
@@ -22,10 +29,8 @@ RUN wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/
     && chmod +x install_geographiclib_datasets.sh \
     && ./install_geographiclib_datasets.sh
 
-# && apt install python-prettytable
 
-
-# PX4 FIRMWARE.
+# PX4 FIRMWARE
 RUN apt-get update \
     && apt-get install -qq -y --no-install-recommends \
         wget \

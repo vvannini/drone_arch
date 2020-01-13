@@ -16,7 +16,11 @@ docker-build-image--no-cache:
 
 # Start bash on the container
 docker-run-bash:
-	@docker run -it --rm --entrypoint=/bin/bash $(IMAGE_NAME)
+	docker run \
+		-it --rm \
+		-e DISPLAY=$(DISPLAY) \
+    	-v /tmp/.X11-unix:/tmp/.X11-unix \
+		--entrypoint=/bin/bash $(IMAGE_NAME)
 
 # Removes the container
 docker-rm:
