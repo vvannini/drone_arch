@@ -1,0 +1,14 @@
+
+; Version LPG-td-1.4
+; Seed 4453158
+; Command line: /home/vannini/drone_arch/drone_ws/src/ROSPlan/src/rosplan/rosplan_planning_system/common/bin/lpg-td -f /home/vannini/drone_arch/Data/problem_ijcai_types.pddl -o /home/vannini/drone_arch/Data/domain_ijcai_types.pddl -speed 
+; Problem /home/vannini/drone_arch/Data
+; Time 0.01
+; Search time 0.01
+; Parsing time 0.00
+; Mutex time 0.00
+; MakeSpan 0.00
+
+
+
+
