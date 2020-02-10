@@ -261,6 +261,7 @@
     (:durative-action recharge-battery
         :parameters 
             (?rover
+
              ?region
              ?drone)
         
