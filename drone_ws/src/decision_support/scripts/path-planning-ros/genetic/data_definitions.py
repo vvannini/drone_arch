@@ -1,39 +1,14 @@
 import collections
 import math
-import random
-#from genetic.utils import pairwise_circle, _normal, _eq_line, _eq_intersection_point
 
+from genetic.utils import pairwise_circle, _normal, _eq_line, _eq_intersection_point
 
+# CartesianPoint = collections.namedtuple('CartesianPoint', 'x y')
 GeoPoint = collections.namedtuple("GeoPoint", "latitude, longitude, altitude")
-
-
-class GeoPoint:
-    """A geographical point.
-
-        Args:
-            latitude (float): value of point expressed in latitude geographical coordinate (specifies north-south position on earth surface).
-            longitude (float): value of point expressed in longitude geographical coordinate (specifies east-west position on earth surface).
-            altitude (float): value of point expressed in absolute altitude (distance above sea level).
-    """
-
-    def __init__(self, latitude, longitude, altitude):
-        self.latitude = latitude
-        self.longitude = longitude
-        self.altitude = altitude
-
-    def __repr__(self):
-        return f"[{self.latitude}, {self.longitude}, {self.altitude}]"
+Version = collections.namedtuple("Version", "major, minor")
 
 
 class CartesianPoint:
-    """A Cartesian point.
-
-        Args:
-            x (float): value of point on X-axis.
-            y (float): value of point on Y-axis.
-            z (float): value of point on Z-axis.
-    """
-
     def __init__(self, x, y, z=0):
         self.x = x
         self.y = y
@@ -43,60 +18,8 @@ class CartesianPoint:
         return f"[{self.x}, {self.y}, {self.z}]"
 
 
-class Mission:
-    """[summary]
-
-        Args:
-            id ([type]): [description]
-            name ([type]): [description]
-            map ([type]): [description]
-            commands ([type]): [description]
-    """
-
-    def __init__(
-        self,
-        id,
-        name,
-        map,
-        commands,
-        geo_points,
-        waypoints
-    ):
-        self.id = id
-        self.name = name
-        self.map = map
-        self.commands = commands
-        self.geo_points = geo_points
-        self.waypoints = waypoints
-
-
-class Map:
-    def __init__(
-        self,
-        id,
-        name,
-        geo_home,
-        geo_zones_nofly,
-        geo_zones_penalty,
-        geo_zones_bonus,
-        zones_no_fly,
-        zones_penalty,
-        zones_bonus,
-    ):
-        self.id = id
-        self.name = name
-        self.geo_home = geo_home
-        self.geo_zones_nofly = geo_zones_nofly
-        self.geo_zones_penalty = geo_zones_penalty
-        self.geo_zones_bonus = geo_zones_bonus
-        self.zones_no_fly = zones_no_fly
-        self.zones_penalty = zones_penalty
-        self.zones_bonus = zones_bonus
-
-
 class Mapa:
     def __init__(self, origin, destination, areas_n, inflation_rate=0.1):
-
         self.origin = origin  # CartesianPoint : Define o ponto de partida da rota
         self.destination = (
             destination  # CartesianPoint : Define o ponto de destino da rota
@@ -130,8 +53,7 @@ class Mapa:
         new_area = []
 
         for L1, L2 in pairwise_circle(lines):
-            x, y = _eq_intersection_point(
-                L1[0], L1[1], L1[2], L2[0], L2[1], L2[2])
+            x, y = _eq_intersection_point(L1[0], L1[1], L1[2], L2[0], L2[1], L2[2])
             new_area.append(CartesianPoint(x, y))
 
             # if verbose:
@@ -157,8 +79,7 @@ class Conversor:
 
         def calc_x(longi, longi_, lat_):
             return (longi - longi_) * (
-                6400000.0 * (math.cos(lat_ * math.pi / 180)
-                             * 2 * math.pi / 360)
+                6400000.0 * (math.cos(lat_ * math.pi / 180) * 2 * math.pi / 360)
             )
 
         x = calc_x(geo_point.longitude, geo_home.longitude, geo_home.latitude)

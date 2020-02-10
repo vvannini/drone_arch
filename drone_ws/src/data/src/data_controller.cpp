@@ -1,115 +1,137 @@
-#include "ros/ros.h"
-#include "std_msgs/String.h"
-#include "sensor_msgs/NavSatFix.h"
-#include "std_msgs/Float64.h"
-#include "sensor_msgs/Imu.h"
+#include <cstdlib>
+#include <ros/ros.h>
+#include "std_srvs/Empty.h"
+#include <mavros_msgs/CommandBool.h>
+#include <mavros_msgs/CommandTOL.h>
+#include <mavros_msgs/SetMode.h>
+#include <mavros_msgs/State.h>
+#include <geometry_msgs/PoseStamped.h>
+#include <termios.h>
 
-using namespace std;
-struct drone_message
-{
-	char *email_user;
-    char *date;             //yyyy/MM/dd
-    char *hour;             //HH:mm:ss
-    double time;             //in seconds
-    int nextWaypoint;
-    int countWaypoint;
-    double distToHome;       //in meters
-    double distToCurrentWpt; //in meters    
-    char *typeFailure;
-    double voltage;          //in millivolts
-    double current;          //in 10 * milliamperes
-    double level;            //in percentage (%)
-    double lat;	//ok
-    double lng; //ok
-    double alt_rel;          //in meters (in relation to launch level)
-    double alt_abs;//ok      //in meters (in relation to sea level)
-    double pitch;            //in radians
-    double yaw;              //in radians
-    double roll;             //in radians
-    double vx;//ok           //velocity in m/s
-    double vy;//ok           //velocity in m/s
-    double vz;//ok           //velocity in m/s
-    int fixType;//ok         //0-1: no fix, 2: 2D fix, 3: 3D fix
-    int satellitesVisible;   //number of visible satellites
-    int eph;                 //GPS horizontal dilution of position (HDOP)
-    int epv;                 //GPS vertical   dilution of position (VDOP)
-    double heading;//ok      //in degrees (0 ... 360)
-    double groundspeed;      //in metres/second
-    double airspeed;         //in metres/second
-    char *mode;
-    char *systemStatus;
-    bool armed;
-    bool isArmable;    
-    bool ekfOk;
-};
+//#include <rosplan_knowledge_base/KnowledgeBase.h>
 
-drone_message oracle_msg;
+//#include "rosplan_knowledge_base/KnowledgeBase.h"
+//#include "rosplan_knowledge_base/KnowledgeBaseFactory.h"
 
-void chatterCallback_Global(const sensor_msgs::NavSatFix::ConstPtr& msg)
-{
-	 oracle_msg.alt_abs = msg->altitude;
-	 oracle_msg.fixType = msg->status.status;
-	 oracle_msg.lat     = msg->latitude;
-	 oracle_msg.lng	 = msg->longitude;
 
+mavros_msgs::State current_state;
+void state_cb(const mavros_msgs::State::ConstPtr& msg){
+    current_state = *msg;
 }
 
-void chatterCallback_heading(const std_msgs::Float64::ConstPtr& msg)
+int getch()
 {
-	 oracle_msg.heading = msg->data; 
+  static struct termios oldt, newt;
+  tcgetattr( STDIN_FILENO, &oldt);           // save old settings
+  newt = oldt;
+  newt.c_lflag &= ~(ICANON);                 // disable buffering      
+  tcsetattr( STDIN_FILENO, TCSANOW, &newt);  // apply new settings
 
-}
+  int c = getchar();  // read character (non-blocking)
 
-
-void chatterCallback_Relative(const std_msgs::Float64::ConstPtr& msg)
-{
-	oracle_msg.alt_rel = msg->data;
-}
-
-
-void chatterCallback_IMU(const sensor_msgs::Imu::ConstPtr& msg)
-{
-	oracle_msg.vx = msg->angular_velocity.x;
-	oracle_msg.vy = msg->angular_velocity.y;
-	oracle_msg.vz = msg->angular_velocity.z;
-	//oracel = msg->orientation->x,y,z
-	
-}
-
-void chatterCallback_imuRaw(const sensor_msgs::Imu::ConstPtr& msg)
-{
-	//cout << "imu_pub/data_raw/linear_acceleration: ";
-	//cout << endl;
-	//cout << msg->linear_acceleration;
+  tcsetattr( STDIN_FILENO, TCSANOW, &oldt);  // restore old settings
+  return c;
 }
 
 int main(int argc, char **argv)
 {
+    ros::init(argc, argv, "data_controller");
+    ros::NodeHandle n;
+    ros::spinOnce();
+    // while (ros::ok())
+    // {
 
-	ros::init(argc, argv, "data_controller");
+        //int c = getch();  
+        int c = atoi(argv[1]); 
+         //clear
+        if (c == 0)
+        {
+        	ROS_INFO("Sending clear to problem");
+            ros::ServiceClient clear_cl = n.serviceClient<std_srvs::Empty>("/rosplan_knowledge_base/clear");
+            std_srvs::Empty srv;
+            clear_cl.call(srv);
+        }
+        else if (c == 1) //add type 
+        {
+         	// //ROS_INFO("argv 1: %s", argv[2]);
+          //   ros::ServiceClient add = n.serviceClient<rosplan_knowledge_msgs::KnowledgeUpdateService>("/rosplan_knowledge_base/update");
+          //   rosplan_knowledge_msgs::KnowledgeUpdateService srv;
+          //   srv.request.update_type = 0;
+          //   if(add.call(srv)){
+          //       ROS_ERROR("ARM send ok %d", srv.response.success);
+          //   }else{
+          //       ROS_ERROR("Failed arming or disarming");
+          //   }
+        }
+        else if (c == 2)
+        {
+            ros::ServiceClient cl = n.serviceClient<mavros_msgs::SetMode>("/mavros/set_mode");
+            mavros_msgs::SetMode srv_setMode;
+            srv_setMode.request.base_mode = 0;
+            //srv_setMode.request.custom_mode = "AUTO.LOITER";
+            srv_setMode.request.custom_mode = "LOITER";
+            if(cl.call(srv_setMode)){
+                //ROS_INFO("AUTO.LOITER");
+                ROS_INFO("LOITER");
+                //ROS_ERROR("setmode send ok %d value:", srv_setMode.response.success);
+            }else{
+                ROS_ERROR("Failed SetMode");
+                return -1;
+            }
+        }
+        else if (c == 3)
+        {
+            ros::ServiceClient cl = n.serviceClient<mavros_msgs::SetMode>("/mavros/set_mode");
+            mavros_msgs::SetMode srv_setMode;
+            srv_setMode.request.base_mode = 0;
+            //srv_setMode.request.custom_mode = "AUTO.MISSION";
+            srv_setMode.request.custom_mode = "AUTO";
+            if(cl.call(srv_setMode)){
+                //ROS_INFO("AUTO.MISSION");
+                ROS_INFO("AUTO");
+                //ROS_ERROR("setmode send ok %d value:", srv_setMode.response.success);
+            }else{
+                ROS_ERROR("Failed SetMode");
+                return -1;
+            }
+        }
+        else if (c == 4)
+        {
+            ros::ServiceClient land_cl = n.serviceClient<mavros_msgs::CommandTOL>("/mavros/cmd/land");
+            mavros_msgs::CommandTOL srv_land;
+            srv_land.request.altitude = 10;
+            srv_land.request.latitude = 0;
+            srv_land.request.longitude = 0;
+            srv_land.request.min_pitch = 0;
+            srv_land.request.yaw = 0;
+            if(land_cl.call(srv_land))
+            {
+                ROS_INFO("srv_land send ok %d", srv_land.response.success);
+            }
+            else
+            {
+                ROS_ERROR("Failed Land");
+            }
+        }
+        else if (c == 5)
+        {
+            ros::ServiceClient takeoff_cl = n.serviceClient<mavros_msgs::CommandTOL>("/mavros/cmd/takeoff");
+            mavros_msgs::CommandTOL srv_takeoff;
+            srv_takeoff.request.altitude = 5;
+            srv_takeoff.request.latitude = -22.002178;
+            srv_takeoff.request.longitude = -47.932588;
+            //srv_takeoff.request.latitude = 0;
+            //srv_takeoff.request.longitude = 0;
+            srv_takeoff.request.min_pitch = 0;
+            srv_takeoff.request.yaw = 0;
+            if(takeoff_cl.call(srv_takeoff)){
+                ROS_ERROR("srv_takeoff send ok %d", srv_takeoff.response.success);
+            }else{
+                ROS_ERROR("Failed Takeoff");
+            }
+        }
 
 
-	ros::NodeHandle n;
-
-	ros::Subscriber global = n.subscribe("/mavros/global_position/global", 100, chatterCallback_Global);
-
-	ros::Subscriber relative = n.subscribe("/mavros/global_position/rel_alt", 100, chatterCallback_Relative);
-	
-	//ros::Subscriber raw = n.subscribe("/mavros/global_position/raw/fix", 100, chatterCallback_Raw);	
-
-	ros::Subscriber Imu = n.subscribe("/mavros/imu/data", 100, chatterCallback_IMU);
-	
-	ros::Subscriber Imu_raw = n.subscribe("/mavros/imu/data_raw", 100, chatterCallback_imuRaw);
-
-	ros::Subscriber Heading = n.subscribe("/mavros/global_position/compass_hdg", 100, chatterCallback_heading);
-	//global_position/compass_hdg (std_msgs/Float64)
-	//global_position/raw/gps_vel (geometry_msgs/TwistStamped)
-
-	cout << "olar" <<oracle_msg.alt_abs << endl;
-
-
-	ros::spin();
-
-
-return 0;
+    //}
+    return 0;
 }

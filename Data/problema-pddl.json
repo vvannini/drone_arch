@@ -9,10 +9,10 @@
                  "blue_objective1", "blue_objective2", 
                  "purple_objective1", 
                  "camera1", 
-                 " rover1" ],
+                 " rover1"],
     "init":{
         "rover": ["rover1"],
-        "at": [""],
+        "at": [],
         "battery-capacity": [],
         "velocity": [],
         "battery-amount": [],
@@ -25,9 +25,13 @@
         "base": ["base1", "base2", "base3"],
         "objective": ["region1_photo", "region2_photo", "region3_photo", "region4_photo", "orange_objective1", "orange_objective2",
                       "orange_objective3", "green_objective1", "green_objective2"],
-        "is-recharging-dock": ["base1", "base2", "base3"],
+        "is-recharging-dock": ["base1", "base2", "base3"]
 
+    },
 
+    "goal": {
+        "pulverized": [],
+        "taken-image": ["region1_photo", "region2_photo", "region3_photo", "region4_photo"]
     }
 }
 

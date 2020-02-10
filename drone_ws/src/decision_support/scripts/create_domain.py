@@ -1,7 +1,7 @@
 import collections
 import math
 import random
-#from genetic.utils import pairwise_circle, _normal, _eq_line, _eq_intersection_point
+from genetic.utils import pairwise_circle, _normal, _eq_line, _eq_intersection_point
 
 
 GeoPoint = collections.namedtuple("GeoPoint", "latitude, longitude, altitude")
@@ -58,16 +58,12 @@ class Mission:
         id,
         name,
         map,
-        commands,
-        geo_points,
-        waypoints
+        commands
     ):
         self.id = id
         self.name = name
         self.map = map
         self.commands = commands
-        self.geo_points = geo_points
-        self.waypoints = waypoints
 
 
 class Map:
