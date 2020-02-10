@@ -57,7 +57,8 @@
         (rover ?rover)
         (usable ?payload)
         (payload ?payload)   
-        (base ?ragion)          
+        (base ?ragion)       
+        (photo ?photo)   
     )
          
     (:durative-action go-to
@@ -232,7 +233,7 @@
     (:durative-action take_image
         :parameters 
             (?rover
-             ?objective 
+             ?photo 
              ?region
              ?payload)
             
@@ -242,25 +243,27 @@
         :condition
             (and 
                 (at start (rover ?rover))
-                (at start (objective ?objective))
+                (at start (photo ?photo))
                 (at start (region ?region))
                 (at start (payload ?payload))
                 (at start (usable ?payload))
                 (at start (at ?rover ?region))
                 (over all (at ?rover ?region))
-                (over all (is-visible ?objective ?region))
+                (over all (is-visible ?photo ?region))
                 (at start (> (battery-amount ?rover) 1)))
      
         :effect
             (and 
-                (at end (taken-image ?objective))
+                (at end (taken-image ?photo))
                 (at start (decrease (battery-amount ?rover) 1)))            
     )
     
     (:durative-action recharge-battery
         :parameters 
             (?rover
-             ?region)
+
+             ?region
+             ?drone)
         
         :duration 
             (= ?duration 

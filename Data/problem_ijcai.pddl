@@ -18,6 +18,10 @@
         blue_objective1   blue_objective2 
         purple_objective1
 
+
+        region1_photo  region2_photo 
+        region3_photo region4_photo 
+
         camera1 
 
         rover1
@@ -91,7 +95,8 @@
         (base base1)    (base base2)    (base base3)
 
         ;; objetivos de foto
-        (objective region1_photo)    (objective region2_photo)    (objective region3_photo)    (objective region4_photo)
+
+        (photo region1_photo)    (photo region2_photo)    (photo region3_photo)    (photo region4_photo)
 
         ;; relação de objetivos de foto com regioes
         (is-visible region1_photo region1)    (is-visible region2_photo region2)    
@@ -127,16 +132,18 @@
     (:goal
         (and 
 
-            (pulverized input1 orange_objective1)   (pulverized input1 orange_objective2)   ;(pulverized input1 orange_objective3)
-            (pulverized input2 green_objective1 )   (pulverized input2 green_objective2 )   ;(pulverized input2 green_objective3 )
+
+            (pulverized input1 orange_objective1)   ;(pulverized input1 orange_objective2)   ;(pulverized input1 orange_objective3)
+           ; (pulverized input2 green_objective1 )   ;(pulverized input2 green_objective2 )   ;(pulverized input2 green_objective3 )
             ;(pulverized input3 blue_objective1  )   (pulverized input3 blue_objective2)        
             ;(pulverized input4 purple_objective1)
             
 
             (taken-image region1_photo)
-            (taken-image region2_photo)
-            (taken-image region3_photo)
-            (taken-image region4_photo)    
+
+            ;(taken-image region2_photo)
+           ; (taken-image region3_photo)
+            ;(taken-image region4_photo)    
             
             (at rover1 base1))
     )
@@ -144,4 +151,6 @@
     (:metric 
         minimize (total-time)
     )
+
 )
+
