@@ -1,4 +1,0 @@
----
-string domain_path
-string problem_path
-bool planner_ready # True if the planner thread is started
