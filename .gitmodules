@@ -1,6 +1,0 @@
-[submodule "drone_ws/src/rosplan_pytools"]
-	path = drone_ws/src/rosplan_pytools
-	url = https://github.com/dgerod/rosplan_pytools.git
-[submodule "drone_ws/src/drone_ws/src/rosplan_pytools"]
-	path = drone_ws/src/drone_ws/src/rosplan_pytools
-	url = https://github.com/dgerod/rosplan_pytools.git
