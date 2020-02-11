@@ -21,3 +21,7 @@
 3016.441: (pulverize-region rover1 input2 region1 green_objective1 camera1)  [100.000]
 3116.442: (pulverize-region rover1 input2 region1 green_objective2 camera1)  [100.000]
 3216.443: (go-to rover1 region1 base1)  [85.714]
+
+
+
+TO TENTANDO DAR UM COMMIT
