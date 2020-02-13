@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- ROSPlan -->
+	<include file="$(find rosplan_planning_system)/launch/interfaced_planning_system.launch" >
+		<arg name="domain_path"		value="/home/vannini/drone_arch/Data/domain_ijcai_types.pddl" />
+		<arg name="problem_path"	value="/home/vannini/drone_arch/Data/problem_ijcai_types.pddl" />
+	</include>
+
+	<!-- sim actions -->
+	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
+		<arg name="pddl_action_name" value="go_to" />
+	</include>
+	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
+		<arg name="pddl_action_name" value="recharge_input" />
+	</include>
+	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
+		<arg name="pddl_action_name" value="discharge_input" />
+	</include>
+	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
+		<arg name="pddl_action_name" value="clean_camera" />
+	</include>
+	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
+		<arg name="pddl_action_name" value="pulverize_region" />
+	</include>
+	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
+		<arg name="pddl_action_name" value="take_image" />
+	</include>
+	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
+		<arg name="pddl_action_name" value="recharge_battery" />
+	</include>
+</launch>

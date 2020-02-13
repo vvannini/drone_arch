@@ -70,16 +70,16 @@
         ;(photo ?photo)   
     )
          
-    (:durative-action go-to
+    (:durative-action go_to
         :parameters 
             (?rover - rover
              ?from-region - region 
              ?to-region - region)
         
-        :duration 
-            (= ?duration (/ (distance ?from-region ?to-region)
-                			(velocity ?rover))
-            )
+        :duration (= ?duration 1)
+            ; (= ?duration (/ (distance ?from-region ?to-region)
+            ;     			(velocity ?rover))
+            ; )
         
         :condition
             (and 
@@ -118,7 +118,7 @@
             )
     )
 
-    (:durative-action recharge-input
+    (:durative-action recharge_input
         :parameters 
             (?rover - rover
              ?input - input
@@ -153,7 +153,7 @@
             )    
     )
 
-    (:durative-action discharge-input
+    (:durative-action discharge_input
         :parameters 
             (?rover - rover 
              ?input - input
@@ -183,7 +183,7 @@
 
     )
 
-    (:durative-action clean-camera
+    (:durative-action clean_camera
         :parameters 
             (?rover - rover
              ?region - base
@@ -205,7 +205,7 @@
                 (at start (usable ?camera))                
     )
 
-    (:durative-action pulverize-region
+    (:durative-action pulverize_region
         :parameters 
             (?rover - rover
              ?input - input
@@ -268,7 +268,7 @@
                 (at start (decrease (battery-amount ?rover) 1)))            
     )
     
-    (:durative-action recharge-battery
+    (:durative-action recharge_battery
         :parameters 
             (?rover - rover
              ?region - base

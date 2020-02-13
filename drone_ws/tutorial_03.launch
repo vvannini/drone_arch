@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- arguments -->
+	<arg name="domain_path"	default="/home/vannini/drone_arch/Data/domain_ijcai_types.pddl" />	
+	<arg name="problem_path"	default="/home/vannini/drone_arch/Data/problem_ijcai_types.pddl" />
+	
+	<!-- knowledge base -->
+	<node name="rosplan_knowledge_base" pkg="rosplan_knowledge_base" type="knowledgeBase" respawn="false" output="screen">
+		<param name="domain_path" value="$(arg domain_path)" />
+		<param name="problem_path" value="$(arg problem_path)" />
+		<param name="database_path" value="$(find rosplan_knowledge_base)/common/mongoDB/" />
+		<!-- conditional planning flags -->
+		<param name="use_unknowns" value="false" />
+	</node>
+	
+	<!-- scene database (MongoDB) -->
+	<include file="$(find mongodb_store)/launch/mongodb_store.launch">
+		<arg name="db_path" value="$(find rosplan_knowledge_base)/common/mongoDB/"/>
+	</include>
+
+	<!-- plan parsing -->
+	<node name="rosplan_parsing_interface" pkg="rosplan_planning_system" type="pddl_simple_plan_parser" respawn="false" output="screen">
+		<param name="knowledge_base" value="rosplan_knowledge_base" />
+		<param name="planner_topic"  value="/rosplan_planner_interface/planner_output" />
+		<param name="plan_topic"     value="complete_plan" />
+	</node>
+
+	<!-- plan dispatching -->
+	<node name="rosplan_plan_dispatcher" pkg="rosplan_planning_system" type="pddl_simple_plan_dispatcher" respawn="false" output="screen">
+		<param name="knowledge_base"        value="rosplan_knowledge_base" />
+		<param name="plan_topic"            value="/rosplan_parsing_interface/complete_plan" />
+		<param name="action_dispatch_topic" value="action_dispatch" />
+		<param name="action_feedback_topic" value="action_feedback" />
+	</node>
+
+</launch>
