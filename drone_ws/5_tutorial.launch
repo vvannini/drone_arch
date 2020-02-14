@@ -9,33 +9,33 @@
 
 	<!-- sim actions -->
 	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
-		<arg name="pddl_action_name" value="undock" />
+		<arg name="pddl_action_name" value="go_to" />
+		<arg name="action_duration" value="101" />
 	</include>
 	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
-		<arg name="pddl_action_name" value="dock" />
+		<arg name="pddl_action_name" value="recharge_input" />
+		<arg name="action_duration" value="5" />
 	</include>
 	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
-		<arg name="pddl_action_name" value="localise" />
+		<arg name="pddl_action_name" value="discharge_input" />
+		<arg name="action_duration" value="15" />
 	</include>
 	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
-		<arg name="pddl_action_name" value="goto_waypoint" />
+		<arg name="pddl_action_name" value="clean_camera" />
+		<arg name="action_duration" value="9" />
+	</include>
+	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
+		<arg name="pddl_action_name" value="pulverize_region" />
+		<arg name="action_duration" value="36" />
+	</include>
+	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
+		<arg name="pddl_action_name" value="take_image" />
+		<arg name="action_duration" value="85" />
+	</include>
+	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
+		<arg name="pddl_action_name" value="recharge_battery" />
+		<arg name="action_duration" value="20" />
 	</include>
 
-	<!-- sim actions -->
-		<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
-			<arg name="pddl_action_name" value="undock" />
-			<arg name="action_duration" value="5" />
-		</include>
-		<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
-			<arg name="pddl_action_name" value="dock" />
-			<arg name="action_duration" value="15" />
-		</include>
-		<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
-			<arg name="pddl_action_name" value="localise" />
-			<arg name="action_duration" value="60" />
-		</include>
-		<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
-			<arg name="pddl_action_name" value="goto_waypoint" />
-			<arg name="action_duration" value="45" />
-		</include>
+
 </launch>

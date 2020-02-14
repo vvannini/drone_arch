@@ -94,7 +94,7 @@
     (:goal
         (and 
 
-            (pulverized input1 orange_objective1)   ;(pulverized input1 orange_objective2)   ;(pulverized input1 orange_objective3)
+            (pulverized input1 orange_objective1)  ; (pulverized input1 orange_objective2)   ;(pulverized input1 orange_objective3)
             ;(pulverized input2 green_objective1 )   ;(pulverized input2 green_objective2 )   ;(pulverized input2 green_objective3 )
             ;(pulverized input3 blue_objective1  )   (pulverized input3 blue_objective2)        
             ;(pulverized input4 purple_objective1)

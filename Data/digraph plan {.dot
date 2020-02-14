@@ -1,0 +1,67 @@
+digraph plan {
+0[ label="plan_start",style=filled,fillcolor=black,fontcolor=white];
+1[ label="recharge_input_start
+(rover1,input1,base1)",style=filled,fillcolor=darkolivegreen,fontcolor=white];
+2[ label="recharge_input_end
+(rover1,input1,base1)",style=filled,fillcolor=darkolivegreen,fontcolor=white];
+3[ label="clean_camera_start
+(rover1,base1,camera1)",style=filled,fillcolor=darkolivegreen,fontcolor=white];
+4[ label="clean_camera_end
+(rover1,base1,camera1)",style=filled,fillcolor=darkolivegreen,fontcolor=white];
+5[ label="recharge_battery_start
+(rover1,base1)",style=filled,fillcolor=darkolivegreen,fontcolor=white];
+6[ label="recharge_battery_end
+(rover1,base1)",style=filled,fillcolor=darkolivegreen,fontcolor=white];
+7[ label="go_to_start
+(rover1,base1,base2)",style=filled,fillcolor=darkolivegreen,fontcolor=white];
+8[ label="go_to_end
+(rover1,base1,base2)",style=filled,fillcolor=darkgoldenrod2];
+9[ label="go_to_start
+(rover1,base2,region1)"];
+10[ label="go_to_end
+(rover1,base2,region1)"];
+11[ label="take_image_start
+(rover1,region1_photo,region1,camera1)"];
+12[ label="take_image_end
+(rover1,region1_photo,region1,camera1)"];
+13[ label="pulverize_region_start
+(rover1,input1,region1,orange_objective1,camera1)"];
+14[ label="pulverize_region_end
+(rover1,input1,region1,orange_objective1,camera1)"];
+15[ label="go_to_start
+(rover1,region1,base2)"];
+16[ label="go_to_end
+(rover1,region1,base2)"];
+"0" -> "1" [ label="[0.001, inf]" , penwidth=2, color="black"]
+"0" -> "3" [ label="[0.001, inf]" , penwidth=2, color="black"]
+"0" -> "5" [ label="[0.001, inf]" , penwidth=2, color="black"]
+"5" -> "6" [ label="[5, 5]" , penwidth=2, color="black"]
+"0" -> "6" [ label="[0.001, inf]" , penwidth=2, color="black"]
+"1" -> "2" [ label="[8, 8]" , penwidth=2, color="black"]
+"0" -> "2" [ label="[0.001, inf]" , penwidth=2, color="black"]
+"3" -> "4" [ label="[8, 8]" , penwidth=2, color="black"]
+"0" -> "4" [ label="[0.001, inf]" , penwidth=2, color="black"]
+"4" -> "7" [ label="[0.001, inf]" , penwidth=2, color="black"]
+"2" -> "7" [ label="[0.001, inf]" , penwidth=2, color="black"]
+"5" -> "7" [ label="[0.001, inf]" , penwidth=2, color="black"]
+"7" -> "8" [ label="[1, 1]" , penwidth=2, color="red"]
+"0" -> "8" [ label="[0.001, inf]" , penwidth=2, color="red"]
+"8" -> "9" [ label="[0.001, inf]" , penwidth=2, color="black"]
+"9" -> "10" [ label="[1, 1]" , penwidth=2, color="black"]
+"0" -> "10" [ label="[0.001, inf]" , penwidth=2, color="red"]
+"3" -> "11" [ label="[0.001, inf]" , penwidth=2, color="red"]
+"10" -> "11" [ label="[0.001, inf]" , penwidth=2, color="black"]
+"2" -> "13" [ label="[0.001, inf]" , penwidth=2, color="red"]
+"10" -> "13" [ label="[0.001, inf]" , penwidth=2, color="black"]
+"11" -> "13" [ label="[0.001, inf]" , penwidth=2, color="black"]
+"3" -> "13" [ label="[0.001, inf]" , penwidth=2, color="red"]
+"11" -> "12" [ label="[7, 7]" , penwidth=2, color="black"]
+"0" -> "12" [ label="[0.001, inf]" , penwidth=2, color="red"]
+"10" -> "15" [ label="[0.001, inf]" , penwidth=2, color="black"]
+"12" -> "15" [ label="[0.001, inf]" , penwidth=2, color="black"]
+"13" -> "15" [ label="[0.001, inf]" , penwidth=2, color="black"]
+"11" -> "15" [ label="[0.001, inf]" , penwidth=2, color="black"]
+"15" -> "16" [ label="[1, 1]" , penwidth=2, color="black"]
+"9" -> "16" [ label="[0.001, inf]" , penwidth=2, color="black"]
+"13" -> "14" [ label="[100, 100]" , penwidth=2, color="black"]
+}
