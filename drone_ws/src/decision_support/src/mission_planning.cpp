@@ -11,11 +11,9 @@
 #include <mavros_msgs/CommandTOL.h>
 #include <mavros_msgs/SetMode.h>
 #include <decision_support/newMission.h>
-//#include "drone_system/path_msg.h"
 #include <new>
 #include <bits/stdc++.h> 
 #include<cstdlib>
-//#include "newMission.h"
 
 using namespace std;
 

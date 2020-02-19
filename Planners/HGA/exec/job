@@ -1,0 +1,513 @@
+<factorys number>
+18
+<node id>
+0
+<node type>
+2
+<node name>
+Run
+<node class name>
+ProOF.apl.factorys.fRun
+<chooses>
+7
+<node id>
+110
+<node type>
+2
+<node name>
+Stop
+<node class name>
+ProOF.apl.factorys.fStop
+<chooses>
+1
+<node id>
+143
+<node type>
+2
+<node name>
+Population
+<node class name>
+ProOF.apl.factorys.fPopulation
+<chooses>
+0
+<node id>
+146
+<node type>
+2
+<node name>
+Local Improvement
+<node class name>
+ProOF.apl.factorys.fLocalImprovement
+<chooses>
+0
+<node id>
+64
+<node type>
+2
+<node name>
+Problem
+<node class name>
+ProOF.apl.factorys.fProblem
+<chooses>
+23
+<node id>
+512
+<node type>
+2
+<node name>
+Structure
+<node class name>
+ProOF.apl.factorys.fStructure
+<chooses>
+4
+<node id>
+456
+<node type>
+2
+<node name>
+Vehicle
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.fLinearVehicle
+<chooses>
+0
+<node id>
+459
+<node type>
+2
+<node name>
+fBlackmoreUncertainty
+<node class name>
+ProOF.apl.UAV.mission.Blackmore.fBlackmoreUncertainty
+<chooses>
+0
+<node id>
+466
+<node type>
+2
+<node name>
+Instance Reader
+<node class name>
+ProOF.apl.UAV.mission.Blackmore.fBlackmoreInstance
+<chooses>
+0
+<node id>
+475
+<node type>
+2
+<node name>
+Objective
+<node class name>
+ProOF.apl.UAV.gen.linear.mission.parts.fLinearObjective
+<chooses>
+2
+<node id>
+480
+<node type>
+2
+<node name>
+Blackmore Avoidance
+<node class name>
+ProOF.apl.UAV.mission.Blackmore.fBlackmoreAvoidance
+<chooses>
+5
+<node id>
+564
+<node type>
+2
+<node name>
+State Bound
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.parts.fLinearStateBound
+<chooses>
+0
+<node id>
+570
+<node type>
+2
+<node name>
+Control Bound
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.parts.fLinearControlBound
+<chooses>
+0
+<node id>
+576
+<node type>
+2
+<node name>
+Dynamic
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.parts.fLinearDynamic
+<chooses>
+0
+<node id>
+595
+<node type>
+2
+<node name>
+Specific
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.parts.fLinearSpecific
+<chooses>
+0
+<node id>
+491
+<node type>
+2
+<node name>
+BlackmoreOperatorProblem
+<node class name>
+ProOF.apl.UAV.problem.Blackmore.BlackmoreOperatorProblem
+<chooses>
+0
+<node id>
+491
+<node type>
+2
+<node name>
+BlackmoreOperatorProblem
+<node class name>
+ProOF.apl.UAV.problem.Blackmore.BlackmoreOperatorProblem
+<chooses>
+1
+<node id>
+491
+<node type>
+2
+<node name>
+BlackmoreOperatorProblem
+<node class name>
+ProOF.apl.UAV.problem.Blackmore.BlackmoreOperatorProblem
+<chooses>
+2
+<nodes number>
+26
+<node id>
+8
+<node type>
+1
+<node name>
+MPGA
+<node class name>
+ProOF.apl.advanced1.method.MPGA
+<parameters number>
+2
+3
+39
+<node id>
+112
+<node type>
+0
+<node name>
+Time
+<node class name>
+ProOF.gen.stopping.Time
+<parameters number>
+1
+20.0
+<node id>
+144
+<node type>
+0
+<node name>
+Convergence
+<node class name>
+ProOF.apl.advanced1.FMS.population.Convergence
+<parameters number>
+2
+5.0
+0.7
+<node id>
+42
+<node type>
+0
+<node name>
+Initialize
+<node class name>
+ProOF.gen.operator.Initialization
+<parameters number>
+0
+<node id>
+43
+<node type>
+0
+<node name>
+Crossover
+<node class name>
+ProOF.gen.operator.Crossover
+<parameters number>
+0
+<node id>
+44
+<node type>
+0
+<node name>
+Mutation
+<node class name>
+ProOF.gen.operator.Mutation
+<parameters number>
+0
+<node id>
+147
+<node type>
+0
+<node name>
+Nothing
+<node class name>
+ProOF.apl.advanced1.FMS.local_search.Nothing
+<parameters number>
+0
+<node id>
+88
+<node type>
+0
+<node name>
+BlackmoreProblem
+<node class name>
+ProOF.apl.UAV.problem.Blackmore.BlackmoreProblem
+<parameters number>
+3
+12
+20
+1000
+<node id>
+89
+<node type>
+0
+<node name>
+BestSol
+<node class name>
+ProOF.gen.best.BestSol
+<parameters number>
+1
+0.1
+<node id>
+109
+<node type>
+3
+<node name>
+Evaluations
+<node class name>
+ProOF.gen.best.nEvaluations
+<parameters number>
+0
+<node id>
+107
+<node type>
+0
+<node name>
+Linear Delta
+<node class name>
+ProOF.apl.UAV.abst.uncertainty.Delta
+<parameters number>
+1
+0.01
+<node id>
+108
+<node type>
+0
+<node name>
+Blackmore Plot
+<node class name>
+ProOF.apl.UAV.mission.Blackmore.BlackmorePlot
+<parameters number>
+4
+1
+1
+1
+2.5
+<node id>
+517
+<node type>
+0
+<node name>
+Tree
+<node class name>
+ProOF.apl.advanced1.FMS.structure.Tree
+<parameters number>
+1
+2
+<node id>
+457
+<node type>
+0
+<node name>
+Parts
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.fLinearVehicle$PartsVehicle
+<parameters number>
+0
+<node id>
+460
+<node type>
+0
+<node name>
+Linear State Unc.
+<node class name>
+ProOF.apl.UAV.gen.linear.uncertainty.LinearStateUncertainty
+<parameters number>
+3
+0.05
+0.0
+1.0
+<node id>
+467
+<node type>
+0
+<node name>
+Instance 2D
+<node class name>
+ProOF.apl.UAV.mission.Blackmore.fBlackmoreInstance$Instance2D
+<parameters number>
+2
+mission.sgl
+map.sgl
+<node id>
+478
+<node type>
+0
+<node name>
+aprox{ u*u }*dt
+<node class name>
+ProOF.apl.UAV.gen.linear.mission.parts.fLinearObjective$ScalProdUtAprox
+<parameters number>
+1
+32
+<node id>
+486
+<node type>
+0
+<node name>
+sum{ Z(t) and Z(t-1) } = 1
+<node class name>
+ProOF.apl.UAV.mission.Blackmore.fBlackmoreAvoidance$ArantesEq
+<parameters number>
+0
+<node id>
+565
+<node type>
+0
+<node name>
+DetNorm1(Vt)
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.parts.fLinearStateBound$DetNorm1VtUB
+<parameters number>
+0
+<node id>
+571
+<node type>
+0
+<node name>
+DetNorm1(Ut)
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.parts.fLinearControlBound$DetNorm1UtUB
+<parameters number>
+0
+<node id>
+577
+<node type>
+0
+<node name>
+Air-Free
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.parts.fLinearDynamic$AirFree
+<parameters number>
+0
+<node id>
+586
+<node type>
+0
+<node name>
+Dynamic dt
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.parts.fLinearDynamic$DynamicDt
+<parameters number>
+4
+20
+600.0
+0.1
+0.08
+<node id>
+596
+<node type>
+0
+<node name>
+Empty
+<node class name>
+ProOF.apl.UAV.gen.linear.vehicle.parts.fLinearSpecific$Empty
+<parameters number>
+0
+<node id>
+492
+<node type>
+0
+<node name>
+Random Tour
+<node class name>
+ProOF.apl.UAV.problem.Blackmore.BlackmoreOperatorProblem$RandomTour
+<parameters number>
+0
+<node id>
+493
+<node type>
+0
+<node name>
+Mut-Exchange
+<node class name>
+ProOF.apl.UAV.problem.Blackmore.BlackmoreOperatorProblem$MutExchange
+<parameters number>
+0
+<node id>
+494
+<node type>
+0
+<node name>
+Uniform
+<node class name>
+ProOF.apl.UAV.problem.Blackmore.BlackmoreOperatorProblem$Uniform
+<parameters number>
+0
+---------- summarizing ----------
+Run;MPGA
+Stop;Time
+Population;Convergence
+Local Improvement;Nothing
+Problem;BlackmoreProblem
+Structure;Tree
+Vehicle;Parts
+fBlackmoreUncertainty;Linear State Unc.
+Instance Reader;Instance 2D
+Objective;aprox{ u*u }*dt
+Blackmore Avoidance;sum{ Z(t) and Z(t-1) } = 1
+State Bound;DetNorm1(Vt)
+Control Bound;DetNorm1(Ut)
+Dynamic;Air-Free
+Specific;Empty
+BlackmoreOperatorProblem;Random Tour
+BlackmoreOperatorProblem;Mut-Exchange
+BlackmoreOperatorProblem;Uniform
+number of populations;3
+number of individuals;39
+time;10.0
+Crossover Rate;5.0
+Mutation Rate;0.7
+Avoid-N-risk;12
+Steps;10
+Particle-Control;1000
+refresh time;0.1
+Delta;0.01
+Enable plot;true
+Save png;true
+Save gif;true
+resolution;2.5
+Ramification;2
+std-position;0.05
+std-velocity;0.0
+inc-factor;1.0
+Configuration for Instance 2D;mission.sgl
+Map for Instance 2D;map.sgl
+N-aprox;32
+Waypoints;20
+time horizon;20.0
+Max-velocity;3.0
+Max-control;1.0

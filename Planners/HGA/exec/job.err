@@ -1,0 +1,12 @@
+java.lang.UnsatisfiedLinkError: ilog.cplex.Cplex.CPXopenCPLEX([I)J
+	at ilog.cplex.Cplex.CPXopenCPLEX(Native Method)
+	at ilog.cplex.CplexI.init(CplexI.java:6834)
+	at ilog.cplex.CplexI.<init>(CplexI.java:785)
+	at ilog.cplex.IloCplex.<init>(IloCplex.java:10154)
+	at ilog.cplex.IloCplex.<init>(IloCplex.java:10169)
+	at CplexExtended.CplexExtended.<init>(CplexExtended.java:29)
+	at CplexExtended.CplexExtended.<init>(CplexExtended.java:34)
+	at ProOF.apl.UAV.problem.Blackmore.BlackmoreProblem.start(BlackmoreProblem.java:159)
+	at ProOF.com.runner.Runner.run(Runner.java:173)
+	at ProOF.ProOF.starting(ProOF.java:154)
+	at ProOF.ProOF.main(ProOF.java:104)
