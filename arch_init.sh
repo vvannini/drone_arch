@@ -21,3 +21,9 @@
 # 	#gnome-terminal -x bash -c "rosrun tarkin target_Alderaan; read line"
 # 	#gnome-terminal -x bash -c "rosrun tarkin fire_Alderaan; read line"
 # fi
+
+
+# roslaunch 10_tutorial.launch 
+# export PX4_HOME_LAT=-12.82046769976293; export PX4_HOME_LON=-50.33633513165995; export PX4_HOME_ALT=847.142652; export NAV_RCL_ACT=0; export MAV_BROADCAST=1; make px4_sitl jmavsim
+# roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
+# ./tutorial.bash 

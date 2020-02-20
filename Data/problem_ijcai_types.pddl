@@ -94,18 +94,19 @@
     (:goal
         (and 
 
-            ;(pulverized input1 orange_objective1)  ; (pulverized input1 orange_objective2)   ;(pulverized input1 orange_objective3)
+            (pulverized input1 orange_objective1)  ; (pulverized input1 orange_objective2)   ;(pulverized input1 orange_objective3)
             ;(pulverized input2 green_objective1 )   ;(pulverized input2 green_objective2 )   ;(pulverized input2 green_objective3 )
             ;(pulverized input3 blue_objective1  )   (pulverized input3 blue_objective2)        
             ;(pulverized input4 purple_objective1)
             
 
             ;(taken-image plantation_1_photo)
-            ;(taken-image region_2_photo)
+            ;(taken-image region_1_photo)
             ;(taken-image region_3_photo)
             ;(taken-image region_4_photo)    
             
-            (at rover1 base_2))
+            (at rover1 region_1)
+            )
     )
     
     (:metric 

@@ -8,7 +8,7 @@
                 "command": "take_picture",
                 "instructions": {
                     "area": {
-                        "name": "plantation_1",
+                        "name": "region_1",
                         "geo_points": [
                             [
                                 -50.350296,
