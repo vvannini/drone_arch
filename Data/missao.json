@@ -43,7 +43,7 @@
                 "command": "take_picture",
                 "instructions": {
                     "area": {
-                        "name": "plantation_2",
+                        "name": "region_2",
                         "geo_points": [
                             [
                                 -50.33563000000001,
@@ -78,7 +78,7 @@
                 "command": "take_picture",
                 "instructions": {
                     "area": {
-                        "name": "plantation_3",
+                        "name": "region_3",
                         "geo_points": [
                             [
                                 -50.34841,
@@ -113,7 +113,7 @@
                 "command": "take_picture",
                 "instructions": {
                     "area": {
-                        "name": "plantation_4",
+                        "name": "region_4",
                         "geo_points": [
                             [
                                 -50.357734,
@@ -148,7 +148,7 @@
                 "command": "take_picture",
                 "instructions": {
                     "area": {
-                        "name": "plantation_5",
+                        "name": "region_5",
                         "geo_points": [
                             [
                                 -50.33107,
@@ -183,7 +183,7 @@
                 "command": "pulverize",
                 "instructions": {
                     "area": {
-                        "name": "p2_pulverize_1",
+                        "name": "region_6",
                         "geo_points": [
                             [
                                 -50.339991,
@@ -218,7 +218,7 @@
                 "command": "pulverize",
                 "instructions": {
                     "area": {
-                        "name": "p3_pulverize_1",
+                        "name": "region_7",
                         "geo_points": [
                             [
                                 -50.35320900000001,
@@ -253,7 +253,7 @@
                 "command": "pulverize",
                 "instructions": {
                     "area": {
-                        "name": "p3_pulverize_2",
+                        "name": "region_8",
                         "geo_points": [
                             [
                                 -50.35719999999999,
@@ -288,7 +288,7 @@
                 "command": "pulverize",
                 "instructions": {
                     "area": {
-                        "name": "p5_pulverize_1",
+                        "name": "region_9",
                         "geo_points": [
                             [
                                 -50.333332,
@@ -323,7 +323,7 @@
                 "command": "pulverize",
                 "instructions": {
                     "area": {
-                        "name": "p5_pulverize_2",
+                        "name": "region_10",
                         "geo_points": [
                             [
                                 -50.33147599999999,
@@ -358,7 +358,7 @@
                 "command": "pulverize",
                 "instructions": {
                     "area": {
-                        "name": "p5_pulverize_3",
+                        "name": "region_11",
                         "geo_points": [
                             [
                                 -50.332656,
@@ -393,7 +393,7 @@
                 "command": "pulverize",
                 "instructions": {
                     "area": {
-                        "name": "p5_pulverize_4",
+                        "name": "region_12",
                         "geo_points": [
                             [
                                 -50.329481,

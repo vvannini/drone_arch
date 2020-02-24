@@ -3,8 +3,8 @@
 
 	<!-- ROSPlan -->
 	<include file="$(find rosplan_planning_system)/launch/interfaced_planning_system.launch" >
-		<arg name="domain_path"		value="/home/vannini/drone_arch/Data/domain_ijcai_types.pddl" />
-		<arg name="problem_path"	value="/home/vannini/drone_arch/Data/problem_ijcai_types.pddl" />
+		<arg name="domain_path"		value="/home/vannini/drone_arch/Data/domain_iros.pddl" />
+		<arg name="problem_path"	value="/home/vannini/drone_arch/Data/problem_iros.pddl" />
 	</include>
 
 	<!-- sim actions 
@@ -51,12 +51,12 @@
 		<param name="action_feedback_topic" value="/rosplan_plan_dispatcher/action_feedback" />
 	</node>
 
-	<node name="rosplan_interface_discharge_input" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
+	<!-- <node name="rosplan_interface_discharge_input" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
 		<param name="knowledge_base"		value="rosplan_knowledge_base" />
 		<param name="pddl_action_name"		value="discharge_input" />
 		<param name="action_dispatch_topic" value="/rosplan_plan_dispatcher/action_dispatch" />
 		<param name="action_feedback_topic" value="/rosplan_plan_dispatcher/action_feedback" />
-	</node>
+	</node> -->
 
 	<node name="rosplan_interface_pulverize" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
 		<param name="knowledge_base"		value="rosplan_knowledge_base" />
