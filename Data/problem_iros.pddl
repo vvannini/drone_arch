@@ -1,4 +1,4 @@
-(define (problem rover-2)
+(define (problem rover2)
 
     (:domain 
         rover-domain
@@ -9,19 +9,6 @@
         region_1 region_2 region_3 region_4 - region
 
         base_1 base_2 base_3 - base
-
-
-        input1 input2 input3 input4 - input
-        
-        orange_objective1 orange_objective2 orange_objective3 
-        green_objective1  green_objective2  green_objective3  
-        blue_objective1   blue_objective2  
-        purple_objective1 - objective
-
-        plantation_1_photo  region_2_photo - photo
-        region_3_photo region_4_photo - photo
-
-        camera1 - camera
 
         rover1 - rover
     )
@@ -35,14 +22,10 @@
         (= (recharge-rate-battery rover1) 20) 
         (= (discharge-rate-battery rover1) 0.01) 
         (= (input-amount rover1) 0)
-        (= (input-per-flight rover1) 1)
 
-        ;; quanto de cada insumo o drone pode levar
-        (= (input-capacity rover1 input1) 10)
-        (= (input-capacity rover1 input2) 8)        
-        (= (input-capacity rover1 input3) 6)
-        (= (input-capacity rover1 input4) 4)
-
+        ;; quanto d0 insumo o drone pode levar
+        (= (input-capacity rover1) 1)
+        
         ;; distancias de região pra região
         (= (distance region_1 region_2) 2800) (= (distance region_2 region_1) 2800)
         (= (distance region_1 region_3) 1900) (= (distance region_3 region_1) 1900)
@@ -78,29 +61,22 @@
         (= (distance base_2 base_3) 4200) (= (distance base_3 base_2) 4200)
 
         
-        ;; relação de objetivos de foto com regioes
-        (is-visible plantation_1_photo region_1)    (is-visible region_2_photo region_2)    
-        (is-visible region_3_photo region_3)    (is-visible region_4_photo region_4) 
- 
-
-        ;; relação entre regioes e objetivos de pulverização
-        (is-in orange_objective1 region_1 )   (is-in orange_objective2 region_2 )   (is-in orange_objective3 region_4 )
-        (is-in green_objective1  region_2 )   (is-in green_objective2  region_1 )   (is-in green_objective3  region_3 )
-        (is-in blue_objective1   region_3 )   (is-in blue_objective2   region_4 )         
-        (is-in purple_objective1 region_2 )
 
 )
     
     (:goal
         (and 
 
-            ;(pulverized input1 orange_objective1)  ; (pulverized input1 orange_objective2)   ;(pulverized input1 orange_objective3)
-            ;(pulverized input2 green_objective1 )   ;(pulverized input2 green_objective2 )   ;(pulverized input2 green_objective3 )
-            ;(pulverized input3 blue_objective1  )   (pulverized input3 blue_objective2)        
-            ;(pulverized input4 purple_objective1)
+            (pulverized region_1)  
+            (pulverized region_2)
+            (pulverized region_3)
+            (pulverized region_4)
             
-            (been-at rover1 region_1)
-            ;(taken-image plantation_1_photo)
+            
+            (taken-image region_1)
+            (taken-image region_2)
+            (taken-image region_3)
+            (taken-image region_4)
             ;(taken-image region_1_photo)
             ;(taken-image region_3_photo)
             ;(taken-image region_4_photo)    

@@ -2,10 +2,10 @@
 <launch>
 
 	<!-- arguments -->
-	<arg name="domain_path"	default="/home/vannini/drone_arch/Data/domain_ijcai_types.pddl" />	
+	<arg name="domain_path"	default="/home/vannini/drone_arch/Data/domain_iros.pddl" />	
 	<!--arg name="domain_path"	default="$(find rosplan_demos)/common/testDomain.pddl" /-->
 
-	<arg name="problem_path"	default="/home/vannini/drone_arch/Data/problem_ijcai_types.pddl" />
+	<arg name="problem_path"	default="/home/vannini/drone_arch/Data/problem_iros.pddl" />
 	<!--arg name="problem_path"	default="$(find rosplan_demos)/common/testProblem.pddl" /-->
 
 	<arg name="use_unknowns" default="false"/>
