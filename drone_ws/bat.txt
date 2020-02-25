@@ -1,0 +1,9080 @@
+header: 
+  seq: 75
+  stamp: 
+    secs: 1582658704
+    nsecs: 266373916
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 76
+  stamp: 
+    secs: 1582658704
+    nsecs: 732281547
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 77
+  stamp: 
+    secs: 1582658705
+    nsecs: 169733686
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 78
+  stamp: 
+    secs: 1582658705
+    nsecs: 630466412
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 79
+  stamp: 
+    secs: 1582658705
+    nsecs: 862610248
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 80
+  stamp: 
+    secs: 1582658706
+    nsecs: 137271997
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 81
+  stamp: 
+    secs: 1582658706
+    nsecs: 480378031
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 82
+  stamp: 
+    secs: 1582658706
+    nsecs: 975974023
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 83
+  stamp: 
+    secs: 1582658707
+    nsecs: 454361980
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 84
+  stamp: 
+    secs: 1582658707
+    nsecs: 916539917
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 85
+  stamp: 
+    secs: 1582658708
+    nsecs: 386858708
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 86
+  stamp: 
+    secs: 1582658708
+    nsecs: 687766056
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 87
+  stamp: 
+    secs: 1582658709
+    nsecs: 201217728
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 88
+  stamp: 
+    secs: 1582658709
+    nsecs: 563904330
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 89
+  stamp: 
+    secs: 1582658709
+    nsecs: 933613294
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 90
+  stamp: 
+    secs: 1582658710
+    nsecs: 490303744
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 91
+  stamp: 
+    secs: 1582658711
+    nsecs:  10906253
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 92
+  stamp: 
+    secs: 1582658711
+    nsecs: 485938319
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 93
+  stamp: 
+    secs: 1582658712
+    nsecs:  88534884
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 94
+  stamp: 
+    secs: 1582658712
+    nsecs: 591354676
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 95
+  stamp: 
+    secs: 1582658713
+    nsecs: 108498289
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 96
+  stamp: 
+    secs: 1582658713
+    nsecs: 656144016
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 97
+  stamp: 
+    secs: 1582658714
+    nsecs: 207508317
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 98
+  stamp: 
+    secs: 1582658714
+    nsecs: 686117458
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 99
+  stamp: 
+    secs: 1582658715
+    nsecs: 114617764
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 100
+  stamp: 
+    secs: 1582658715
+    nsecs: 570728400
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 101
+  stamp: 
+    secs: 1582658716
+    nsecs:  30048590
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 102
+  stamp: 
+    secs: 1582658716
+    nsecs: 253300516
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 103
+  stamp: 
+    secs: 1582658716
+    nsecs: 528962409
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 104
+  stamp: 
+    secs: 1582658716
+    nsecs: 732508909
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 105
+  stamp: 
+    secs: 1582658717
+    nsecs: 228349316
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 106
+  stamp: 
+    secs: 1582658717
+    nsecs: 760359789
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 107
+  stamp: 
+    secs: 1582658718
+    nsecs: 188473067
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 108
+  stamp: 
+    secs: 1582658718
+    nsecs: 525723289
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 109
+  stamp: 
+    secs: 1582658718
+    nsecs: 947753771
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 110
+  stamp: 
+    secs: 1582658719
+    nsecs: 356455827
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 111
+  stamp: 
+    secs: 1582658720
+    nsecs:  30332587
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 112
+  stamp: 
+    secs: 1582658720
+    nsecs: 625470796
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 113
+  stamp: 
+    secs: 1582658721
+    nsecs: 194833675
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 114
+  stamp: 
+    secs: 1582658721
+    nsecs: 419580056
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 115
+  stamp: 
+    secs: 1582658721
+    nsecs: 623393824
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 116
+  stamp: 
+    secs: 1582658721
+    nsecs: 862924727
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 117
+  stamp: 
+    secs: 1582658722
+    nsecs: 334277766
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 118
+  stamp: 
+    secs: 1582658722
+    nsecs: 568376420
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 119
+  stamp: 
+    secs: 1582658722
+    nsecs: 887690297
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 120
+  stamp: 
+    secs: 1582658723
+    nsecs: 211100732
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 121
+  stamp: 
+    secs: 1582658723
+    nsecs: 812129306
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 122
+  stamp: 
+    secs: 1582658724
+    nsecs: 260776040
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 123
+  stamp: 
+    secs: 1582658724
+    nsecs: 852580177
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 124
+  stamp: 
+    secs: 1582658725
+    nsecs: 436348708
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 125
+  stamp: 
+    secs: 1582658725
+    nsecs: 921680752
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 126
+  stamp: 
+    secs: 1582658726
+    nsecs: 544855905
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 127
+  stamp: 
+    secs: 1582658727
+    nsecs: 107850458
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 128
+  stamp: 
+    secs: 1582658727
+    nsecs: 662543233
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 129
+  stamp: 
+    secs: 1582658728
+    nsecs: 246774124
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 130
+  stamp: 
+    secs: 1582658728
+    nsecs: 743861728
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 131
+  stamp: 
+    secs: 1582658729
+    nsecs:  99352201
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 132
+  stamp: 
+    secs: 1582658729
+    nsecs: 639543957
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 133
+  stamp: 
+    secs: 1582658730
+    nsecs: 193584600
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 134
+  stamp: 
+    secs: 1582658730
+    nsecs: 739861504
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 135
+  stamp: 
+    secs: 1582658731
+    nsecs: 304796381
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 136
+  stamp: 
+    secs: 1582658731
+    nsecs: 873348789
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 137
+  stamp: 
+    secs: 1582658732
+    nsecs: 395142323
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 138
+  stamp: 
+    secs: 1582658732
+    nsecs: 925997854
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 139
+  stamp: 
+    secs: 1582658733
+    nsecs: 403989129
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 140
+  stamp: 
+    secs: 1582658733
+    nsecs: 984338016
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 141
+  stamp: 
+    secs: 1582658734
+    nsecs: 476696449
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 142
+  stamp: 
+    secs: 1582658734
+    nsecs: 932195934
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 143
+  stamp: 
+    secs: 1582658735
+    nsecs: 386560222
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 144
+  stamp: 
+    secs: 1582658735
+    nsecs: 859097684
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 145
+  stamp: 
+    secs: 1582658736
+    nsecs:  63941248
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 146
+  stamp: 
+    secs: 1582658736
+    nsecs: 528777022
+  frame_id: ''
+voltage: 12.1499996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 147
+  stamp: 
+    secs: 1582658736
+    nsecs: 973904433
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.048999786376953, 4.048999786376953, 4.048999786376953]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 148
+  stamp: 
+    secs: 1582658737
+    nsecs: 320523187
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.046999931335449, 4.046999931335449, 4.046999931335449]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 149
+  stamp: 
+    secs: 1582658737
+    nsecs: 690739831
+  frame_id: ''
+voltage: 12.1479997635
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.046000003814697, 4.046000003814697, 4.046000003814697]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 150
+  stamp: 
+    secs: 1582658737
+    nsecs: 978183988
+  frame_id: ''
+voltage: 12.1459999084
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.044000148773193, 4.044000148773193, 4.044000148773193]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 151
+  stamp: 
+    secs: 1582658738
+    nsecs: 474799457
+  frame_id: ''
+voltage: 12.142999649
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.041999816894531, 4.041999816894531, 4.041999816894531]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 152
+  stamp: 
+    secs: 1582658738
+    nsecs: 828368385
+  frame_id: ''
+voltage: 12.1400003433
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.039999961853027, 4.039999961853027, 4.039999961853027]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 153
+  stamp: 
+    secs: 1582658739
+    nsecs: 274596882
+  frame_id: ''
+voltage: 12.1370000839
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.038000106811523, 4.038000106811523, 4.038000106811523]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 154
+  stamp: 
+    secs: 1582658739
+    nsecs: 727698562
+  frame_id: ''
+voltage: 12.1330003738
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.035999774932861, 4.035999774932861, 4.035999774932861]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 155
+  stamp: 
+    secs: 1582658740
+    nsecs: 202713868
+  frame_id: ''
+voltage: 12.1289997101
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.990000009537
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.034999847412109, 4.034999847412109, 4.034999847412109]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 156
+  stamp: 
+    secs: 1582658740
+    nsecs: 585792929
+  frame_id: ''
+voltage: 12.125
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.990000009537
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.0329999923706055, 4.0329999923706055, 4.0329999923706055]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 157
+  stamp: 
+    secs: 1582658741
+    nsecs:  50046648
+  frame_id: ''
+voltage: 12.1199998856
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.990000009537
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.031000137329102, 4.031000137329102, 4.031000137329102]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 158
+  stamp: 
+    secs: 1582658741
+    nsecs: 486498133
+  frame_id: ''
+voltage: 12.1160001755
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.980000019073
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.0289998054504395, 4.0289998054504395, 4.0289998054504395]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 159
+  stamp: 
+    secs: 1582658741
+    nsecs: 928936722
+  frame_id: ''
+voltage: 12.111000061
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.980000019073
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.0269999504089355, 4.0269999504089355, 4.0269999504089355]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 160
+  stamp: 
+    secs: 1582658742
+    nsecs: 353671885
+  frame_id: ''
+voltage: 12.1059999466
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.980000019073
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.025000095367432, 4.025000095367432, 4.025000095367432]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 161
+  stamp: 
+    secs: 1582658742
+    nsecs: 770994967
+  frame_id: ''
+voltage: 12.1009998322
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.980000019073
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.02400016784668, 4.02400016784668, 4.02400016784668]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 162
+  stamp: 
+    secs: 1582658743
+    nsecs: 223689648
+  frame_id: ''
+voltage: 12.0959997177
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.97000002861
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.021999835968018, 4.021999835968018, 4.021999835968018]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 163
+  stamp: 
+    secs: 1582658743
+    nsecs: 603830510
+  frame_id: ''
+voltage: 12.0909996033
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.97000002861
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.019999980926514, 4.019999980926514, 4.019999980926514]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 164
+  stamp: 
+    secs: 1582658744
+    nsecs: 101022460
+  frame_id: ''
+voltage: 12.0860004425
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.97000002861
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.01800012588501, 4.01800012588501, 4.01800012588501]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 165
+  stamp: 
+    secs: 1582658744
+    nsecs: 625557681
+  frame_id: ''
+voltage: 12.0810003281
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.959999978542
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.015999794006348, 4.015999794006348, 4.015999794006348]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 166
+  stamp: 
+    secs: 1582658745
+    nsecs: 151342655
+  frame_id: ''
+voltage: 12.0760002136
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.959999978542
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.013999938964844, 4.013999938964844, 4.013999938964844]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 167
+  stamp: 
+    secs: 1582658745
+    nsecs: 615728642
+  frame_id: ''
+voltage: 12.0699996948
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.959999978542
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.013000011444092, 4.013000011444092, 4.013000011444092]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 168
+  stamp: 
+    secs: 1582658746
+    nsecs:  46116206
+  frame_id: ''
+voltage: 12.0649995804
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.949999988079
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.011000156402588, 4.011000156402588, 4.011000156402588]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 169
+  stamp: 
+    secs: 1582658746
+    nsecs: 504485182
+  frame_id: ''
+voltage: 12.0600004196
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.949999988079
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.008999824523926, 4.008999824523926, 4.008999824523926]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 170
+  stamp: 
+    secs: 1582658746
+    nsecs: 946004588
+  frame_id: ''
+voltage: 12.0539999008
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.949999988079
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.006999969482422, 4.006999969482422, 4.006999969482422]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 171
+  stamp: 
+    secs: 1582658747
+    nsecs: 392833727
+  frame_id: ''
+voltage: 12.0489997864
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.939999997616
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.005000114440918, 4.005000114440918, 4.005000114440918]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 172
+  stamp: 
+    secs: 1582658747
+    nsecs: 694895184
+  frame_id: ''
+voltage: 12.0430002213
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.939999997616
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.002999782562256, 4.002999782562256, 4.002999782562256]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 173
+  stamp: 
+    secs: 1582658747
+    nsecs: 801835491
+  frame_id: ''
+voltage: 12.0380001068
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.939999997616
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.001999855041504, 4.001999855041504, 4.001999855041504]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 174
+  stamp: 
+    secs: 1582658748
+    nsecs: 307245777
+  frame_id: ''
+voltage: 12.031999588
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.930000007153
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.0, 4.0, 4.0]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 175
+  stamp: 
+    secs: 1582658748
+    nsecs: 802206788
+  frame_id: ''
+voltage: 12.0270004272
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.930000007153
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.997999906539917, 3.997999906539917, 3.997999906539917]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 176
+  stamp: 
+    secs: 1582658749
+    nsecs: 214571857
+  frame_id: ''
+voltage: 12.0220003128
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.930000007153
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.996000051498413, 3.996000051498413, 3.996000051498413]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 177
+  stamp: 
+    secs: 1582658749
+    nsecs: 636080828
+  frame_id: ''
+voltage: 12.015999794
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.920000016689
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.99399995803833, 3.99399995803833, 3.99399995803833]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 178
+  stamp: 
+    secs: 1582658750
+    nsecs:  70884243
+  frame_id: ''
+voltage: 12.0109996796
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.920000016689
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.992000102996826, 3.992000102996826, 3.992000102996826]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 179
+  stamp: 
+    secs: 1582658750
+    nsecs: 547578096
+  frame_id: ''
+voltage: 12.0050001144
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.920000016689
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.990999937057495, 3.990999937057495, 3.990999937057495]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 180
+  stamp: 
+    secs: 1582658750
+    nsecs: 956301612
+  frame_id: ''
+voltage: 12.0
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.910000026226
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.989000082015991, 3.989000082015991, 3.989000082015991]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 181
+  stamp: 
+    secs: 1582658751
+    nsecs: 395751844
+  frame_id: ''
+voltage: 11.9940004349
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.910000026226
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.986999988555908, 3.986999988555908, 3.986999988555908]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 182
+  stamp: 
+    secs: 1582658751
+    nsecs: 806398050
+  frame_id: ''
+voltage: 11.9890003204
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.910000026226
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.984999895095825, 3.984999895095825, 3.984999895095825]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 183
+  stamp: 
+    secs: 1582658752
+    nsecs: 277894475
+  frame_id: ''
+voltage: 11.9829998016
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.899999976158
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9830000400543213, 3.9830000400543213, 3.9830000400543213]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 184
+  stamp: 
+    secs: 1582658752
+    nsecs: 751904042
+  frame_id: ''
+voltage: 11.9779996872
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.899999976158
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9809999465942383, 3.9809999465942383, 3.9809999465942383]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 185
+  stamp: 
+    secs: 1582658753
+    nsecs: 249382907
+  frame_id: ''
+voltage: 11.9720001221
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.899999976158
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9800000190734863, 3.9800000190734863, 3.9800000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 186
+  stamp: 
+    secs: 1582658753
+    nsecs: 686710906
+  frame_id: ''
+voltage: 11.9670000076
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.889999985695
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9779999256134033, 3.9779999256134033, 3.9779999256134033]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 187
+  stamp: 
+    secs: 1582658754
+    nsecs: 206842306
+  frame_id: ''
+voltage: 11.9610004425
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.889999985695
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9760000705718994, 3.9760000705718994, 3.9760000705718994]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 188
+  stamp: 
+    secs: 1582658754
+    nsecs: 592424240
+  frame_id: ''
+voltage: 11.9560003281
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.889999985695
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9739999771118164, 3.9739999771118164, 3.9739999771118164]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 189
+  stamp: 
+    secs: 1582658755
+    nsecs:  57045710
+  frame_id: ''
+voltage: 11.9499998093
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.879999995232
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9719998836517334, 3.9719998836517334, 3.9719998836517334]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 190
+  stamp: 
+    secs: 1582658755
+    nsecs: 497693226
+  frame_id: ''
+voltage: 11.9449996948
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.879999995232
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9700000286102295, 3.9700000286102295, 3.9700000286102295]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 191
+  stamp: 
+    secs: 1582658755
+    nsecs: 967494246
+  frame_id: ''
+voltage: 11.9390001297
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.879999995232
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9690001010894775, 3.9690001010894775, 3.9690001010894775]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 192
+  stamp: 
+    secs: 1582658756
+    nsecs: 425562036
+  frame_id: ''
+voltage: 11.9340000153
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.870000004768
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9670000076293945, 3.9670000076293945, 3.9670000076293945]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 193
+  stamp: 
+    secs: 1582658756
+    nsecs: 816399900
+  frame_id: ''
+voltage: 11.9280004501
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.870000004768
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9649999141693115, 3.9649999141693115, 3.9649999141693115]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 194
+  stamp: 
+    secs: 1582658757
+    nsecs: 267115814
+  frame_id: ''
+voltage: 11.9230003357
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.870000004768
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9630000591278076, 3.9630000591278076, 3.9630000591278076]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 195
+  stamp: 
+    secs: 1582658757
+    nsecs: 698422521
+  frame_id: ''
+voltage: 11.9169998169
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.860000014305
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9609999656677246, 3.9609999656677246, 3.9609999656677246]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 196
+  stamp: 
+    secs: 1582658758
+    nsecs: 214084867
+  frame_id: ''
+voltage: 11.9119997025
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.860000014305
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9590001106262207, 3.9590001106262207, 3.9590001106262207]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 197
+  stamp: 
+    secs: 1582658758
+    nsecs: 688392749
+  frame_id: ''
+voltage: 11.9060001373
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.860000014305
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9579999446868896, 3.9579999446868896, 3.9579999446868896]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 198
+  stamp: 
+    secs: 1582658759
+    nsecs:  92468878
+  frame_id: ''
+voltage: 11.9010000229
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.850000023842
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9560000896453857, 3.9560000896453857, 3.9560000896453857]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 199
+  stamp: 
+    secs: 1582658759
+    nsecs: 499268889
+  frame_id: ''
+voltage: 11.8950004578
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.850000023842
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9539999961853027, 3.9539999961853027, 3.9539999961853027]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 200
+  stamp: 
+    secs: 1582658759
+    nsecs: 953308600
+  frame_id: ''
+voltage: 11.8900003433
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.850000023842
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9519999027252197, 3.9519999027252197, 3.9519999027252197]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 201
+  stamp: 
+    secs: 1582658760
+    nsecs: 407717963
+  frame_id: ''
+voltage: 11.8839998245
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.839999973774
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.950000047683716, 3.950000047683716, 3.950000047683716]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 202
+  stamp: 
+    secs: 1582658760
+    nsecs: 801301208
+  frame_id: ''
+voltage: 11.8789997101
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.839999973774
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.947999954223633, 3.947999954223633, 3.947999954223633]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 203
+  stamp: 
+    secs: 1582658761
+    nsecs: 178636820
+  frame_id: ''
+voltage: 11.873000145
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.839999973774
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.947000026702881, 3.947000026702881, 3.947000026702881]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 204
+  stamp: 
+    secs: 1582658761
+    nsecs: 559435907
+  frame_id: ''
+voltage: 11.8680000305
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.829999983311
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.944999933242798, 3.944999933242798, 3.944999933242798]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 205
+  stamp: 
+    secs: 1582658762
+    nsecs:  43226603
+  frame_id: ''
+voltage: 11.8620004654
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.829999983311
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.943000078201294, 3.943000078201294, 3.943000078201294]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 206
+  stamp: 
+    secs: 1582658762
+    nsecs: 396698857
+  frame_id: ''
+voltage: 11.857000351
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.829999983311
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.940999984741211, 3.940999984741211, 3.940999984741211]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 207
+  stamp: 
+    secs: 1582658762
+    nsecs: 804600133
+  frame_id: ''
+voltage: 11.8509998322
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.819999992847
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.938999891281128, 3.938999891281128, 3.938999891281128]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 208
+  stamp: 
+    secs: 1582658763
+    nsecs: 250499286
+  frame_id: ''
+voltage: 11.8459997177
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.819999992847
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.937000036239624, 3.937000036239624, 3.937000036239624]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 209
+  stamp: 
+    secs: 1582658763
+    nsecs: 728483451
+  frame_id: ''
+voltage: 11.8400001526
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.819999992847
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.936000108718872, 3.936000108718872, 3.936000108718872]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 210
+  stamp: 
+    secs: 1582658764
+    nsecs: 138973856
+  frame_id: ''
+voltage: 11.8350000381
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.810000002384
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.934000015258789, 3.934000015258789, 3.934000015258789]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 211
+  stamp: 
+    secs: 1582658764
+    nsecs: 564006721
+  frame_id: ''
+voltage: 11.829000473
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.810000002384
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.931999921798706, 3.931999921798706, 3.931999921798706]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 212
+  stamp: 
+    secs: 1582658764
+    nsecs: 912336142
+  frame_id: ''
+voltage: 11.8240003586
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.810000002384
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.930000066757202, 3.930000066757202, 3.930000066757202]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 213
+  stamp: 
+    secs: 1582658765
+    nsecs: 344734693
+  frame_id: ''
+voltage: 11.8179998398
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.800000011921
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.927999973297119, 3.927999973297119, 3.927999973297119]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 214
+  stamp: 
+    secs: 1582658765
+    nsecs: 780413969
+  frame_id: ''
+voltage: 11.8129997253
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.800000011921
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9260001182556152, 3.9260001182556152, 3.9260001182556152]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 215
+  stamp: 
+    secs: 1582658766
+    nsecs: 282462526
+  frame_id: ''
+voltage: 11.8070001602
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.800000011921
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.924999952316284, 3.924999952316284, 3.924999952316284]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 216
+  stamp: 
+    secs: 1582658766
+    nsecs: 649383801
+  frame_id: ''
+voltage: 11.8020000458
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.790000021458
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9230000972747803, 3.9230000972747803, 3.9230000972747803]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 217
+  stamp: 
+    secs: 1582658767
+    nsecs:  96725380
+  frame_id: ''
+voltage: 11.795999527
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.790000021458
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9210000038146973, 3.9210000038146973, 3.9210000038146973]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 218
+  stamp: 
+    secs: 1582658767
+    nsecs: 553256182
+  frame_id: ''
+voltage: 11.7910003662
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.790000021458
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9189999103546143, 3.9189999103546143, 3.9189999103546143]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 219
+  stamp: 
+    secs: 1582658768
+    nsecs:  47531728
+  frame_id: ''
+voltage: 11.7849998474
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.77999997139
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9170000553131104, 3.9170000553131104, 3.9170000553131104]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 220
+  stamp: 
+    secs: 1582658768
+    nsecs: 492855183
+  frame_id: ''
+voltage: 11.779999733
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.77999997139
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9149999618530273, 3.9149999618530273, 3.9149999618530273]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 221
+  stamp: 
+    secs: 1582658768
+    nsecs: 920935831
+  frame_id: ''
+voltage: 11.7740001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.77999997139
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9140000343322754, 3.9140000343322754, 3.9140000343322754]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 222
+  stamp: 
+    secs: 1582658769
+    nsecs: 273916533
+  frame_id: ''
+voltage: 11.7690000534
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.769999980927
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9119999408721924, 3.9119999408721924, 3.9119999408721924]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 223
+  stamp: 
+    secs: 1582658769
+    nsecs: 670528342
+  frame_id: ''
+voltage: 11.7629995346
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.769999980927
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9100000858306885, 3.9100000858306885, 3.9100000858306885]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 224
+  stamp: 
+    secs: 1582658770
+    nsecs: 186969243
+  frame_id: ''
+voltage: 11.7580003738
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.769999980927
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9079999923706055, 3.9079999923706055, 3.9079999923706055]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 225
+  stamp: 
+    secs: 1582658770
+    nsecs: 633084434
+  frame_id: ''
+voltage: 11.751999855
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.759999990463
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9059998989105225, 3.9059998989105225, 3.9059998989105225]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 226
+  stamp: 
+    secs: 1582658771
+    nsecs:  55024096
+  frame_id: ''
+voltage: 11.7469997406
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.759999990463
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9040000438690186, 3.9040000438690186, 3.9040000438690186]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 227
+  stamp: 
+    secs: 1582658771
+    nsecs: 519252862
+  frame_id: ''
+voltage: 11.7410001755
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.759999990463
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9030001163482666, 3.9030001163482666, 3.9030001163482666]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 228
+  stamp: 
+    secs: 1582658771
+    nsecs: 989068518
+  frame_id: ''
+voltage: 11.736000061
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.75
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.9010000228881836, 3.9010000228881836, 3.9010000228881836]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 229
+  stamp: 
+    secs: 1582658772
+    nsecs: 448062364
+  frame_id: ''
+voltage: 11.7299995422
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.75
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8989999294281006, 3.8989999294281006, 3.8989999294281006]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 230
+  stamp: 
+    secs: 1582658772
+    nsecs: 921208387
+  frame_id: ''
+voltage: 11.7250003815
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.75
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8970000743865967, 3.8970000743865967, 3.8970000743865967]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 231
+  stamp: 
+    secs: 1582658773
+    nsecs: 315531985
+  frame_id: ''
+voltage: 11.7189998627
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.740000009537
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8949999809265137, 3.8949999809265137, 3.8949999809265137]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 232
+  stamp: 
+    secs: 1582658773
+    nsecs: 789053844
+  frame_id: ''
+voltage: 11.7139997482
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.740000009537
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8929998874664307, 3.8929998874664307, 3.8929998874664307]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 233
+  stamp: 
+    secs: 1582658774
+    nsecs: 246443133
+  frame_id: ''
+voltage: 11.7080001831
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.740000009537
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8919999599456787, 3.8919999599456787, 3.8919999599456787]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 234
+  stamp: 
+    secs: 1582658774
+    nsecs: 649856667
+  frame_id: ''
+voltage: 11.7030000687
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.730000019073
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.890000104904175, 3.890000104904175, 3.890000104904175]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 235
+  stamp: 
+    secs: 1582658775
+    nsecs: 162390656
+  frame_id: ''
+voltage: 11.6969995499
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.730000019073
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.888000011444092, 3.888000011444092, 3.888000011444092]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 236
+  stamp: 
+    secs: 1582658775
+    nsecs: 652202541
+  frame_id: ''
+voltage: 11.6920003891
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.730000019073
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.885999917984009, 3.885999917984009, 3.885999917984009]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 237
+  stamp: 
+    secs: 1582658776
+    nsecs: 131702517
+  frame_id: ''
+voltage: 11.6859998703
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.72000002861
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.884000062942505, 3.884000062942505, 3.884000062942505]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 238
+  stamp: 
+    secs: 1582658776
+    nsecs: 597374970
+  frame_id: ''
+voltage: 11.6809997559
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.72000002861
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.881999969482422, 3.881999969482422, 3.881999969482422]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 239
+  stamp: 
+    secs: 1582658777
+    nsecs:  88024889
+  frame_id: ''
+voltage: 11.6750001907
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.72000002861
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.88100004196167, 3.88100004196167, 3.88100004196167]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 240
+  stamp: 
+    secs: 1582658777
+    nsecs: 580827217
+  frame_id: ''
+voltage: 11.6700000763
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.709999978542
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.878999948501587, 3.878999948501587, 3.878999948501587]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 241
+  stamp: 
+    secs: 1582658778
+    nsecs:  36350882
+  frame_id: ''
+voltage: 11.6639995575
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.709999978542
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.877000093460083, 3.877000093460083, 3.877000093460083]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 242
+  stamp: 
+    secs: 1582658778
+    nsecs: 320710395
+  frame_id: ''
+voltage: 11.6590003967
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.709999978542
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.875, 3.875, 3.875]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 243
+  stamp: 
+    secs: 1582658778
+    nsecs: 458991710
+  frame_id: ''
+voltage: 11.6529998779
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.699999988079
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.872999906539917, 3.872999906539917, 3.872999906539917]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 244
+  stamp: 
+    secs: 1582658778
+    nsecs: 768306756
+  frame_id: ''
+voltage: 11.6479997635
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.699999988079
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.871000051498413, 3.871000051498413, 3.871000051498413]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 245
+  stamp: 
+    secs: 1582658779
+    nsecs: 141262369
+  frame_id: ''
+voltage: 11.6420001984
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.699999988079
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.869999885559082, 3.869999885559082, 3.869999885559082]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 246
+  stamp: 
+    secs: 1582658779
+    nsecs: 574864043
+  frame_id: ''
+voltage: 11.6370000839
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.689999997616
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.868000030517578, 3.868000030517578, 3.868000030517578]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 247
+  stamp: 
+    secs: 1582658779
+    nsecs: 959982693
+  frame_id: ''
+voltage: 11.6309995651
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.689999997616
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.865999937057495, 3.865999937057495, 3.865999937057495]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 248
+  stamp: 
+    secs: 1582658780
+    nsecs: 424124669
+  frame_id: ''
+voltage: 11.6260004044
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.689999997616
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.864000082015991, 3.864000082015991, 3.864000082015991]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 249
+  stamp: 
+    secs: 1582658780
+    nsecs: 820611653
+  frame_id: ''
+voltage: 11.6199998856
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.680000007153
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.861999988555908, 3.861999988555908, 3.861999988555908]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 250
+  stamp: 
+    secs: 1582658781
+    nsecs: 260472272
+  frame_id: ''
+voltage: 11.6149997711
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.680000007153
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.859999895095825, 3.859999895095825, 3.859999895095825]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 251
+  stamp: 
+    secs: 1582658781
+    nsecs: 661598466
+  frame_id: ''
+voltage: 11.609000206
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.680000007153
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8589999675750732, 3.8589999675750732, 3.8589999675750732]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 252
+  stamp: 
+    secs: 1582658782
+    nsecs: 148338212
+  frame_id: ''
+voltage: 11.6040000916
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.670000016689
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8570001125335693, 3.8570001125335693, 3.8570001125335693]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 253
+  stamp: 
+    secs: 1582658782
+    nsecs: 612422158
+  frame_id: ''
+voltage: 11.5979995728
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.670000016689
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8550000190734863, 3.8550000190734863, 3.8550000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 254
+  stamp: 
+    secs: 1582658783
+    nsecs:  88123031
+  frame_id: ''
+voltage: 11.593000412
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.670000016689
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8529999256134033, 3.8529999256134033, 3.8529999256134033]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 255
+  stamp: 
+    secs: 1582658783
+    nsecs: 491537091
+  frame_id: ''
+voltage: 11.5869998932
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.660000026226
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8510000705718994, 3.8510000705718994, 3.8510000705718994]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 256
+  stamp: 
+    secs: 1582658783
+    nsecs: 895647565
+  frame_id: ''
+voltage: 11.5819997787
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.660000026226
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8489999771118164, 3.8489999771118164, 3.8489999771118164]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 257
+  stamp: 
+    secs: 1582658784
+    nsecs: 397184720
+  frame_id: ''
+voltage: 11.5760002136
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.660000026226
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8480000495910645, 3.8480000495910645, 3.8480000495910645]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 258
+  stamp: 
+    secs: 1582658784
+    nsecs: 811174643
+  frame_id: ''
+voltage: 11.5710000992
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.649999976158
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8459999561309814, 3.8459999561309814, 3.8459999561309814]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 259
+  stamp: 
+    secs: 1582658785
+    nsecs: 325826459
+  frame_id: ''
+voltage: 11.5649995804
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.649999976158
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8440001010894775, 3.8440001010894775, 3.8440001010894775]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 260
+  stamp: 
+    secs: 1582658785
+    nsecs: 832745653
+  frame_id: ''
+voltage: 11.5600004196
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.649999976158
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8420000076293945, 3.8420000076293945, 3.8420000076293945]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 261
+  stamp: 
+    secs: 1582658786
+    nsecs: 219313547
+  frame_id: ''
+voltage: 11.5539999008
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.639999985695
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8399999141693115, 3.8399999141693115, 3.8399999141693115]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 262
+  stamp: 
+    secs: 1582658786
+    nsecs: 692467303
+  frame_id: ''
+voltage: 11.5489997864
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.639999985695
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8380000591278076, 3.8380000591278076, 3.8380000591278076]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 263
+  stamp: 
+    secs: 1582658787
+    nsecs: 101129011
+  frame_id: ''
+voltage: 11.5430002213
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.639999985695
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8369998931884766, 3.8369998931884766, 3.8369998931884766]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 264
+  stamp: 
+    secs: 1582658787
+    nsecs: 609635213
+  frame_id: ''
+voltage: 11.5380001068
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.629999995232
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8350000381469727, 3.8350000381469727, 3.8350000381469727]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 265
+  stamp: 
+    secs: 1582658788
+    nsecs:  89090832
+  frame_id: ''
+voltage: 11.531999588
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.629999995232
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8329999446868896, 3.8329999446868896, 3.8329999446868896]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 266
+  stamp: 
+    secs: 1582658788
+    nsecs: 557761541
+  frame_id: ''
+voltage: 11.5270004272
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.629999995232
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8310000896453857, 3.8310000896453857, 3.8310000896453857]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 267
+  stamp: 
+    secs: 1582658788
+    nsecs: 996023637
+  frame_id: ''
+voltage: 11.5209999084
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.620000004768
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8289999961853027, 3.8289999961853027, 3.8289999961853027]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 268
+  stamp: 
+    secs: 1582658789
+    nsecs: 484477446
+  frame_id: ''
+voltage: 11.515999794
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.620000004768
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8269999027252197, 3.8269999027252197, 3.8269999027252197]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 269
+  stamp: 
+    secs: 1582658789
+    nsecs: 944567594
+  frame_id: ''
+voltage: 11.5100002289
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.620000004768
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8259999752044678, 3.8259999752044678, 3.8259999752044678]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 270
+  stamp: 
+    secs: 1582658790
+    nsecs: 401222887
+  frame_id: ''
+voltage: 11.5050001144
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.610000014305
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.8239998817443848, 3.8239998817443848, 3.8239998817443848]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 271
+  stamp: 
+    secs: 1582658790
+    nsecs: 867920624
+  frame_id: ''
+voltage: 11.4989995956
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.610000014305
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.822000026702881, 3.822000026702881, 3.822000026702881]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 272
+  stamp: 
+    secs: 1582658791
+    nsecs: 275230745
+  frame_id: ''
+voltage: 11.4940004349
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.610000014305
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.819999933242798, 3.819999933242798, 3.819999933242798]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 273
+  stamp: 
+    secs: 1582658791
+    nsecs: 695320861
+  frame_id: ''
+voltage: 11.4879999161
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.600000023842
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.818000078201294, 3.818000078201294, 3.818000078201294]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 274
+  stamp: 
+    secs: 1582658792
+    nsecs: 164614265
+  frame_id: ''
+voltage: 11.4829998016
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.600000023842
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.815999984741211, 3.815999984741211, 3.815999984741211]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 275
+  stamp: 
+    secs: 1582658792
+    nsecs: 652517940
+  frame_id: ''
+voltage: 11.4770002365
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.600000023842
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.815000057220459, 3.815000057220459, 3.815000057220459]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 276
+  stamp: 
+    secs: 1582658793
+    nsecs: 161165716
+  frame_id: ''
+voltage: 11.4720001221
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.589999973774
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.812999963760376, 3.812999963760376, 3.812999963760376]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 277
+  stamp: 
+    secs: 1582658793
+    nsecs: 635219243
+  frame_id: ''
+voltage: 11.4659996033
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.589999973774
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.811000108718872, 3.811000108718872, 3.811000108718872]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 278
+  stamp: 
+    secs: 1582658794
+    nsecs:  68384589
+  frame_id: ''
+voltage: 11.4610004425
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.589999973774
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.809000015258789, 3.809000015258789, 3.809000015258789]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 279
+  stamp: 
+    secs: 1582658794
+    nsecs: 555701555
+  frame_id: ''
+voltage: 11.4549999237
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.579999983311
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.806999921798706, 3.806999921798706, 3.806999921798706]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 280
+  stamp: 
+    secs: 1582658794
+    nsecs: 969644413
+  frame_id: ''
+voltage: 11.4499998093
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.579999983311
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.805000066757202, 3.805000066757202, 3.805000066757202]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 281
+  stamp: 
+    secs: 1582658795
+    nsecs: 406386651
+  frame_id: ''
+voltage: 11.4440002441
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.579999983311
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.803999900817871, 3.803999900817871, 3.803999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 282
+  stamp: 
+    secs: 1582658795
+    nsecs: 777400712
+  frame_id: ''
+voltage: 11.4390001297
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.569999992847
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.802000045776367, 3.802000045776367, 3.802000045776367]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 283
+  stamp: 
+    secs: 1582658796
+    nsecs: 262403192
+  frame_id: ''
+voltage: 11.4329996109
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.569999992847
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.799999952316284, 3.799999952316284, 3.799999952316284]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 284
+  stamp: 
+    secs: 1582658796
+    nsecs: 730867910
+  frame_id: ''
+voltage: 11.4280004501
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.569999992847
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7980000972747803, 3.7980000972747803, 3.7980000972747803]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 285
+  stamp: 
+    secs: 1582658797
+    nsecs: 213998770
+  frame_id: ''
+voltage: 11.4219999313
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.560000002384
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7960000038146973, 3.7960000038146973, 3.7960000038146973]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 286
+  stamp: 
+    secs: 1582658797
+    nsecs: 692269469
+  frame_id: ''
+voltage: 11.4169998169
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.560000002384
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7939999103546143, 3.7939999103546143, 3.7939999103546143]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 287
+  stamp: 
+    secs: 1582658798
+    nsecs: 135099083
+  frame_id: ''
+voltage: 11.4110002518
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.560000002384
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7929999828338623, 3.7929999828338623, 3.7929999828338623]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 288
+  stamp: 
+    secs: 1582658798
+    nsecs: 685268527
+  frame_id: ''
+voltage: 11.4060001373
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.550000011921
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7909998893737793, 3.7909998893737793, 3.7909998893737793]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 289
+  stamp: 
+    secs: 1582658799
+    nsecs: 166878891
+  frame_id: ''
+voltage: 11.3999996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.550000011921
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7890000343322754, 3.7890000343322754, 3.7890000343322754]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 290
+  stamp: 
+    secs: 1582658799
+    nsecs: 635934416
+  frame_id: ''
+voltage: 11.3950004578
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.550000011921
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7869999408721924, 3.7869999408721924, 3.7869999408721924]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 291
+  stamp: 
+    secs: 1582658800
+    nsecs: 133128559
+  frame_id: ''
+voltage: 11.388999939
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.540000021458
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7850000858306885, 3.7850000858306885, 3.7850000858306885]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 292
+  stamp: 
+    secs: 1582658800
+    nsecs: 644108997
+  frame_id: ''
+voltage: 11.3839998245
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.540000021458
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7829999923706055, 3.7829999923706055, 3.7829999923706055]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 293
+  stamp: 
+    secs: 1582658801
+    nsecs: 113775170
+  frame_id: ''
+voltage: 11.3780002594
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.540000021458
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7820000648498535, 3.7820000648498535, 3.7820000648498535]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 294
+  stamp: 
+    secs: 1582658801
+    nsecs: 592798587
+  frame_id: ''
+voltage: 11.373000145
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.52999997139
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7799999713897705, 3.7799999713897705, 3.7799999713897705]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 295
+  stamp: 
+    secs: 1582658802
+    nsecs:  10703160
+  frame_id: ''
+voltage: 11.3669996262
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.52999997139
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7780001163482666, 3.7780001163482666, 3.7780001163482666]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 296
+  stamp: 
+    secs: 1582658802
+    nsecs: 444385094
+  frame_id: ''
+voltage: 11.3620004654
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.52999997139
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7760000228881836, 3.7760000228881836, 3.7760000228881836]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 297
+  stamp: 
+    secs: 1582658802
+    nsecs: 894736495
+  frame_id: ''
+voltage: 11.3559999466
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.519999980927
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7739999294281006, 3.7739999294281006, 3.7739999294281006]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 298
+  stamp: 
+    secs: 1582658803
+    nsecs: 281625099
+  frame_id: ''
+voltage: 11.3509998322
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.519999980927
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7720000743865967, 3.7720000743865967, 3.7720000743865967]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 299
+  stamp: 
+    secs: 1582658803
+    nsecs: 631097247
+  frame_id: ''
+voltage: 11.345000267
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.519999980927
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7709999084472656, 3.7709999084472656, 3.7709999084472656]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 300
+  stamp: 
+    secs: 1582658804
+    nsecs:  32110160
+  frame_id: ''
+voltage: 11.3400001526
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.509999990463
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7690000534057617, 3.7690000534057617, 3.7690000534057617]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 301
+  stamp: 
+    secs: 1582658804
+    nsecs: 420369259
+  frame_id: ''
+voltage: 11.3339996338
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.509999990463
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7669999599456787, 3.7669999599456787, 3.7669999599456787]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 302
+  stamp: 
+    secs: 1582658804
+    nsecs: 826377415
+  frame_id: ''
+voltage: 11.329000473
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.509999990463
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.765000104904175, 3.765000104904175, 3.765000104904175]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 303
+  stamp: 
+    secs: 1582658805
+    nsecs: 214719942
+  frame_id: ''
+voltage: 11.3229999542
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.5
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.763000011444092, 3.763000011444092, 3.763000011444092]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 304
+  stamp: 
+    secs: 1582658805
+    nsecs: 688052276
+  frame_id: ''
+voltage: 11.3179998398
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.5
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.760999917984009, 3.760999917984009, 3.760999917984009]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 305
+  stamp: 
+    secs: 1582658806
+    nsecs: 116472189
+  frame_id: ''
+voltage: 11.3120002747
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.5
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.759999990463257, 3.759999990463257, 3.759999990463257]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 306
+  stamp: 
+    secs: 1582658806
+    nsecs: 562353045
+  frame_id: ''
+voltage: 11.3070001602
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.490000009537
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.757999897003174, 3.757999897003174, 3.757999897003174]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 307
+  stamp: 
+    secs: 1582658807
+    nsecs:   9549348
+  frame_id: ''
+voltage: 11.3009996414
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.490000009537
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.75600004196167, 3.75600004196167, 3.75600004196167]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 308
+  stamp: 
+    secs: 1582658807
+    nsecs: 423083634
+  frame_id: ''
+voltage: 11.295999527
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.490000009537
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.753999948501587, 3.753999948501587, 3.753999948501587]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 309
+  stamp: 
+    secs: 1582658807
+    nsecs: 804563567
+  frame_id: ''
+voltage: 11.2899999619
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.479999989271
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.752000093460083, 3.752000093460083, 3.752000093460083]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 310
+  stamp: 
+    secs: 1582658808
+    nsecs: 183483559
+  frame_id: ''
+voltage: 11.2849998474
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.479999989271
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.75, 3.75, 3.75]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 311
+  stamp: 
+    secs: 1582658808
+    nsecs: 558775732
+  frame_id: ''
+voltage: 11.2790002823
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.479999989271
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.749000072479248, 3.749000072479248, 3.749000072479248]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 312
+  stamp: 
+    secs: 1582658809
+    nsecs:  17057520
+  frame_id: ''
+voltage: 11.2740001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.469999998808
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.746999979019165, 3.746999979019165, 3.746999979019165]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 313
+  stamp: 
+    secs: 1582658809
+    nsecs: 490338367
+  frame_id: ''
+voltage: 11.267999649
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.469999998808
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.744999885559082, 3.744999885559082, 3.744999885559082]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 314
+  stamp: 
+    secs: 1582658809
+    nsecs: 909574595
+  frame_id: ''
+voltage: 11.2629995346
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.469999998808
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.743000030517578, 3.743000030517578, 3.743000030517578]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 315
+  stamp: 
+    secs: 1582658810
+    nsecs: 392400613
+  frame_id: ''
+voltage: 11.2569999695
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.460000008345
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.740999937057495, 3.740999937057495, 3.740999937057495]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 316
+  stamp: 
+    secs: 1582658810
+    nsecs: 817310042
+  frame_id: ''
+voltage: 11.251999855
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.460000008345
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.739000082015991, 3.739000082015991, 3.739000082015991]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 317
+  stamp: 
+    secs: 1582658811
+    nsecs: 267831710
+  frame_id: ''
+voltage: 11.2460002899
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.460000008345
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.73799991607666, 3.73799991607666, 3.73799991607666]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 318
+  stamp: 
+    secs: 1582658811
+    nsecs: 734357036
+  frame_id: ''
+voltage: 11.2410001755
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.449999988079
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7360000610351562, 3.7360000610351562, 3.7360000610351562]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 319
+  stamp: 
+    secs: 1582658812
+    nsecs: 199173570
+  frame_id: ''
+voltage: 11.2349996567
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.449999988079
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7339999675750732, 3.7339999675750732, 3.7339999675750732]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 320
+  stamp: 
+    secs: 1582658812
+    nsecs: 638922509
+  frame_id: ''
+voltage: 11.2299995422
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.449999988079
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7320001125335693, 3.7320001125335693, 3.7320001125335693]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 321
+  stamp: 
+    secs: 1582658813
+    nsecs: 158531172
+  frame_id: ''
+voltage: 11.2239999771
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.439999997616
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7300000190734863, 3.7300000190734863, 3.7300000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 322
+  stamp: 
+    secs: 1582658813
+    nsecs: 619144215
+  frame_id: ''
+voltage: 11.2189998627
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.439999997616
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7279999256134033, 3.7279999256134033, 3.7279999256134033]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 323
+  stamp: 
+    secs: 1582658813
+    nsecs: 980543324
+  frame_id: ''
+voltage: 11.2130002975
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.439999997616
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7269999980926514, 3.7269999980926514, 3.7269999980926514]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 324
+  stamp: 
+    secs: 1582658814
+    nsecs: 509020434
+  frame_id: ''
+voltage: 11.2080001831
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.430000007153
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7249999046325684, 3.7249999046325684, 3.7249999046325684]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 325
+  stamp: 
+    secs: 1582658814
+    nsecs: 980217680
+  frame_id: ''
+voltage: 11.2019996643
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.430000007153
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7230000495910645, 3.7230000495910645, 3.7230000495910645]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 326
+  stamp: 
+    secs: 1582658815
+    nsecs: 502568286
+  frame_id: ''
+voltage: 11.1969995499
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.430000007153
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7209999561309814, 3.7209999561309814, 3.7209999561309814]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 327
+  stamp: 
+    secs: 1582658816
+    nsecs:  93541563
+  frame_id: ''
+voltage: 11.1909999847
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.419999986887
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7190001010894775, 3.7190001010894775, 3.7190001010894775]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 328
+  stamp: 
+    secs: 1582658816
+    nsecs: 650833145
+  frame_id: ''
+voltage: 11.1859998703
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.419999986887
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7170000076293945, 3.7170000076293945, 3.7170000076293945]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 329
+  stamp: 
+    secs: 1582658817
+    nsecs: 178340969
+  frame_id: ''
+voltage: 11.1800003052
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.419999986887
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7160000801086426, 3.7160000801086426, 3.7160000801086426]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 330
+  stamp: 
+    secs: 1582658817
+    nsecs: 606179975
+  frame_id: ''
+voltage: 11.1750001907
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.409999996424
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7139999866485596, 3.7139999866485596, 3.7139999866485596]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 331
+  stamp: 
+    secs: 1582658817
+    nsecs: 900608545
+  frame_id: ''
+voltage: 11.1689996719
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.409999996424
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7119998931884766, 3.7119998931884766, 3.7119998931884766]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 332
+  stamp: 
+    secs: 1582658818
+    nsecs: 398768464
+  frame_id: ''
+voltage: 11.1639995575
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.409999996424
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7100000381469727, 3.7100000381469727, 3.7100000381469727]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 333
+  stamp: 
+    secs: 1582658818
+    nsecs: 951408329
+  frame_id: ''
+voltage: 11.1579999924
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.40000000596
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7079999446868896, 3.7079999446868896, 3.7079999446868896]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 334
+  stamp: 
+    secs: 1582658819
+    nsecs: 493848442
+  frame_id: ''
+voltage: 11.1529998779
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.40000000596
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7060000896453857, 3.7060000896453857, 3.7060000896453857]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 335
+  stamp: 
+    secs: 1582658819
+    nsecs: 950016911
+  frame_id: ''
+voltage: 11.1470003128
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.40000000596
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7049999237060547, 3.7049999237060547, 3.7049999237060547]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 336
+  stamp: 
+    secs: 1582658820
+    nsecs: 452475737
+  frame_id: ''
+voltage: 11.1420001984
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.389999985695
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.703000068664551, 3.703000068664551, 3.703000068664551]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 337
+  stamp: 
+    secs: 1582658820
+    nsecs: 935269592
+  frame_id: ''
+voltage: 11.1359996796
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.389999985695
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.7009999752044678, 3.7009999752044678, 3.7009999752044678]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 338
+  stamp: 
+    secs: 1582658821
+    nsecs: 399673304
+  frame_id: ''
+voltage: 11.1309995651
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.389999985695
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6989998817443848, 3.6989998817443848, 3.6989998817443848]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 339
+  stamp: 
+    secs: 1582658821
+    nsecs: 889026966
+  frame_id: ''
+voltage: 11.125
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.379999995232
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.697000026702881, 3.697000026702881, 3.697000026702881]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 340
+  stamp: 
+    secs: 1582658822
+    nsecs: 303327176
+  frame_id: ''
+voltage: 11.1199998856
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.379999995232
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.694999933242798, 3.694999933242798, 3.694999933242798]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 341
+  stamp: 
+    secs: 1582658822
+    nsecs: 793929016
+  frame_id: ''
+voltage: 11.1140003204
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.379999995232
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.694000005722046, 3.694000005722046, 3.694000005722046]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 342
+  stamp: 
+    secs: 1582658823
+    nsecs: 242413394
+  frame_id: ''
+voltage: 11.109000206
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.370000004768
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.691999912261963, 3.691999912261963, 3.691999912261963]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 343
+  stamp: 
+    secs: 1582658823
+    nsecs: 679940044
+  frame_id: ''
+voltage: 11.1029996872
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.370000004768
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.690000057220459, 3.690000057220459, 3.690000057220459]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 344
+  stamp: 
+    secs: 1582658824
+    nsecs: 118244947
+  frame_id: ''
+voltage: 11.0979995728
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.370000004768
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.687999963760376, 3.687999963760376, 3.687999963760376]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 345
+  stamp: 
+    secs: 1582658824
+    nsecs: 532740478
+  frame_id: ''
+voltage: 11.0920000076
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.360000014305
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.686000108718872, 3.686000108718872, 3.686000108718872]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 346
+  stamp: 
+    secs: 1582658825
+    nsecs:  22001828
+  frame_id: ''
+voltage: 11.0869998932
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.360000014305
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.684000015258789, 3.684000015258789, 3.684000015258789]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 347
+  stamp: 
+    secs: 1582658825
+    nsecs: 471267645
+  frame_id: ''
+voltage: 11.0810003281
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.360000014305
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.683000087738037, 3.683000087738037, 3.683000087738037]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 348
+  stamp: 
+    secs: 1582658826
+    nsecs:  10797261
+  frame_id: ''
+voltage: 11.0760002136
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.34999999404
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.680999994277954, 3.680999994277954, 3.680999994277954]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 349
+  stamp: 
+    secs: 1582658826
+    nsecs: 558403534
+  frame_id: ''
+voltage: 11.0699996948
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.34999999404
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.678999900817871, 3.678999900817871, 3.678999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 350
+  stamp: 
+    secs: 1582658827
+    nsecs:  32490168
+  frame_id: ''
+voltage: 11.0649995804
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.34999999404
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.677000045776367, 3.677000045776367, 3.677000045776367]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 351
+  stamp: 
+    secs: 1582658827
+    nsecs: 481724052
+  frame_id: ''
+voltage: 11.0590000153
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.340000003576
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.674999952316284, 3.674999952316284, 3.674999952316284]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 352
+  stamp: 
+    secs: 1582658827
+    nsecs: 912637077
+  frame_id: ''
+voltage: 11.0539999008
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.340000003576
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6730000972747803, 3.6730000972747803, 3.6730000972747803]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 353
+  stamp: 
+    secs: 1582658828
+    nsecs: 386830602
+  frame_id: ''
+voltage: 11.0480003357
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.340000003576
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.671999931335449, 3.671999931335449, 3.671999931335449]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 354
+  stamp: 
+    secs: 1582658828
+    nsecs: 811667198
+  frame_id: ''
+voltage: 11.0430002213
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.330000013113
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6700000762939453, 3.6700000762939453, 3.6700000762939453]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 355
+  stamp: 
+    secs: 1582658829
+    nsecs: 285747166
+  frame_id: ''
+voltage: 11.0369997025
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.330000013113
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6679999828338623, 3.6679999828338623, 3.6679999828338623]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 356
+  stamp: 
+    secs: 1582658829
+    nsecs: 723096948
+  frame_id: ''
+voltage: 11.031999588
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.330000013113
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6659998893737793, 3.6659998893737793, 3.6659998893737793]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 357
+  stamp: 
+    secs: 1582658830
+    nsecs: 265224739
+  frame_id: ''
+voltage: 11.0260000229
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.319999992847
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6640000343322754, 3.6640000343322754, 3.6640000343322754]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 358
+  stamp: 
+    secs: 1582658830
+    nsecs: 744362938
+  frame_id: ''
+voltage: 11.0209999084
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.319999992847
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6619999408721924, 3.6619999408721924, 3.6619999408721924]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 359
+  stamp: 
+    secs: 1582658831
+    nsecs: 205910772
+  frame_id: ''
+voltage: 11.0150003433
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.319999992847
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6610000133514404, 3.6610000133514404, 3.6610000133514404]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 360
+  stamp: 
+    secs: 1582658831
+    nsecs: 635310191
+  frame_id: ''
+voltage: 11.0100002289
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.310000002384
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6589999198913574, 3.6589999198913574, 3.6589999198913574]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 361
+  stamp: 
+    secs: 1582658832
+    nsecs:  58934266
+  frame_id: ''
+voltage: 11.0039997101
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.310000002384
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6570000648498535, 3.6570000648498535, 3.6570000648498535]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 362
+  stamp: 
+    secs: 1582658832
+    nsecs: 501733885
+  frame_id: ''
+voltage: 10.9989995956
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.310000002384
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6549999713897705, 3.6549999713897705, 3.6549999713897705]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 363
+  stamp: 
+    secs: 1582658832
+    nsecs: 979210863
+  frame_id: ''
+voltage: 10.9930000305
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.300000011921
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6530001163482666, 3.6530001163482666, 3.6530001163482666]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 364
+  stamp: 
+    secs: 1582658833
+    nsecs: 436163347
+  frame_id: ''
+voltage: 10.9879999161
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.300000011921
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6510000228881836, 3.6510000228881836, 3.6510000228881836]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 365
+  stamp: 
+    secs: 1582658833
+    nsecs: 913709358
+  frame_id: ''
+voltage: 10.982000351
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.300000011921
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6500000953674316, 3.6500000953674316, 3.6500000953674316]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 366
+  stamp: 
+    secs: 1582658834
+    nsecs: 310254592
+  frame_id: ''
+voltage: 10.9770002365
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.289999991655
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6480000019073486, 3.6480000019073486, 3.6480000019073486]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 367
+  stamp: 
+    secs: 1582658834
+    nsecs: 786400835
+  frame_id: ''
+voltage: 10.9709997177
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.289999991655
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6459999084472656, 3.6459999084472656, 3.6459999084472656]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 368
+  stamp: 
+    secs: 1582658835
+    nsecs: 225272152
+  frame_id: ''
+voltage: 10.9659996033
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.289999991655
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6440000534057617, 3.6440000534057617, 3.6440000534057617]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 369
+  stamp: 
+    secs: 1582658835
+    nsecs: 700811468
+  frame_id: ''
+voltage: 10.9600000381
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.280000001192
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6419999599456787, 3.6419999599456787, 3.6419999599456787]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 370
+  stamp: 
+    secs: 1582658836
+    nsecs: 177289919
+  frame_id: ''
+voltage: 10.9549999237
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.280000001192
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.640000104904175, 3.640000104904175, 3.640000104904175]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 371
+  stamp: 
+    secs: 1582658836
+    nsecs: 607364503
+  frame_id: ''
+voltage: 10.9490003586
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.280000001192
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6389999389648438, 3.6389999389648438, 3.6389999389648438]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 372
+  stamp: 
+    secs: 1582658837
+    nsecs:  40169803
+  frame_id: ''
+voltage: 10.9440002441
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.270000010729
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.63700008392334, 3.63700008392334, 3.63700008392334]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 373
+  stamp: 
+    secs: 1582658837
+    nsecs: 561139061
+  frame_id: ''
+voltage: 10.9379997253
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.270000010729
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.634999990463257, 3.634999990463257, 3.634999990463257]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 374
+  stamp: 
+    secs: 1582658838
+    nsecs:  63251084
+  frame_id: ''
+voltage: 10.9329996109
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.270000010729
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.632999897003174, 3.632999897003174, 3.632999897003174]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 375
+  stamp: 
+    secs: 1582658838
+    nsecs: 436448757
+  frame_id: ''
+voltage: 10.9270000458
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.259999990463
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.63100004196167, 3.63100004196167, 3.63100004196167]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 376
+  stamp: 
+    secs: 1582658838
+    nsecs: 997392812
+  frame_id: ''
+voltage: 10.9219999313
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.259999990463
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.628999948501587, 3.628999948501587, 3.628999948501587]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 377
+  stamp: 
+    secs: 1582658839
+    nsecs: 502058441
+  frame_id: ''
+voltage: 10.9160003662
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.259999990463
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.628000020980835, 3.628000020980835, 3.628000020980835]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 378
+  stamp: 
+    secs: 1582658840
+    nsecs:  33207694
+  frame_id: ''
+voltage: 10.9110002518
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.25
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.625999927520752, 3.625999927520752, 3.625999927520752]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 379
+  stamp: 
+    secs: 1582658840
+    nsecs: 519530289
+  frame_id: ''
+voltage: 10.904999733
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.25
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.624000072479248, 3.624000072479248, 3.624000072479248]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 380
+  stamp: 
+    secs: 1582658840
+    nsecs: 979810920
+  frame_id: ''
+voltage: 10.8999996185
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.25
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.621999979019165, 3.621999979019165, 3.621999979019165]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 381
+  stamp: 
+    secs: 1582658841
+    nsecs: 481616233
+  frame_id: ''
+voltage: 10.8940000534
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.239999994636
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.619999885559082, 3.619999885559082, 3.619999885559082]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 382
+  stamp: 
+    secs: 1582658841
+    nsecs: 993181709
+  frame_id: ''
+voltage: 10.888999939
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.239999994636
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.618000030517578, 3.618000030517578, 3.618000030517578]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 383
+  stamp: 
+    secs: 1582658842
+    nsecs: 453392710
+  frame_id: ''
+voltage: 10.8830003738
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.239999994636
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.617000102996826, 3.617000102996826, 3.617000102996826]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 384
+  stamp: 
+    secs: 1582658842
+    nsecs: 891155947
+  frame_id: ''
+voltage: 10.8780002594
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.230000004172
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.615000009536743, 3.615000009536743, 3.615000009536743]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 385
+  stamp: 
+    secs: 1582658843
+    nsecs: 414720255
+  frame_id: ''
+voltage: 10.8719997406
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.230000004172
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.61299991607666, 3.61299991607666, 3.61299991607666]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 386
+  stamp: 
+    secs: 1582658843
+    nsecs: 895001777
+  frame_id: ''
+voltage: 10.8669996262
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.230000004172
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6110000610351562, 3.6110000610351562, 3.6110000610351562]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 387
+  stamp: 
+    secs: 1582658844
+    nsecs: 273976574
+  frame_id: ''
+voltage: 10.861000061
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.219999998808
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6089999675750732, 3.6089999675750732, 3.6089999675750732]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 388
+  stamp: 
+    secs: 1582658844
+    nsecs: 787771037
+  frame_id: ''
+voltage: 10.8559999466
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.219999998808
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6070001125335693, 3.6070001125335693, 3.6070001125335693]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 389
+  stamp: 
+    secs: 1582658845
+    nsecs: 312122466
+  frame_id: ''
+voltage: 10.8500003815
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.219999998808
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6059999465942383, 3.6059999465942383, 3.6059999465942383]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 390
+  stamp: 
+    secs: 1582658845
+    nsecs: 789547656
+  frame_id: ''
+voltage: 10.845000267
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.209999993443
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6040000915527344, 3.6040000915527344, 3.6040000915527344]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 391
+  stamp: 
+    secs: 1582658846
+    nsecs: 299642400
+  frame_id: ''
+voltage: 10.8389997482
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.209999993443
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.6019999980926514, 3.6019999980926514, 3.6019999980926514]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 392
+  stamp: 
+    secs: 1582658846
+    nsecs: 735917198
+  frame_id: ''
+voltage: 10.8339996338
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.209999993443
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.5999999046325684, 3.5999999046325684, 3.5999999046325684]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 393
+  stamp: 
+    secs: 1582658847
+    nsecs: 156763360
+  frame_id: ''
+voltage: 10.8280000687
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.20000000298
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.5980000495910645, 3.5980000495910645, 3.5980000495910645]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 394
+  stamp: 
+    secs: 1582658847
+    nsecs: 672625563
+  frame_id: ''
+voltage: 10.8229999542
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.20000000298
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.5959999561309814, 3.5959999561309814, 3.5959999561309814]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 395
+  stamp: 
+    secs: 1582658848
+    nsecs: 186549207
+  frame_id: ''
+voltage: 10.8170003891
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.20000000298
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.5950000286102295, 3.5950000286102295, 3.5950000286102295]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 396
+  stamp: 
+    secs: 1582658848
+    nsecs: 665937837
+  frame_id: ''
+voltage: 10.8120002747
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.189999997616
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.5929999351501465, 3.5929999351501465, 3.5929999351501465]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 397
+  stamp: 
+    secs: 1582658849
+    nsecs: 183747775
+  frame_id: ''
+voltage: 10.8059997559
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.189999997616
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.5910000801086426, 3.5910000801086426, 3.5910000801086426]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 398
+  stamp: 
+    secs: 1582658849
+    nsecs: 647083423
+  frame_id: ''
+voltage: 10.8009996414
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.189999997616
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.5889999866485596, 3.5889999866485596, 3.5889999866485596]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 399
+  stamp: 
+    secs: 1582658850
+    nsecs: 174312633
+  frame_id: ''
+voltage: 10.7950000763
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.180000007153
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.5869998931884766, 3.5869998931884766, 3.5869998931884766]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 400
+  stamp: 
+    secs: 1582658850
+    nsecs: 598568643
+  frame_id: ''
+voltage: 10.7899999619
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.180000007153
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.5850000381469727, 3.5850000381469727, 3.5850000381469727]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 401
+  stamp: 
+    secs: 1582658851
+    nsecs:  85428970
+  frame_id: ''
+voltage: 10.7840003967
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.180000007153
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.5840001106262207, 3.5840001106262207, 3.5840001106262207]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 402
+  stamp: 
+    secs: 1582658851
+    nsecs: 555050412
+  frame_id: ''
+voltage: 10.7790002823
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.170000001788
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.5820000171661377, 3.5820000171661377, 3.5820000171661377]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 403
+  stamp: 
+    secs: 1582658852
+    nsecs:  55926971
+  frame_id: ''
+voltage: 10.7729997635
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.170000001788
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.5799999237060547, 3.5799999237060547, 3.5799999237060547]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 404
+  stamp: 
+    secs: 1582658852
+    nsecs: 556229269
+  frame_id: ''
+voltage: 10.767999649
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.170000001788
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.578000068664551, 3.578000068664551, 3.578000068664551]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 405
+  stamp: 
+    secs: 1582658853
+    nsecs:  25027046
+  frame_id: ''
+voltage: 10.7620000839
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.159999996424
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.5759999752044678, 3.5759999752044678, 3.5759999752044678]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 406
+  stamp: 
+    secs: 1582658853
+    nsecs: 507169467
+  frame_id: ''
+voltage: 10.7569999695
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.159999996424
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.5739998817443848, 3.5739998817443848, 3.5739998817443848]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 407
+  stamp: 
+    secs: 1582658853
+    nsecs: 923740174
+  frame_id: ''
+voltage: 10.7510004044
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.159999996424
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.572999954223633, 3.572999954223633, 3.572999954223633]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 408
+  stamp: 
+    secs: 1582658854
+    nsecs: 379659862
+  frame_id: ''
+voltage: 10.7460002899
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.15000000596
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.571000099182129, 3.571000099182129, 3.571000099182129]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 409
+  stamp: 
+    secs: 1582658854
+    nsecs: 754798904
+  frame_id: ''
+voltage: 10.7399997711
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.15000000596
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.569000005722046, 3.569000005722046, 3.569000005722046]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 410
+  stamp: 
+    secs: 1582658855
+    nsecs: 163798217
+  frame_id: ''
+voltage: 10.7349996567
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.15000000596
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.566999912261963, 3.566999912261963, 3.566999912261963]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 411
+  stamp: 
+    secs: 1582658855
+    nsecs: 599749336
+  frame_id: ''
+voltage: 10.7290000916
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.140000000596
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.565000057220459, 3.565000057220459, 3.565000057220459]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 412
+  stamp: 
+    secs: 1582658856
+    nsecs:  64521916
+  frame_id: ''
+voltage: 10.7239999771
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.140000000596
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.562999963760376, 3.562999963760376, 3.562999963760376]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 413
+  stamp: 
+    secs: 1582658856
+    nsecs: 497420462
+  frame_id: ''
+voltage: 10.718000412
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.140000000596
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.562000036239624, 3.562000036239624, 3.562000036239624]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 414
+  stamp: 
+    secs: 1582658856
+    nsecs: 898390685
+  frame_id: ''
+voltage: 10.7130002975
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.129999995232
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.559999942779541, 3.559999942779541, 3.559999942779541]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 415
+  stamp: 
+    secs: 1582658857
+    nsecs: 349359137
+  frame_id: ''
+voltage: 10.7069997787
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.129999995232
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.558000087738037, 3.558000087738037, 3.558000087738037]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 416
+  stamp: 
+    secs: 1582658857
+    nsecs: 850584602
+  frame_id: ''
+voltage: 10.7019996643
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.129999995232
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.555999994277954, 3.555999994277954, 3.555999994277954]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 417
+  stamp: 
+    secs: 1582658858
+    nsecs: 379074270
+  frame_id: ''
+voltage: 10.6960000992
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.119999997318
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 418
+  stamp: 
+    secs: 1582658858
+    nsecs: 834435926
+  frame_id: ''
+voltage: 10.6909999847
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.119999997318
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 419
+  stamp: 
+    secs: 1582658859
+    nsecs: 318985557
+  frame_id: ''
+voltage: 10.6870002747
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.119999997318
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 420
+  stamp: 
+    secs: 1582658859
+    nsecs: 760780314
+  frame_id: ''
+voltage: 10.6829996109
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.119999997318
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 421
+  stamp: 
+    secs: 1582658860
+    nsecs: 175940778
+  frame_id: ''
+voltage: 10.6800003052
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.109999999404
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 422
+  stamp: 
+    secs: 1582658860
+    nsecs: 609409705
+  frame_id: ''
+voltage: 10.6770000458
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.109999999404
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 423
+  stamp: 
+    secs: 1582658861
+    nsecs:  73852086
+  frame_id: ''
+voltage: 10.6750001907
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.109999999404
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 424
+  stamp: 
+    secs: 1582658861
+    nsecs: 563590270
+  frame_id: ''
+voltage: 10.6730003357
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.109999999404
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 425
+  stamp: 
+    secs: 1582658862
+    nsecs:  83201253
+  frame_id: ''
+voltage: 10.6719999313
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.109999999404
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 426
+  stamp: 
+    secs: 1582658862
+    nsecs: 556022022
+  frame_id: ''
+voltage: 10.6700000763
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.109999999404
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 427
+  stamp: 
+    secs: 1582658862
+    nsecs: 994646152
+  frame_id: ''
+voltage: 10.6689996719
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.109999999404
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 428
+  stamp: 
+    secs: 1582658863
+    nsecs: 450683273
+  frame_id: ''
+voltage: 10.6680002213
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.109999999404
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 429
+  stamp: 
+    secs: 1582658863
+    nsecs: 895466893
+  frame_id: ''
+voltage: 10.6669998169
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.109999999404
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 430
+  stamp: 
+    secs: 1582658864
+    nsecs: 388769469
+  frame_id: ''
+voltage: 10.6669998169
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.109999999404
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 431
+  stamp: 
+    secs: 1582658864
+    nsecs: 851458936
+  frame_id: ''
+voltage: 10.6660003662
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.109999999404
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 432
+  stamp: 
+    secs: 1582658865
+    nsecs: 316949224
+  frame_id: ''
+voltage: 10.6660003662
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.109999999404
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 433
+  stamp: 
+    secs: 1582658865
+    nsecs: 766394354
+  frame_id: ''
+voltage: 10.6649999619
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.109999999404
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 434
+  stamp: 
+    secs: 1582658866
+    nsecs: 220515559
+  frame_id: ''
+voltage: 10.6649999619
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.109999999404
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 435
+  stamp: 
+    secs: 1582658866
+    nsecs: 682787841
+  frame_id: ''
+voltage: 10.6639995575
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.10000000149
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 436
+  stamp: 
+    secs: 1582658867
+    nsecs: 163009979
+  frame_id: ''
+voltage: 10.6639995575
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.10000000149
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 437
+  stamp: 
+    secs: 1582658867
+    nsecs: 620661579
+  frame_id: ''
+voltage: 10.6639995575
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.10000000149
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 438
+  stamp: 
+    secs: 1582658868
+    nsecs: 104127424
+  frame_id: ''
+voltage: 10.6639995575
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.10000000149
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 439
+  stamp: 
+    secs: 1582658868
+    nsecs: 601064283
+  frame_id: ''
+voltage: 10.6639995575
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.10000000149
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [3.553999900817871, 3.553999900817871, 3.553999900817871]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 440
+  stamp: 
+    secs: 1582658869
+    nsecs:  66418848
+  frame_id: ''
+voltage: 10.8190002441
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.20000000298
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 441
+  stamp: 
+    secs: 1582658869
+    nsecs: 527689697
+  frame_id: ''
+voltage: 11.0279998779
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.330000013113
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 442
+  stamp: 
+    secs: 1582658869
+    nsecs: 977406704
+  frame_id: ''
+voltage: 11.1949996948
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.430000007153
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 443
+  stamp: 
+    secs: 1582658870
+    nsecs: 408894070
+  frame_id: ''
+voltage: 11.345000267
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.519999980927
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 444
+  stamp: 
+    secs: 1582658870
+    nsecs: 846735655
+  frame_id: ''
+voltage: 11.4709997177
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.589999973774
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 445
+  stamp: 
+    secs: 1582658871
+    nsecs: 257761280
+  frame_id: ''
+voltage: 11.5719995499
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.649999976158
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 446
+  stamp: 
+    secs: 1582658871
+    nsecs: 747965726
+  frame_id: ''
+voltage: 11.6630001068
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.709999978542
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 447
+  stamp: 
+    secs: 1582658872
+    nsecs: 154287984
+  frame_id: ''
+voltage: 11.7390003204
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.759999990463
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 448
+  stamp: 
+    secs: 1582658872
+    nsecs: 584720284
+  frame_id: ''
+voltage: 11.8000001907
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.790000021458
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 449
+  stamp: 
+    secs: 1582658872
+    nsecs: 996813400
+  frame_id: ''
+voltage: 11.8549995422
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.829999983311
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 450
+  stamp: 
+    secs: 1582658873
+    nsecs: 357963922
+  frame_id: ''
+voltage: 11.9010000229
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.850000023842
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 451
+  stamp: 
+    secs: 1582658873
+    nsecs: 807086285
+  frame_id: ''
+voltage: 11.9379997253
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.879999995232
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 452
+  stamp: 
+    secs: 1582658874
+    nsecs: 248979178
+  frame_id: ''
+voltage: 11.9709997177
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.899999976158
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 453
+  stamp: 
+    secs: 1582658874
+    nsecs: 684012133
+  frame_id: ''
+voltage: 11.9989995956
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.910000026226
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 454
+  stamp: 
+    secs: 1582658875
+    nsecs: 116444300
+  frame_id: ''
+voltage: 12.0220003128
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.930000007153
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 455
+  stamp: 
+    secs: 1582658875
+    nsecs: 612903824
+  frame_id: ''
+voltage: 12.0419998169
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.939999997616
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 456
+  stamp: 
+    secs: 1582658876
+    nsecs:  92813939
+  frame_id: ''
+voltage: 12.0590000153
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.949999988079
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 457
+  stamp: 
+    secs: 1582658876
+    nsecs: 536396495
+  frame_id: ''
+voltage: 12.0719995499
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.959999978542
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 458
+  stamp: 
+    secs: 1582658876
+    nsecs: 946600458
+  frame_id: ''
+voltage: 12.0839996338
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.97000002861
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 459
+  stamp: 
+    secs: 1582658877
+    nsecs: 381505999
+  frame_id: ''
+voltage: 12.095000267
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.97000002861
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 460
+  stamp: 
+    secs: 1582658877
+    nsecs: 851558680
+  frame_id: ''
+voltage: 12.1029996872
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.980000019073
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 461
+  stamp: 
+    secs: 1582658878
+    nsecs: 371954781
+  frame_id: ''
+voltage: 12.1099996567
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.980000019073
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 462
+  stamp: 
+    secs: 1582658878
+    nsecs: 802059481
+  frame_id: ''
+voltage: 12.1160001755
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.980000019073
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 463
+  stamp: 
+    secs: 1582658879
+    nsecs: 247678815
+  frame_id: ''
+voltage: 12.1210002899
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.990000009537
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 464
+  stamp: 
+    secs: 1582658879
+    nsecs: 673006011
+  frame_id: ''
+voltage: 12.1260004044
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.990000009537
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 465
+  stamp: 
+    secs: 1582658880
+    nsecs: 160427600
+  frame_id: ''
+voltage: 12.1289997101
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.990000009537
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 466
+  stamp: 
+    secs: 1582658880
+    nsecs: 659235770
+  frame_id: ''
+voltage: 12.1319999695
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 0.990000009537
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 467
+  stamp: 
+    secs: 1582658881
+    nsecs: 114225757
+  frame_id: ''
+voltage: 12.1350002289
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 468
+  stamp: 
+    secs: 1582658881
+    nsecs: 660343324
+  frame_id: ''
+voltage: 12.1370000839
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 469
+  stamp: 
+    secs: 1582658882
+    nsecs: 135386580
+  frame_id: ''
+voltage: 12.138999939
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 470
+  stamp: 
+    secs: 1582658882
+    nsecs: 613006898
+  frame_id: ''
+voltage: 12.140999794
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 471
+  stamp: 
+    secs: 1582658883
+    nsecs: 100400878
+  frame_id: ''
+voltage: 12.1420001984
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 472
+  stamp: 
+    secs: 1582658883
+    nsecs: 525612192
+  frame_id: ''
+voltage: 12.142999649
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 473
+  stamp: 
+    secs: 1582658883
+    nsecs: 968101934
+  frame_id: ''
+voltage: 12.1440000534
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 474
+  stamp: 
+    secs: 1582658884
+    nsecs: 378255585
+  frame_id: ''
+voltage: 12.1450004578
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 475
+  stamp: 
+    secs: 1582658884
+    nsecs: 795552704
+  frame_id: ''
+voltage: 12.1459999084
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 476
+  stamp: 
+    secs: 1582658885
+    nsecs: 302401119
+  frame_id: ''
+voltage: 12.1459999084
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 477
+  stamp: 
+    secs: 1582658885
+    nsecs: 773268724
+  frame_id: ''
+voltage: 12.1470003128
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 478
+  stamp: 
+    secs: 1582658886
+    nsecs: 196084813
+  frame_id: ''
+voltage: 12.1470003128
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 479
+  stamp: 
+    secs: 1582658886
+    nsecs: 797408954
+  frame_id: ''
+voltage: 12.1479997635
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 480
+  stamp: 
+    secs: 1582658887
+    nsecs: 293278688
+  frame_id: ''
+voltage: 12.1479997635
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 481
+  stamp: 
+    secs: 1582658887
+    nsecs: 782703980
+  frame_id: ''
+voltage: 12.1479997635
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 482
+  stamp: 
+    secs: 1582658888
+    nsecs: 252429208
+  frame_id: ''
+voltage: 12.1479997635
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 483
+  stamp: 
+    secs: 1582658888
+    nsecs: 794311477
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 484
+  stamp: 
+    secs: 1582658889
+    nsecs: 211591608
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 485
+  stamp: 
+    secs: 1582658889
+    nsecs: 620468110
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 486
+  stamp: 
+    secs: 1582658890
+    nsecs: 187655712
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 487
+  stamp: 
+    secs: 1582658890
+    nsecs: 736884305
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 488
+  stamp: 
+    secs: 1582658891
+    nsecs: 364849283
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 489
+  stamp: 
+    secs: 1582658891
+    nsecs: 914588164
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 490
+  stamp: 
+    secs: 1582658892
+    nsecs: 338092326
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 491
+  stamp: 
+    secs: 1582658892
+    nsecs: 835645057
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 492
+  stamp: 
+    secs: 1582658893
+    nsecs: 328473075
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 493
+  stamp: 
+    secs: 1582658893
+    nsecs: 836318188
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 494
+  stamp: 
+    secs: 1582658894
+    nsecs: 228482177
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 495
+  stamp: 
+    secs: 1582658894
+    nsecs: 774931941
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 496
+  stamp: 
+    secs: 1582658895
+    nsecs: 307016293
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 497
+  stamp: 
+    secs: 1582658895
+    nsecs: 721168250
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 498
+  stamp: 
+    secs: 1582658896
+    nsecs: 310034903
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 499
+  stamp: 
+    secs: 1582658896
+    nsecs: 865538867
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 500
+  stamp: 
+    secs: 1582658897
+    nsecs: 392571918
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 501
+  stamp: 
+    secs: 1582658897
+    nsecs: 962489385
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 502
+  stamp: 
+    secs: 1582658898
+    nsecs: 492030709
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 503
+  stamp: 
+    secs: 1582658898
+    nsecs: 996019417
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 504
+  stamp: 
+    secs: 1582658899
+    nsecs: 516467305
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 505
+  stamp: 
+    secs: 1582658900
+    nsecs:  42509657
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 506
+  stamp: 
+    secs: 1582658900
+    nsecs: 562395418
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 507
+  stamp: 
+    secs: 1582658901
+    nsecs: 149340628
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 508
+  stamp: 
+    secs: 1582658901
+    nsecs: 640993329
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 509
+  stamp: 
+    secs: 1582658902
+    nsecs: 160179151
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 510
+  stamp: 
+    secs: 1582658902
+    nsecs: 633462079
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 511
+  stamp: 
+    secs: 1582658903
+    nsecs:  80861147
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 512
+  stamp: 
+    secs: 1582658903
+    nsecs: 496021199
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 513
+  stamp: 
+    secs: 1582658904
+    nsecs:  13427294
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 514
+  stamp: 
+    secs: 1582658904
+    nsecs: 447626607
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 515
+  stamp: 
+    secs: 1582658904
+    nsecs: 873850522
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 516
+  stamp: 
+    secs: 1582658905
+    nsecs: 413863152
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 517
+  stamp: 
+    secs: 1582658906
+    nsecs: 226075176
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 518
+  stamp: 
+    secs: 1582658906
+    nsecs: 798828529
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 519
+  stamp: 
+    secs: 1582658906
+    nsecs: 961380523
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 520
+  stamp: 
+    secs: 1582658907
+    nsecs: 156068502
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 521
+  stamp: 
+    secs: 1582658907
+    nsecs: 303074682
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 522
+  stamp: 
+    secs: 1582658907
+    nsecs: 434827759
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 523
+  stamp: 
+    secs: 1582658907
+    nsecs: 605372117
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 524
+  stamp: 
+    secs: 1582658907
+    nsecs: 724399190
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 525
+  stamp: 
+    secs: 1582658907
+    nsecs: 888403949
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 526
+  stamp: 
+    secs: 1582658908
+    nsecs: 145010530
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 527
+  stamp: 
+    secs: 1582658908
+    nsecs: 292745628
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
+header: 
+  seq: 528
+  stamp: 
+    secs: 1582658908
+    nsecs: 425912712
+  frame_id: ''
+voltage: 12.1490001678
+current: 1.0
+charge: nan
+capacity: nan
+design_capacity: nan
+percentage: 1.0
+power_supply_status: 2
+power_supply_health: 0
+power_supply_technology: 3
+present: True
+cell_voltage: [4.050000190734863, 4.050000190734863, 4.050000190734863]
+location: "id0"
+serial_number: ''
+---
