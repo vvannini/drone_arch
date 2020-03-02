@@ -67,21 +67,21 @@
     (:goal
         (and 
 
-            (pulverized region_1)  
-            (pulverized region_2)
-            (pulverized region_3)
-            (pulverized region_4)
+            ;(pulverized region_1)  
+            ;(pulverized region_2)
+            ;(pulverized region_3)
+            ;(pulverized region_4)
             
             
-            (taken-image region_1)
-            (taken-image region_2)
-            (taken-image region_3)
-            (taken-image region_4)
+            ;(taken-image region_1)
+            ;(taken-image region_2)
+            ;(taken-image region_3)
+            ;(taken-image region_4)
             ;(taken-image region_1_photo)
             ;(taken-image region_3_photo)
             ;(taken-image region_4_photo)    
-            
-            (at rover1 base_2)
+            (been-at rover1 base_2)
+            (at rover1 region_1)
             )
     )
     
