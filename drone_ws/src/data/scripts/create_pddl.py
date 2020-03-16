@@ -272,7 +272,7 @@ mission_filename = PATH + "missao.json"
 hw_filename = PATH + "hardware.json"
 with open(mission_filename, "r") as mission_file:
         mission_file = json.load(mission_file)
-        mission = mission_file[0]
+        mission = mission_file[1]
 
 mapa_id = 0
 
