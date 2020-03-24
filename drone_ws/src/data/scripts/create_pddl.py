@@ -103,10 +103,10 @@ def euclidean_distance(A, B):
     return math.sqrt((B.x - A.x) ** 2 + (B.y - A.y) ** 2)
 
 
-def get_regions(missao_json):
+def get_regions(mapa_json):
     regions = []
-    for step in missao_json["mission_execution"]:
-        regions.append(step["instructions"]["area"]["name"])
+    for region in mapa_json["regions"]:
+        regions.append(region["name"])
     return regions
 
 
@@ -121,7 +121,7 @@ def get_objectives(missao_json, command=""):
     obj = []
     for step in missao_json["mission_execution"]:
         if step["command"] == command:
-            obj.append(step["instructions"]["area"]["name"])
+            obj.append(step["instructions"]["area"])
     return obj
 
 
@@ -137,22 +137,21 @@ def read_json(mission, mapa):
 
     geo_home = list_to_geopoint(mapa["geo_home"])
 
-    for miss in mission["mission_execution"]:
-        step = miss["instructions"]["area"]
+    for region in mapa["regions"]:
 
-        geo_points = [list_to_geopoint(gp) for gp in step["geo_points"]]
+        geo_points = [list_to_geopoint(gp) for gp in region["geo_points"]]
         cart_points = [geo_to_cart(gp, geo_home) for gp in geo_points]
-        geo_center = list_to_geopoint(step["center"])
+        geo_center = list_to_geopoint(region["center"])
         cart_center = geo_to_cart(geo_center, geo_home)
 
-        names.append(step["name"])
+        names.append(region["name"])
 
         region = Region(
-            step["name"], step["name"], geo_points, cart_points, geo_center, cart_center
+            region["id"], region["name"], geo_points, cart_points, geo_center, cart_center
         )
 
         regions.append(region)
-        labels.append(miss["command"])
+        labels.append("region")
 
     for base in mapa["bases"]:
 
@@ -270,9 +269,11 @@ def create_predicate(attribute_name, values, is_negative = False):
 mapa_filename = PATH + "mapa.json"
 mission_filename = PATH + "missao.json"
 hw_filename = PATH + "hardware.json"
+
+mission_id = 2
 with open(mission_filename, "r") as mission_file:
         mission_file = json.load(mission_file)
-        mission = mission_file[1]
+        mission = mission_file[mission_id]
 
 mapa_id = 0
 
@@ -290,7 +291,7 @@ with open(hw_filename, "r") as hw_file:
 
 regions_obj, regions_names, labels, geo_home = read_json(mission, mapa)
 
-regions  = get_regions(mission)
+regions  = get_regions(mapa)
 base = get_bases(mapa)
 pulverize = get_objectives(mission, command='pulverize')
 photo = get_objectives(mission, command='take_picture')
