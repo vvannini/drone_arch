@@ -129,7 +129,7 @@ aeqd_to_wgs84 = partial(
 
 point_transformed = transform(wgs84_to_aeqd, point)
 
-buffer = point_transformed.buffer(10_000)
+buffer = point_transformed.buffer(20)
 
 buffer_wgs84 = transform(aeqd_to_wgs84, buffer)
 
