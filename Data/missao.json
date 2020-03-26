@@ -1,20 +1,7 @@
 [
     {
         "id": 0,
-        "name": "Routine 1 - Fazenda Nova Piratininga",
-        "map": 0,
-        "mission_execution": [
-            {
-                "command": "take_picture",
-                "instructions": {
-                    "area": "region_1"
-                }
-            }    
-        ]
-    },
-    {
-        "id": 1,
-        "name": "Routine 1 - Fazenda Nova Piratininga",
+        "name": "photo_1",
         "map": 0,
         "mission_execution": [
             {
@@ -24,29 +11,73 @@
                 }
             },
             {
-                "command": "pulverize",
+                "command": "end",
                 "instructions": {
-                    "area": "region_10"
+                    "area": "base_1"
+                }
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "photo_2",
+        "map": 0,
+        "mission_execution": [
+            {
+                "command": "take_picture",
+                "instructions": {
+                    "area": "region_1"
+                }
+            },
+            {
+                "command": "take_picture",
+                "instructions": {
+                    "area": "region_5"
+                }
+            },
+            {
+                "command": "end",
+                "instructions": {
+                    "area": "base_1"
                 }
             }
         ]
     },
     {
         "id": 2,
-        "name": "Routine 1 - Fazenda Nova Piratininga",
+        "name": "photo_3",
         "map": 0,
         "mission_execution": [
             {
-                "command": "pulverize",
+                "command": "take_picture",
                 "instructions": {
-                    "area": "region_10"
+                    "area": "region_2"
+                }
+            },
+            {
+                "command": "take_picture",
+                "instructions": {
+                    "area": "region_3"
+                }
+            },
+            {
+                "command": "take_picture",
+                "instructions": {
+                    "area": "region_4"
+                }
+            },
+
+            {
+                "command": "end",
+                "instructions": {
+                    "area": "base_3"
                 }
             }
         ]
     },
     {
         "id": 3,
-        "name": "Routine 1 - Fazenda Nova Piratininga",
+        "name": "photo_4",
         "map": 0,
         "mission_execution": [
             {
@@ -70,13 +101,14 @@
             {
                 "command": "take_picture",
                 "instructions": {
-                    "area": "region_4"
+                    "area": "region_5"
                 }
             },
+
             {
-                "command": "take_picture",
+                "command": "end",
                 "instructions": {
-                    "area": "region_5"
+                    "area": "base_2"
                 }
             }
 
@@ -84,26 +116,7 @@
     },
     {
         "id": 4,
-        "name": "Routine 1 - Fazenda Nova Piratininga",
-        "map": 0,
-        "mission_execution": [
-            {
-                "command": "take_picture",
-                "instructions": {
-                    "area": "region_1"
-                }
-            },
-            {
-                "command": "pulverize",
-                "instructions": {
-                    "area": "region_6"
-                }
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "name": "Routine 1 - Fazenda Nova Piratininga",
+        "name": "photo_5",
         "map": 0,
         "mission_execution": [
             {
@@ -137,9 +150,69 @@
                 }
             },
             {
+                "command": "end",
+                "instructions": {
+                    "area": "base_1"
+                }
+            }
+
+        ]
+    },
+    {
+        "id": 5,
+        "name": "pulverize_01",
+        "map": 0,
+        "mission_execution": [
+            {
                 "command": "pulverize",
                 "instructions": {
                     "area": "region_6"
+                }
+            },
+            {
+                "command": "end",
+                "instructions": {
+                    "area": "base_1"
+                }
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "pulverize_03",
+        "map": 0,
+        "mission_execution": [
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_12"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_6"
+                }
+            },
+
+            {
+                "command": "end",
+                "instructions": {
+                    "area": "base_4"
+                }
+            }
+
+        ]
+    },
+    {
+        "id": 7,
+        "name": "pulverize_07",
+        "map": 0,
+        "mission_execution": [
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_8"
                 }
             },
             {
@@ -152,6 +225,36 @@
                 "command": "pulverize",
                 "instructions": {
                     "area": "region_6"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_9"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_10"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_11"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_12"
+                }
+            },
+            {
+                "command": "end",
+                "instructions": {
+                    "area": "base_1"
                 }
             }
 

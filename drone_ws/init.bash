@@ -2,7 +2,7 @@ echo "Setting Rate"
 rosservice call /mavros/set_stream_rate 0 10 1
 
 echo "Update KB"
-python3 src/data/scripts/create_pddl.py 
+python3 src/data/scripts/create_pddl.py $1
 
 echo "Generating a Problem"
 rosservice call /rosplan_problem_interface/problem_generation_server

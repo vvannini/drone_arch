@@ -266,11 +266,12 @@ def create_predicate(attribute_name, values, is_negative = False):
     return instance
 
 
+args = sys.argv
 mapa_filename = PATH + "mapa.json"
 mission_filename = PATH + "missao.json"
 hw_filename = PATH + "hardware.json"
 
-mission_id = 1
+mission_id = int(args[1])
 with open(mission_filename, "r") as mission_file:
         mission_file = json.load(mission_file)
         mission = mission_file[mission_id]
@@ -295,6 +296,7 @@ regions  = get_regions(mapa)
 base = get_bases(mapa)
 pulverize = get_objectives(mission, command='pulverize')
 photo = get_objectives(mission, command='take_picture')
+end = get_objectives(mission, command='end')
 
 # inputs = ["input1"]
 # cameras = ["camera1"]
@@ -387,7 +389,9 @@ for i in photo:
 	obj = create_predicate("taken-image", [diagnostic_msgs.msg.KeyValue("region", i)])
 	add_goal(obj)
 
-
+for i in end:
+    obj = create_predicate("at", [diagnostic_msgs.msg.KeyValue("rover", hardware["name"]), diagnostic_msgs.msg.KeyValue("region", i)])
+    add_goal(obj)
 
  # {list_to_str([f'(pulverized {i} {b})' for i in inputs for b in get_objectives(missao_json, command='pulverize', sufix='_objective')], prefix=' ;', last_prefix=' ;', diff=True)}
 

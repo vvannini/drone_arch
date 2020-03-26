@@ -113,6 +113,7 @@ args = sys.argv
 #point = Point(-90.0667, 29.9500)
 point = Point(float(args[1]), float(args[2]))
 alt = float(args[3])
+raio = float(args[4])
 local_azimuthal_projection = f"+proj=aeqd +R=6371000 +units=m +lat_0={point.y} +lon_0={point.x}"
 
 wgs84_to_aeqd = partial(
@@ -129,7 +130,7 @@ aeqd_to_wgs84 = partial(
 
 point_transformed = transform(wgs84_to_aeqd, point)
 
-buffer = point_transformed.buffer(20)
+buffer = point_transformed.buffer(raio)
 
 buffer_wgs84 = transform(aeqd_to_wgs84, buffer)
 

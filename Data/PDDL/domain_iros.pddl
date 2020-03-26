@@ -9,11 +9,11 @@
 
     (:functions
     	
-    	;; Variavel q controla bateria
+    	;; Variavel q controla bateria em porcentagem
         (battery-amount ?rover - rover)
         ;; quantidade de insumo
         (input-amount ?rover - rover)
-        ;;velocidade de carregar a bateria
+        ;;velocidade de carregar a bateria em porcentagem por segundos
         (recharge-rate-battery ?rover - rover)
         ;;velocidade de descarregar a bateria
         (discharge-rate-battery ?rover - rover)
@@ -25,9 +25,9 @@
         ; (input-per-flight ?rover - rover)
         ;;velocidade de reabastecer o insumo
         (recharge-rate-input ?rover - rover)
-        ;;distancia entre regioes
+        ;;distancia entre regioes em metros
         (distance ?from-region - region ?to-region - region)
-        ;;velocidade
+        ;;velocidade em m/s
         (velocity ?rover - rover)
     )
 
@@ -154,7 +154,8 @@
              )
         
         :duration 
-            (= ?duration 100)
+            (= ?duration (/ 314
+                         (velocity ?rover)))
         
         :condition
             (and
@@ -162,15 +163,31 @@
                 ;(at start (is-in ?objective ?region))
                 (at start (at ?rover ?region))
                 (at start (carry ?rover))
-                (at start (> (battery-amount ?rover) 2)))
-        
+                (at start (> (battery-amount ?rover)  
+                                (*
+                                    (/
+                                        314
+                                        (velocity ?rover)
+                                    )
+                                    (discharge-rate-battery ?rover)
+                                )
+                        ))   
+            )
         :effect 
             (and 
             	(at start (not (can-spray ?rover)))
                 (at start (not (can-take-pic ?rover)))
                 (at end (pulverized ?region))
-                (at start (decrease (battery-amount ?rover) 2))
-                (at end (decrease (input-amount ?rover) 1))
+                (at start (decrease (battery-amount ?rover) 
+                                (*
+                                    (/
+                                        314
+                                        (velocity ?rover)
+                                    )
+                                    (discharge-rate-battery ?rover)
+                                )
+                        )
+                )                (at end (decrease (input-amount ?rover) 1))
                 (at end (can-spray ?rover))
             )
       
