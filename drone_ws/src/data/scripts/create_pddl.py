@@ -313,6 +313,9 @@ call_clear()
 obj = create_predicate("at", [diagnostic_msgs.msg.KeyValue("rover", hardware["name"]), diagnostic_msgs.msg.KeyValue("region", "base_1")])
 add_instance(obj)
 
+obj = create_predicate("can-go", [diagnostic_msgs.msg.KeyValue("rover", hardware["name"])])
+add_instance(obj)
+
 obj = create_function("battery-capacity",[diagnostic_msgs.msg.KeyValue("rover", hardware["name"])], hardware["battery-capacity"])
 print(obj)
 add_instance(obj)

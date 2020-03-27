@@ -44,7 +44,7 @@
 		<param name="action_feedback_topic" value="/rosplan_plan_dispatcher/action_feedback" />
 	</node>
 
-	<node name="rosplan_interface_go_to" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
+	<node name="rosplan_interface_go_to" pkg="rosplan_planning_system" type="tutorialInterface" respawn="true" output="screen">
 		<param name="knowledge_base"		value="rosplan_knowledge_base" />
 		<param name="pddl_action_name"		value="go_to" />
 		<param name="action_dispatch_topic" value="/rosplan_plan_dispatcher/action_dispatch" />
@@ -58,7 +58,7 @@
 		<param name="action_feedback_topic" value="/rosplan_plan_dispatcher/action_feedback" />
 	</node> -->
 
-	<node name="rosplan_interface_pulverize" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
+	<node name="rosplan_interface_pulverize" pkg="rosplan_planning_system" type="tutorialInterface" respawn="true" output="screen">
 		<param name="knowledge_base"		value="rosplan_knowledge_base" />
 		<param name="pddl_action_name"		value="pulverize_region" />
 		<param name="action_dispatch_topic" value="/rosplan_plan_dispatcher/action_dispatch" />

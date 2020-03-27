@@ -1,6 +1,10 @@
 echo "Setting Rate"
 rosservice call /mavros/set_stream_rate 0 10 1
 
+echo "Cleaning Route and out files"
+rm ../Data/out.txt
+rm ../Data/route.txt
+
 echo "Update KB"
 python3 src/data/scripts/create_pddl.py $1
 

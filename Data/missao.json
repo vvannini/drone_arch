@@ -166,7 +166,7 @@
             {
                 "command": "pulverize",
                 "instructions": {
-                    "area": "region_6"
+                    "area": "region_8"
                 }
             },
             {
@@ -179,7 +179,7 @@
     },
     {
         "id": 6,
-        "name": "pulverize_03",
+        "name": "pulverize_02",
         "map": 0,
         "mission_execution": [
             {
@@ -191,14 +191,13 @@
             {
                 "command": "pulverize",
                 "instructions": {
-                    "area": "region_6"
+                    "area": "region_7"
                 }
             },
-
             {
                 "command": "end",
                 "instructions": {
-                    "area": "base_4"
+                    "area": "base_1"
                 }
             }
 

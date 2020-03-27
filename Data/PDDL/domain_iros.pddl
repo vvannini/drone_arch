@@ -53,7 +53,7 @@
         (taken-image ?region - region)
         ;se pulverizou
         (pulverized ?region - region)
-
+        (can-go ?rover - rover)
         (can-take-pic ?rover - rover)
         
     )
@@ -71,7 +71,7 @@
         
         :condition
             (and 
-                
+                (over all (can-go ?rover))
                 (at start (at ?rover ?from-region)) 
                 (at start (> (battery-amount ?rover) 
                 	(*
@@ -175,6 +175,7 @@
             )
         :effect 
             (and 
+                (at start (not (can-go ?rover)))
             	(at start (not (can-spray ?rover)))
                 (at start (not (can-take-pic ?rover)))
                 (at end (pulverized ?region))
@@ -187,8 +188,10 @@
                                     (discharge-rate-battery ?rover)
                                 )
                         )
-                )                (at end (decrease (input-amount ?rover) 1))
+                )                
+                (at end (decrease (input-amount ?rover) 1))
                 (at end (can-spray ?rover))
+                (at end (can-go ?rover))
             )
       
     )
@@ -199,19 +202,43 @@
              ?region - region)
             
         :duration 
-            (= ?duration 7)
+            (= ?duration (/ 1000
+                         (velocity ?rover)))
             
         :condition
             (and 
                 (at start (can-take-pic ?rover))
                 (at start (at ?rover ?region))
                 (over all (at ?rover ?region))
-                (at start (> (battery-amount ?rover) 1)))
+                (at start (> (battery-amount ?rover) 
+                                (*
+                                    (/
+                                        314
+                                        (velocity ?rover)
+                                    )
+                                    (discharge-rate-battery ?rover)
+                                )
+                        )
+                ) 
+            )
      
         :effect
             (and 
+                (at start (not (can-go ?rover)))
                 (at end (taken-image ?region))
-                (at start (decrease (battery-amount ?rover) 1)))            
+                (at start (decrease (battery-amount ?rover) 
+                                                (*
+                                                    (/
+                                                        314
+                                                        (velocity ?rover)
+                                                    )
+                                                    (discharge-rate-battery ?rover)
+                                                )
+                                        )
+                                )
+                (at end (can-go ?rover)) 
+
+            )            
     )
     
     (:durative-action recharge_battery
