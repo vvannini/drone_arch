@@ -44,6 +44,12 @@ find_package(FLEX REQUIRED)
 # Disable deprecated declarations warning (about std::auto_ptr)
 add_definitions(-Wno-deprecated-declarations)
 
+## Declare action interface for Tutorial 10
+add_executable(tutorialInterface src/ActionInterface/RPTutorial10.cpp src/ActionInterface/RPActionInterface.cpp)
+add_dependencies(tutorialInterface ${catkin_EXPORTED_TARGETS})
+target_link_libraries(tutorialInterface ${catkin_LIBRARIES})
+
+
 ## Declare cpp executables
 add_executable(problemInterface src/ProblemGeneration/ProblemInterface.cpp src/ProblemGeneration/PDDLProblemGenerator.cpp
                                                                            src/ProblemGeneration/ProblemGenerator.cpp

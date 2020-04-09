@@ -257,17 +257,18 @@ int getRadius(string region)
 void calcRoute(GeoPoint from, GeoPoint to)
 {
 	//string command = "java -jar ~/drone_arch/Planners/HGA/hga-interface.jar" + to_string(from.longitude) + " " + to_string(from.latitude) +"15 "+ to_string(to.longitude) + " "+ to_string(to.latitude) +" 13 0 20 10 5 10 8 0.01 1.0 true 100 \"java -jar -Djava.library.path=/opt/ibm/ILOG/CPLEX_Studio128/cplex/bin/x86-64_linux  hga.jar run job ./\"";
-	//string command = "java -jar /home/vannini/drone_arch/Planners/HGA/hga-interface.jar " + to_string(from.longitude) + " " + to_string(from.latitude) +" "+to_string(from.altitude) +" "+ to_string(to.longitude) + " "+ to_string(to.latitude) +" "+to_string(to.altitude)+" 0 20 600 5 10 8 0.01 5.0 false 200 \"/home/vannini/drone_arch/Data/mapa.json\" \"/home/vannini/drone_arch/Planners/HGA/pasta-executavel\" \"/home/vannini/drone_arch/Data/route.txt\" \"java -jar -Djava.library.path=/opt/ibm/ILOG/CPLEX_Studio128/cplex/bin/x86-64_linux hga.jar run job ./\"";
+	string command = "java -jar /home/vannini/drone_arch/Planners/HGA/hga-interface.jar " + to_string(from.longitude) + " " + to_string(from.latitude) +" "+to_string(from.altitude) +" "+ to_string(to.longitude) + " "+ to_string(to.latitude) +" "+to_string(to.altitude)+" 0 20 600 5 10 8 0.01 5.0 false 200 \"/home/vannini/drone_arch/Data/mapa.json\" \"/home/vannini/drone_arch/Planners/HGA/pasta-executavel\" \"/home/vannini/drone_arch/Data/route.txt\" \"java -jar -Djava.library.path=/opt/ibm/ILOG/CPLEX_Studio128/cplex/bin/x86-64_linux hga.jar run job ./\"";
 					//java -jar /home/vannini/drone_arch/Planners/HGA/hga-interface.jar    -50.33276461                        -12.82225103                 15  -50.3567626                      -12.8111267             13 0 20 600 5 10 8 0.01 5.0 true 200 "/home/vannini/drone_arch/Data/mapa.json" "/home/vannini/drone_arch/Planners/HGA/pasta-executavel" "/home/vannini/drone_arch/Data/route.txt" 		  "java -jar -Djava.library.path=/opt/ibm/ILOG/CPLEX_Studio128/cplex/bin/x86-64_linux  hga.jar run job ./"
 
-	//system(command.c_str());
+	system(command.c_str());
 }
 
 void calcRoute_pulverize(GeoPoint at, int radius)
 {
 	//string command = "python3 /home/vannini/drone_arch/Planners/simple-behaivors/circle.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " "+ to_string(radius);
-	// string command = "python3 /home/vannini/drone_arch/Planners/simple-behaivors/circle.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " 50";
-	string command = "python3 /home/vannini/drone_arch/Planners/simple-behaivors/square.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " 250";
+	string command = "python3 /home/vannini/drone_arch/Planners/simple-behaivors/circle.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " 50";
+	//string command = "python3 /home/vannini/drone_arch/Planners/simple-behaivors/square.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " 250";
+	
 	system(command.c_str());
 }
 
@@ -502,7 +503,7 @@ namespace KCL_rosplan {
 				ros::Duration(10).sleep();
 			}
 			//while not at the end, wait
-			reset_mission();
+			//reset_mission();
 			set_loiter();
 			
 
@@ -519,21 +520,24 @@ namespace KCL_rosplan {
 		} 
 		else if (strcmp(msg->name.c_str(), "pulverize_region") == 0)
 		{			
-			string region = msg->parameters[1].value.c_str();
+			// string region = msg->parameters[1].value.c_str();
 
-			ROS_INFO("pulverize_region %s", region.c_str());
+			// ROS_INFO("pulverize_region %s", region.c_str());
+
+			ROS_INFO("pulverize_region");
+			string region = msg->parameters[1].value.c_str();
 			// ros::Duration(msg->duration).sleep();
 			mission.Ended = false;
 
 			//get coordinates
-			int radius = getRadius(region);
+			//int radius = getRadius(region);
 
 			//calc route
 			GeoPoint at;
 			at.latitude = drone.position.latitude;
 			at.longitude = drone.position.longitude;
 			at.altitude = 15;
-			calcRoute_pulverize(at, radius);
+			calcRoute_pulverize(at, 50);
 
 
 
@@ -563,7 +567,7 @@ namespace KCL_rosplan {
 				ros::Duration(10).sleep();
 			}
 			//while not at the end, wait
-			reset_mission();
+			//reset_mission();
 			set_loiter();
 			// complete the action
 			ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
@@ -614,7 +618,7 @@ namespace KCL_rosplan {
 				ros::Duration(10).sleep();
 			}
 			//while not at the end, wait
-			reset_mission();
+			//reset_mission();
 			set_loiter();
 			// complete the action
 			ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());

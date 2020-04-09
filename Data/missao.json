@@ -205,7 +205,46 @@
     },
     {
         "id": 7,
-        "name": "pulverize_07",
+        "name": "pulverize_04",
+        "map": 0,
+        "mission_execution": [
+            
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_9"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_10"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_11"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_12"
+                }
+            },
+            {
+                "command": "end",
+                "instructions": {
+                    "area": "base_3"
+                }
+            }
+
+        ]
+    },
+    {
+        "id": 8,
+        "name": "pulverize_06",
         "map": 0,
         "mission_execution": [
             {
@@ -257,6 +296,31 @@
                 }
             }
 
+        ]
+    },
+    {
+        "id": 9,
+        "name": "mix_1_1",
+        "map": 0,
+        "mission_execution": [
+            {
+                "command": "take_picture",
+                "instructions": {
+                    "area": "region_1"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_11"
+                }
+            },
+            {
+                "command": "end",
+                "instructions": {
+                    "area": "base_1"
+                }
+            }
         ]
     }
 

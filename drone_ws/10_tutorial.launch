@@ -3,33 +3,10 @@
 
 	<!-- ROSPlan -->
 	<include file="$(find rosplan_planning_system)/launch/interfaced_planning_system.launch" >
-		<arg name="domain_path"		value="/home/vannini/drone_arch/Data/PDDL/domain_iros.pddl" />
-		<arg name="problem_path"	value="/home/vannini/drone_arch/Data/PDDL/problem_iros.pddl" />
+		<arg name="domain_path"		value="/home/vannini/drone_arch/Data/PDDL/domain_quali.pddl" />
+		<arg name="problem_path"	value="/home/vannini/drone_arch/Data/PDDL/problem_quali.pddl" />
 	</include>
 
-	<!-- sim actions 
-	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
-		<arg name="pddl_action_name" value="go_to" />
-	</include>
-	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
-		<arg name="pddl_action_name" value="recharge_input" />
-	</include>
-	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
-		<arg name="pddl_action_name" value="discharge_input" />
-	</include>
-	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
-		<arg name="pddl_action_name" value="clean_camera" />
-	</include>
-	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
-		<arg name="pddl_action_name" value="pulverize_region" />
-	</include>
-	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
-		<arg name="pddl_action_name" value="take_image" />
-	</include>
-	<include file="$(find rosplan_planning_system)/launch/includes/simulated_action.launch" >
-		<arg name="pddl_action_name" value="recharge_battery" />
-	</include>-->
-<!-- dock action interface -->
 	<node name="rosplan_interface_recharge_input" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
 		<param name="knowledge_base"		value="rosplan_knowledge_base" />
 		<param name="pddl_action_name"		value="recharge_input" />
@@ -44,21 +21,14 @@
 		<param name="action_feedback_topic" value="/rosplan_plan_dispatcher/action_feedback" />
 	</node>
 
-	<node name="rosplan_interface_go_to" pkg="rosplan_planning_system" type="tutorialInterface" respawn="true" output="screen">
+	<node name="rosplan_interface_go_to" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
 		<param name="knowledge_base"		value="rosplan_knowledge_base" />
 		<param name="pddl_action_name"		value="go_to" />
 		<param name="action_dispatch_topic" value="/rosplan_plan_dispatcher/action_dispatch" />
 		<param name="action_feedback_topic" value="/rosplan_plan_dispatcher/action_feedback" />
 	</node>
 
-	<!-- <node name="rosplan_interface_discharge_input" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
-		<param name="knowledge_base"		value="rosplan_knowledge_base" />
-		<param name="pddl_action_name"		value="discharge_input" />
-		<param name="action_dispatch_topic" value="/rosplan_plan_dispatcher/action_dispatch" />
-		<param name="action_feedback_topic" value="/rosplan_plan_dispatcher/action_feedback" />
-	</node> -->
-
-	<node name="rosplan_interface_pulverize" pkg="rosplan_planning_system" type="tutorialInterface" respawn="true" output="screen">
+	<node name="rosplan_interface_pulverize" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
 		<param name="knowledge_base"		value="rosplan_knowledge_base" />
 		<param name="pddl_action_name"		value="pulverize_region" />
 		<param name="action_dispatch_topic" value="/rosplan_plan_dispatcher/action_dispatch" />
