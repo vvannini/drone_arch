@@ -256,8 +256,10 @@ int getRadius(string region)
 
 void calcRoute(GeoPoint from, GeoPoint to)
 {
+	//string command = " python ~/drone_arch/Planners/RRT/rrt.py -t geo -m /home/bob/drone_arch/Data/missao2.json -n /home/bob/drone_arch/Data/mapa2.json";
+	string command = " python ~/drone_arch/Planners/RRT/rrt_star.py -t geo -m /home/bob/drone_arch/Data/missao2.json -n /home/bob/drone_arch/Data/mapa2.json";
 	//string command = "java -jar ~/drone_arch/Planners/HGA/hga-interface.jar" + to_string(from.longitude) + " " + to_string(from.latitude) +"15 "+ to_string(to.longitude) + " "+ to_string(to.latitude) +" 13 0 20 10 5 10 8 0.01 1.0 true 100 \"java -jar -Djava.library.path=/opt/ibm/ILOG/CPLEX_Studio128/cplex/bin/x86-64_linux  hga.jar run job ./\"";
-	string command = "java -jar /home/vannini/drone_arch/Planners/HGA/hga-interface.jar " + to_string(from.longitude) + " " + to_string(from.latitude) +" "+to_string(from.altitude) +" "+ to_string(to.longitude) + " "+ to_string(to.latitude) +" "+to_string(to.altitude)+" 0 20 600 5 10 8 0.01 5.0 false 200 \"/home/vannini/drone_arch/Data/mapa.json\" \"/home/vannini/drone_arch/Planners/HGA/pasta-executavel\" \"/home/vannini/drone_arch/Data/route.txt\" \"java -jar -Djava.library.path=/opt/ibm/ILOG/CPLEX_Studio128/cplex/bin/x86-64_linux hga.jar run job ./\"";
+	//string command = "java -jar /home/vannini/drone_arch/Planners/HGA/hga-interface.jar " + to_string(from.longitude) + " " + to_string(from.latitude) +" "+to_string(from.altitude) +" "+ to_string(to.longitude) + " "+ to_string(to.latitude) +" "+to_string(to.altitude)+" 0 20 600 5 10 8 0.01 5.0 false 200 \"/home/vannini/drone_arch/Data/mapa.json\" \"/home/vannini/drone_arch/Planners/HGA/pasta-executavel\" \"/home/vannini/drone_arch/Data/route.txt\" \"java -jar -Djava.library.path=/opt/ibm/ILOG/CPLEX_Studio128/cplex/bin/x86-64_linux hga.jar run job ./\"";
 					//java -jar /home/vannini/drone_arch/Planners/HGA/hga-interface.jar    -50.33276461                        -12.82225103                 15  -50.3567626                      -12.8111267             13 0 20 600 5 10 8 0.01 5.0 true 200 "/home/vannini/drone_arch/Data/mapa.json" "/home/vannini/drone_arch/Planners/HGA/pasta-executavel" "/home/vannini/drone_arch/Data/route.txt" 		  "java -jar -Djava.library.path=/opt/ibm/ILOG/CPLEX_Studio128/cplex/bin/x86-64_linux  hga.jar run job ./"
 
 	system(command.c_str());
