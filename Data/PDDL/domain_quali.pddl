@@ -131,14 +131,14 @@
             )
     )
 
-    (:durative-action need-battery
+    (:durative-action need_battery
         :parameters (?rover - rover)
         :duration (= ?duration 1)
         :condition (and (at start (< (battery-amount ?rover) 20)))
         :effect (and (at start (can-go-to-base ?rover)))
     )
 
-    (:durative-action need-input
+    (:durative-action need_input
         :parameters (?rover - rover)
         :duration (= ?duration 1)
         :condition (and (at start (= (input-amount ?rover) 0))
@@ -154,7 +154,7 @@
     ;     :effect (and (at start (can-go-to-base ?rover)))
     ; )
 
-    (:durative-action has-all-goals-achived
+    (:durative-action has_all_goals_achived
         :parameters (?rover - rover)
         :duration (= ?duration 1)
         :condition (and (at start (= (total-goals) (goals-achived))))

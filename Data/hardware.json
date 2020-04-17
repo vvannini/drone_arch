@@ -8,7 +8,7 @@
 	"max_velocity": 65.0,
 	"efficient_velocity": 3.5,
 	"battery-capacity": 100,
-	"recharge-rate-battery": 0.142,
+	"recharge-rate-battery": 2.142,
 	"discharge-rate-battery":0.042,
 	"input-capacity": 2,
 	"camera": {

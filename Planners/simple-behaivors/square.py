@@ -22,7 +22,7 @@ distance = float(args[4])
 f = open("/home/vannini/drone_arch/Data/route.txt", "w")
 
 theta = 135
-for i in range(5):
+for i in range(4):
     dx = distance* math.cos(math.radians(theta)) # theta measured clockwise from due east
     # print (math.cos(math.radians(theta)))
     # print (distance)

@@ -218,12 +218,12 @@ void getGeoPoint(GeoPoint *geo)
     		if(result)
     		{
       			geo->latitude =  stod(line);
-      			//cout << geo->latitude;
+      			cout << geo->latitude;
       			result = 0;
     		}
     		else
     			geo->longitude = stod(line);
-    			//cout << geo->longitude;
+    			cout << geo->longitude;
     	}
     	myfile.clear();
     	myfile.close();
@@ -518,6 +518,73 @@ namespace KCL_rosplan {
 			return true;
 
 		} 
+		else if (strcmp(msg->name.c_str(), "go_to_base") == 0)
+		{	//adicionar um while(mission.Ended != true ) wait() 
+			// while(!mission.Ended)
+			// 	ros::Duration(10).sleep();
+
+
+			mission.Ended = false;
+			GeoPoint from, to;
+			//get coordinates
+			from.name = msg->parameters[1].value.c_str();
+			to.name = msg->parameters[2].value.c_str();
+			ROS_INFO("go_to_base %s->%s", from.name.c_str(), to.name.c_str());
+			getGeoPoint(&from);
+			from.altitude = 15;
+
+			getGeoPoint(&to);
+			to.altitude =13;
+			//calc route
+			calcRoute(from, to);
+
+
+
+			//is flying?
+				//is armed
+			while(!drone.current_state.armed && drone.ex_current_state.landed_state != 2)
+			{
+				set_loiter();
+				arm();
+				takeoff(drone);
+			}
+			ros::Duration(10).sleep();
+			set_loiter();
+			arm();
+			takeoff(drone);
+			//send route 
+			if(!sendWPFile())
+				callRoute(from, to);
+			ros::Duration(20).sleep();
+
+			//change to auto
+			// while(drone.current_state.mode != "AUTO.MISSION"){
+				// ROS_INFO("current: %d", mission.currentWP);
+			set_auto();	
+			// }
+
+			
+			while(!mission.Ended){
+				ros::Duration(10).sleep();
+			}
+			//while not at the end, wait
+			//reset_mission();
+			set_loiter();
+
+			//land after arive to base
+
+			while(!drone.current_state.armed && drone.ex_current_state.landed_state != 2)
+			{
+				set_loiter();
+				arm();
+				takeoff(drone);
+			}
+			
+
+			ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
+			return true;
+
+		} 
 		else if (strcmp(msg->name.c_str(), "pulverize_region") == 0)
 		{			
 			// string region = msg->parameters[1].value.c_str();
@@ -670,6 +737,33 @@ namespace KCL_rosplan {
 				ROS_INFO("landing... %d", drone.ex_current_state.landed_state);
 				ros::Duration(10).sleep();
 			}
+			ros::Duration(msg->duration).sleep();
+			// complete the action
+			ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
+			return true;
+		} 
+		else if (strcmp(msg->name.c_str(), "has_all_goals_achived") == 0)
+		{
+			ROS_INFO("has-all-goals-achived");
+
+			ros::Duration(1).sleep();
+			// complete the action
+			ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
+			return true;
+		} 
+		else if (strcmp(msg->name.c_str(), "need_battery") == 0)
+		{
+			ROS_INFO("need-battery");
+
+			ros::Duration(msg->duration).sleep();
+			// complete the action
+			ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
+			return true;
+		} 
+		else if (strcmp(msg->name.c_str(), "need_input") == 0)
+		{
+			ROS_INFO("need-input");
+
 			ros::Duration(msg->duration).sleep();
 			// complete the action
 			ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
