@@ -550,8 +550,8 @@ namespace KCL_rosplan {
 			}
 			ros::Duration(10).sleep();
 			set_loiter();
-			arm();
-			takeoff(drone);
+			//arm();
+			//takeoff(drone);
 			//send route 
 			if(!sendWPFile())
 				callRoute(from, to);
