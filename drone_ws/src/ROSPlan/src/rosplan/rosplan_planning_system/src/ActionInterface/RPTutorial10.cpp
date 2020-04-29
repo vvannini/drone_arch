@@ -203,12 +203,12 @@ void takeoff(Drone drone)
 
 void getGeoPoint(GeoPoint *geo)
 {
-	string command = "python3 ~/drone_arch/drone_ws/src/ROSPlan/src/rosplan/rosplan_planning_system/src/ActionInterface/pyemb7.py "+geo->name+" >> ~/drone_arch/Data/out.txt";
+	string command = "python3 /home/bob/drone_arch/drone_ws/src/ROSPlan/src/rosplan/rosplan_planning_system/src/ActionInterface/pyemb7.py "+geo->name+" >> /home/bob/drone_arch/Data/out.txt";
 	int result = 1;
 	system(command.c_str());
 	// cout << result; 
 	string line;
-  	ifstream myfile ("~/drone_arch/Data/out.txt");
+  	ifstream myfile ("/home/bob/drone_arch/Data/out.txt");
   	if (myfile.is_open())
  	{
  		cout << "file opened" << endl;
@@ -218,12 +218,12 @@ void getGeoPoint(GeoPoint *geo)
     		if(result)
     		{
       			geo->latitude =  stod(line);
-      			//cout << geo->latitude;
+      			cout << geo->latitude;
       			result = 0;
     		}
     		else
     			geo->longitude = stod(line);
-    			//cout << geo->longitude;
+    			cout << geo->longitude;
     	}
     	myfile.clear();
     	myfile.close();
@@ -233,7 +233,8 @@ void getGeoPoint(GeoPoint *geo)
 }
 
 int getRadius(string region)
-{
+{	
+
 	string command = "python3 ~/drone_arch/drone_ws/src/ROSPlan/src/rosplan/rosplan_planning_system/src/ActionInterface/getRadius.py "+region+" >> ~/drone_arch/Data/out.txt";
 	system(command.c_str());
 	// cout << result; 
@@ -256,8 +257,7 @@ int getRadius(string region)
 
 void calcRoute(GeoPoint from, GeoPoint to)
 {
-	//string command = " python ~/drone_arch/Planners/RRT/rrt.py -t geo -m /home/bob/drone_arch/Data/missao2.json -n /home/bob/drone_arch/Data/mapa2.json";
-	string command = " python ~/drone_arch/Planners/RRT/rrt_star.py -t geo -m /home/bob/drone_arch/Data/missao2.json -n /home/bob/drone_arch/Data/mapa2.json";
+	string command = "python  ~/drone_arch/Planners/RRT/rrt_star.py " + to_string(from.latitude) + " " + to_string(from.longitude) + " " + to_string(to.latitude) + " " + to_string(to.longitude)  + " /home/bob/drone_arch/Data/mapa.json";
 	//string command = "java -jar ~/drone_arch/Planners/HGA/hga-interface.jar" + to_string(from.longitude) + " " + to_string(from.latitude) +"15 "+ to_string(to.longitude) + " "+ to_string(to.latitude) +" 13 0 20 10 5 10 8 0.01 1.0 true 100 \"java -jar -Djava.library.path=/opt/ibm/ILOG/CPLEX_Studio128/cplex/bin/x86-64_linux  hga.jar run job ./\"";
 	//string command = "java -jar /home/vannini/drone_arch/Planners/HGA/hga-interface.jar " + to_string(from.longitude) + " " + to_string(from.latitude) +" "+to_string(from.altitude) +" "+ to_string(to.longitude) + " "+ to_string(to.latitude) +" "+to_string(to.altitude)+" 0 20 600 5 10 8 0.01 5.0 false 200 \"/home/vannini/drone_arch/Data/mapa.json\" \"/home/vannini/drone_arch/Planners/HGA/pasta-executavel\" \"/home/vannini/drone_arch/Data/route.txt\" \"java -jar -Djava.library.path=/opt/ibm/ILOG/CPLEX_Studio128/cplex/bin/x86-64_linux hga.jar run job ./\"";
 					//java -jar /home/vannini/drone_arch/Planners/HGA/hga-interface.jar    -50.33276461                        -12.82225103                 15  -50.3567626                      -12.8111267             13 0 20 600 5 10 8 0.01 5.0 true 200 "/home/vannini/drone_arch/Data/mapa.json" "/home/vannini/drone_arch/Planners/HGA/pasta-executavel" "/home/vannini/drone_arch/Data/route.txt" 		  "java -jar -Djava.library.path=/opt/ibm/ILOG/CPLEX_Studio128/cplex/bin/x86-64_linux  hga.jar run job ./"
@@ -267,8 +267,9 @@ void calcRoute(GeoPoint from, GeoPoint to)
 
 void calcRoute_pulverize(GeoPoint at, int radius)
 {
+	
 	//string command = "python3 /home/vannini/drone_arch/Planners/simple-behaivors/circle.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " "+ to_string(radius);
-	string command = "python3 /home/vannini/drone_arch/Planners/simple-behaivors/circle.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " 50";
+	string command = "python3 /home/bob/drone_arch/Planners/simple-behaivors/circle.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " 50";
 	//string command = "python3 /home/vannini/drone_arch/Planners/simple-behaivors/square.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " 250";
 	
 	system(command.c_str());
@@ -276,8 +277,9 @@ void calcRoute_pulverize(GeoPoint at, int radius)
 
 void calcRoute_picture(GeoPoint at, int distance)
 {
+	
 	//string command = "python3 /home/vannini/drone_arch/Planners/simple-behaivors/circle.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " "+ to_string(radius);
-	string command = "python3 /home/vannini/drone_arch/Planners/simple-behaivors/square.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " 250";
+	string command = "python3 /home/bob/drone_arch/Planners/simple-behaivors/square.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " 250";
 	system(command.c_str());
 }
 
@@ -298,7 +300,7 @@ int sendWPFile()
 
 
 	int index = 0;
-  	ifstream myfile ("/home/vannini/drone_arch/Data/route.txt");
+  	ifstream myfile ("/home/bob/drone_arch/Data/route.txt");
 
 
   	if (myfile.is_open())
@@ -378,7 +380,7 @@ int sendWPFile()
   	}
   	else 
   	{
-  		remove("/home/vannini/drone_arch/Data/route.txt");
+  		remove("/home/bob/drone_arch/Data/route.txt");
   		return 0;  
   	}
  	wp_clear_srv.request = {};
@@ -401,13 +403,13 @@ int sendWPFile()
   	if(wp_srv_client.call(wp_push_srv))
   	{
  	   ROS_INFO("Success:%d", (bool)wp_push_srv.response.success);
- 	   remove("/home/vannini/drone_arch/Data/route.txt");
+ 	   remove("/home/bob/drone_arch/Data/route.txt");
  	}
  	else
  	{
   	  ROS_ERROR("Waypoint couldn't been sent");
   	  ROS_INFO("Success:%d", (bool)wp_push_srv.response.success);
- 	  remove("/home/vannini/drone_arch/Data/route.txt");
+ 	  remove("/home/bob/drone_arch/Data/route.txt");
   	  return 0;
   	}
   	
@@ -516,6 +518,73 @@ namespace KCL_rosplan {
 			// 	ros::Duration(10).sleep();
 			// }
 			// complete the action
+			ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
+			return true;
+
+		} 
+		else if (strcmp(msg->name.c_str(), "go_to_base") == 0)
+		{	//adicionar um while(mission.Ended != true ) wait() 
+			// while(!mission.Ended)
+			// 	ros::Duration(10).sleep();
+
+
+			mission.Ended = false;
+			GeoPoint from, to;
+			//get coordinates
+			from.name = msg->parameters[1].value.c_str();
+			to.name = msg->parameters[2].value.c_str();
+			ROS_INFO("go_to_base %s->%s", from.name.c_str(), to.name.c_str());
+			getGeoPoint(&from);
+			from.altitude = 15;
+
+			getGeoPoint(&to);
+			to.altitude =13;
+			//calc route
+			calcRoute(from, to);
+
+
+
+			//is flying?
+				//is armed
+			while(!drone.current_state.armed && drone.ex_current_state.landed_state != 2)
+			{
+				set_loiter();
+				arm();
+				takeoff(drone);
+			}
+			ros::Duration(10).sleep();
+			set_loiter();
+			arm();
+			takeoff(drone);
+			//send route 
+			if(!sendWPFile())
+				callRoute(from, to);
+			ros::Duration(20).sleep();
+
+			//change to auto
+			// while(drone.current_state.mode != "AUTO.MISSION"){
+				// ROS_INFO("current: %d", mission.currentWP);
+			set_auto();	
+			// }
+
+			
+			while(!mission.Ended){
+				ros::Duration(10).sleep();
+			}
+			//while not at the end, wait
+			//reset_mission();
+			set_loiter();
+
+			//land after arive to base
+
+			while(!drone.current_state.armed && drone.ex_current_state.landed_state != 2)
+			{
+				set_loiter();
+				arm();
+				takeoff(drone);
+			}
+			
+
 			ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
 			return true;
 
@@ -672,6 +741,33 @@ namespace KCL_rosplan {
 				ROS_INFO("landing... %d", drone.ex_current_state.landed_state);
 				ros::Duration(10).sleep();
 			}
+			ros::Duration(msg->duration).sleep();
+			// complete the action
+			ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
+			return true;
+		} 
+		else if (strcmp(msg->name.c_str(), "has_all_goals_achived") == 0)
+		{
+			ROS_INFO("has-all-goals-achived");
+
+			ros::Duration(1).sleep();
+			// complete the action
+			ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
+			return true;
+		} 
+		else if (strcmp(msg->name.c_str(), "need_battery") == 0)
+		{
+			ROS_INFO("need-battery");
+
+			ros::Duration(msg->duration).sleep();
+			// complete the action
+			ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
+			return true;
+		} 
+		else if (strcmp(msg->name.c_str(), "need_input") == 0)
+		{
+			ROS_INFO("need-input");
+
 			ros::Duration(msg->duration).sleep();
 			// complete the action
 			ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
