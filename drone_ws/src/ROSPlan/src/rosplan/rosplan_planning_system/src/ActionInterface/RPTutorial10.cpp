@@ -208,7 +208,7 @@ void getGeoPoint(GeoPoint *geo)
 	system(command.c_str());
 	// cout << result; 
 	string line;
-  	ifstream myfile ("~/drone_arch/Data/out.txt");
+  	ifstream myfile ("/home/vannini/drone_arch/Data/out.txt");
   	if (myfile.is_open())
  	{
  		cout << "file opened" << endl;
@@ -229,7 +229,7 @@ void getGeoPoint(GeoPoint *geo)
     	myfile.close();
   	}
   	else 
-  		cout << "Unable to open file";  
+  		cout << "Unable to open file"<<endl;  
 }
 
 int getRadius(string region)
@@ -238,7 +238,7 @@ int getRadius(string region)
 	system(command.c_str());
 	// cout << result; 
 	string line;
-  	ifstream myfile ("~/drone_arch/Data/out.txt");
+  	ifstream myfile ("/home/vannini/drone_arch/Data/out.txt");
   	if (myfile.is_open())
  	{
  		cout << "file opened" << endl;
@@ -470,6 +470,7 @@ namespace KCL_rosplan {
 
 			getGeoPoint(&to);
 			to.altitude =13;
+			ROS_INFO("GEO GeoPoint %f %f %f -> %f %f %f", from.latitude, from.longitude, from.altitude, to.latitude, to.longitude, to.altitude);
 			//calc route
 			calcRoute(from, to);
 
@@ -535,6 +536,7 @@ namespace KCL_rosplan {
 
 			getGeoPoint(&to);
 			to.altitude =13;
+			ROS_INFO("GEO GeoPoint %f %f %f -> %f %f %f", from.latitude, from.longitude, from.altitude, to.latitude, to.longitude, to.altitude);
 			//calc route
 			calcRoute(from, to);
 
