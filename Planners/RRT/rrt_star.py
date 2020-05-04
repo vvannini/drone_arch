@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import math,random,sys,collections,re
-#import argparse
 from math import *
 import pygame
 import time
@@ -9,8 +8,10 @@ import json
 GeoPoint = collections.namedtuple('GeoPoint', 'latitude, longitude, altitude')
 CartesianPoint = collections.namedtuple('CartesianPoint', 'x, y, z')
 
-XDIM = 1000
-YDIM = 1000
+XDIM = 600
+YDIM = 600
+SIZEX = 4
+SIZEY = 4
 WINSIZE = [XDIM, YDIM]
 #JUMP = 7.0
 JUMP = 15.0
@@ -59,7 +60,7 @@ def dist(p1,p2):
 	return sqrt((p1[0]-p2[0])*(p1[0]-p2[0])+(p1[1]-p2[1])*(p1[1]-p2[1]))
 
 
-#Function that 
+
 def step_from_to(p1,p2):
 	if dist(p1,p2) < JUMP:
 		return p2
@@ -70,46 +71,14 @@ def step_from_to(p1,p2):
 
 
 def main():
-	'''parser = argparse.ArgumentParser()
 
-	#Type of points
-	parser.add_argument('-t','--point_type',required=False,default="cart",help='Define if the instances are geograpfic or cartesian     Ex: geo, cart')
-
-	#Initial point
-	parser.add_argument('-i','--initial_point',required=False,help='beggining point of algorithm separated by ","  Ex: 10.0,4.5')
-
-	#Goal point
-	parser.add_argument('-g','--goal_point',required=False,help='goal point of algorithm separated by "," Ex: 100.4,90.5')
- 
-	#graphic route
-	parser.add_argument('-p','--graphic',nargs='?',required=False,default=False,const=True,help='initializes the graphic route')
-
-	#Map file
-	parser.add_argument('-m','--mission_file',required=False,help='map file for RRT algorithm')
-
-	#Mission file
-	parser.add_argument('-n','--map_file',required=False,help='mission file for RRT algorithm')'''
-
-
-	'''try:
-		args = parser.parse_args()
-		#goalPoint = string_to_cart(args.goal_point)
-		#initPoint = string_to_cart(args.initial_point)
-		graph = args.graphic
-		if args.map_file != None:
-			coordinates = read_mission(args.mission_file)
-			initPoint = coordinates[0]
-			goalPoint = coordinates[1]
-	except Exception as e:
-		print(e)
-		print('Exiting...')
-		exit()'''
 
 	graph = False
 
 	param = sys.argv[1:]
 	initPoint = [float(param[0]),float(param[1])]
 	goalPoint = [float(param[2]),float(param[3])]
+	goal = [param[2],param[3]]
 	map_file = param[4]
 
 	obstacles = map_json(map_file)
@@ -120,21 +89,19 @@ def main():
 	initPoint = to_cartesian(initPoint,home)
 	goalPoint = to_cartesian(goalPoint,home)
 
+	#distx = initPoint[0]-(XDIM/2)
+	#disty = initPoint[1]-(YDIM/2)
 	distx = min([initPoint[0],goalPoint[0]])-(XDIM/2)
 	disty = min([initPoint[1],goalPoint[1]])-(YDIM/2)
-		
-	'''if min([initPoint[0],goalPoint[0]]) > 0:
-		transladox = 0
-	if min([initPoint[1],goalPoint[1]]) > 0:
-		transladoy = 0'''
-	initPoint  = (initPoint[0]/4 - distx,initPoint[1]/4 - disty)
+
+
+	initPoint  = ((initPoint[0] - distx)/SIZEX,(initPoint[1]-disty)/SIZEY)
 	
-	goalPoint = (goalPoint[0]/4 - distx,goalPoint[1]/4 - disty)
+	goalPoint = ((goalPoint[0] - distx)/SIZEX,(goalPoint[1] - disty)/SIZEY)
 	
 	for j in range(len(obstacles)):
 		for l in range(len(obstacles[j])):
-			obstacles[j][l] = (obstacles[j][l][0]/4 - distx,obstacles[j][l][1]/4 - disty)
-		print obstacles[j]
+			obstacles[j][l] = ((obstacles[j][l][0] - distx)/SIZEX,(obstacles[j][l][1] - disty)/SIZEY)
 
 
 	print("inicio "+str(initPoint[0])+" , "+str(initPoint[1]))
@@ -206,6 +173,7 @@ def main():
 
 		fim = time.time()
 		if dist(bestNode.get_point(),goalPoint) < 10.0 and (fim-init)>execution_time:
+			linhas = []
 			print("custo ideal: "+str(dist(initPoint,goalPoint)))
 			print("custo real: "+str(bestNode.get_cost()))
 			print("tempo de execucao: "+str(fim-init))
@@ -213,22 +181,27 @@ def main():
 			text = "           lng            lat            alt\n"
 			arquivo.write(text)
 			while bestNode.get_parent() != None:
-				point = CartesianPoint((bestNode.get_x() + distx)*4,(bestNode.get_y() + disty)*4,15)
+				point = CartesianPoint((bestNode.get_x()*SIZEX)+distx,(bestNode.get_y()*SIZEY)+disty,15)
 				point = to_geo_point(point,home)
 				text = str(round(point[1],9))+"  "+str(round(point[0],9))+"         15.000\n"
-				arquivo.write(text)
+				linhas.append(text)
+				#arquivo.write(text)
 				result = []
 				result.append(point)
-				#print node1.get_x()+distx,",",node1.get_y()+disty,"\n"
-				#print point[0]," , ",point[1]
+
 				bestNode = bestNode.get_parent()
 				aux = bestNode.get_parent()
 				if graph:
 					if aux != None:
 						pygame.draw.line(screen,[255, 0 , 0],bestNode.get_point(),aux.get_point())
 						pygame.display.update()
+			text = goal[0]+"  "+goal[1]+"         15.000\n"
+			linhas.append(text)
 			if graph:
 				time.sleep(3)
+
+			for w in range(1,len(linhas)):
+				arquivo.write(linhas[len(linhas)-1-w])
 
 			text = str(result[0][0])+"  "+str(result[0][1])+"         15.000"
 			arquivo.close
@@ -273,28 +246,6 @@ def not_colides(x,y,poly):
 		#print "colidiu"
 	return inside
 
-#verifys if the point colides with the obstacle
-'''def not_colides(p,obstacles):
-	cross = 0
-	for i in range(len(obstacles)):
-		for l in range(len(obstacles[i])):
-			n = l+1
-			if l == 3:
-				n = 1
-			a = obstacles[i][l]
-			b = obstacles[i][n]
-			r = (a[0]-b[0])*(p[1]-b[1])-(p[0]-b[0])*(a[1]-b[1])+a[0]*b[1]-a[1]-b[0]
-
-			if a[1]>b[1]:
-				aux = a
-				a = b
-				b = aux
-			if r>0:
-				cross = cross+1
-		if cross >= 4:
-			#print "colidiu no ponto: ",p
-			return False
-	return True'''
 
 
 #converts geograpfic to cartesian
@@ -327,92 +278,6 @@ def calc_longitude_x(lat_, longi_, x):
 	return ((x * 90) / (10008000 * math.cos(lat_ * math.pi / 180))) + longi_
 
 
-def read_mission(mission_file):
-	mission = open(mission_file,'r')
-	coordinates =[]
-	for line in mission:
-		words = line.strip()
-		words = words.replace('"',"")
-		words = words.split(":")
-		if words[0] == "geo_origin":
-			words[1] = words[1].replace('[','')
-			words[1] = words[1].replace(']','')
-			words[1] = words[1].replace(' ','')
-			words[1] = words[1].rstrip()
-			point = words[1].split(",")
-			point[0] = float(point[0])
-			point[1] = float(point[1])
-			del(point[3])
-			del(point[2])
-			coordinates.append(point)
-		elif words[0]  == "geo_destination":
-			words[1] = words[1].replace('[','')
-			words[1] = words[1].replace(']','')
-			words[1] = words[1].replace(' ','')
-			words[1] = words[1].rstrip()
-			point = words[1].split(",")
-			del(point[2])
-			point[0] = float(point[0])
-			point[1] = float(point[1])
-			coordinates.append(point)
-
-	mission.close()
-	return coordinates    #[initPoint, goalPoint]
-
-
-def read_map(map_file):
-	mapa = open(map_file,'r')
-	coordinates = []
-	obst_id = 1
-	home = 0
-	polygon = []
-	mission_lines = mapa.readlines()
-	for i in range(len(mission_lines)):
-		if re.search('\\bgeo_home\\b', mission_lines[i], re.IGNORECASE):
-			home = mission_lines[i]
-			home = home.strip()
-			home = home.replace('"','')
-			home = home.replace("geo_home:",'')
-			home = home.replace('[','')
-			home = home.replace(']','')
-			home = home.split(',')
-			home[0] = float(home[0])
-			home[1] = float(home[1])
-			home[2] = float(home[2])
-			del(home[3])
-			#coordinates.append(home)
-		'''parsed_json = json.loads(mission_lines[i])
-		print parsed_json
-		if parsed_json == "geo_home":
-			home = json.loads(parsed_json)
-			print "home é: ",home'''
-		mission_lines[i] = mission_lines[i].strip()
-		mission_lines[i] = mission_lines[i].replace('"','')
-		#print mission_lines[i]
-	for i in range(len(mission_lines)):
-			#coordinates.append('p')
-		if mission_lines[i] == "geo_points:[":
-			#coordinates.append(obst_id)
-			obst_id = obst_id+1
-			i = i+1
-			while mission_lines[i] != "]":
-				line = mission_lines[i].replace('[','')
-				line = line.replace(']','')
-				line = line.split(',')
-				line[0] = float(line[0])
-				line[1] = float(line[1])
-				line[2] = float(line[2])
-				#del(line[3])
-				line = to_cartesian(line,home)
-				polygon.append(line)
-				if len(line) == 4:
-					del(line[3])
-				i=i+1
-			coordinates.append(polygon)
-			polygon = []
-		#if mission_lines[i] == "areas_nao_navegaveis:[":
-			#coordinates.append('n')
-	#print coordinates[0]
 
 
 	mapa.close()
@@ -428,34 +293,18 @@ def map_json(map_file):
 
 	for i in range(len(z)):
 		coordinates.append(z[i]["geo_points"])
-		'''aux = z[i]["geo_points"]
-		print("coordenadas:::")
-		print(aux)
-		aux1 = [aux[i][1],aux[i][0]]
-		print(aux1)
-		coordinates.append(aux1)'''
 
 	for l in range(len(coordinates)):
 		for m in range(len(coordinates[l])):
 			aux = coordinates[l][m][0]
 			coordinates[l][m][0] = coordinates[l][m][1]
 			coordinates[l][m][1] = aux
-			#aux = (coordinates[l][m][1],coordinates[l][m][0])
 			del(coordinates[l][m][2])
 			coordinates[l][m] = to_cartesian(coordinates[l][m],home)
 
-	print(coordinates)
 	mapa.close()
 	return coordinates
 
-
-def create_route(result):
-	arquivo = open('/home/bob/drone_arch/Data/route.txt','w')
-	text = "           lng            lat            alt"
-	arquivo.write(text)
-	text = str(result[0][0])+"  "+str(result[0][1])+"         15.000"
-	arquivo.close
-	return
  
 
 if __name__ == '__main__':
