@@ -70,8 +70,42 @@ def step_from_to(p1,p2):
 
 
 def main():
+	'''parser = argparse.ArgumentParser()
 
-	graph = False
+	#Type of points
+	parser.add_argument('-t','--point_type',required=False,default="cart",help='Define if the instances are geograpfic or cartesian     Ex: geo, cart')
+
+	#Initial point
+	parser.add_argument('-i','--initial_point',required=False,help='beggining point of algorithm separated by ","  Ex: 10.0,4.5')
+
+	#Goal point
+	parser.add_argument('-g','--goal_point',required=False,help='goal point of algorithm separated by "," Ex: 100.4,90.5')
+ 
+	#graphic route
+	parser.add_argument('-p','--graphic',nargs='?',required=False,default=False,const=True,help='initializes the graphic route')
+
+	#Map file
+	parser.add_argument('-m','--mission_file',required=False,help='map file for RRT algorithm')
+
+	#Mission file
+	parser.add_argument('-n','--map_file',required=False,help='mission file for RRT algorithm')'''
+
+
+	'''try:
+		args = parser.parse_args()
+		#goalPoint = string_to_cart(args.goal_point)
+		#initPoint = string_to_cart(args.initial_point)
+		graph = args.graphic
+		if args.map_file != None:
+			coordinates = read_mission(args.mission_file)
+			initPoint = coordinates[0]
+			goalPoint = coordinates[1]
+	except Exception as e:
+		print(e)
+		print('Exiting...')
+		exit()'''
+
+	graph = True
 
 	param = sys.argv[1:]
 	initPoint = [float(param[0]),float(param[1])]
@@ -79,8 +113,8 @@ def main():
 	map_file = param[4]
 
 	obstacles = map_json(map_file)
-	print("obstaculos:\n ")
-	print(obstacles)
+	#print("obstaculos:\n ")
+	#print(obstacles)
 
 	
 	initPoint = to_cartesian(initPoint,home)
@@ -89,7 +123,10 @@ def main():
 	distx = min([initPoint[0],goalPoint[0]])-(XDIM/2)
 	disty = min([initPoint[1],goalPoint[1]])-(YDIM/2)
 		
-	
+	'''if min([initPoint[0],goalPoint[0]]) > 0:
+		transladox = 0
+	if min([initPoint[1],goalPoint[1]]) > 0:
+		transladoy = 0'''
 	initPoint  = (initPoint[0]/4 - distx,initPoint[1]/4 - disty)
 	
 	goalPoint = (goalPoint[0]/4 - distx,goalPoint[1]/4 - disty)
@@ -172,15 +209,13 @@ def main():
 			print("custo ideal: "+str(dist(initPoint,goalPoint)))
 			print("custo real: "+str(bestNode.get_cost()))
 			print("tempo de execucao: "+str(fim-init))
-			arquivo = open('/home/vannini/drone_arch/Data/route.txt','w')
+			arquivo = open('/home/bob/drone_arch/Data/route.txt','w')
 			text = "           lng            lat            alt\n"
 			arquivo.write(text)
-			print(text)
 			while bestNode.get_parent() != None:
 				point = CartesianPoint((bestNode.get_x() + distx)*4,(bestNode.get_y() + disty)*4,15)
 				point = to_geo_point(point,home)
 				text = str(round(point[1],9))+"  "+str(round(point[0],9))+"         15.000\n"
-				print(text)
 				arquivo.write(text)
 				result = []
 				result.append(point)
@@ -409,13 +444,13 @@ def map_json(map_file):
 			del(coordinates[l][m][2])
 			coordinates[l][m] = to_cartesian(coordinates[l][m],home)
 
-	#print(coordinates)
+	print(coordinates)
 	mapa.close()
 	return coordinates
 
 
 def create_route(result):
-	arquivo = open('/home/vannini/drone_arch/Data/route.txt','w')
+	arquivo = open('/home/bob/drone_arch/Data/route.txt','w')
 	text = "           lng            lat            alt"
 	arquivo.write(text)
 	text = str(result[0][0])+"  "+str(result[0][1])+"         15.000"

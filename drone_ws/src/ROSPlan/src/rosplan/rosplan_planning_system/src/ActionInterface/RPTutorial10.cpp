@@ -477,6 +477,8 @@ namespace KCL_rosplan {
 			ROS_INFO("GEO GeoPoint %f %f %f -> %f %f %f", from.latitude, from.longitude, from.altitude, to.latitude, to.longitude, to.altitude);
 			//calc route
 			calcRoute(from, to);
+			ros::Duration(100).sleep();
+
 
 
 
@@ -547,6 +549,8 @@ namespace KCL_rosplan {
 			ROS_INFO("GEO GeoPoint %f %f %f -> %f %f %f", from.latitude, from.longitude, from.altitude, to.latitude, to.longitude, to.altitude);
 			//calc route
 			calcRoute(from, to);
+			ros::Duration(100).sleep();
+
 
 
 
