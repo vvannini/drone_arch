@@ -76,6 +76,20 @@ def remove_goal(item):
     except rospy.ServiceException as e:
         print ("Service call failed: %s"%e)
 
+
+def get_goal(predicate_name):
+    instance = KnowledgeItem()
+    print ("Waiting for service")
+    rospy.wait_for_service('/rosplan_knowledge_base/state/goals')
+    try:
+        print ("Calling Service get_function")
+        query_proxy = rospy.ServiceProxy('rosplan_knowledge_base/state/goals', GetAttributeService)
+        instance = query_proxy(predicate_name)
+        #instance = instance.attributes[0]
+    except rospy.ServiceException as e:
+        print ("Service call failed: %s"%e)
+    return instance
+
 def get_function(function_name):
     instance = KnowledgeItem()
     print ("Waiting for service")
@@ -84,7 +98,20 @@ def get_function(function_name):
         print ("Calling Service get_function")
         query_proxy = rospy.ServiceProxy('rosplan_knowledge_base/state/functions', GetAttributeService)
         instance = query_proxy(function_name)
-        instance = instance.attributes[0]
+        #instance = instance.attributes[0]
+    except rospy.ServiceException as e:
+        print ("Service call failed: %s"%e)
+    return instance
+
+def get_predicate(predicate_name):
+    instance = KnowledgeItem()
+    print ("Waiting for service")
+    rospy.wait_for_service('/rosplan_knowledge_base/state/propositions')
+    try:
+        print ("Calling Service get_function")
+        query_proxy = rospy.ServiceProxy('rosplan_knowledge_base/state/propositions', GetAttributeService)
+        instance = query_proxy(predicate_name)
+        #instance = instance.attributes[0]
     except rospy.ServiceException as e:
         print ("Service call failed: %s"%e)
     return instance
@@ -118,10 +145,35 @@ def create_predicate(attribute_name, values, is_negative = False):
 
 #call_clear()
 
-obj = create_predicate("taken-image", [diagnostic_msgs.msg.KeyValue("region", "region_5")])
-add_goal(obj)
-f = get_function("total-goals")
-remove_instance(f)
+at = get_predicate("at").attributes[0]
+
+f = get_function("total-goals").attributes[0]
+
+print(get_goal(''))
+for goal in get_goal('').attributes:
+    if(goal.attribute_name != "at"):
+        for goal_achived in get_predicate(goal.attribute_name).attributes:
+            if(goal.values[0].value == goal_achived.values[0].value):
+                f.function_value = f.function_value - 1
+                remove_goal(goal)
+
+#remove_instance(at)
+#at.values[1].value = "region_1"
+
+goal = create_predicate("taken-image", [diagnostic_msgs.msg.KeyValue("region", "region_5")])
+add_goal(goal)
 f.function_value = f.function_value + 1
+
+bat = get_function("battery-amount").attributes[0]
+print("bat:")
+print(bat.function_value)
+
+print(at.values[1].value)
+add_instance(at)
+
 print(f.function_value)
 add_instance(f)
+# remove_instance(f)
+# f.function_value = f.function_value + 1
+# 
+# add_instance(f)

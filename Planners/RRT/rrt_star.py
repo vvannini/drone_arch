@@ -71,7 +71,7 @@ def step_from_to(p1,p2):
 
 def main():
 
-	graph = True
+	graph = False
 
 	param = sys.argv[1:]
 	initPoint = [float(param[0]),float(param[1])]
