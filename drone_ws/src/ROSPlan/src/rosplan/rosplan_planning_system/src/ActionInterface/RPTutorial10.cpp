@@ -20,6 +20,7 @@
 #include <mavros_msgs/WaypointClear.h>
 #include <mavros_msgs/WaypointSetCurrent.h>
 
+#include <signal.h>
 
 #include <fstream>
 #include<iomanip>
@@ -203,12 +204,16 @@ void takeoff(Drone drone)
 
 void getGeoPoint(GeoPoint *geo)
 {
+	string clear ="rm ~/drone_arch/Data/out.txt";
+	system(clear.c_str());
+
 	string command = "python3 ~/drone_arch/drone_ws/src/ROSPlan/src/rosplan/rosplan_planning_system/src/ActionInterface/pyemb7.py "+geo->name+" >> ~/drone_arch/Data/out.txt";
 	int result = 1;
 	system(command.c_str());
+
+	ifstream myfile ("/home/vannini/drone_arch/Data/out.txt");
 	// cout << result; 
 	string line;
-  	ifstream myfile ("/home/vannini/drone_arch/Data/out.txt");
   	if (myfile.is_open())
  	{
  		cout << "file opened" << endl;
@@ -218,12 +223,12 @@ void getGeoPoint(GeoPoint *geo)
     		if(result)
     		{
       			geo->latitude =  stod(line);
-      			cout << geo->latitude;
+      			cout << "latitude:" << geo->latitude << endl;
       			result = 0;
     		}
     		else
     			geo->longitude = stod(line);
-    			cout << geo->longitude;
+    			cout << "longitude: " << geo->longitude << endl;
     	}
     	myfile.clear();
     	myfile.close();
@@ -441,6 +446,17 @@ void callRoute(GeoPoint from, GeoPoint to)
 	system(command.c_str());
 }
 
+
+/*--------------------------------------------*/
+void mySigintHandler(int sig)
+{
+	// Do some custom action.
+	set_loiter();	
+	// All the default sigint handler does is call shutdown()
+	ros::shutdown();
+}
+/*--------------------------------------------*/
+
 namespace KCL_rosplan {
 
 	/* constructor */
@@ -477,7 +493,7 @@ namespace KCL_rosplan {
 			ROS_INFO("GEO GeoPoint %f %f %f -> %f %f %f", from.latitude, from.longitude, from.altitude, to.latitude, to.longitude, to.altitude);
 			//calc route
 			calcRoute(from, to);
-			ros::Duration(100).sleep();
+			ros::Duration(5).sleep();
 
 
 
@@ -549,7 +565,7 @@ namespace KCL_rosplan {
 			ROS_INFO("GEO GeoPoint %f %f %f -> %f %f %f", from.latitude, from.longitude, from.altitude, to.latitude, to.longitude, to.altitude);
 			//calc route
 			calcRoute(from, to);
-			ros::Duration(100).sleep();
+			ros::Duration(5).sleep();
 
 
 
@@ -799,6 +815,7 @@ namespace KCL_rosplan {
 
 		ros::init(argc, argv, "rosplan_tutorial_action", ros::init_options::AnonymousName);
 		ros::NodeHandle nh("~");
+		signal(SIGINT, mySigintHandler);
 		//ros::NodeHandle nh;
 
 		ros::Subscriber global 			= nh.subscribe("/mavros/mission/waypoints", 	1, &Mission::chatterCallback_wpqtd, 			&mission);

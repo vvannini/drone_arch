@@ -371,6 +371,154 @@
                 }
             }
         ]
+    },
+    {
+        "id": 11,
+        "name": "mix_2_3",
+        "map": 0,
+        "mission_execution": [
+            {
+                "command": "take_picture",
+                "instructions": {
+                    "area": "region_1"
+                }
+            },
+            {
+                "command": "take_picture",
+                "instructions": {
+                    "area": "region_4"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_6"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_8"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_11"
+                }
+            },
+            {
+                "command": "end",
+                "instructions": {
+                    "area": "base_3"
+                }
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "all",
+        "map": 0,
+        "mission_execution": [
+            {
+                "command": "take_picture",
+                "instructions": {
+                    "area": "region_1"
+                }
+            },
+            {
+                "command": "take_picture",
+                "instructions": {
+                    "area": "region_2"
+                }
+            },
+            {
+                "command": "take_picture",
+                "instructions": {
+                    "area": "region_3"
+                }
+            },
+            {
+                "command": "take_picture",
+                "instructions": {
+                    "area": "region_4"
+                }
+            },
+            {
+                "command": "take_picture",
+                "instructions": {
+                    "area": "region_5"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_8"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_7"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_6"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_9"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_10"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_11"
+                }
+            },
+            {
+                "command": "pulverize",
+                "instructions": {
+                    "area": "region_12"
+                }
+            },
+            {
+                "command": "end",
+                "instructions": {
+                    "area": "base_1"
+                }
+            }
+
+        ]
+    },
+    {
+        "id": 13,
+        "name": "photo_1",
+        "map": 0,
+        "mission_execution": [
+            {
+                "command": "take_picture",
+                "instructions": {
+                    "area": "region_2"
+                }
+            },
+            {
+                "command": "end",
+                "instructions": {
+                    "area": "base_1"
+                }
+            }
+        ]
     }
 
 

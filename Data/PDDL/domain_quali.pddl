@@ -63,6 +63,7 @@
         (can-go-to-base ?rover - rover)
         (has-pulverize-goal)
         (has-picture-goal)
+        (at-move)
 
         
     )
@@ -114,8 +115,10 @@
                 
         :effect
             (and 
+                (at end (not (at-move)))
                 (at end (at ?rover ?to-region))
                 (at end (been-at ?rover ?to-region))
+                (at start (at-move))
                 (at start (not (at ?rover ?from-region))) 
                 (at start (decrease (battery-amount ?rover) 
 			                	(*

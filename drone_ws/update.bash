@@ -1,8 +1,9 @@
-echo "Cancel atual plan"
-rosservice call /rosplan_plan_dispatcher/cancel_dispatch
+#echo "Cancel atual plan"
+#rosservice call /rosplan_plan_dispatcher/cancel_dispatch
 
-echo "Update Goal"
-python3 add_1_goal.py
+echo "Cancel atual plan & Update Goal"
+#python3 add_1_goal.py
+python3 add_1_goal_at_move.py 1
 
 echo "Generating a Problem"
 rosservice call /rosplan_problem_interface/problem_generation_server
