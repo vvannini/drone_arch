@@ -3,6 +3,10 @@ import math,random,sys,collections,re
 from math import *
 import time
 import json
+import os
+
+PATH = '~/drone_arch/Data/route.txt' #set 
+PATH = os.path.expanduser(PATH)
 
 GeoPoint = collections.namedtuple('GeoPoint', 'latitude, longitude, altitude')
 CartesianPoint = collections.namedtuple('CartesianPoint', 'x, y, z')
@@ -122,7 +126,7 @@ def main():
 		fim = time.time()
 		if dist(bestNode.get_point(),goalPoint) < 10.0 and (fim-init)>execution_time:
 			linhas = []
-			arquivo = open('/home/vannini/drone_arch/Data/route.txt','w')
+			arquivo = open(PATH,'w')
 			text = "           lng            lat            alt\n"
 			arquivo.write(text)
 			

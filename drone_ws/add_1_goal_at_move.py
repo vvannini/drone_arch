@@ -28,7 +28,8 @@ KB_ITEM_FUNCTION = 2
 KB_ITEM_EXPRESSION = 3
 KB_ITEM_INEQUALITY = 4
 
-PATH = '/home/vannini/drone_arch/Data/' #set 
+PATH = '~/drone_arch/Data/' #set 
+PATH = os.path.expanduser(PATH)
 
 latitude = 0
 longitude = 0

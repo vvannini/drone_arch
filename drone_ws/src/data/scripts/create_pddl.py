@@ -5,6 +5,7 @@ import rospy
 import math
 import json
 import time
+import os
 from std_srvs.srv import Empty
 from rosplan_knowledge_msgs.srv import *
 from rosplan_knowledge_msgs.msg import *
@@ -21,7 +22,8 @@ KB_ITEM_FUNCTION = 2
 KB_ITEM_EXPRESSION = 3
 KB_ITEM_INEQUALITY = 4
 
-PATH = '/home/vannini/drone_arch/Data/' #set 
+PATH = '~/drone_arch/Data/' #set 
+PATH = os.path.expanduser(PATH)
 
 
 # ---

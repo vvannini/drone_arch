@@ -27,7 +27,7 @@
 
 #include <cstdlib>
 using namespace std;
-
+std::string homepath = getenv("HOME");
 
 /* The implementation of RPTutorial.h */
 
@@ -211,7 +211,7 @@ void getGeoPoint(GeoPoint *geo)
 	int result = 1;
 	system(command.c_str());
 
-	ifstream myfile ("/home/vannini/drone_arch/Data/out.txt");
+	ifstream myfile ((homepath + "/drone_arch/Data/out.txt").c_str());
 	// cout << result; 
 	string line;
   	if (myfile.is_open())
@@ -243,7 +243,7 @@ int getRadius(string region)
 	system(command.c_str());
 	// cout << result; 
 	string line;
-  	ifstream myfile ("/home/vannini/drone_arch/Data/out.txt");
+  	ifstream myfile ((homepath + "/drone_arch/Data/out.txt").c_str());
   	if (myfile.is_open())
  	{
  		cout << "file opened" << endl;
@@ -272,7 +272,7 @@ void calcRoute(GeoPoint from, GeoPoint to)
 void calcRoute_pulverize(GeoPoint at, int radius)
 {
 	//string command = "python3 /home/vannini/drone_arch/Planners/simple-behaivors/circle.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " "+ to_string(radius);
-	string command = "python3 /home/vannini/drone_arch/Planners/simple-behaivors/circle.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " 50";
+	string command = "python3 ~/drone_arch/Planners/simple-behaivors/circle.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " 50";
 	//string command = "python3 /home/vannini/drone_arch/Planners/simple-behaivors/square.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " 250";
 	
 	system(command.c_str());
@@ -281,7 +281,7 @@ void calcRoute_pulverize(GeoPoint at, int radius)
 void calcRoute_picture(GeoPoint at, int distance)
 {
 	//string command = "python3 /home/vannini/drone_arch/Planners/simple-behaivors/circle.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " "+ to_string(radius);
-	string command = "python3 /home/vannini/drone_arch/Planners/simple-behaivors/square.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " 250";
+	string command = "python3 ~/drone_arch/Planners/simple-behaivors/square.py "+to_string(at.longitude)+" "+to_string(at.latitude)+" "+to_string(at.altitude)+ " 250";
 	system(command.c_str());
 }
 
@@ -302,7 +302,7 @@ int sendWPFile()
 
 
 	int index = 0;
-  	ifstream myfile ("/home/vannini/drone_arch/Data/route.txt");
+  	ifstream myfile ((homepath + "/drone_arch/Data/route.txt").c_str());
 
 
   	if (myfile.is_open())
@@ -382,7 +382,7 @@ int sendWPFile()
   	}
   	else 
   	{
-  		remove("/home/vannini/drone_arch/Data/route.txt");
+  		remove((homepath + "/drone_arch/Data/route.txt").c_str());
   		return 0;  
   	}
  	wp_clear_srv.request = {};
@@ -405,13 +405,13 @@ int sendWPFile()
   	if(wp_srv_client.call(wp_push_srv))
   	{
  	   ROS_INFO("Success:%d", (bool)wp_push_srv.response.success);
- 	   remove("/home/vannini/drone_arch/Data/route.txt");
+ 	   remove((homepath + "/drone_arch/Data/route.txt").c_str());
  	}
  	else
  	{
   	  ROS_ERROR("Waypoint couldn't been sent");
   	  ROS_INFO("Success:%d", (bool)wp_push_srv.response.success);
- 	  remove("/home/vannini/drone_arch/Data/route.txt");
+ 	  remove((homepath + "/drone_arch/Data/route.txt").c_str());
   	  return 0;
   	}
   	
@@ -474,6 +474,9 @@ namespace KCL_rosplan {
 		{	//adicionar um while(mission.Ended != true ) wait() 
 			// while(!mission.Ended)
 			// 	ros::Duration(10).sleep();
+
+			// ROS_ERROR("%s", homepath.c_str());
+			// ros::Duration(500).sleep();
 
 
 			mission.Ended = false;
