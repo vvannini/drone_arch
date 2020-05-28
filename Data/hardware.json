@@ -10,7 +10,7 @@
 	"battery-capacity": 100,
 	"recharge-rate-battery": 2.142,
 	"discharge-rate-battery":0.042,
-	"input-capacity": 2,
+	"input-capacity": 3,
 	"camera": {
 		"id": 0,
 		"name": "Camera Mavic Pro I",

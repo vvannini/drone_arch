@@ -428,17 +428,12 @@ if photo:
 
 
 for i in pulverize:
-	obj = create_predicate("pulverize-goal", [diagnostic_msgs.msg.KeyValue("region", i)])
-	add_instance(obj)
 	obj = create_predicate("pulverized", [diagnostic_msgs.msg.KeyValue("region", i)])
 	add_goal(obj)
 	total_goals = total_goals + 1
-	
 
 
 for i in photo:
-	obj = create_predicate("picture-goal", [diagnostic_msgs.msg.KeyValue("region", i)])
-	add_instance(obj)
 	obj = create_predicate("taken-image", [diagnostic_msgs.msg.KeyValue("region", i)])
 	add_goal(obj)
 	total_goals = total_goals + 1

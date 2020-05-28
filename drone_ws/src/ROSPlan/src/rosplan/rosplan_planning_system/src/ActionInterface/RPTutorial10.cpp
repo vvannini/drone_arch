@@ -470,7 +470,11 @@ namespace KCL_rosplan {
 		
 
 		// The action implementation goes here.
-		if (strcmp(msg->name.c_str(), "go_to") == 0)
+		// if (strcmp(msg->name.c_str(), "go_to") == 0)
+		string str = msg->name.c_str();
+		string str1 = "go_to";
+		size_t found = str.find(str1); 
+    	if (found != string::npos) 
 		{	//adicionar um while(mission.Ended != true ) wait() 
 			// while(!mission.Ended)
 			// 	ros::Duration(10).sleep();
@@ -544,80 +548,80 @@ namespace KCL_rosplan {
 			return true;
 
 		} 
-		else if (strcmp(msg->name.c_str(), "go_to_base") == 0)
-		{	//adicionar um while(mission.Ended != true ) wait() 
-			// while(!mission.Ended)
-			// 	ros::Duration(10).sleep();
+		// else if (strcmp(msg->name.c_str(), "go_to_base") == 0)
+		// {	//adicionar um while(mission.Ended != true ) wait() 
+		// 	// while(!mission.Ended)
+		// 	// 	ros::Duration(10).sleep();
 
 
-			mission.Ended = false;
-			GeoPoint from, to;
-			//get coordinates
-			from.name = msg->parameters[1].value.c_str();
-			to.name = msg->parameters[2].value.c_str();
-			ROS_INFO("go_to_base %s->%s", from.name.c_str(), to.name.c_str());
+		// 	mission.Ended = false;
+		// 	GeoPoint from, to;
+		// 	//get coordinates
+		// 	from.name = msg->parameters[1].value.c_str();
+		// 	to.name = msg->parameters[2].value.c_str();
+		// 	ROS_INFO("go_to_base %s->%s", from.name.c_str(), to.name.c_str());
 			
-			//getGeoPoint(&from);
-			from.latitude = drone.position.latitude;
-			from.longitude = drone.position.longitude;
-			from.altitude = 15;
+		// 	//getGeoPoint(&from);
+		// 	from.latitude = drone.position.latitude;
+		// 	from.longitude = drone.position.longitude;
+		// 	from.altitude = 15;
 
 
-			getGeoPoint(&to);
-			to.altitude =13;
-			ROS_INFO("GEO GeoPoint %f %f %f -> %f %f %f", from.latitude, from.longitude, from.altitude, to.latitude, to.longitude, to.altitude);
-			//calc route
-			calcRoute(from, to);
-			ros::Duration(5).sleep();
+		// 	getGeoPoint(&to);
+		// 	to.altitude =13;
+		// 	ROS_INFO("GEO GeoPoint %f %f %f -> %f %f %f", from.latitude, from.longitude, from.altitude, to.latitude, to.longitude, to.altitude);
+		// 	//calc route
+		// 	calcRoute(from, to);
+		// 	ros::Duration(5).sleep();
 
 
 
 
-			//is flying?
-				//is armed
-			while(!drone.current_state.armed && drone.ex_current_state.landed_state != 2)
-			{
-				set_loiter();
-				arm();
-				takeoff(drone);
-			}
-			ros::Duration(10).sleep();
-			set_loiter();
-			//arm();
-			//takeoff(drone);
-			//send route 
-			if(!sendWPFile())
-				callRoute(from, to);
-			ros::Duration(20).sleep();
+		// 	//is flying?
+		// 		//is armed
+		// 	while(!drone.current_state.armed && drone.ex_current_state.landed_state != 2)
+		// 	{
+		// 		set_loiter();
+		// 		arm();
+		// 		takeoff(drone);
+		// 	}
+		// 	ros::Duration(10).sleep();
+		// 	set_loiter();
+		// 	//arm();
+		// 	//takeoff(drone);
+		// 	//send route 
+		// 	if(!sendWPFile())
+		// 		callRoute(from, to);
+		// 	ros::Duration(20).sleep();
 
-			//change to auto
-			// while(drone.current_state.mode != "AUTO.MISSION"){
-				// ROS_INFO("current: %d", mission.currentWP);
-			set_auto();	
-			// }
+		// 	//change to auto
+		// 	// while(drone.current_state.mode != "AUTO.MISSION"){
+		// 		// ROS_INFO("current: %d", mission.currentWP);
+		// 	set_auto();	
+		// 	// }
 
 			
-			while(!mission.Ended){
-				ros::Duration(10).sleep();
-			}
-			//while not at the end, wait
-			//reset_mission();
-			set_loiter();
+		// 	while(!mission.Ended){
+		// 		ros::Duration(10).sleep();
+		// 	}
+		// 	//while not at the end, wait
+		// 	//reset_mission();
+		// 	set_loiter();
 
-			//land after arive to base
+		// 	//land after arive to base
 
-			while(!drone.current_state.armed && drone.ex_current_state.landed_state != 2)
-			{
-				set_loiter();
-				arm();
-				takeoff(drone);
-			}
+		// 	while(!drone.current_state.armed && drone.ex_current_state.landed_state != 2)
+		// 	{
+		// 		set_loiter();
+		// 		arm();
+		// 		takeoff(drone);
+		// 	}
 			
 
-			ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
-			return true;
+		// 	ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
+		// 	return true;
 
-		} 
+		// } 
 		else if (strcmp(msg->name.c_str(), "pulverize_region") == 0)
 		{			
 			// string region = msg->parameters[1].value.c_str();

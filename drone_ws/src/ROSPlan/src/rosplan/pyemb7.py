@@ -3,8 +3,10 @@ import rospy
 import math
 import json
 import time
+import os
 
-PATH = '/home/vannini/drone_arch/Data/' 
+PATH = '~/drone_arch/Data/' #set 
+PATH = os.path.expanduser(PATH)
 
 
 def get_region(mapa_json, name):

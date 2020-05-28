@@ -1,0 +1,338 @@
+[
+{
+	"id": 0,
+	"name": "farm",
+	"requirements": ["typing", "durative-actions", "fluents", "duration-inequalities", "strips", "disjunctive-preconditions", "action-costs"],
+	"types": [
+		{
+            "name": "rover",
+            "type": "object"
+        },
+        {
+            "name": "region",
+            "type": "object"
+        },
+        {
+            "name": "base",
+            "type": "region"
+        }
+	],
+	"functions": [
+		{
+            "name": "battery-amount",
+            "var": [
+            	{
+	                "name": "rover",
+	                "type": "rover"
+		        }
+            ]
+        },
+        {
+            "name": "input-amount",
+            "var": [
+            	{
+	                "name": "rover",
+	                "type": "rover"
+		        }
+            ]
+        },
+        {
+            "name": "recharge-rate-battery",
+            "var": [
+            	{
+	                "name": "rover",
+	                "type": "rover"
+		        }
+            ]
+        },
+        {
+            "name": "recharge-rate-input",
+            "var": [
+            	{
+	                "name": "rover",
+	                "type": "rover"
+		        }
+            ]
+        },
+        {
+            "name": "discharge-rate-battery",
+            "var": [
+            	{
+	                "name": "rover",
+	                "type": "rover"
+		        }
+            ]
+        },
+        {
+            "name": "battery-capacity",
+            "var": [
+            	{
+	                "name": "rover",
+	                "type": "rover"
+		        }
+            ]
+        },
+        {
+            "name": "input-capacity",
+            "var": [
+            	{
+	                "name": "rover",
+	                "type": "rover"
+		        }
+            ]
+        },
+        {
+            "name": "distance",
+            "var": [
+            	{
+	                "name": "from-region",
+	                "type": "region"
+		        },
+		        {
+	                "name": "to-region",
+	                "type": "region"
+		        }
+            ]
+        },
+        {
+            "name": "velocity",
+            "var": [
+            	{
+	                "name": "rover",
+	                "type": "rover"
+		        }
+            ]
+        },
+        {
+            "name": "total-goals",
+            "var": []
+        },
+        {
+            "name": "goals-achived",
+            "var": []
+        }
+	],
+	"predicates": [
+		{
+            "name": "been-at",
+            "var": [
+            	{
+	                "name": "rover",
+	                "type": "rover"
+		        },
+		        {
+	                "name": "region",
+	                "type": "region"
+		        }
+            ]
+        },
+        {
+            "name": "carry",
+            "var": [
+            	{
+	                "name": "rover",
+	                "type": "rover"
+		        }
+            ]
+        },
+        {
+            "name": "at",
+            "var": [
+            	{
+	                "name": "rover",
+	                "type": "rover"
+		        },
+		        {
+	                "name": "region",
+	                "type": "region"
+		        }
+            ]
+        },
+        {
+            "name": "is-recharging-dock",
+            "var": [
+            	{
+	                "name": "region",
+	                "type": "region"
+		        }
+            ]
+        },
+        {
+            "name": "can-spray",
+            "var": [
+            	{
+	                "name": "rover",
+	                "type": "rover"
+		        }
+            ]
+        },
+        {
+            "name": "can-recharge",
+            "var": [
+            	{
+	                "name": "rover",
+	                "type": "rover"
+		        }
+            ]
+        },
+        {
+            "name": "taken-image",
+            "var": [
+            	{
+	                "name": "region",
+	                "type": "region"
+		        }
+            ]
+        },
+        {
+            "name": "pulverized",
+            "var": [
+            	{
+	                "name": "region",
+	                "type": "region"
+		        }
+            ]
+        },
+        {
+            "name": "can-go",
+            "var": [
+            	{
+	                "name": "rover",
+	                "type": "rover"
+		        }
+            ]
+        },
+        {
+            "name": "can-take-pic",
+            "var": [
+            	{
+	                "name": "rover",
+	                "type": "rover"
+		        }
+            ]
+        },
+        {
+            "name": "its-not-base",
+            "var": [
+            	{
+	                "name": "region",
+	                "type": "region"
+		        }
+            ]
+        },
+        {
+            "name": "can-go-to-base",
+            "var": [
+            	{
+	                "name": "rover",
+	                "type": "rover"
+		        }
+            ]
+        },
+        {
+            "name": "has-pulverize-goal",
+            "var": []
+        },
+        {
+            "name": "has-picture-goal",
+            "var": []
+        },
+        {
+            "name": "at-move",
+            "var": []
+        }
+	],
+	"actions":[
+		{
+			"name": "clean_camera",
+			"parameters":[
+				{
+	                "name": "rover",
+	                "type": "rover"
+		        },
+		        {
+	                "name": "region",
+	                "type": "base"
+		        }
+
+			],
+			"duration": "8",
+			"condition":[
+				{
+					"time": "over all",
+					"is-negative": 0,
+					"predicate": "at",
+					"parameters":["rover", "region"]
+				}
+			],
+			"effect":[
+				{
+					"time": "at start",
+					"is-negative": 0,
+					"predicate": "can-take-pic",
+					"parameters": ["rover"]
+
+				}
+			]
+
+		},
+		{
+			"name": "go_to",
+			"parameters":[
+				{
+	                "name": "rover",
+	                "type": "rover"
+		        },
+		        {
+	                "name": "from-region",
+	                "type": "region"
+		        },
+		        {
+	                "name": "to-region",
+	                "type": "region"
+		        }
+
+			],
+			"duration": "(/ (distance ?from-region ?to-region) (velocity ?rover))",
+			"condition":[
+				{
+					"time": "over all",
+					"is-negative": 0,
+					"predicate": "its-not-base",
+					"parameters":["to-region"]
+				},
+				{
+					"time": "over all",
+					"is-negative": 0,					
+					"predicate": "can-go",
+					"parameters":["rover"]
+				},
+				{
+					"time": "at start",
+					"is-negative": 0,
+					"predicate": "at",
+					"parameters":["rover", "from-region"]
+				},
+				{
+					"time": "at start",
+					"is-negative": 0,
+					"predicate": "hw-ready",
+					"parameters":["rover"]
+				}
+			],
+			"effect":[
+				{
+					"time": "at end",
+					"is-negative": 1,
+					"predicate": "at-move",
+					"parameters": ["rover"]
+
+				}
+			]
+
+		}
+		
+	]
+}
+
+]
