@@ -29,7 +29,8 @@
         (distance ?from-region - region ?to-region - region)
         ;;velocidade em m/s
         (velocity ?rover - rover)
-
+        (picture-path-len ?region - region)
+        (pulverize-path-len ?region - region)
         (total-goals)
         (goals-achived)
     )
@@ -101,13 +102,24 @@
                 (at start (at ?rover ?from-region))
                 (at start (has-picture-goal)) 
                 (at start (> (battery-amount ?rover) 
-                  (*
-                      (/
-                          (distance ?from-region ?to-region)
-                          (velocity ?rover)
-                      )
-                      (discharge-rate-battery ?rover)
-                  )
+                        (+
+                          (*
+                              (/
+                                  (distance ?from-region ?to-region)
+                                  (velocity ?rover)
+                              )
+                              (discharge-rate-battery ?rover)
+                          )
+
+                          (*
+                              (/
+                                  (picture-path-len ?to-region)
+                                  (velocity ?rover)
+                              )
+                              (discharge-rate-battery ?rover)
+                          )
+                      ) 
+
                   )
                 )
             )
@@ -153,13 +165,33 @@
                 ;(at start (hw-ready ?rover ?from-region ?to-region))
                 (at start (has-pulverize-goal))
                 (at start (> (input-amount ?rover) 0))
+                ; (at start (> (battery-amount ?rover) 
+                ;   (*
+                ;       (/
+                ;           (distance ?from-region ?to-region)
+                ;           (velocity ?rover)
+                ;       )
+                ;       (discharge-rate-battery ?rover)
+                ;   )
+                ;   )
+                ; )
                 (at start (> (battery-amount ?rover) 
-                  (*
-                      (/
-                          (distance ?from-region ?to-region)
-                          (velocity ?rover)
+                  (+
+                      (*
+                          (/
+                              (distance ?from-region ?to-region)
+                              (velocity ?rover)
+                          )
+                          (discharge-rate-battery ?rover)
                       )
-                      (discharge-rate-battery ?rover)
+
+                      (*
+                          (/
+                              (pulverize-path-len ?to-region)
+                              (velocity ?rover)
+                          )
+                          (discharge-rate-battery ?rover)
+                      )
                   )
                   )
                 )
@@ -189,7 +221,7 @@
     (:durative-action need_battery
         :parameters (?rover - rover)
         :duration (= ?duration 1)
-        :condition (and (at start (< (battery-amount ?rover) 15)))
+        :condition (and (at start (< (battery-amount ?rover) 30)))
         :effect 
             (and 
                 (at start (can-go-to-base ?rover))
