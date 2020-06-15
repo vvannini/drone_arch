@@ -6,7 +6,7 @@ rm ../Data/out.txt
 rm ../Data/route.txt
 
 echo "Update KB"
-python3 src/data/scripts/create_pddl.py $1
+python3 src/data/scripts/create_pddl_global.py $1
 
 echo "Generating a Problem"
 rosservice call /rosplan_problem_interface/problem_generation_server
