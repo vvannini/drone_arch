@@ -4,16 +4,16 @@
   <!-- :::arguments::: -->
 
   <!-- pddl domain path -->
-  <arg name="domain_path"  default="$(find rosplan_planning_system)/test/pddl/turtlebot/domain.pddl" />
+  <arg name="domain_path"  default="$(find data)/pddl/domain.pddl" />
 
   <!-- load a particular initial state into KB at startup (optional) -->
   <arg name="problem_path" default="" />
 
   <!-- automatically generated pddl problem will be created here -->
-  <arg name="autom_gen_problem_path" default="$(find rosplan_planning_system)/test/pddl/turtlebot/problem.pddl" />
+  <arg name="autom_gen_problem_path" default="$(find data)/pddl/problem.pddl" />
 
   <!-- planner will produce output plan and write to this location -->
-  <arg name="data_path" default="$(find rosplan_planning_system)/test/pddl/turtlebot/" />
+  <arg name="data_path" default="$(find data)/pddl/" />
 
   <!-- use problem.pddl or receive problem from topic -->
   <arg name="use_problem_topic" default="true" />
@@ -46,6 +46,9 @@
     <arg name="problem_path"         value="$(arg autom_gen_problem_path)" />
     <arg name="data_path"            value="$(arg data_path)" />
     <arg name="planner_command"      value="timeout 20 $(find rosplan_planning_system)/common/bin/popf DOMAIN PROBLEM" />
+    <!-- <arg name="planner_command"      value="timeout 10 $(find rosplan_planning_system)/common/bin/lpg-td -f PROBLEM -o DOMAIN -speed -noout"/> -->
+    <!-- <arg name="planner_command"      value="timeout 10 $(find rosplan_planning_system)/common/bin/Metric-FF -o DOMAIN -f PROBLEM"/> NAO É TEMPORAL -->
+    <!-- <arg name="planner_command"      value="timeout 10 $(find rosplan_planning_system)/common/bin/Contingent-FF -o DOMAIN -f PROBLEM"/>NAO É TEMPORAL -->
   </include>
 
   <!-- plan parsing -->

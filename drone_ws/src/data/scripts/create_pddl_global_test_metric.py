@@ -322,7 +322,7 @@ with open(hw_filename, "r") as hw_file:
 # pulverize = get_objectives(mission, command='pulverize')
 # photo = get_objectives(mission, command='take_picture')
 # end = get_objectives(mission, command='end')
-# total_goals = 0
+total_goals = 0
 
 # # inputs = ["input1"]
 # # cameras = ["camera1"]
@@ -385,24 +385,27 @@ for b in base:
 	add_instance(obj)
 	add_instance(obj2)
 
+obj = []
+obj.append(create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "base_1"), diagnostic_msgs.msg.KeyValue("region", "region_1")], 100))
+obj.append(create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "base_1"), diagnostic_msgs.msg.KeyValue("region", "region_2")], 500))
+obj.append(create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "base_1"), diagnostic_msgs.msg.KeyValue("region", "region_3")], 900))
 
-obj = create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "base_1"), diagnostic_msgs.msg.KeyValue("region", "region_1")], 100)
-obj = create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "base_1"), diagnostic_msgs.msg.KeyValue("region", "region_2")], 500)
-obj = create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "base_1"), diagnostic_msgs.msg.KeyValue("region", "region_3")], 900)
+obj.append(create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "region_1"), diagnostic_msgs.msg.KeyValue("region", "region_2")], 100))
+obj.append(create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "region_1"), diagnostic_msgs.msg.KeyValue("region", "base_1")], 500))
+obj.append(create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "region_1"), diagnostic_msgs.msg.KeyValue("region", "region_3")], 900))
 
-obj = create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "region_1"), diagnostic_msgs.msg.KeyValue("region", "region_2")], 100)
-obj = create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "region_1"), diagnostic_msgs.msg.KeyValue("region", "base_1")], 500)
-obj = create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "region_1"), diagnostic_msgs.msg.KeyValue("region", "region_3")], 900)
+obj.append(create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "region_2"), diagnostic_msgs.msg.KeyValue("region", "region_3")], 100))
+obj.append(create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "region_2"), diagnostic_msgs.msg.KeyValue("region", "base_1")], 500))
+obj.append(create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "region_2"), diagnostic_msgs.msg.KeyValue("region", "region_1")], 900))
 
-obj = create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "region_2"), diagnostic_msgs.msg.KeyValue("region", "region_3")], 100)
-obj = create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "region_2"), diagnostic_msgs.msg.KeyValue("region", "base_2")], 500)
-obj = create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "region_2"), diagnostic_msgs.msg.KeyValue("region", "region_1")], 900)
+obj.append(create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "region_3"), diagnostic_msgs.msg.KeyValue("region", "region_2")], 100))
+obj.append(create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "region_3"), diagnostic_msgs.msg.KeyValue("region", "base_1")], 100))
+obj.append(create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "region_3"), diagnostic_msgs.msg.KeyValue("region", "region_1")], 100))
 
-obj = create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "region_3"), diagnostic_msgs.msg.KeyValue("region", "region_2")], 100)
-obj = create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "region_3"), diagnostic_msgs.msg.KeyValue("region", "base_1")], 100)
-obj = create_function("distance", [diagnostic_msgs.msg.KeyValue("region", "region_3"), diagnostic_msgs.msg.KeyValue("region", "region_1")], 100)
+for i in obj:
+	add_instance(i)
 
-
+pulverize = []
 if pulverize:
 	obj = create_predicate("has-pulverize-goal", [])
 	add_instance(obj)
@@ -458,4 +461,3 @@ obj = create_metric("minimize (total-time)",[] )
 # print(obj)
 add_metric(obj)
 
-print(maior)

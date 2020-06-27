@@ -287,188 +287,175 @@ def create_metric(optimization, item):
 	
 	return instance
 
+def main():
+	args = sys.argv
+
+	#get file names
+	mapa_filename = PATH + "mapa.json"
+	mission_filename = PATH + "missao.json"
+	hw_filename = PATH + "hardware.json"
+
+	#open files
+	mission_id = int(args[1])
+	with open(mission_filename, "r") as mission_file:
+			mission_file = json.load(mission_file)
+			mission = mission_file[mission_id]
+
+	mapa_id = 0
+
+	with open(mapa_filename, "r") as mapa_file:
+			mapa_file = json.load(mapa_file)
+			mapa = mapa_file[mapa_id]
+
+	hw_id = 0
+	with open(hw_filename, "r") as hw_file:
+			hw_file = json.load(hw_file)
+			hardware = hw_file[hw_id]
+
+			# rostopic echo /rosplan_problem_interface/problem_instance -n 1
 
 
-args = sys.argv
-mapa_filename = PATH + "mapa.json"
-mission_filename = PATH + "missao.json"
-hw_filename = PATH + "hardware.json"
+	#read objects
+	regions_obj, regions_names, labels, geo_home = read_json(mission, mapa)
 
-mission_id = int(args[1])
-with open(mission_filename, "r") as mission_file:
-		mission_file = json.load(mission_file)
-		mission = mission_file[mission_id]
+	regions  = get_regions(mapa)
+	base = get_bases(mapa)
+	pulverize = get_objectives(mission, command='pulverize')
+	photo = get_objectives(mission, command='take_picture')
+	end = get_objectives(mission, command='end')
+	total_goals = 0
 
-mapa_id = 0
-
-with open(mapa_filename, "r") as mapa_file:
-		mapa_file = json.load(mapa_file)
-		mapa = mapa_file[mapa_id]
-
-hw_id = 0
-with open(hw_filename, "r") as hw_file:
-		hw_file = json.load(hw_file)
-		hardware = hw_file[hw_id]
-
-		# rostopic echo /rosplan_problem_interface/problem_instance -n 1
+	# inputs = ["input1"]
+	# cameras = ["camera1"]
+	rover = ["kenny"]
 
 
-regions_obj, regions_names, labels, geo_home = read_json(mission, mapa)
+	distances = format_distances(calc_distances(regions_obj), regions_names)
 
-regions  = get_regions(mapa)
-base = get_bases(mapa)
-pulverize = get_objectives(mission, command='pulverize')
-photo = get_objectives(mission, command='take_picture')
-end = get_objectives(mission, command='end')
-total_goals = 0
+	call_clear()
 
-# inputs = ["input1"]
-# cameras = ["camera1"]
-rover = ["kenny"]
+	# set drone init
 
-
-distances = format_distances(calc_distances(regions_obj), regions_names)
-
-call_clear()
-
-# set drone init
-
-
-obj = create_predicate("at", [diagnostic_msgs.msg.KeyValue("rover", hardware["name"]), diagnostic_msgs.msg.KeyValue("region", "base_1")])
-add_instance(obj)
-
-obj = create_predicate("can-go", [diagnostic_msgs.msg.KeyValue("rover", hardware["name"])])
-add_instance(obj)
-
-obj = create_predicate("can-take-pic", [diagnostic_msgs.msg.KeyValue("rover", hardware["name"])])
-add_instance(obj)
-
-obj = create_function("battery-capacity",[diagnostic_msgs.msg.KeyValue("rover", hardware["name"])], hardware["battery-capacity"])
-#print(obj)
-add_instance(obj)
-
-obj = create_function("velocity",[diagnostic_msgs.msg.KeyValue("rover", hardware["name"])], hardware["efficient_velocity"])
-add_instance(obj)
-
-obj = create_function("battery-amount",[diagnostic_msgs.msg.KeyValue("rover", hardware["name"])], 100)
-add_instance(obj)
-
-
-obj = create_function("recharge-rate-battery",[diagnostic_msgs.msg.KeyValue("rover", hardware["name"])], hardware["recharge-rate-battery"])
-add_instance(obj)
-
-obj = create_function("discharge-rate-battery",[diagnostic_msgs.msg.KeyValue("rover", hardware["name"])], hardware["discharge-rate-battery"])
-add_instance(obj)
-
-obj = create_function("input-amount",[diagnostic_msgs.msg.KeyValue("rover", hardware["name"])], 0)
-add_instance(obj)
-
-obj = create_function("input-capacity",[diagnostic_msgs.msg.KeyValue("rover", hardware["name"])], hardware["input-capacity"])
-add_instance(obj)
-
-
-
-for r in regions:
-	obj = create_object(str(r), "region")
-	obj2 = create_predicate("its-not-base", [diagnostic_msgs.msg.KeyValue("region", r)])
-	add_instance(obj)    
-	add_instance(obj2)
-
-
-for b in base:
-	obj = create_object(str(b), "base")
+	#adding objetcts to knowlege base
+	obj = create_predicate("at", [diagnostic_msgs.msg.KeyValue("rover", hardware["name"]), diagnostic_msgs.msg.KeyValue("region", "base_1")])
 	add_instance(obj)
 
-# for i in inputs:
-#     obj = create_object(str(i), "input")
-#     add_instance(obj)
-
-# for p in pulverize:
-#     obj = create_object(str(p), "objective")
-#     add_instance(obj)
-
-# for p in photo:
-#     obj = create_object(str(p), "photo")
-#     add_instance(obj)
-
-# for c in cameras:
-#     obj = create_object(str(c), "camera")
-#     add_instance(obj)
-
-for r in rover:
-	obj = create_object(str(r), "rover")
+	obj = create_predicate("can-go", [diagnostic_msgs.msg.KeyValue("rover", hardware["name"])])
 	add_instance(obj)
 
-maior = 0
-for d in distances:
-	obj = create_function("distance", d.values, d.function_value)
-	if (maior < d.function_value):
-		maior = d.function_value
+	obj = create_predicate("can-take-pic", [diagnostic_msgs.msg.KeyValue("rover", hardware["name"])])
+	add_instance(obj)
+
+	obj = create_function("battery-capacity",[diagnostic_msgs.msg.KeyValue("rover", hardware["name"])], hardware["battery-capacity"])
+	add_instance(obj)
+
+	obj = create_function("velocity",[diagnostic_msgs.msg.KeyValue("rover", hardware["name"])], hardware["efficient_velocity"])
+	add_instance(obj)
+
+	obj = create_function("battery-amount",[diagnostic_msgs.msg.KeyValue("rover", hardware["name"])], 100)
 	add_instance(obj)
 
 
-# for i in get_objectives(mission, command='take_picture', sufix='_photo'):
-# 	for j in get_objectives(mission, command='take_picture', sufix=''):
-# 		# obj = create_predicate("is-visible", [diagnostic_msgs.msg.KeyValue("photo", i), diagnostic_msgs.msg.KeyValue("region", j)])
-# 		# print(obj)
-# 		add_instance(obj)
-
-# for i in get_objectives(mission, command='pulverize', sufix='_objective'):
-# 	for j in get_objectives(mission, command='pulverize', sufix=''):
-# 		# obj = create_predicate("is-visible", [diagnostic_msgs.msg.KeyValue("objective", i), diagnostic_msgs.msg.KeyValue("region", j)])
-# 		add_instance(obj)
-
-if pulverize:
-	obj = create_predicate("has-pulverize-goal", [])
+	obj = create_function("recharge-rate-battery",[diagnostic_msgs.msg.KeyValue("rover", hardware["name"])], hardware["recharge-rate-battery"])
 	add_instance(obj)
 
-if photo:
-	obj = create_predicate("has-picture-goal", [])
+	obj = create_function("discharge-rate-battery",[diagnostic_msgs.msg.KeyValue("rover", hardware["name"])], hardware["discharge-rate-battery"])
+	add_instance(obj)
+
+	obj = create_function("input-amount",[diagnostic_msgs.msg.KeyValue("rover", hardware["name"])], 0)
+	add_instance(obj)
+
+	obj = create_function("input-capacity",[diagnostic_msgs.msg.KeyValue("rover", hardware["name"])], hardware["input-capacity"])
 	add_instance(obj)
 
 
-for i in pulverize:
-	obj = create_predicate("pulverize-goal", [diagnostic_msgs.msg.KeyValue("region", i)])
+
+	for r in regions:
+		obj = create_object(str(r), "region")
+		obj2 = create_predicate("its-not-base", [diagnostic_msgs.msg.KeyValue("region", r)])
+		add_instance(obj)    
+		add_instance(obj2)
+
+
+	for b in base:
+		obj = create_object(str(b), "base")
+		add_instance(obj)
+
+	for r in rover:
+		obj = create_object(str(r), "rover")
+		add_instance(obj)
+
+	maior = 0
+	for d in distances:
+		obj = create_function("distance", d.values, d.function_value)
+		if (maior < d.function_value):
+			maior = d.function_value
+		add_instance(obj)
+
+	if pulverize:
+		obj = create_predicate("has-pulverize-goal", [])
+		add_instance(obj)
+
+	if photo:
+		obj = create_predicate("has-picture-goal", [])
+		add_instance(obj)
+
+
+	for i in pulverize:
+		obj = create_predicate("pulverize-goal", [diagnostic_msgs.msg.KeyValue("region", i)])
+		add_instance(obj)
+		obj = create_function("pulverize-path-len",[diagnostic_msgs.msg.KeyValue("region", i)], 314)
+		add_instance(obj)
+		obj = create_predicate("pulverized", [diagnostic_msgs.msg.KeyValue("region", i)])
+		add_goal(obj)
+		total_goals = total_goals + 1
+		
+
+
+	for i in photo:
+		obj = create_predicate("picture-goal", [diagnostic_msgs.msg.KeyValue("region", i)])
+		add_instance(obj)
+		obj = create_function("picture-path-len",[diagnostic_msgs.msg.KeyValue("region", i)], 1000)
+		add_instance(obj)
+		obj = create_predicate("taken-image", [diagnostic_msgs.msg.KeyValue("region", i)])
+		add_goal(obj)
+		total_goals = total_goals + 1
+
+	for i in end:
+		obj = create_predicate("at", [diagnostic_msgs.msg.KeyValue("rover", hardware["name"]), diagnostic_msgs.msg.KeyValue("region", i)])
+		add_goal(obj)
+
+	 # {list_to_str([f'(pulverized {i} {b})' for i in inputs for b in get_objectives(missao_json, command='pulverize', sufix='_objective')], prefix=' ;', last_prefix=' ;', diff=True)}
+
+
+	obj = create_function("total-goals",[],total_goals)
+	print(obj)
 	add_instance(obj)
-	obj = create_function("pulverize-path-len",[diagnostic_msgs.msg.KeyValue("region", i)], 314)
+
+	obj = create_function("goals-achived",[], 0)
 	add_instance(obj)
-	obj = create_predicate("pulverized", [diagnostic_msgs.msg.KeyValue("region", i)])
-	add_goal(obj)
-	total_goals = total_goals + 1
+
+
+	obj = create_metric("minimize (total-time)",[] )
+	# obj = create_metric("minimize", [diagnostic_msgs.msg.KeyValue("total-time", "total-time")])
+	add_metric(obj)
+
 	
+def talker():
+	pub = rospy.Publisher('chatter', String, queue_size=10)
+	rospy.init_node('talker', anonymous=True)
+	rate = rospy.Rate(10) 
+	while not rospy.is_shutdown():
+		hello_str = "hello world %s" % rospy.get_time()
+		rospy.loginfo(hello_str)
+		pub.publish(hello_str)
+		rate.sleep()
 
 
-for i in photo:
-	obj = create_predicate("picture-goal", [diagnostic_msgs.msg.KeyValue("region", i)])
-	add_instance(obj)
-	obj = create_function("picture-path-len",[diagnostic_msgs.msg.KeyValue("region", i)], 1000)
-	add_instance(obj)
-	obj = create_predicate("taken-image", [diagnostic_msgs.msg.KeyValue("region", i)])
-	add_goal(obj)
-	total_goals = total_goals + 1
+if __name__ == '__main__':
+	main()
+	# try:
+	# 	talker()
+	# except rospy.ROSInterruptException as e:
+	# 	print("talker error %s"%e)
 
-for i in end:
-	obj = create_predicate("at", [diagnostic_msgs.msg.KeyValue("rover", hardware["name"]), diagnostic_msgs.msg.KeyValue("region", i)])
-	add_goal(obj)
-
- # {list_to_str([f'(pulverized {i} {b})' for i in inputs for b in get_objectives(missao_json, command='pulverize', sufix='_objective')], prefix=' ;', last_prefix=' ;', diff=True)}
-
-
-obj = create_function("total-goals",[],total_goals)
-print(obj)
-add_instance(obj)
-
-obj = create_function("goals-achived",[], 0)
-#print(obj)
-add_instance(obj)
-
-# obj = create_function("total-cost",[], 0)
-# add_instance(obj)
-
-
-obj = create_metric("minimize (total-time)",[] )
-# obj = create_metric("minimize", [diagnostic_msgs.msg.KeyValue("total-time", "total-time")])
-# print(obj)
-add_metric(obj)
-
-print(maior)
