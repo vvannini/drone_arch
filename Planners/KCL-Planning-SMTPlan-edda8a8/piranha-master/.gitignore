@@ -1,0 +1,16 @@
+# Build dirs.
+build*
+
+# Documentation.
+doc/_build
+doc/conf.py
+
+# Temp files.
+*~
+*.bak
+
+# .orig files from patch.
+*.orig
+
+# Python bits.
+*.pyc

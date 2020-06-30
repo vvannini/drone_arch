@@ -81,7 +81,7 @@ def goals(id_mission):
 	for step in mission["mission_execution"]:
 		total_goals += 1
 		if step["command"] not in obj: #should exclude goal 'end'?
-			obj.append(step["instructions"]["area"])
+			obj.append(step["command"])
 	return total_goals, len(obj)
 
 '''
@@ -107,9 +107,6 @@ def parse_file_plan():
 			aux = line.split(' ')
 			total_time += eval(aux[-1].rstrip())[0]
 	return sucsses, cpu_time, total_time
-
-
-
 
 
 

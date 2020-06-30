@@ -1,22 +1,39 @@
 (define (problem task)
-(:domain atomic)
+(:domain journal)
 (:objects
-    kenny - rover
     region_1 region_2 region_3 region_4 region_5 region_6 region_7 region_8 region_9 region_10 region_11 region_12 - region
     base_1 base_2 base_3 base_4 - base
 )
 (:init
 
 
-    (at kenny base_1)
+    (at base_1)
+
+
+    (nto region_1)
+    (nto region_2)
+    (nto region_3)
+    (nto region_4)
+    (nto region_5)
+    (nto region_6)
+    (nto region_7)
+    (nto region_8)
+    (nto region_9)
+    (nto region_10)
+    (nto region_11)
+    (nto region_12)
+    (nto base_1)
+    (nto base_2)
+    (nto base_3)
+    (nto base_4)
 
 
 
 
 
-    (can-go kenny)
+    (can-go)
 
-    (can-take-pic kenny)
+    (can-take-pic)
 
     (its-not-base region_1)
     (its-not-base region_2)
@@ -32,7 +49,7 @@
     (its-not-base region_12)
 
 
-    (picture-goal region_2)
+    (picture-goal region_1)
 
 
 
@@ -40,17 +57,17 @@
     (has-picture-goal)
 
 
-    (= (battery-amount kenny) 100)
+    (= (battery-amount) 100)
 
-    (= (input-amount kenny) 0)
+    (= (input-amount) 0)
 
-    (= (recharge-rate-battery kenny) 2.142)
+    (= (recharge-rate-battery) 2.142)
 
-    (= (discharge-rate-battery kenny) 0.042)
+    (= (discharge-rate-battery) 0.042)
 
-    (= (battery-capacity kenny) 100)
+    (= (battery-capacity) 100)
 
-    (= (input-capacity kenny) 3)
+    (= (input-capacity) 3)
 
 
     (= (distance region_1 region_2) 2129.9)
@@ -294,9 +311,9 @@
     (= (distance base_4 base_2) 2003.83)
     (= (distance base_4 base_3) 2438.41)
 
-    (= (velocity kenny) 3.5)
+    (= (velocity) 3.5)
 
-    (= (picture-path-len region_2) 1000)
+    (= (picture-path-len region_1) 1000)
 
 
     (= (total-goals) 1)
@@ -305,8 +322,8 @@
 
 )
 (:goal (and
-    (taken-image region_2)
-    (at kenny base_1)
+    (taken-image region_1)
+    (at base_1)
 ))
 (:metric minimize (total-time))
 )
