@@ -62,6 +62,23 @@ def get_exe_path(node_name):
 	#print(p.name())
 	return p.name()
 
+def get_total_distance(total_time):
+	# rosservice call /rosplan_knowledge_base/state/functions "predicate_name: 'velocity'"
+	instance = KnowledgeItem()
+	rospy.wait_for_service('/rosplan_knowledge_base/state/functions')
+	try:
+		print ("Calling Service get_function")
+		query_proxy = rospy.ServiceProxy('rosplan_knowledge_base/state/functions', GetAttributeService)
+		instance = query_proxy('velocity')
+		#instance = instance.attributes[0]
+		velocity = instance.attributes[0].function_value
+	except rospy.ServiceException as e:
+		print ("Service call failed: %s"%e)
+		velocity = float(Inf)
+	return velocity*total_time
+
+
+
 #rosservice call /rosplan_knowledge_base/domain/name
 
 '''
@@ -121,7 +138,11 @@ if __name__ == '__main__':
 	mission_id = int(args[1])
 	total_goals, type_qtd = goals(mission_id)
 
+
 	sucsses, cpu_time, total_time = parse_file_plan()
+
+	total_distance = get_total_distance(total_time)
+
 
 
 	log['id'] = id_log
@@ -133,6 +154,7 @@ if __name__ == '__main__':
 	log['sucsses'] = sucsses
 	log['cpu_time'] = cpu_time
 	log['total_time'] = total_time
+	log['total_distance'] = total_distance
 
 	
 	log_file.append(log)

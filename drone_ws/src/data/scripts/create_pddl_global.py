@@ -178,10 +178,10 @@ def read_json(mission, mapa):
 
 
 def call_clear():
-	print ("Waiting for service")
+	# print ("Waiting for service")
 	rospy.wait_for_service('/rosplan_knowledge_base/clear')
 	try:
-		print ("Calling Service Clear")
+		# print ("Calling Service Clear")
 		query_proxy = rospy.ServiceProxy('rosplan_knowledge_base/clear', Empty)
 		query_proxy()
 	except rospy.ServiceException as e:
@@ -189,10 +189,10 @@ def call_clear():
 
 
 def add_instance(item):
-	print ("Waiting for service")
+	# print ("Waiting for service")
 	rospy.wait_for_service('/rosplan_knowledge_base/update')
 	try:
-		print ("ADD",  item.instance_name, item.instance_type)
+		# print ("ADD",  item.instance_name, item.instance_type)
 		query_proxy = rospy.ServiceProxy('rosplan_knowledge_base/update', KnowledgeUpdateService)
 		query_proxy(KB_UPDATE_ADD_KNOWLEDGE, item)
 	except rospy.ServiceException as e:
@@ -200,10 +200,10 @@ def add_instance(item):
 
 
 def remove_instance(item):
-	print ("Waiting for service")
+	# print ("Waiting for service")
 	rospy.wait_for_service('/rosplan_knowledge_base/update')
 	try:
-		print ("Calling Service RM")
+		# print ("Calling Service RM")
 		query_proxy = rospy.ServiceProxy('rosplan_knowledge_base/update', KnowledgeUpdateService)
 		query_proxy(KB_UPDATE_RM_KNOWLEDGE, item)
 	except rospy.ServiceException as e:
@@ -211,10 +211,10 @@ def remove_instance(item):
 
 
 def add_goal(item):
-	print ("Waiting for service")
+	# print ("Waiting for service")
 	rospy.wait_for_service('/rosplan_knowledge_base/update')
 	try:
-		print ("Calling Service ADD GOAL")
+		# print ("Calling Service ADD GOAL")
 		query_proxy = rospy.ServiceProxy('rosplan_knowledge_base/update', KnowledgeUpdateService)
 		query_proxy(KB_UPDATE_ADD_GOAL, item)
 	except rospy.ServiceException as e:
@@ -222,20 +222,20 @@ def add_goal(item):
 
 
 def remove_goal(item):
-	print ("Waiting for service")
+	# print ("Waiting for service")
 	rospy.wait_for_service('/rosplan_knowledge_base/update')
 	try:
-		print ("Calling Service RM GOAL")
+		# print ("Calling Service RM GOAL")
 		query_proxy = rospy.ServiceProxy('rosplan_knowledge_base/update', KnowledgeUpdateService)
 		query_proxy(KB_UPDATE_RM_GOAL, item)
 	except rospy.ServiceException as e:
 		print ("Service call failed: %s"%e)
 
 def add_metric(item):
-	print ("Waiting for service")
+	# print ("Waiting for service")
 	rospy.wait_for_service('/rosplan_knowledge_base/update')
 	try:
-		print ("Calling Service ADD METRIC")
+		# print ("Calling Service ADD METRIC")
 		query_proxy = rospy.ServiceProxy('rosplan_knowledge_base/update', KnowledgeUpdateService)
 		query_proxy(KB_UPDATE_ADD_METRIC, item)
 	except rospy.ServiceException as e:
@@ -435,7 +435,7 @@ def main():
 
 
 	obj = create_function("total-goals",[],total_goals)
-	print(obj)
+	# print(obj)
 	add_instance(obj)
 
 	obj = create_function("goals-achived",[], 0)

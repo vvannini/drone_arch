@@ -1,7 +1,9 @@
 import os
 import json
+import matplotlib
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.ticker import FuncFormatter
 
 
 PATH = '~/drone_arch/Data/' #set 
@@ -35,45 +37,54 @@ def read_log(fn):
 	  return []
 
 def plot_test():
-	n_groups = 4
-	means_frank = [90, 55, 40, 65]
-	means_guido = [85, 62, 54, 20]
+	x = np.arange(4)
+	money = [1.5e5, 2.5e6, 5.5e6, 2.0e7]
 
-	# create plot
+
+	def millions(x, pos):
+	    'The two args are the value and tick position'
+	    return '$%1.1fM' % (x * 1e-6)
+
+
+	formatter = FuncFormatter(millions)
+
 	fig, ax = plt.subplots()
-	index = np.arange(n_groups)
-	bar_width = 0.35
-	opacity = 0.8
-
-	rects1 = plt.bar(index, means_frank, bar_width,
-	alpha=opacity,
-	color=np.random.rand(3,),
-	label='Frank')
-
-	rects2 = plt.bar(index + bar_width, means_guido, bar_width,
-	alpha=opacity,
-	color=np.random.rand(3,),
-	label='Guido')
-
-	plt.xlabel('Person')
-	plt.ylabel('Scores')
-	plt.title('Scores by person')
-	plt.xticks(index + bar_width, ('A', 'B', 'C', 'D'))
-	plt.legend()
-
-	plt.tight_layout()
+	ax.yaxis.set_major_formatter(formatter)
+	plt.bar(x, money)
+	plt.xticks(x, ('Bill', 'Fred', 'Mary', 'Sue'))
 	plt.show()
 
+
+	# n_groups = 4
+	# means_frank = [90, 55, 40, 65]
+	# means_guido = [85, 62, 54, 20]
+
+	# # create plot
+	# fig, ax = plt.subplots()
+	# index = np.arange(n_groups)
+	# bar_width = 0.35
+	# opacity = 0.8
+
+	# rects1 = plt.bar(index, means_frank, bar_width,
+	# alpha=opacity,
+	# color=np.random.rand(3,),
+	# label='Frank')
+
+	# rects2 = plt.bar(index + bar_width, means_guido, bar_width,
+	# alpha=opacity,
+	# color=np.random.rand(3,),
+	# label='Guido')
+
+	# plt.xlabel('Person')
+	# plt.ylabel('Scores')
+	# plt.title('Scores by person')
+	# plt.xticks(index + bar_width, ('A', 'B', 'C', 'D'))
+	# plt.legend()
+
+	# plt.tight_layout()
+	# plt.show()
+
 '''
-This function should:
-	- create a list of cpu_time per type of domain
-	- sort list by id of mission
-	- make avg of cpu_time per mission/domain
-
-At the time, as I'm doing controled tests, this just create the list and plot,
-assumin it has only 1 value per mission/domain, and the input is sorted
-
-series -> 
 
 '''
 def plot(log, domains, qtd_goals):
@@ -128,7 +139,7 @@ parameters:
 	title
 
 '''
-def plot_general(log, series, serie, x_values, y_group, y_name, x_label, y_label, title):
+def plot_general(log, series, serie, x_values, y_group, y_name, x_label, y_label, title, exclude_name, exclude_value):
 	n_groups = len(x_values)
 
 	listoflist = []
@@ -138,14 +149,15 @@ def plot_general(log, series, serie, x_values, y_group, y_name, x_label, y_label
 		values = {}
 		count = {}
 		for step in log:
-			if step[serie] == series[i]:
-				try:
-					values[step[y_group]] +=  step[y_name]
-					count[step[y_group]] += 1
-				except Exception as e:
-					values[step[y_group]] =  step[y_name]
-					count[step[y_group]] = 1
-				
+			if step[serie] == series[i] and exclude_name != '':
+				if step[exclude_name] != exclude_value:
+					try:
+						values[step[y_group]] +=  step[y_name]
+						count[step[y_group]] += 1
+					except Exception as e:
+						values[step[y_group]] =  step[y_name]
+						count[step[y_group]] = 1
+					
 		tuple_list = []
 		list_value = []
 
@@ -167,39 +179,89 @@ def plot_general(log, series, serie, x_values, y_group, y_name, x_label, y_label
 	# create plot
 	fig, ax = plt.subplots()
 	index = np.arange(n_groups)
-	bar_width = 0.35
-	opacity = 0.8
+	bar_width = 1/len(series)
+	opacity = 1
 
 	for i in range(0, len(series)):
-		plt.bar(index + (i*bar_width), listoflist[i], bar_width,
+		rects = plt.bar(index + (i*bar_width), listoflist[i], bar_width,
 		alpha=opacity,
 		color=np.random.rand(4,),
 		label=series[i])
+		for rect in rects:
+			# print(rect)
+			height = rect.get_height()
+			ax.annotate('{:.0f}'.format(height),
+						xy=(rect.get_x() + rect.get_width() / 2, height),
+						xytext=(0, 3),  # 3 points vertical offset
+						textcoords="offset points",
+						ha='center', va='bottom')
+		
 
 	plt.xlabel(x_label)
 	plt.ylabel(y_label)
 	plt.title(title)
 	plt.xticks(index + bar_width, x_values)
 	plt.legend()
+	
 
 	plt.tight_layout()
 	plt.show()
 	
 	
 
+
+def plot_fails(log, domains):
+	x = np.arange(len(domains))
+	errors = {}
+
+	for d in domains:
+		errors[d] = 0
+
+	for step in log:
+		if step['sucsses'] == 0:
+			errors[step['domain']] += 1
+	errors_list = []
+
+	# print(errors)
+
+	for step in errors:
+		# print(errors[step])
+		errors_list.append(errors[step])
+
+	# print(errors_list)
+
+	fig, ax = plt.subplots()
+	# ax.yaxis.set_major_formatter(formatter)
+	plt.bar(domains, errors_list)
+	plt.title('Quantity of plan failure ')
+	# plt.ylabel(errors_list)
+	# plt.xticks(x, domains)
+	plt.show()
+
 log_path = PATH + "mission_log.json"
 domains, missions, qtd_types, planners, qtd_goals, log_file = read_log(log_path)
 
-#			log 	 , series , serie   , x_values, y_group     , y_name    , x_label    ,  y_label   , title
-plot_general(log_file, domains, 'domain', missions, 'id_mission', 'cpu_time', 'id_mission', 'cpu_time', 'CPU time per Mission')
-plot_general(log_file, domains, 'domain', missions, 'id_mission', 'total_time', 'id_mission', 'total_time', 'Total Time per Mission')
 
-plot_general(log_file, domains, 'domain', qtd_goals, 'total_goals', 'cpu_time', 'total_goals', 'cpu_time', 'CPU time per quantity of goals')
-plot_general(log_file, domains, 'domain', qtd_goals, 'total_goals', 'total_time', 'total_goals', 'total_time', 'Total mission time per quantity of goals')
+#			log 	 , series , serie   , x_values, y_group     , y_name    , x_label    ,  y_label   , title          , exclude name,     exclude value
+# plot_general(log_file, domains, 'domain', missions, 'id_mission', 'cpu_time', 'id_mission', 'cpu_time', 'CPU time per Mission')
+# plot_general(log_file, domains, 'domain', missions, 'id_mission', 'total_time', 'id_mission', 'total_time', 'Total Time per Mission')
+# plot_general(log_file, domains, 'domain', missions, 'id_mission', 'total_distance', 'id_mission', 'total_distance', 'Total Distance per Mission')
 
-plot_general(log_file, domains, 'domain', qtd_types, 'qtd_types_goals', 'cpu_time', 'qtd_goals_types', 'cpu_time', 'CPU mission time per quantity of goals types')
-plot_general(log_file, domains, 'domain', qtd_types, 'qtd_types_goals', 'total_time', 'qtd_goals_types', 'total_time', 'Total mission time per quantity of goals types')
-# plot_test()
+
+# plot_general(log_file, domains, 'domain', qtd_goals, 'total_goals', 'total_distance', 'total_goals', 'total_distance', 'Total Distance per quantity of goals')
+
+
+# plot_general(log_file, domains, 'domain', qtd_types, 'qtd_types_goals', 'total_distance', 'qtd_goals_types', 'total_distance', 'Total Distance per quantity of goals types')
+
+
+
+# plot_general(log_file, domains, 'domain', qtd_goals, 'total_goals', 'cpu_time', 'total_goals', 'cpu_time', 'CPU time per quantity of goals', 'sucsses', 0)
+plot_general(log_file, domains, 'domain', qtd_goals, 'total_goals', 'total_time', 'total_goals', 'total_time', 'Total mission time per quantity of goals', 'sucsses', 0)
+# plot_general(log_file, domains, 'domain', qtd_types, 'qtd_types_goals', 'cpu_time', 'qtd_goals_types', 'cpu_time', 'CPU time per quantity of goals types', 'sucsses', 0)
+# plot_general(log_file, domains, 'domain', qtd_types, 'qtd_types_goals', 'total_time', 'qtd_goals_types', 'total_time', 'Total mission time per quantity of goals types', 'sucsses', 0)
+
+
+# plot_fails(log_file, domains)
 # print(domains, missions, qtd_types, planners, qtd_goals)
 
 # data to plot
