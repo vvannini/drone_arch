@@ -3,8 +3,8 @@
 
 	<!-- ROSPlan -->
 	<include file="$(find rosplan_planning_system)/launch/interfaced_planning_system.launch" >
-		<arg name="domain_path"		value="/home/vannini/drone_arch/Data/PDDL/domain_atomic_actions.pddl" />
-		<!-- <arg name="domain_path"		value="/home/vannini/drone_arch/Data/PDDL/domain_no_drone.pddl" /> -->
+		<!-- <arg name="domain_path"		value="/home/vannini/drone_arch/Data/PDDL/domain_atomic_actions.pddl" /> -->
+		<arg name="domain_path"		value="/home/vannini/drone_arch/Data/PDDL/domain_no_drone.pddl" />
 		<!-- <arg name="domain_path"		value="/home/vannini/drone_arch/Data/PDDL/domain_journal.pddl" /> -->
 		<!-- <arg name="problem_path"	value="/home/vannini/drone_arch/Data/PDDL/problem_atomic_actions.pddl" /> -->
 	</include>
@@ -36,7 +36,13 @@
 		<param name="action_dispatch_topic" value="/rosplan_plan_dispatcher/action_dispatch" />
 		<param name="action_feedback_topic" value="/rosplan_plan_dispatcher/action_feedback" />
 	</node>
-
+	
+	<node name="rosplan_interface_go_to_picture" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
+		<param name="knowledge_base"		value="rosplan_knowledge_base" />
+		<param name="pddl_action_name"		value="go_to_picture" />
+		<param name="action_dispatch_topic" value="/rosplan_plan_dispatcher/action_dispatch" />
+		<param name="action_feedback_topic" value="/rosplan_plan_dispatcher/action_feedback" />
+	</node>
 	<!-- <node name="rosplan_interface_pulverize" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
 		<param name="knowledge_base"		value="rosplan_knowledge_base" />
 		<param name="pddl_action_name"		value="pulverize_region" />

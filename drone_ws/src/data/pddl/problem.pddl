@@ -1,22 +1,21 @@
 (define (problem task)
-(:domain atomic)
+(:domain no_drone)
 (:objects
-    kenny - rover
     region_1 region_2 region_3 region_4 region_5 region_6 region_7 region_8 region_9 region_10 region_11 region_12 - region
     base_1 base_2 base_3 base_4 - base
 )
 (:init
 
 
-    (at kenny base_1)
+    (at base_1)
 
 
 
 
 
-    (can-go kenny)
+    (can-go)
 
-    (can-take-pic kenny)
+    (can-take-pic)
 
     (its-not-base region_1)
     (its-not-base region_2)
@@ -31,37 +30,26 @@
     (its-not-base region_11)
     (its-not-base region_12)
 
-    (pulverize-goal region_1)
-    (pulverize-goal region_2)
-    (pulverize-goal region_3)
-    (pulverize-goal region_4)
-    (pulverize-goal region_5)
-    (pulverize-goal region_6)
-    (pulverize-goal region_7)
-    (pulverize-goal region_8)
-    (pulverize-goal region_9)
-    (pulverize-goal region_10)
-    (pulverize-goal region_11)
-    (pulverize-goal region_12)
+
+    (picture-goal region_3)
 
 
 
 
-    (has-pulverize-goal)
+    (has-picture-goal)
 
 
+    (= (battery-amount) 100)
 
-    (= (battery-amount kenny) 100)
+    (= (input-amount) 0)
 
-    (= (input-amount kenny) 0)
+    (= (recharge-rate-battery) 2.142)
 
-    (= (recharge-rate-battery kenny) 2.142)
+    (= (discharge-rate-battery) 0.042)
 
-    (= (discharge-rate-battery kenny) 0.042)
+    (= (battery-capacity) 100)
 
-    (= (battery-capacity kenny) 100)
-
-    (= (input-capacity kenny) 3)
+    (= (input-capacity) 3)
 
 
     (= (distance region_1 region_2) 2129.9)
@@ -305,41 +293,18 @@
     (= (distance base_4 base_2) 2003.83)
     (= (distance base_4 base_3) 2438.41)
 
-    (= (velocity kenny) 3.5)
+    (= (velocity) 3.5)
+
+    (= (picture-path-len region_3) 1000)
 
 
-    (= (pulverize-path-len region_1) 314)
-    (= (pulverize-path-len region_2) 314)
-    (= (pulverize-path-len region_3) 314)
-    (= (pulverize-path-len region_4) 314)
-    (= (pulverize-path-len region_5) 314)
-    (= (pulverize-path-len region_6) 314)
-    (= (pulverize-path-len region_7) 314)
-    (= (pulverize-path-len region_8) 314)
-    (= (pulverize-path-len region_9) 314)
-    (= (pulverize-path-len region_10) 314)
-    (= (pulverize-path-len region_11) 314)
-    (= (pulverize-path-len region_12) 314)
-
-    (= (total-goals) 12)
+    (= (total-goals) 1)
 
     (= (goals-achived) 0)
 
 )
 (:goal (and
-    (pulverized region_1)
-    (pulverized region_2)
-    (pulverized region_3)
-    (pulverized region_4)
-    (pulverized region_5)
-    (pulverized region_6)
-    (pulverized region_7)
-    (pulverized region_8)
-    (pulverized region_9)
-    (pulverized region_10)
-    (pulverized region_11)
-    (pulverized region_12)
-    (at kenny base_4)
+    (taken-image region_3)
 ))
 (:metric minimize (total-time))
 )

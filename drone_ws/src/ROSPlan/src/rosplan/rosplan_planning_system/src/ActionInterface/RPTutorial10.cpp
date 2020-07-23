@@ -486,8 +486,8 @@ namespace KCL_rosplan {
 			mission.Ended = false;
 			GeoPoint from, to;
 			//get coordinates
-			from.name = msg->parameters[1].value.c_str();
-			to.name = msg->parameters[2].value.c_str();
+			from.name = msg->parameters[0].value.c_str();
+			to.name = msg->parameters[1].value.c_str();
 			ROS_INFO("go_to %s -> %s", from.name.c_str(), to.name.c_str());
 			
 			//getGeoPoint(&from);
@@ -514,9 +514,9 @@ namespace KCL_rosplan {
 				takeoff(drone);
 			}
 			ros::Duration(10).sleep();
-			set_loiter();
-			arm();
-			takeoff(drone);
+			// set_loiter();
+			// arm();
+			// takeoff(drone);
 			//send route 
 			if(!sendWPFile())
 				callRoute(from, to);
