@@ -15,8 +15,8 @@ rosservice call /rosplan_problem_interface/problem_generation_server
 echo "Planning"
 rosservice call /rosplan_planner_interface/planning_server
 
-# echo "Creating log"
-# python3 src/data/scripts/create_log.py $1
+echo "Creating log"
+python3 src/data/scripts/create_log.py $1 0
 
 echo "Executing the Plan"
 rosservice call /rosplan_parsing_interface/parse_plan
