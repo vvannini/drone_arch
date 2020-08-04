@@ -1,5 +1,5 @@
 (define (problem task)
-(:domain no_drone)
+(:domain journal)
 (:objects
     region_1 region_2 region_3 region_4 region_5 region_6 region_7 region_8 region_9 region_10 region_11 region_12 - region
     base_1 base_2 base_3 base_4 - base
@@ -8,6 +8,24 @@
 
 
     (at base_1)
+
+
+    (nto region_1)
+    (nto region_2)
+    (nto region_3)
+    (nto region_4)
+    (nto region_5)
+    (nto region_6)
+    (nto region_7)
+    (nto region_8)
+    (nto region_9)
+    (nto region_10)
+    (nto region_11)
+    (nto region_12)
+    (nto base_1)
+    (nto base_2)
+    (nto base_3)
+    (nto base_4)
 
 
 
@@ -31,7 +49,15 @@
     (its-not-base region_12)
 
 
-    (picture-goal region_3)
+    (picture-goal region_1)
+    (picture-goal region_2)
+    (picture-goal region_4)
+    (picture-goal region_6)
+    (picture-goal region_8)
+    (picture-goal region_9)
+    (picture-goal region_10)
+    (picture-goal region_11)
+    (picture-goal region_12)
 
 
 
@@ -295,16 +321,32 @@
 
     (= (velocity) 3.5)
 
-    (= (picture-path-len region_3) 1000)
+    (= (picture-path-len region_1) 1000)
+    (= (picture-path-len region_2) 1000)
+    (= (picture-path-len region_4) 1000)
+    (= (picture-path-len region_6) 1000)
+    (= (picture-path-len region_8) 1000)
+    (= (picture-path-len region_9) 1000)
+    (= (picture-path-len region_10) 1000)
+    (= (picture-path-len region_11) 1000)
+    (= (picture-path-len region_12) 1000)
 
 
-    (= (total-goals) 1)
+    (= (total-goals) 9)
 
     (= (goals-achived) 0)
 
 )
 (:goal (and
-    (taken-image region_3)
+    (taken-image region_1)
+    (taken-image region_2)
+    (taken-image region_4)
+    (taken-image region_6)
+    (taken-image region_8)
+    (taken-image region_9)
+    (taken-image region_10)
+    (taken-image region_11)
+    (taken-image region_12)
 ))
 (:metric minimize (total-time))
 )

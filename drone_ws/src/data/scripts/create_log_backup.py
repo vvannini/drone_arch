@@ -22,15 +22,12 @@ def plan_listener():
 
 	rospy.spin()
 
-def FileCheck_id(fn, replanning):
+def FileCheck_id(fn):
 	try:
 		with open(fn, "r") as log_file:
 			log_file = json.load(log_file)
 		
-		if not replanning: 
-			log_id = log_file[-1]["id"] + 1
-		else:
-			log_id = log_file[-1]["id"]
+		log_id = log_file[-1]["id"] + 1
 
 		return log_id, log_file
 
@@ -54,7 +51,7 @@ def get_domain():
 
 def write_log(log, log_file):
 	with open(log_file, 'w') as outfile:
-		json.dump(log, outfile, indent=4)
+		json.dump(log, outfile)
 
 
 def get_exe_path(node_name):
@@ -134,51 +131,33 @@ if __name__ == '__main__':
 	#args = sys.argv
 	log = {}
 	log_path = PATH + "mission_log.json"
-
+	id_log, log_file = FileCheck_id(log_path)
+	domain = get_domain()
+	planner = get_exe_path("rosplan_planner_interface")
 	args = sys.argv
 	mission_id = int(args[1])
-	replanning = int(args[2])
-
-	id_log, log_file = FileCheck_id(log_path, replanning)
-
-	if replanning != 2:
-		domain = get_domain()
-		planner = get_exe_path("rosplan_planner_interface")
-		total_goals, type_qtd = goals(mission_id)
+	total_goals, type_qtd = goals(mission_id)
 
 
-		sucsses, cpu_time, total_time = parse_file_plan()
+	sucsses, cpu_time, total_time = parse_file_plan()
 
-		total_distance = get_total_distance(total_time)
+	total_distance = get_total_distance(total_time)
 
-		log['id'] = id_log
-		log['domain'] = domain
-		log['planner'] = planner
-		log['id_mission'] = mission_id
-		log['total_goals'] = total_goals
-		log['qtd_types_goals'] = type_qtd
-		log['sucsses'] = sucsses
-		log['cpu_time'] = cpu_time
-		log['total_time'] = total_time
-		log['total_distance'] = total_distance
 
-	if not replanning:
-		log_file.append(log)
-	else:
-		if replanning == 1:
-			try:
 
-				log['id'] = len(log_file[id_log]["replanning"])
-				log_file[id_log]["replanning"].append(log)
+	log['id'] = id_log
+	log['domain'] = domain
+	log['planner'] = planner
+	log['id_mission'] = mission_id
+	log['total_goals'] = total_goals
+	log['qtd_types_goals'] = type_qtd
+	log['sucsses'] = sucsses
+	log['cpu_time'] = cpu_time
+	log['total_time'] = total_time
+	log['total_distance'] = total_distance
 
-			except Exception as e:
-				
-				log['id'] = 0
-				lista = [log]
-				log_file[id_log]["replanning"] = lista
-		else:
-			log_file[log_id]['real_time'] = mission_id
-
+	
+	log_file.append(log)
 	
 	#plan_listener()
 	write_log(log_file, log_path)

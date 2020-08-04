@@ -546,188 +546,122 @@ namespace KCL_rosplan {
 			// }
 			// complete the action
 			ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
-			return true;
+			//return true;
 
-		} 
-		// else if (strcmp(msg->name.c_str(), "go_to_base") == 0)
-		// {	//adicionar um while(mission.Ended != true ) wait() 
-		// 	// while(!mission.Ended)
-		// 	// 	ros::Duration(10).sleep();
+			string str2 = "pulverize";
+			size_t found_pulverize = str.find(str2); 
 
-
-		// 	mission.Ended = false;
-		// 	GeoPoint from, to;
-		// 	//get coordinates
-		// 	from.name = msg->parameters[1].value.c_str();
-		// 	to.name = msg->parameters[2].value.c_str();
-		// 	ROS_INFO("go_to_base %s->%s", from.name.c_str(), to.name.c_str());
-			
-		// 	//getGeoPoint(&from);
-		// 	from.latitude = drone.position.latitude;
-		// 	from.longitude = drone.position.longitude;
-		// 	from.altitude = 15;
-
-
-		// 	getGeoPoint(&to);
-		// 	to.altitude =13;
-		// 	ROS_INFO("GEO GeoPoint %f %f %f -> %f %f %f", from.latitude, from.longitude, from.altitude, to.latitude, to.longitude, to.altitude);
-		// 	//calc route
-		// 	calcRoute(from, to);
-		// 	ros::Duration(5).sleep();
-
-
-
-
-		// 	//is flying?
-		// 		//is armed
-		// 	while(!drone.current_state.armed && drone.ex_current_state.landed_state != 2)
-		// 	{
-		// 		set_loiter();
-		// 		arm();
-		// 		takeoff(drone);
-		// 	}
-		// 	ros::Duration(10).sleep();
-		// 	set_loiter();
-		// 	//arm();
-		// 	//takeoff(drone);
-		// 	//send route 
-		// 	if(!sendWPFile())
-		// 		callRoute(from, to);
-		// 	ros::Duration(20).sleep();
-
-		// 	//change to auto
-		// 	// while(drone.current_state.mode != "AUTO.MISSION"){
-		// 		// ROS_INFO("current: %d", mission.currentWP);
-		// 	set_auto();	
-		// 	// }
-
-			
-		// 	while(!mission.Ended){
-		// 		ros::Duration(10).sleep();
-		// 	}
-		// 	//while not at the end, wait
-		// 	//reset_mission();
-		// 	set_loiter();
-
-		// 	//land after arive to base
-
-		// 	while(!drone.current_state.armed && drone.ex_current_state.landed_state != 2)
-		// 	{
-		// 		set_loiter();
-		// 		arm();
-		// 		takeoff(drone);
-		// 	}
-			
-
-		// 	ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
-		// 	return true;
-
-		// } 
-		else if (strcmp(msg->name.c_str(), "pulverize_region") == 0)
-		{			
-			// string region = msg->parameters[1].value.c_str();
-
-			// ROS_INFO("pulverize_region %s", region.c_str());
-
-			ROS_INFO("pulverize_region");
-			string region = msg->parameters[1].value.c_str();
-			// ros::Duration(msg->duration).sleep();
-			mission.Ended = false;
-
-			//get coordinates
-			//int radius = getRadius(region);
-
-			//calc route
-			GeoPoint at;
-			at.latitude = drone.position.latitude;
-			at.longitude = drone.position.longitude;
-			at.altitude = 15;
-			calcRoute_pulverize(at, 50);
-
-
-
-			//is flying?
-				//is armed
-			while(!drone.current_state.armed && drone.ex_current_state.landed_state != 2)
+	    	if (found_pulverize != string::npos) 
 			{
+				// string region = msg->parameters[1].value.c_str();
+
+				// ROS_INFO("pulverize_region %s", region.c_str());
+
+				ROS_INFO("pulverize_region");
+				string region = msg->parameters[1].value.c_str();
+				// ros::Duration(msg->duration).sleep();
+				mission.Ended = false;
+
+				//get coordinates
+				//int radius = getRadius(region);
+
+				//calc route
+				GeoPoint at;
+				at.latitude = drone.position.latitude;
+				at.longitude = drone.position.longitude;
+				at.altitude = 15;
+				calcRoute_pulverize(at, 50);
+
+
+
+				//is flying?
+					//is armed
+				while(!drone.current_state.armed && drone.ex_current_state.landed_state != 2)
+				{
+					set_loiter();
+					arm();
+					takeoff(drone);
+				}
+				ros::Duration(20).sleep();
+				
+				//send route 
+				if(!sendWPFile())
+					ROS_ERROR("Error call route pulverize_region");
+				ros::Duration(20).sleep();
+
+				//change to auto
+				// while(drone.current_state.mode != "AUTO.MISSION"){
+					// ROS_INFO("current: %d", mission.currentWP);
+				set_auto();	
+				// }
+
+				
+				while(!mission.Ended){
+					ros::Duration(10).sleep();
+				}
+				//while not at the end, wait
+				//reset_mission();
 				set_loiter();
-				arm();
-				takeoff(drone);
+				// complete the action
+				ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
+				return true;
 			}
-			ros::Duration(20).sleep();
-			
-			//send route 
-			if(!sendWPFile())
-				ROS_ERROR("Error call route pulverize_region");
-			ros::Duration(20).sleep();
 
-			//change to auto
-			// while(drone.current_state.mode != "AUTO.MISSION"){
-				// ROS_INFO("current: %d", mission.currentWP);
-			set_auto();	
-			// }
+			string str3 = "picture";
+			size_t found_picture = str.find(str3); 
 
-			
-			while(!mission.Ended){
-				ros::Duration(10).sleep();
-			}
-			//while not at the end, wait
-			//reset_mission();
-			set_loiter();
-			// complete the action
-			ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
-			return true;
-		}
-		else if (strcmp(msg->name.c_str(), "take_img") == 0)
-		{
-			ROS_INFO("take_image");
-			string region = msg->parameters[1].value.c_str();
-			// ros::Duration(msg->duration).sleep();
-			mission.Ended = false;
-
-			//get coordinates
-			//int radius = getRadius(region);
-
-			//calc route
-			GeoPoint at;
-			at.latitude = drone.position.latitude;
-			at.longitude = drone.position.longitude;
-			at.altitude = 15;
-			calcRoute_picture(at, 50);
-
-
-
-			//is flying?
-				//is armed
-			while(!drone.current_state.armed && drone.ex_current_state.landed_state != 2)
+	    	if (found_picture != string::npos) 
 			{
+				ROS_INFO("take_image");
+				string region = msg->parameters[1].value.c_str();
+				// ros::Duration(msg->duration).sleep();
+				mission.Ended = false;
+
+				//get coordinates
+				//int radius = getRadius(region);
+
+				//calc route
+				GeoPoint at;
+				at.latitude = drone.position.latitude;
+				at.longitude = drone.position.longitude;
+				at.altitude = 15;
+				calcRoute_picture(at, 50);
+
+
+
+				//is flying?
+					//is armed
+				while(!drone.current_state.armed && drone.ex_current_state.landed_state != 2)
+				{
+					set_loiter();
+					arm();
+					takeoff(drone);
+				}
+				ros::Duration(20).sleep();
+				
+				//send route 
+				if(!sendWPFile())
+					ROS_ERROR("Error call route pulverize_region");
+				ros::Duration(20).sleep();
+
+				//change to auto
+				// while(drone.current_state.mode != "AUTO.MISSION"){
+					// ROS_INFO("current: %d", mission.currentWP);
+				set_auto();	
+				// }
+
+				
+				while(!mission.Ended){
+					ros::Duration(10).sleep();
+				}
+				//while not at the end, wait
+				//reset_mission();
 				set_loiter();
-				arm();
-				takeoff(drone);
+				// complete the action
+				ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
+				return true;
 			}
-			ros::Duration(20).sleep();
-			
-			//send route 
-			if(!sendWPFile())
-				ROS_ERROR("Error call route pulverize_region");
-			ros::Duration(20).sleep();
 
-			//change to auto
-			// while(drone.current_state.mode != "AUTO.MISSION"){
-				// ROS_INFO("current: %d", mission.currentWP);
-			set_auto();	
-			// }
-
-			
-			while(!mission.Ended){
-				ros::Duration(10).sleep();
-			}
-			//while not at the end, wait
-			//reset_mission();
-			set_loiter();
-			// complete the action
-			ROS_INFO("KCL: (%s) TUTORIAL Action completing.", msg->name.c_str());
-			return true;
 		} 
 		else if (strcmp(msg->name.c_str(), "recharge_input") == 0)
 		{
