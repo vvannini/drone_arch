@@ -3,10 +3,7 @@
 
 	<!-- ROSPlan -->
 	<include file="$(find rosplan_planning_system)/launch/interfaced_planning_system.launch" >
-		<!-- <arg name="domain_path"		value="/home/vannini/drone_arch/Data/PDDL/domain_atomic_actions.pddl" /> -->
-		<arg name="domain_path"		value="/home/vannini/drone_arch/Data/PDDL/domain_no_drone.pddl" />
-		<!-- <arg name="domain_path"		value="/home/vannini/drone_arch/Data/PDDL/domain_journal.pddl" /> -->
-		<!-- <arg name="problem_path"	value="/home/vannini/drone_arch/Data/PDDL/problem_atomic_actions.pddl" /> -->
+		<arg name="domain_path"		value="/home/pedronatali/drone_arch/Data/PDDL/domain_journal.pddl" />
 	</include>
 
 	<node name="rosplan_interface_recharge_input" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
@@ -43,21 +40,21 @@
 		<param name="action_dispatch_topic" value="/rosplan_plan_dispatcher/action_dispatch" />
 		<param name="action_feedback_topic" value="/rosplan_plan_dispatcher/action_feedback" />
 	</node>
-	<!-- <node name="rosplan_interface_pulverize" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
+	<node name="rosplan_interface_pulverize_region" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
 		<param name="knowledge_base"		value="rosplan_knowledge_base" />
 		<param name="pddl_action_name"		value="pulverize_region" />
 		<param name="action_dispatch_topic" value="/rosplan_plan_dispatcher/action_dispatch" />
 		<param name="action_feedback_topic" value="/rosplan_plan_dispatcher/action_feedback" />
-	</node> -->
+	</node>
 
-	<!-- <node name="rosplan_interface_take_img" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
+	<node name="rosplan_interface_take_img" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
 		<param name="knowledge_base"		value="rosplan_knowledge_base" />
 		<param name="pddl_action_name"		value="take_image" />
 		<param name="action_dispatch_topic" value="/rosplan_plan_dispatcher/action_dispatch" />
 		<param name="action_feedback_topic" value="/rosplan_plan_dispatcher/action_feedback" />
-	</node> -->
+	</node>
 
-	<node name="rosplan_interface_recharge_bat" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
+	<node name="rosplan_interface_recharge_battery" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
 		<param name="knowledge_base"		value="rosplan_knowledge_base" />
 		<param name="pddl_action_name"		value="recharge_battery" />
 		<param name="action_dispatch_topic" value="/rosplan_plan_dispatcher/action_dispatch" />
@@ -77,12 +74,20 @@
 		<param name="action_dispatch_topic" value="/rosplan_plan_dispatcher/action_dispatch" />
 		<param name="action_feedback_topic" value="/rosplan_plan_dispatcher/action_feedback" />
 	</node>
-<!-- 
+
 	<node name="rosplan_interface_has_all_goals_achived" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
 		<param name="knowledge_base"		value="rosplan_knowledge_base" />
 		<param name="pddl_action_name"		value="has_all_goals_achived" />
 		<param name="action_dispatch_topic" value="/rosplan_plan_dispatcher/action_dispatch" />
 		<param name="action_feedback_topic" value="/rosplan_plan_dispatcher/action_feedback" />
-	</node> -->
+	</node>
+
+
+	<node name="rosplan_interface_set_next_region" pkg="rosplan_planning_system" type="tutorialInterface" respawn="false" output="screen">
+		<param name="knowledge_base"		value="rosplan_knowledge_base" />
+		<param name="pddl_action_name"		value="set_next_region" />
+		<param name="action_dispatch_topic" value="/rosplan_plan_dispatcher/action_dispatch" />
+		<param name="action_feedback_topic" value="/rosplan_plan_dispatcher/action_feedback" />
+	</node>
 
 </launch>
