@@ -1,0 +1,4388 @@
+Mission ID,Mission Path,Success (PRED),Domain,Total Goals,Type quantity,Success (PLAN),CPU time,Total time,Total Distance
+0,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+",1,journal,1,1,1,0.02,903.5799999999999,3162.5299999999997
+1,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",1,journal,2,2,1,0.02,1522446,5328561
+2,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+",1,journal,2,2,1,0.02,1527014,5344549
+3,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,2,2,1,0.04,2079111,7276.888499999999
+4,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+",1,journal,2,2,1,0.04,1512.0,5292.0
+5,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+",1,journal,1,1,1,0.02,640797,2242.7895
+6,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to base ['region_2', 'base_1'] 355.083
+",1,journal,2,2,1,0.02,996.8800000000001,3489.0800000000004
+7,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to base ['region_2', 'base_2'] 346.163
+",1,journal,2,2,1,0.02,987.96,3457.86
+8,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to base ['region_2', 'base_3'] 570.563
+",1,journal,2,2,1,0.02,1212.3600000000001,4243.26
+9,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to base ['region_2', 'base_4'] 240.677
+",1,journal,2,2,1,0.02,882474,3088659
+10,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+",1,journal,1,1,1,0.02,939.2080000000001,3287228
+11,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_1'] 653.494
+",1,journal,2,2,1,0.02,1593.7020000000002,5577957
+12,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_2'] 649.546
+",1,journal,2,2,1,0.02,1589.7540000000001,5564139
+13,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_3'] 904.983
+",1,journal,2,2,1,0.02,1845191,6458.1685
+14,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_4'] 212.943
+",1,journal,2,2,1,0.02,1153151,4036.0285000000003
+15,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+",1,journal,1,1,1,0.02,1278803,4475.8105000000005
+16,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+",0,journal,2,2,1,0.02,2272.8920000000003,7955.122000000001
+17,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_2'] 990.883
+",0,journal,2,2,1,0.02,2270686,7947.401000000001
+18,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_3'] 1242.123
+",0,journal,2,2,1,0.04,2521.9260000000004,8826.741000000002
+19,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+",1,journal,2,2,1,0.02,1828909,6401.181500000001
+20,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+",1,journal,1,1,1,0.02,821374,2874809
+21,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_1'] 535.660
+",1,journal,2,2,1,0.02,1358034,4753.119000000001
+22,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_2'] 524.440
+",1,journal,2,2,1,0.02,1346814,4713849
+23,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_3'] 377.277
+",1,journal,2,2,1,0.02,1199651,4198.7785
+24,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+",1,journal,2,2,1,0.04,1141788,3996258
+25,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+",1,journal,1,1,1,0.02,726768,2543688
+26,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_1'] 441.054
+",1,journal,2,2,1,0.04,1168.8220000000001,4090.8770000000004
+27,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_2'] 431.529
+",1,journal,2,2,1,0.04,1159297,4057.5395
+28,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_3'] 534.551
+",1,journal,2,2,1,0.02,1262319,4418.1165
+29,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+",1,journal,2,2,1,0.04,921613,3225.6455
+30,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+",1,journal,1,1,1,0.02,1009008,3531.5280000000002
+31,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_1'] 723.294
+",1,journal,2,2,1,0.02,1733.3020000000001,6066.557000000001
+32,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_2'] 718.457
+",1,journal,2,2,1,0.02,1728.4650000000001,6049.6275000000005
+33,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_3'] 908.231
+",1,journal,2,2,1,0.02,1918239,6713.8365
+34,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",1,journal,2,2,1,0.04,1224188,4284658
+35,"Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+",1,journal,1,1,1,0.02,1113045,3895.6575000000003
+36,"Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_1'] 827.331
+",1,journal,2,2,1,0.02,1941.3760000000002,6794.816000000001
+37,"Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_2'] 823.877
+",1,journal,2,2,1,0.04,1937922,6782727
+38,"Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_3'] 1050.406
+",0,journal,2,2,1,0.02,2164451,7575.5785
+39,"Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+",1,journal,2,2,1,0.02,1470125,5145.4375
+40,"Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+",1,journal,1,1,1,0.02,856383,2997.3405000000002
+41,"Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_1'] 570.669
+",1,journal,2,2,1,0.0,1428.0520000000001,4998.182000000001
+42,"Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+",1,journal,2,2,1,0.02,1416526,4957841
+43,"Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+",1,journal,2,2,1,0.02,1178394,4124379
+44,"Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_4'] 377.531
+",1,journal,2,2,1,0.02,1234914,4322199
+45,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+",1,journal,1,1,1,0.04,894.5229999999999,3130.8304999999996
+46,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_1'] 608.809
+",1,journal,2,2,1,0.02,1504.3319999999999,5265.161999999999
+47,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_2'] 596.994
+",1,journal,2,2,1,0.02,1492.5169999999998,5223.809499999999
+48,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_3'] 216.990
+",1,journal,2,2,1,0.02,1112513,3893.7954999999997
+49,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_4'] 482.677
+",1,journal,2,2,1,0.02,1378.1999999999998,4823.699999999999
+50,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+",1,journal,1,1,1,0.02,870268,3045938
+51,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_1'] 584.554
+",1,journal,2,2,1,0.02,1455.8220000000001,5095377
+52,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_2'] 572.783
+",1,journal,2,2,1,0.02,1444051,5054.1785
+53,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_3'] 248.221
+",1,journal,2,2,1,0.02,1119489,3918.2115000000003
+54,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_4'] 449.374
+",1,journal,2,2,1,0.02,1320642,4622247
+55,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+",1,journal,1,1,1,0.02,859.8710000000001,3009.5485000000003
+56,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_1'] 574.157
+",1,journal,2,2,1,0.02,1435.0280000000002,5022.598000000001
+57,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_2'] 562.349
+",1,journal,2,2,1,0.02,1423.2200000000003,4981.27
+58,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_3'] 165.630
+",1,journal,2,2,1,0.02,1026.5010000000002,3592.7535000000007
+59,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_4'] 536.431
+",1,journal,2,2,1,0.02,1397.3020000000001,4890.557000000001
+60,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Take Image ['region_1'] 285.714
+",1,journal,2,1,1,0.02,1535054,5372689
+61,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,3,2,1,0.02,2153.92,7538.72
+62,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+",0,journal,3,2,1,0.04,2158.4880000000003,7554.7080000000005
+63,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,3,2,1,0.04,2710585,9487.0475
+64,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_2'] 608.543
+Take Image ['region_2'] 285.714
+Go to base ['region_2', 'base_4'] 240.677
+",0,journal,3,2,1,0.02,2039514,7138299
+65,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+",1,journal,2,1,1,0.04,1683511,5892.2885
+66,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,3,2,1,0.02,2302377,8058.3195
+67,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+",0,journal,3,2,1,0.04,2306.9449999999997,8074.307499999999
+68,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,3,2,1,0.04,2859042,10006.646999999999
+69,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_4'] 212.943
+",1,journal,3,2,1,0.04,1861.8259999999998,6516391
+70,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_1'] 584.891
+Take Image ['region_1'] 285.714
+",0,journal,2,1,1,0.04,2149408,7522928
+71,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_1'] 584.891
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,3,2,1,0.04,2768274,9688.958999999999
+72,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_1'] 584.891
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+",0,journal,3,2,1,0.04,2772.8419999999996,9704.946999999998
+73,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_1'] 584.891
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,3,2,1,0.02,3324939,11637.2865
+74,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+",0,journal,3,2,1,0.04,2324291,8135.0185
+75,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+",1,journal,2,1,1,0.02,1951399,6829.8965
+76,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,3,2,1,0.02,2570265,8995.9275
+77,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+",0,journal,3,2,1,0.02,2574.8329999999996,9011.9155
+78,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,3,2,1,0.04,3126.93,10944255
+79,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_5'] 844.311
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+",0,journal,3,2,1,0.04,2354.0190000000002,8239.0665
+80,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_1'] 668.243
+Take Image ['region_1'] 285.714
+",1,journal,2,1,1,0.02,1680725,5882.537499999999
+81,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_1'] 668.243
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,3,2,1,0.04,2299591,8048.568499999999
+82,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_1'] 668.243
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+",0,journal,3,2,1,0.02,2304.1589999999997,8064.556499999999
+83,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_1'] 668.243
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,3,2,1,0.04,2856256,9996.895999999999
+84,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_6'] 668.243
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+",0,journal,3,2,1,0.04,2052.3819999999996,7183.336999999999
+85,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+",1,journal,2,1,1,0.02,1835.4879999999998,6424208
+86,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,3,2,1,0.02,2454354,8590239
+87,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+",0,journal,3,2,1,0.02,2458.9219999999996,8606.226999999999
+88,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,3,2,1,0.02,3011019,10538.566499999999
+89,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_7'] 540.766
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",1,journal,3,2,1,0.02,1945.24,6808.34
+90,"Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+Go to picture ['region_8', 'region_1'] 527.180
+Take Image ['region_1'] 285.714
+",1,journal,2,1,1,0.02,1925.9389999999999,6740.786499999999
+91,"Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+Go to picture ['region_8', 'region_1'] 527.180
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,3,2,1,0.02,2544805,8906.8175
+92,"Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+Go to picture ['region_8', 'region_1'] 527.180
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+",0,journal,3,2,1,0.04,2549.3729999999996,8922.805499999999
+93,"Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+Go to picture ['region_8', 'region_1'] 527.180
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,3,2,1,0.04,3101.47,10855.144999999999
+94,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_8'] 527.180
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+",0,journal,3,2,1,0.04,2073.5539999999996,7257.4389999999985
+95,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_9'] 905.309
+Take Image ['region_9'] 285.714
+",0,journal,2,1,1,0.02,2094603,7331.110500000001
+96,"Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to picture ['region_9', 'region_1'] 905.309
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,3,2,1,0.02,2666272,9331952
+97,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_9'] 905.309
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+",0,journal,3,2,1,0.02,2654746,9291611
+98,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_9'] 905.309
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+",0,journal,3,2,1,0.04,2416614,8458149
+99,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_9'] 905.309
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_4'] 377.531
+",0,journal,3,2,1,0.02,2473134,8655.969000000001
+100,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_10'] 996.740
+Take Image ['region_10'] 285.714
+",0,journal,2,1,1,0.02,2186034,7651.119000000001
+101,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_1'] 996.740
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,3,2,1,0.04,2795843,9785.450499999999
+102,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_10'] 996.740
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_2'] 596.994
+",0,journal,3,2,1,0.02,2784.0280000000002,9744.098000000002
+103,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_10'] 996.740
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_3'] 216.990
+",0,journal,3,2,1,0.02,2404.0240000000003,8414084
+104,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_1'] 996.740
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+",0,journal,3,2,1,0.02,2785397,9748.8895
+105,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_11'] 962.086
+Take Image ['region_11'] 285.714
+",0,journal,2,1,1,0.02,2151.38,7529.83
+106,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_1'] 962.086
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,3,2,1,0.02,2736934,9579269
+107,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_11'] 962.086
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_2'] 572.783
+",0,journal,3,2,1,0.02,2725163,9538.0705
+108,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_11'] 962.086
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_3'] 248.221
+",0,journal,3,2,1,0.04,2400601,8402.103500000001
+109,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_1'] 962.086
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+",0,journal,3,2,1,0.02,2726.4880000000003,9542708
+110,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_12'] 1012.520
+Take Image ['region_12'] 285.714
+",0,journal,2,1,1,0.04,2201814,7706.348999999999
+111,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_1'] 1012.520
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,3,2,1,0.04,2776971,9719.3985
+112,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_12'] 1012.520
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_2'] 562.349
+",0,journal,3,2,1,0.02,2765163,9678.0705
+113,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_12'] 1012.520
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_3'] 165.630
+",0,journal,3,2,1,0.04,2368444,8289554
+114,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_1'] 1012.520
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+",0,journal,3,2,1,0.02,2766525,9682.8375
+115,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_3'] 386.620
+Take Image ['region_3'] 285.714
+",1,journal,2,1,1,0.04,1313.1309999999999,4595.9585
+116,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_3'] 386.620
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_1'] 653.494
+",1,journal,3,2,1,0.04,1967625,6886.6875
+117,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_3'] 386.620
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_2'] 649.546
+",1,journal,3,2,1,0.04,1963677,6872.8695
+118,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_3'] 386.620
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_3'] 904.983
+",0,journal,3,2,1,0.04,2219.1139999999996,7766.8989999999985
+119,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_3'] 386.620
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_4'] 212.943
+",1,journal,3,2,1,0.04,1527.0739999999998,5344.758999999999
+120,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_4'] 748.331
+Take Image ['region_4'] 285.714
+",1,journal,2,1,1,0.02,1674842,5861947
+121,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_4'] 748.331
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+",0,journal,3,2,1,0.02,2668931,9341.2585
+122,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_4'] 748.331
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_2'] 990.883
+",0,journal,3,2,1,0.04,2666.7250000000004,9333.537500000002
+123,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_4'] 748.331
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_3'] 1242.123
+",0,journal,3,2,1,0.02,2917965,10212.8775
+124,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_4'] 748.331
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+",0,journal,3,2,1,0.04,2224.9480000000003,7787.318000000001
+125,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_5'] 246.035
+Take Image ['region_5'] 285.714
+",1,journal,2,1,1,0.04,1172546,4103911
+126,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_5'] 246.035
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_1'] 535.660
+",1,journal,3,2,1,0.02,1709.2060000000001,5982.2210000000005
+127,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_5'] 246.035
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_2'] 524.440
+",1,journal,3,2,1,0.02,1697986,5942951
+128,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_5'] 246.035
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_3'] 377.277
+",1,journal,3,2,1,0.04,1550823,5427.8805
+129,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_5'] 246.035
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+",1,journal,3,2,1,0.02,1492.96,5225.360000000001
+130,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_6'] 91.397
+Take Image ['region_6'] 285.714
+",1,journal,2,1,1,0.02,1017.9080000000001,3562.6780000000003
+131,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_6'] 91.397
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_1'] 441.054
+",1,journal,3,2,1,0.02,1459962,5109867
+132,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_6'] 91.397
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_2'] 431.529
+",1,journal,3,2,1,0.02,1450.4370000000001,5076.529500000001
+133,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_6'] 91.397
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_3'] 534.551
+",1,journal,3,2,1,0.04,1553.4590000000003,5437.106500000001
+134,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_6'] 91.397
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+",1,journal,3,2,1,0.02,1212.7530000000002,4244.6355
+135,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_7'] 428.571
+Take Image ['region_7'] 285.714
+",1,journal,2,1,1,0.02,1355.0819999999999,4742.786999999999
+136,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_7'] 428.571
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_1'] 723.294
+",0,journal,3,2,1,0.04,2079.3759999999997,7277.815999999999
+137,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_7'] 428.571
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_2'] 718.457
+",0,journal,3,2,1,0.04,2074.5389999999998,7260.886499999999
+138,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_7'] 428.571
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_3'] 908.231
+",0,journal,3,2,1,0.02,2264313,7925.0955
+139,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_7'] 428.571
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",1,journal,3,2,1,0.04,1570262,5495.9169999999995
+140,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_8'] 559.740
+Take Image ['region_8'] 285.714
+",1,journal,2,1,1,0.02,1486251,5201.8785
+141,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_8'] 559.740
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_1'] 827.331
+",0,journal,3,2,1,0.04,2314582,8101.036999999999
+142,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_8'] 559.740
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_2'] 823.877
+",0,journal,3,2,1,0.02,2311.1279999999997,8088.9479999999985
+143,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_8'] 559.740
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_3'] 1050.406
+",0,journal,3,2,1,0.04,2537657,8881.799500000001
+144,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_8'] 559.740
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+",1,journal,3,2,1,0.02,1843331,6451.6585
+145,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_9'] 303.306
+Take Image ['region_9'] 285.714
+",1,journal,2,1,1,0.02,1229817,4304.3595000000005
+146,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_9'] 303.306
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_1'] 570.669
+",1,journal,3,2,1,0.02,1801.4859999999999,6305.200999999999
+147,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_9'] 303.306
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+",1,journal,3,2,1,0.04,1789.96,6264.860000000001
+148,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_9'] 303.306
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+",1,journal,3,2,1,0.02,1551828,5431398
+149,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_9'] 303.306
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_4'] 377.531
+",1,journal,3,2,1,0.04,1608348,5629218
+150,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_10'] 388.886
+Take Image ['region_10'] 285.714
+",1,journal,2,1,1,0.02,1315397,4603.889499999999
+151,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_10'] 388.886
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_1'] 608.809
+",1,journal,3,2,1,0.02,1925206,6738221
+152,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_10'] 388.886
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_2'] 596.994
+",1,journal,3,2,1,0.02,1913391,6696.8685000000005
+153,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_10'] 388.886
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_3'] 216.990
+",1,journal,3,2,1,0.02,1533387,5366.8544999999995
+154,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_2'] 388.886
+Take Image ['region_2'] 285.714
+Go to base ['region_2', 'base_4'] 240.677
+",1,journal,3,2,1,0.02,1810.7999999999997,6337.799999999999
+155,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_11'] 354.586
+Take Image ['region_11'] 285.714
+",1,journal,2,1,1,0.02,1281097,4483.8395
+156,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_11'] 354.586
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_1'] 584.554
+",1,journal,3,2,1,0.02,1866.6509999999998,6533.278499999999
+157,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_11'] 354.586
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_2'] 572.783
+",1,journal,3,2,1,0.04,1854.88,6492.08
+158,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_11'] 354.586
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_3'] 248.221
+",1,journal,3,2,1,0.02,1530318,5356113
+159,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_2'] 354.586
+Take Image ['region_2'] 285.714
+Go to base ['region_2', 'base_4'] 240.677
+",1,journal,3,2,1,0.02,1752245,6132.8575
+160,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_12'] 406.171
+Take Image ['region_12'] 285.714
+",1,journal,2,1,1,0.02,1332682,4664387
+161,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_12'] 406.171
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_1'] 574.157
+",1,journal,3,2,1,0.02,1907839,6677.4365
+162,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_12'] 406.171
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_2'] 562.349
+",1,journal,3,2,1,0.02,1896031,6636.1085
+163,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_12'] 406.171
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_3'] 165.630
+",1,journal,3,2,1,0.02,1499312,5247592
+164,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_2'] 406.171
+Take Image ['region_2'] 285.714
+Go to base ['region_2', 'base_4'] 240.677
+",1,journal,3,2,1,0.02,1793433,6277.0154999999995
+165,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_4'] 361.809
+Take Image ['region_4'] 285.714
+",1,journal,2,1,1,0.02,1586731,5553.5585
+166,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_4'] 361.809
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+",0,journal,3,2,1,0.02,2580.82,9032.87
+167,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_4'] 361.809
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_2'] 990.883
+",0,journal,3,2,1,0.02,2578614,9025149
+168,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_4'] 361.809
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_3'] 1242.123
+",0,journal,3,2,1,0.02,2829.8540000000003,9904.489000000001
+169,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_4'] 361.809
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+",0,journal,3,2,1,0.02,2136837,7478.9295
+170,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_5'] 528.820
+Take Image ['region_5'] 285.714
+",1,journal,2,1,1,0.04,1753.7420000000002,6138.097000000001
+171,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_3'] 528.820
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_1'] 653.494
+",0,journal,3,2,1,0.02,2290402,8016407
+172,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_5'] 528.820
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_2'] 524.440
+",0,journal,3,2,1,0.02,2279.1820000000002,7977.137000000001
+173,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_5'] 528.820
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_3'] 377.277
+",0,journal,3,2,1,0.04,2132.0190000000002,7462.066500000001
+174,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_5'] 528.820
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+",0,journal,3,2,1,0.04,2074156,7259546
+175,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_6'] 379.489
+Take Image ['region_6'] 285.714
+",1,journal,2,1,1,0.02,1604411,5615.4385
+176,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_3'] 379.489
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_1'] 653.494
+",0,journal,3,2,1,0.02,2046.4650000000001,7162.6275000000005
+177,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_6'] 379.489
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_2'] 431.529
+",0,journal,3,2,1,0.02,2036.94,7129.29
+178,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_6'] 379.489
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_3'] 534.551
+",0,journal,3,2,1,0.02,2139962,7489867
+179,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_6'] 379.489
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+",1,journal,3,2,1,0.02,1799256,6297.396000000001
+180,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_7'] 88.778
+Take Image ['region_7'] 285.714
+",1,journal,2,1,1,0.04,1313.7,4597.95
+181,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_7'] 88.778
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_1'] 723.294
+",0,journal,3,2,1,0.04,2037.9940000000001,7132979
+182,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_7'] 88.778
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_2'] 718.457
+",0,journal,3,2,1,0.04,2033.1570000000002,7116.049500000001
+183,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_7'] 88.778
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_3'] 908.231
+",0,journal,3,2,1,0.02,2222931,7780.2585
+184,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_7'] 88.778
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",1,journal,3,2,1,0.04,1528.88,5351.08
+185,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_8'] 177.060
+Take Image ['region_8'] 285.714
+",1,journal,2,1,1,0.02,1401982,4906937
+186,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_8'] 177.060
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_1'] 827.331
+",0,journal,3,2,1,0.02,2230313,7806.0955
+187,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_8'] 177.060
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_2'] 823.877
+",0,journal,3,2,1,0.02,2226859,7794.0064999999995
+188,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_8'] 177.060
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_3'] 1050.406
+",0,journal,3,2,1,0.02,2453388,8586858
+189,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_8'] 177.060
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+",1,journal,3,2,1,0.02,1759062,6156717
+190,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_9'] 588.466
+Take Image ['region_9'] 285.714
+",1,journal,2,1,1,0.02,1813388,6346858
+191,"Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to picture ['region_9', 'region_3'] 588.466
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_1'] 653.494
+",0,journal,3,2,1,0.04,2385.0570000000002,8347.6995
+192,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_9'] 588.466
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+",0,journal,3,2,1,0.02,2373531,8307.3585
+193,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_9'] 588.466
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+",0,journal,3,2,1,0.02,2135399,7473.8965
+194,"Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to picture ['region_9', 'region_3'] 588.466
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_4'] 212.943
+",1,journal,3,2,1,0.02,1944506,6805.771000000001
+195,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_3'] 693.300
+Take Image ['region_3'] 285.714
+",1,journal,2,1,1,0.02,1873.5369999999998,6557.379499999999
+196,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_3'] 693.300
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_1'] 653.494
+",0,journal,3,2,1,0.04,2528031,8848.1085
+197,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_3'] 693.300
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_2'] 649.546
+",0,journal,3,2,1,0.02,2524.0829999999996,8834.2905
+198,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_10'] 693.300
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_3'] 216.990
+",0,journal,3,2,1,0.02,2136212,7476742
+199,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_3'] 693.300
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_4'] 212.943
+",0,journal,3,2,1,0.02,2087.48,7306.18
+200,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_3'] 659.397
+Take Image ['region_3'] 285.714
+",1,journal,2,1,1,0.02,1815379,6353.826499999999
+201,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_3'] 659.397
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_1'] 653.494
+",0,journal,3,2,1,0.02,2469873,8644.5555
+202,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_3'] 659.397
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_2'] 649.546
+",0,journal,3,2,1,0.04,2465925,8630.737500000001
+203,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_11'] 659.397
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_3'] 248.221
+",0,journal,3,2,1,0.02,2133.54,7467.389999999999
+204,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_3'] 659.397
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_4'] 212.943
+",0,journal,3,2,1,0.02,2029322,7102.6269999999995
+205,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_3'] 742.189
+Take Image ['region_3'] 285.714
+",1,journal,2,1,1,0.02,1887774,6607209
+206,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_3'] 742.189
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_1'] 653.494
+",0,journal,3,2,1,0.04,2542268,8897938
+207,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_3'] 742.189
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_2'] 649.546
+",0,journal,3,2,1,0.04,2538.3199999999997,8884.119999999999
+208,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_12'] 742.189
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_3'] 165.630
+",0,journal,3,2,1,0.02,2133741,7468.0935
+209,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_3'] 742.189
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_4'] 212.943
+",0,journal,3,2,1,0.02,2101717,7356.0095
+210,"Go to picture ['base_1', 'region_4'] 993.089
+Go to picture ['region_4', 'region_5'] 865.991
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+Recharge Battery ['base_4'] 48.318
+Go to picture ['base_4', 'region_4'] 549.106
+Take Image ['region_4'] 285.714
+",0,journal,2,1,1,0.04,3348.3459999999995,11719211
+211,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_4'] 865.991
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+",0,journal,3,2,1,0.04,2967168,10385088
+212,"Go to picture ['base_1', 'region_4'] 993.089
+Go to picture ['region_4', 'region_5'] 865.991
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_2'] 524.440
+Recharge Battery ['base_2'] 52.338
+Go to picture ['base_2', 'region_4'] 990.883
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_2'] 990.883
+",0,journal,3,2,1,0.06,4991052,17468682
+213,"Go to picture ['base_1', 'region_4'] 993.089
+Go to picture ['region_4', 'region_5'] 865.991
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_3'] 377.277
+Recharge Battery ['base_3'] 49.452
+Go to picture ['base_3', 'region_4'] 1242.123
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_3'] 1242.123
+",0,journal,3,2,1,0.04,5343483,18702.1905
+214,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+Recharge Battery ['base_4'] 41.444
+Go to picture ['base_4', 'region_5'] 319.414
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+",0,journal,3,2,1,0.12,3081.6089999999995,10785.631499999998
+215,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_6'] 734.511
+Take Image ['region_6'] 285.714
+",0,journal,2,1,1,0.02,2299.0280000000002,8046.598000000001
+216,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_4'] 734.511
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+",0,journal,3,2,1,0.04,2741082,9593787
+217,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_6'] 734.511
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_2'] 431.529
+",0,journal,3,2,1,0.04,2731.5570000000002,9560.4495
+218,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_6'] 734.511
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_3'] 534.551
+",0,journal,3,2,1,0.02,2834579,9921.0265
+219,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_6'] 734.511
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+",0,journal,3,2,1,0.04,2493873,8728.5555
+220,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_4'] 335.034
+Take Image ['region_4'] 285.714
+",1,journal,2,1,1,0.02,1629.7559999999999,5704146
+221,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_4'] 335.034
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+",0,journal,3,2,1,0.02,2623845,9183.457499999999
+222,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_4'] 335.034
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_2'] 990.883
+",0,journal,3,2,1,0.04,2621639,9175.7365
+223,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_4'] 335.034
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_3'] 1242.123
+",0,journal,3,2,1,0.02,2872879,10055.0765
+224,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_7'] 335.034
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",0,journal,3,2,1,0.04,2114.7309999999998,7401.558499999999
+225,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_8'] 193.111
+Take Image ['region_8'] 285.714
+",1,journal,2,1,1,0.02,1757.6280000000002,6151698
+226,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_8'] 193.111
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_1'] 827.331
+",0,journal,3,2,1,0.04,2585.9590000000003,9050.856500000002
+227,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_8'] 193.111
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_2'] 823.877
+",0,journal,3,2,1,0.02,2582505,9038.7675
+228,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_8'] 193.111
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_3'] 1050.406
+",0,journal,3,2,1,0.02,2809034,9831619
+229,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_8'] 193.111
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+",0,journal,3,2,1,0.04,2114708,7401478
+230,"Go to picture ['base_1', 'region_4'] 993.089
+Go to picture ['region_4', 'region_9'] 921.137
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+Recharge Battery ['base_3'] 49.430
+Go to picture ['base_3', 'region_4'] 1242.123
+Take Image ['region_4'] 285.714
+",0,journal,2,1,1,0.08,4099218,14347.262999999999
+231,"Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to picture ['region_9', 'region_4'] 921.137
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+",0,journal,3,2,1,0.02,3057323,10700.6305
+232,"Go to picture ['base_1', 'region_4'] 993.089
+Go to picture ['region_4', 'region_9'] 921.137
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+Recharge Battery ['base_2'] 54.100
+Go to picture ['base_2', 'region_4'] 990.883
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_2'] 990.883
+",0,journal,3,2,1,0.06,5082663,17789.320499999998
+233,"Go to picture ['base_1', 'region_4'] 993.089
+Go to picture ['region_4', 'region_9'] 921.137
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+Recharge Battery ['base_3'] 49.430
+Go to picture ['base_3', 'region_4'] 1242.123
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_3'] 1242.123
+",0,journal,3,2,1,0.06,5342341,18698.1935
+234,"Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to picture ['region_9', 'region_4'] 921.137
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+",0,journal,3,2,1,0.02,2613.34,9146.69
+235,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_4'] 1025.769
+Take Image ['region_4'] 285.714
+",0,journal,2,1,1,0.04,2206006,7721021
+236,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_4'] 1025.769
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+",0,journal,3,2,1,0.02,3200095,11200.332499999999
+237,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_4'] 1025.769
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_2'] 990.883
+",0,journal,3,2,1,0.02,3197889,11192.6115
+238,"Go to picture ['base_1', 'region_4'] 993.089
+Go to picture ['region_4', 'region_10'] 1025.769
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_3'] 216.990
+Recharge Battery ['base_3'] 49.442
+Go to picture ['base_3', 'region_4'] 1242.123
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_3'] 1242.123
+",0,journal,3,2,1,0.04,5342964,18700374
+239,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_4'] 1025.769
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+",0,journal,3,2,1,0.02,2756112,9646392
+240,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_4'] 993.900
+Take Image ['region_4'] 285.714
+",0,journal,2,1,1,0.02,2149882,7524587
+241,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_4'] 993.900
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+",0,journal,3,2,1,0.04,3143971,11003.8985
+242,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_4'] 993.900
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_2'] 990.883
+",0,journal,3,2,1,0.02,3141.7650000000003,10996.177500000002
+243,"Go to picture ['base_1', 'region_4'] 993.089
+Go to picture ['region_4', 'region_11'] 993.900
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_3'] 248.221
+Recharge Battery ['base_3'] 49.430
+Go to picture ['base_3', 'region_4'] 1242.123
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_3'] 1242.123
+",0,journal,3,2,1,0.06,5342314,18698.099000000002
+244,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_4'] 993.900
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+",0,journal,3,2,1,0.04,2699.9880000000003,9449958
+245,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_4'] 1084.526
+Take Image ['region_4'] 285.714
+",0,journal,2,1,1,0.02,2230.1110000000003,7805.388500000001
+246,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_4'] 1084.526
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+",0,journal,3,2,1,0.04,3224.2000000000003,11284.7
+247,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_4'] 1084.526
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_2'] 990.883
+",0,journal,3,2,1,0.02,3221.9940000000006,11276.979000000003
+248,"Go to picture ['base_1', 'region_4'] 993.089
+Go to picture ['region_4', 'region_12'] 1084.526
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_3'] 165.630
+Recharge Battery ['base_3'] 49.587
+Go to picture ['base_3', 'region_4'] 1242.123
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_3'] 1242.123
+",0,journal,3,2,1,0.06,5350.506000000001,18726.771000000004
+249,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_4'] 1084.526
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+",0,journal,3,2,1,0.02,2780.2170000000006,9730.759500000002
+250,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_6'] 176.241
+Take Image ['region_6'] 285.714
+",1,journal,2,1,1,0.02,1283329,4491.6515
+251,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_6'] 176.241
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_1'] 441.054
+",1,journal,3,2,1,0.04,1725.3829999999998,6038.840499999999
+252,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_6'] 176.241
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_2'] 431.529
+",1,journal,3,2,1,0.02,1715858,6005503
+253,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_6'] 176.241
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_3'] 534.551
+",1,journal,3,2,1,0.02,1818.88,6366.08
+254,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_6'] 176.241
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+",1,journal,3,2,1,0.02,1478174,5173609
+255,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_7'] 531.446
+Take Image ['region_7'] 285.714
+",1,journal,2,1,1,0.02,1638534,5734.869000000001
+256,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_7'] 531.446
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_1'] 723.294
+",0,journal,3,2,1,0.04,2362828,8269898
+257,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_7'] 531.446
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_2'] 718.457
+",0,journal,3,2,1,0.02,2357991,8252.968499999999
+258,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_7'] 531.446
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_3'] 908.231
+",0,journal,3,2,1,0.04,2547.7650000000003,8917.177500000002
+259,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_7'] 531.446
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",1,journal,3,2,1,0.04,1853.7140000000002,6487.999000000001
+260,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_8'] 673.720
+Take Image ['region_8'] 285.714
+",1,journal,2,1,1,0.02,1780808,6232.8279999999995
+261,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_8'] 673.720
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_1'] 827.331
+",0,journal,3,2,1,0.04,2609139,9131.9865
+262,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_8'] 673.720
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_2'] 823.877
+",0,journal,3,2,1,0.04,2605685,9119.8975
+263,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_8'] 673.720
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_3'] 1050.406
+",0,journal,3,2,1,0.04,2832214,9912749
+264,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_8'] 673.720
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+",0,journal,3,2,1,0.04,2137888,7482608
+265,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_9'] 62.169
+Take Image ['region_9'] 285.714
+",1,journal,2,1,1,0.02,1169257,4092.3995000000004
+266,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_9'] 62.169
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_1'] 570.669
+",1,journal,3,2,1,0.04,1740926,6093241
+267,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_9'] 62.169
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+",1,journal,3,2,1,0.04,1729.4,6052.900000000001
+268,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_9'] 62.169
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+",1,journal,3,2,1,0.02,1491268,5219438
+269,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_9'] 62.169
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_4'] 377.531
+",1,journal,3,2,1,0.04,1547788,5417258
+270,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_5'] 164.853
+Take Image ['region_5'] 285.714
+",1,journal,2,1,1,0.02,1345.09,4707815
+271,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_5'] 164.853
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_1'] 535.660
+",1,journal,3,2,1,0.02,1881.75,6586125
+272,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_5'] 164.853
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_2'] 524.440
+",1,journal,3,2,1,0.04,1870.53,6546855
+273,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_5'] 164.853
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_3'] 377.277
+",1,journal,3,2,1,0.02,1723367,6031.7845
+274,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_5'] 164.853
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+",1,journal,3,2,1,0.02,1665504,5829.263999999999
+275,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_5'] 130.606
+Take Image ['region_5'] 285.714
+",1,journal,2,1,1,0.02,1286588,4503058
+276,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_5'] 130.606
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_1'] 535.660
+",1,journal,3,2,1,0.04,1823248,6381368
+277,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_5'] 130.606
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_2'] 524.440
+",1,journal,3,2,1,0.04,1812028,6342098
+278,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_5'] 130.606
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_3'] 377.277
+",1,journal,3,2,1,0.02,1664865,5827.0275
+279,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_5'] 130.606
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+",1,journal,3,2,1,0.02,1607002,5624507
+280,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_5'] 219.053
+Take Image ['region_5'] 285.714
+",1,journal,2,1,1,0.02,1364638,4776233
+281,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_5'] 219.053
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_1'] 535.660
+",1,journal,3,2,1,0.04,1901.2979999999998,6654543
+282,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_5'] 219.053
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_2'] 524.440
+",1,journal,3,2,1,0.04,1890078,6615273
+283,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_5'] 219.053
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_3'] 377.277
+",1,journal,3,2,1,0.02,1742915,6100.202499999999
+284,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_5'] 219.053
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+",1,journal,3,2,1,0.02,1685052,5897682
+285,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_7'] 402.857
+Take Image ['region_7'] 285.714
+",1,journal,2,1,1,0.02,1415339,4953.6865
+286,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_7'] 402.857
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_1'] 723.294
+",0,journal,3,2,1,0.04,2139633,7488.715499999999
+287,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_7'] 402.857
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_2'] 718.457
+",0,journal,3,2,1,0.02,2134796,7471.785999999999
+288,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_7'] 402.857
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_3'] 908.231
+",0,journal,3,2,1,0.04,2324.5699999999997,8135.994999999999
+289,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_7'] 402.857
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",1,journal,3,2,1,0.02,1630519,5706.8165
+290,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_8'] 541.957
+Take Image ['region_8'] 285.714
+",1,journal,2,1,1,0.02,1554.4389999999999,5440.536499999999
+291,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_8'] 541.957
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_1'] 827.331
+",0,journal,3,2,1,0.04,2382.77,8339695
+292,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_8'] 541.957
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_2'] 823.877
+",0,journal,3,2,1,0.04,2379316,8327606
+293,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_8'] 541.957
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_3'] 1050.406
+",0,journal,3,2,1,0.02,2605845,9120.457499999999
+294,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_8'] 541.957
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+",1,journal,3,2,1,0.02,1911.5189999999998,6690.316499999999
+295,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_9'] 237.809
+Take Image ['region_9'] 285.714
+",1,journal,2,1,1,0.04,1250291,4376.0185
+296,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_9'] 237.809
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_1'] 570.669
+",1,journal,3,2,1,0.04,1821.96,6376.860000000001
+297,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_9'] 237.809
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+",1,journal,3,2,1,0.02,1810434,6336519
+298,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_9'] 237.809
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+",1,journal,3,2,1,0.04,1572302,5503057
+299,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_9'] 237.809
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_4'] 377.531
+",1,journal,3,2,1,0.04,1628822,5700.8769999999995
+300,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_10'] 334.740
+Take Image ['region_10'] 285.714
+",1,journal,2,1,1,0.04,1347222,4715277
+301,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_10'] 334.740
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_1'] 608.809
+",1,journal,3,2,1,0.04,1957031,6849.6085
+302,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_10'] 334.740
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_2'] 596.994
+",1,journal,3,2,1,0.02,1945216,6808.255999999999
+303,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_10'] 334.740
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_3'] 216.990
+",1,journal,3,2,1,0.04,1565212,5478242
+304,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_6'] 334.740
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+",1,journal,3,2,1,0.02,1709822,5984.3769999999995
+305,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_11'] 299.623
+Take Image ['region_11'] 285.714
+",1,journal,2,1,1,0.02,1312105,4592.3675
+306,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_11'] 299.623
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_1'] 584.554
+",1,journal,3,2,1,0.04,1897659,6641.806500000001
+307,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_11'] 299.623
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_2'] 572.783
+",1,journal,3,2,1,0.04,1885888,6600608
+308,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_11'] 299.623
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_3'] 248.221
+",1,journal,3,2,1,0.04,1561326,5464641
+309,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_6'] 299.623
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+",1,journal,3,2,1,0.02,1650.45,5776575
+310,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_12'] 369.209
+Take Image ['region_12'] 285.714
+",1,journal,2,1,1,0.02,1381691,4835.9185
+311,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_12'] 369.209
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_1'] 574.157
+",1,journal,3,2,1,0.04,1956848,6848968
+312,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_12'] 369.209
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_2'] 562.349
+",1,journal,3,2,1,0.04,1945.04,6807.639999999999
+313,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_12'] 369.209
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_3'] 165.630
+",1,journal,3,2,1,0.04,1548321,5419.1235
+314,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_6'] 369.209
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+",1,journal,3,2,1,0.02,1709.6390000000001,5983.736500000001
+315,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_8'] 142.287
+Take Image ['region_8'] 285.714
+",1,journal,2,1,1,0.02,1437009,5029.5315
+316,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_8'] 142.287
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_1'] 827.331
+",0,journal,3,2,1,0.04,2265.34,7928.6900000000005
+317,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_8'] 142.287
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_2'] 823.877
+",0,journal,3,2,1,0.02,2261886,7916601
+318,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_8'] 142.287
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_3'] 1050.406
+",0,journal,3,2,1,0.04,2488415,8709.4525
+319,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_8'] 142.287
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+",1,journal,3,2,1,0.02,1794089,6279.3115
+320,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_9'] 587.557
+Take Image ['region_9'] 285.714
+",1,journal,2,1,1,0.02,1882279,6587.9765
+321,"Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to picture ['region_9', 'region_7'] 587.557
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_1'] 723.294
+",0,journal,3,2,1,0.02,2453948,8588818
+322,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_9'] 587.557
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+",0,journal,3,2,1,0.02,2442422,8548477
+323,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_9'] 587.557
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+",0,journal,3,2,1,0.04,2204.29,7715.014999999999
+324,"Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to picture ['region_9', 'region_7'] 587.557
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",1,journal,3,2,1,0.02,1944834,6806919
+325,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_7'] 692.543
+Take Image ['region_7'] 285.714
+",1,journal,2,1,1,0.02,1872.7799999999997,6554.73
+326,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_7'] 692.543
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_1'] 723.294
+",0,journal,3,2,1,0.02,2597.0739999999996,9089.758999999998
+327,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_7'] 692.543
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_2'] 718.457
+",0,journal,3,2,1,0.04,2592.2369999999996,9072.829499999998
+328,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_10'] 692.543
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_3'] 216.990
+",0,journal,3,2,1,0.04,2205255,7718.3925
+329,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_7'] 692.543
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",0,journal,3,2,1,0.02,2087.9599999999996,7307.859999999999
+330,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_7'] 660.129
+Take Image ['region_7'] 285.714
+",1,journal,2,1,1,0.04,1816.1109999999999,6356.388499999999
+331,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_7'] 660.129
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_1'] 723.294
+",0,journal,3,2,1,0.04,2540.4049999999997,8891.4175
+332,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_7'] 660.129
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_2'] 718.457
+",0,journal,3,2,1,0.02,2535.5679999999998,8874488
+333,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_11'] 660.129
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_3'] 248.221
+",0,journal,3,2,1,0.04,2204072,7714252
+334,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_7'] 660.129
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",0,journal,3,2,1,0.02,2031291,7109.5185
+335,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_7'] 749.666
+Take Image ['region_7'] 285.714
+",1,journal,2,1,1,0.04,1895.2510000000002,6633.378500000001
+336,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_7'] 749.666
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_1'] 723.294
+",0,journal,3,2,1,0.04,2619545,9168.407500000001
+337,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_7'] 749.666
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_2'] 718.457
+",0,journal,3,2,1,0.02,2614708,9151.478000000001
+338,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_12'] 749.666
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_3'] 165.630
+",0,journal,3,2,1,0.04,2211018,7738563
+339,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_7'] 749.666
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",0,journal,3,2,1,0.04,2110431,7386.5085
+340,"Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+Go to picture ['region_8', 'region_9'] 729.620
+Take Image ['region_9'] 285.714
+",0,journal,2,1,1,0.04,2128379,7449.326499999999
+341,"Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to picture ['region_9', 'region_8'] 729.620
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_1'] 827.331
+",0,journal,3,2,1,0.04,2700.0480000000002,9450.168000000001
+342,"Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+Go to picture ['region_8', 'region_9'] 729.620
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+",0,journal,3,2,1,0.04,2688522,9409827
+343,"Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+Go to picture ['region_8', 'region_9'] 729.620
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+",0,journal,3,2,1,0.04,2450.39,8576365
+344,"Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to picture ['region_9', 'region_8'] 729.620
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+",0,journal,3,2,1,0.04,2228797,7800.7895
+345,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_8'] 834.520
+Take Image ['region_8'] 285.714
+",1,journal,2,1,1,0.02,2014.7569999999998,7051.6494999999995
+346,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_8'] 834.520
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_1'] 827.331
+",0,journal,3,2,1,0.02,2843.0879999999997,9950.807999999999
+347,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_8'] 834.520
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_2'] 823.877
+",0,journal,3,2,1,0.04,2839634,9938.719000000001
+348,"Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+Go to picture ['region_8', 'region_10'] 834.520
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_3'] 216.990
+",0,journal,3,2,1,0.02,2451.2690000000002,8579.4415
+349,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_8'] 834.520
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+",0,journal,3,2,1,0.02,2371837,8301.4295
+350,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_8'] 802.254
+Take Image ['region_8'] 285.714
+",1,journal,2,1,1,0.04,1958.2359999999999,6853.825999999999
+351,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_8'] 802.254
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_1'] 827.331
+",0,journal,3,2,1,0.04,2786567,9752.9845
+352,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_8'] 802.254
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_2'] 823.877
+",0,journal,3,2,1,0.02,2783113,9740.895499999999
+353,"Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+Go to picture ['region_8', 'region_11'] 802.254
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_3'] 248.221
+",0,journal,3,2,1,0.04,2450234,8575819
+354,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_8'] 802.254
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+",0,journal,3,2,1,0.04,2315316,8103606
+355,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_8'] 891.937
+Take Image ['region_8'] 285.714
+",0,journal,2,1,1,0.04,2037522,7131.326999999999
+356,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_8'] 891.937
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_1'] 827.331
+",0,journal,3,2,1,0.02,2865853,10030.4855
+357,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_8'] 891.937
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_2'] 823.877
+",0,journal,3,2,1,0.04,2862399,10018.396499999999
+358,"Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+Go to picture ['region_8', 'region_12'] 891.937
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_3'] 165.630
+",0,journal,3,2,1,0.04,2457326,8600641
+359,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_8'] 891.937
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+",0,journal,3,2,1,0.02,2394602,8381107
+360,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_9'] 105.170
+Take Image ['region_9'] 285.714
+",1,journal,2,1,1,0.04,1285407,4498.9245
+361,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_9'] 105.170
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_1'] 570.669
+",1,journal,3,2,1,0.04,1857076,6499766
+362,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_9'] 105.170
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+",1,journal,3,2,1,0.04,1845.55,6459425
+363,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_9'] 105.170
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+",1,journal,3,2,1,0.04,1607418,5625963
+364,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_9'] 105.170
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_4'] 377.531
+",1,journal,3,2,1,0.04,1663.9379999999999,5823.782999999999
+365,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_9'] 72.850
+Take Image ['region_9'] 285.714
+",1,journal,2,1,1,0.04,1228832,4300912
+366,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_9'] 72.850
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_1'] 570.669
+",1,journal,3,2,1,0.04,1800.5010000000002,6301.753500000001
+367,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_9'] 72.850
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+",1,journal,3,2,1,0.04,1788.9750000000001,6261.4125
+368,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_9'] 72.850
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+",1,journal,3,2,1,0.04,1550843,5427.9505
+369,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_9'] 72.850
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_4'] 377.531
+",1,journal,3,2,1,0.04,1607363,5625.7705000000005
+370,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_9'] 170.199
+Take Image ['region_9'] 285.714
+",1,journal,2,1,1,0.04,1315784,4605.244000000001
+371,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_9'] 170.199
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_1'] 570.669
+",1,journal,3,2,1,0.04,1887453,6606.0855
+372,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_9'] 170.199
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+",1,journal,3,2,1,0.02,1875.9270000000001,6565.744500000001
+373,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_9'] 170.199
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+",1,journal,3,2,1,0.02,1637795,5732.2825
+374,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_9'] 170.199
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_4'] 377.531
+",1,journal,3,2,1,0.02,1694315,5930.1025
+375,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_11'] 35.117
+Take Image ['region_11'] 285.714
+",1,journal,2,1,1,0.02,1215.3539999999998,4253739
+376,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_11'] 35.117
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_1'] 584.554
+",1,journal,3,2,1,0.04,1800908,6303178
+377,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_11'] 35.117
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_2'] 572.783
+",1,journal,3,2,1,0.02,1789.1369999999997,6261.9794999999995
+378,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_11'] 35.117
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_3'] 248.221
+",1,journal,3,2,1,0.04,1464.5749999999998,5126.012499999999
+379,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_11'] 35.117
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_4'] 449.374
+",1,journal,3,2,1,0.04,1665.7279999999998,5830048
+380,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_12'] 85.290
+Take Image ['region_12'] 285.714
+",1,journal,2,1,1,0.02,1265.5269999999998,4429.344499999999
+381,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_12'] 85.290
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_1'] 574.157
+",1,journal,3,2,1,0.02,1840.6839999999997,6442.393999999999
+382,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_12'] 85.290
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_2'] 562.349
+",1,journal,3,2,1,0.02,1828.8759999999997,6401.065999999999
+383,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_12'] 85.290
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_3'] 165.630
+",1,journal,3,2,1,0.04,1432.1569999999997,5012.549499999999
+384,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_12'] 85.290
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_4'] 536.431
+",1,journal,3,2,1,0.04,1802.9579999999999,6310.352999999999
+385,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_12'] 101.490
+Take Image ['region_12'] 285.714
+",1,journal,2,1,1,0.02,1257472,4401152
+386,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_12'] 101.490
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_1'] 574.157
+",1,journal,3,2,1,0.02,1832629,6414.201499999999
+387,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_12'] 101.490
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_2'] 562.349
+",1,journal,3,2,1,0.02,1820821,6372.8735
+388,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_12'] 101.490
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_3'] 165.630
+",1,journal,3,2,1,0.02,1424.1019999999999,4984357
+389,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_12'] 101.490
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_4'] 536.431
+",1,journal,3,2,1,0.02,1794903,6282.1605
+390,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_3'] 386.620
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+",0,journal,3,1,1,0.02,2057.4339999999997,7201.018999999999
+391,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_3'] 386.620
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.04,2676.2999999999997,9367.05
+392,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_3'] 386.620
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+",0,journal,4,2,1,0.04,2680.8679999999995,9383.037999999999
+393,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_3'] 386.620
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,4,2,1,0.04,3232.9649999999997,11315.377499999999
+394,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_2'] 608.543
+Take Image ['region_2'] 285.714
+Go to base ['region_2', 'base_4'] 240.677
+Recharge Battery ['base_4'] 39.971
+Go to picture ['base_4', 'region_3'] 212.943
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_4'] 212.943
+",0,journal,4,2,1,0.04,2792085,9772.2975
+395,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_4'] 748.331
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+Recharge Battery ['base_4'] 43.607
+Go to picture ['base_4', 'region_1'] 607.420
+Take Image ['region_1'] 285.714
+",0,journal,3,1,1,0.06,3161.6890000000003,11065.911500000002
+396,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_4'] 748.331
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+Recharge Battery ['base_1'] 52.312
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.04,4243689,14852.911500000002
+397,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_4'] 748.331
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_2'] 990.883
+Recharge Battery ['base_2'] 52.269
+Go to picture ['base_2', 'region_1'] 622.434
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+",0,journal,4,2,1,0.06,4250576,14877016
+398,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_4'] 748.331
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_3'] 1242.123
+Recharge Battery ['base_3'] 57.195
+Go to picture ['base_3', 'region_1'] 1174.531
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,4,2,1,0.04,5610.936000000001,19638276
+399,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_2'] 608.543
+Take Image ['region_2'] 285.714
+Go to base ['region_2', 'base_4'] 240.677
+Recharge Battery ['base_4'] 39.971
+Go to picture ['base_4', 'region_4'] 549.106
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+",0,journal,4,2,1,0.04,3464.410999999999,12125.438499999997
+400,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Go to picture ['region_1', 'region_5'] 844.311
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+Recharge Battery ['base_4'] 52.917
+Go to picture ['base_4', 'region_1'] 607.420
+Take Image ['region_1'] 285.714
+",0,journal,3,1,1,0.08,3645.8300000000004,12760405
+401,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Go to picture ['region_1', 'region_5'] 844.311
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_1'] 535.660
+Recharge Battery ['base_1'] 57.157
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.06,4495.628000000001,15734.698000000002
+402,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Go to picture ['region_1', 'region_5'] 844.311
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_2'] 524.440
+Recharge Battery ['base_2'] 56.937
+Go to picture ['base_2', 'region_1'] 622.434
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+",0,journal,4,2,1,0.06,4493.3240000000005,15726.634000000002
+403,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Go to picture ['region_1', 'region_5'] 844.311
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_3'] 377.277
+Recharge Battery ['base_3'] 54.052
+Go to picture ['base_3', 'region_1'] 1174.531
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,4,2,1,0.06,5447.47,19066145
+404,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_2'] 608.543
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_5'] 246.035
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+",0,journal,4,2,1,0.04,2650.0,9275.0
+405,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Go to picture ['region_1', 'region_6'] 668.243
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+Recharge Battery ['base_4'] 47.003
+Go to picture ['base_4', 'region_1'] 607.420
+Take Image ['region_1'] 285.714
+",0,journal,3,1,1,0.06,3338279,11683.9765
+406,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Go to picture ['region_1', 'region_6'] 668.243
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_1'] 441.054
+Recharge Battery ['base_1'] 51.850
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.06,4219647,14768.7645
+407,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Go to picture ['region_1', 'region_6'] 668.243
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_2'] 431.529
+Recharge Battery ['base_2'] 51.663
+Go to picture ['base_2', 'region_1'] 622.434
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+",0,journal,4,2,1,0.06,4219071,14766.7485
+408,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Go to picture ['region_1', 'region_6'] 668.243
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_3'] 534.551
+Recharge Battery ['base_3'] 53.683
+Go to picture ['base_3', 'region_1'] 1174.531
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,4,2,1,0.06,5428307,18999.0745
+409,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_2'] 608.543
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_6'] 91.397
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+",0,journal,4,2,1,0.04,2369.7929999999997,8294.2755
+410,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_7'] 428.571
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+",0,journal,3,1,1,0.04,2181562,7635467
+411,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_7'] 428.571
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.04,2800428,9801498
+412,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_7'] 428.571
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+",0,journal,4,2,1,0.04,2804996,9817486
+413,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_7'] 428.571
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,4,2,1,0.04,3357093,11749.825499999999
+414,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_2'] 608.543
+Take Image ['region_2'] 285.714
+Go to base ['region_2', 'base_4'] 240.677
+Recharge Battery ['base_4'] 39.971
+Go to picture ['base_4', 'region_7'] 214.180
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",0,journal,4,2,1,0.06,2794.5589999999993,9780.956499999997
+415,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_8'] 559.740
+Take Image ['region_8'] 285.714
+Go to picture ['region_8', 'region_1'] 527.180
+Take Image ['region_1'] 285.714
+",0,journal,3,1,1,0.04,2299145,8047.0075
+416,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_8'] 559.740
+Take Image ['region_8'] 285.714
+Go to picture ['region_8', 'region_1'] 527.180
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.04,2918011,10213.0385
+417,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_8'] 559.740
+Take Image ['region_8'] 285.714
+Go to picture ['region_8', 'region_1'] 527.180
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+",0,journal,4,2,1,0.02,2922.5789999999997,10229.0265
+418,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_8'] 559.740
+Take Image ['region_8'] 285.714
+Go to picture ['region_8', 'region_1'] 527.180
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,4,2,1,0.04,3474676,12161366
+419,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_2'] 608.543
+Take Image ['region_2'] 285.714
+Go to base ['region_2', 'base_4'] 240.677
+Recharge Battery ['base_4'] 39.971
+Go to picture ['base_4', 'region_8'] 356.080
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+",0,journal,4,2,1,0.04,3078.3589999999995,10774.256499999998
+420,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Take Image ['region_1'] 285.714
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 47.612
+Go to picture ['base_4', 'region_9'] 377.531
+Take Image ['region_9'] 285.714
+",0,journal,3,1,1,0.1,3140045,10990.157500000001
+421,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 47.816
+Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_1'] 570.669
+",0,journal,4,2,1,0.14,3915.5019999999995,13704.256999999998
+422,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 47.906
+Go to picture ['base_2', 'region_9'] 559.143
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+",0,journal,4,2,1,0.16,3897108,13639878
+423,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 58.731
+Go to picture ['base_3', 'region_9'] 321.011
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+",0,journal,4,2,1,0.14,3983766,13943181
+424,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_2'] 608.543
+Take Image ['region_2'] 285.714
+Go to base ['region_2', 'base_4'] 240.677
+Recharge Battery ['base_4'] 39.971
+Go to picture ['base_4', 'region_9'] 377.531
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_4'] 377.531
+",0,journal,4,2,1,0.04,3121.2609999999995,10924.413499999999
+425,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_10'] 388.886
+Go to picture ['region_10', 'region_1'] 996.740
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 57.246
+Go to picture ['base_4', 'region_10'] 482.677
+Take Image ['region_10'] 285.714
+",0,journal,3,1,1,0.06,3746.1940000000004,13111.679000000002
+426,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_10'] 388.886
+Go to picture ['region_10', 'region_1'] 996.740
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 57.451
+Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_1'] 608.809
+",0,journal,4,2,1,0.06,4492786,15724751
+427,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_10'] 388.886
+Go to picture ['region_10', 'region_1'] 996.740
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 57.541
+Go to picture ['base_2', 'region_10'] 596.994
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_2'] 596.994
+",0,journal,4,2,1,0.06,4473814,15658.349000000002
+428,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 58.731
+Go to picture ['base_3', 'region_10'] 216.990
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_3'] 216.990
+",0,journal,4,2,1,0.16,3775724,13215034
+429,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_1'] 996.740
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 54.596
+Go to picture ['base_4', 'region_2'] 240.677
+Take Image ['region_2'] 285.714
+Go to base ['region_2', 'base_4'] 240.677
+",0,journal,4,2,1,0.04,3608061,12628.2135
+430,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_11'] 354.586
+Go to picture ['region_11', 'region_1'] 962.086
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 55.894
+Go to picture ['base_4', 'region_11'] 449.374
+Take Image ['region_11'] 285.714
+",0,journal,3,1,1,0.1,3642585,12749.0475
+431,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_11'] 354.586
+Go to picture ['region_11', 'region_1'] 962.086
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 56.099
+Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_1'] 584.554
+",0,journal,4,2,1,0.08,4373.97,15308895
+432,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_11'] 354.586
+Go to picture ['region_11', 'region_1'] 962.086
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 56.189
+Go to picture ['base_2', 'region_11'] 572.783
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_2'] 572.783
+",0,journal,4,2,1,0.06,4355086,15242.801000000001
+433,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 58.731
+Go to picture ['base_3', 'region_11'] 248.221
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_3'] 248.221
+",0,journal,4,2,1,0.16,3838186,13433651
+434,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_1'] 962.086
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 53.441
+Go to picture ['base_4', 'region_2'] 240.677
+Take Image ['region_2'] 285.714
+Go to base ['region_2', 'base_4'] 240.677
+",0,journal,4,2,1,0.04,3547.9970000000003,12417.989500000001
+435,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_12'] 406.171
+Go to picture ['region_12', 'region_1'] 1012.520
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 57.895
+Go to picture ['base_4', 'region_12'] 536.431
+Take Image ['region_12'] 285.714
+",0,journal,3,1,1,0.08,3833.6620000000003,13417.817000000001
+436,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_12'] 406.171
+Go to picture ['region_12', 'region_1'] 1012.520
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 58.099
+Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_1'] 574.157
+",0,journal,4,2,1,0.06,4457.195000000001,15600.182500000003
+437,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_12'] 406.171
+Go to picture ['region_12', 'region_1'] 1012.520
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 58.189
+Go to picture ['base_2', 'region_12'] 562.349
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_2'] 562.349
+",0,journal,4,2,1,0.06,4438237,15533.8295
+438,"Go to picture ['base_1', 'region_2'] 355.083
+Take Image ['region_2'] 285.714
+Take Image ['region_2'] 285.714
+Go to picture ['region_2', 'region_1'] 608.543
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 58.731
+Go to picture ['base_3', 'region_12'] 165.630
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_3'] 165.630
+",0,journal,4,2,1,0.16,3673.0040000000004,12855.514000000001
+439,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_1'] 1012.520
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 54.226
+Go to picture ['base_4', 'region_2'] 240.677
+Take Image ['region_2'] 285.714
+Go to base ['region_2', 'base_4'] 240.677
+",0,journal,4,2,1,0.04,3588.8190000000004,12560.866500000002
+440,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 44.920
+Go to picture ['base_4', 'region_4'] 549.106
+Take Image ['region_4'] 285.714
+",0,journal,3,1,1,0.06,3171.6710000000003,11100.8485
+441,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 45.125
+Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+",0,journal,4,2,1,0.04,4620394,16171379
+442,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 45.215
+Go to picture ['base_2', 'region_4'] 990.883
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_2'] 990.883
+",0,journal,4,2,1,0.04,4620.639999999999,16172.239999999998
+443,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 56.040
+Go to picture ['base_3', 'region_4'] 1242.123
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_3'] 1242.123
+",0,journal,4,2,1,0.04,5686.0419999999995,19901.146999999997
+444,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_4'] 361.809
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+",0,journal,4,2,1,0.04,2845.5119999999997,9959292
+445,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Go to picture ['region_3', 'region_5'] 528.820
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+Recharge Battery ['base_4'] 48.943
+Go to picture ['base_4', 'region_3'] 212.943
+Take Image ['region_3'] 285.714
+",0,journal,3,1,1,0.06,3044.7170000000006,10656.509500000002
+446,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_3'] 528.820
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.04,2999.0769999999998,10496.769499999999
+447,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Go to picture ['region_3', 'region_5'] 528.820
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_2'] 524.440
+Recharge Battery ['base_2'] 52.964
+Go to picture ['base_2', 'region_3'] 649.546
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_2'] 649.546
+",0,journal,4,2,1,0.06,4340.9130000000005,15193.195500000002
+448,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Go to picture ['region_3', 'region_5'] 528.820
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_3'] 377.277
+Recharge Battery ['base_3'] 50.078
+Go to picture ['base_3', 'region_3'] 904.983
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_3'] 904.983
+",0,journal,4,2,1,0.06,4701738,16456.083000000002
+449,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Take Image ['region_3'] 285.714
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_4'] 212.943
+Recharge Battery ['base_4'] 42.089
+Go to picture ['base_4', 'region_5'] 319.414
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+",0,journal,4,2,1,0.16,3115.1709999999994,10903.098499999998
+450,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_6'] 379.489
+Take Image ['region_6'] 285.714
+",0,journal,3,1,1,0.04,2313086,8095.8009999999995
+451,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_3'] 379.489
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.04,2755.14,9642.99
+452,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_6'] 379.489
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_2'] 431.529
+",0,journal,4,2,1,0.06,2745615,9609.6525
+453,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_6'] 379.489
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_3'] 534.551
+",0,journal,4,2,1,0.04,2848.6369999999997,9970.2295
+454,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_6'] 379.489
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+",0,journal,4,2,1,0.04,2507.9309999999996,8777.758499999998
+455,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 44.920
+Go to picture ['base_4', 'region_7'] 214.180
+Take Image ['region_7'] 285.714
+",0,journal,3,1,1,0.06,2836745,9928.6075
+456,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 45.125
+Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_1'] 723.294
+",0,journal,4,2,1,0.04,4080.8039999999996,14282.813999999998
+457,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 45.215
+Go to picture ['base_2', 'region_7'] 718.457
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_2'] 718.457
+",0,journal,4,2,1,0.04,4075.7879999999996,14265.257999999998
+458,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 56.040
+Go to picture ['base_3', 'region_7'] 908.231
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_3'] 908.231
+",0,journal,4,2,1,0.06,5018258,17563903
+459,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_7'] 88.778
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",0,journal,4,2,1,0.04,2237555,7831.442499999999
+460,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 44.920
+Go to picture ['base_4', 'region_8'] 356.080
+Take Image ['region_8'] 285.714
+",0,journal,3,1,1,0.06,2978645,10425.2575
+461,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 45.125
+Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_1'] 827.331
+",0,journal,4,2,1,0.04,4288878,15011.072999999999
+462,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 45.215
+Go to picture ['base_2', 'region_8'] 823.877
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_2'] 823.877
+",0,journal,4,2,1,0.04,4286628,15003.197999999999
+463,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_1'] 458.589
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 56.040
+Go to picture ['base_3', 'region_8'] 1050.406
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_3'] 1050.406
+",0,journal,4,2,1,0.04,5302608,18559128
+464,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_8'] 177.060
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+",0,journal,4,2,1,0.04,2467.7369999999996,8637.079499999998
+465,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Go to picture ['region_3', 'region_9'] 588.466
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+Recharge Battery ['base_3'] 50.144
+Go to picture ['base_3', 'region_3'] 904.983
+Take Image ['region_3'] 285.714
+",0,journal,3,1,1,0.08,3799.200999999999,13297.203499999996
+466,"Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to picture ['region_9', 'region_3'] 588.466
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_1'] 653.494
+Recharge Battery ['base_1'] 46.746
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.06,3954.2490000000003,13839.871500000001
+467,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Go to picture ['region_3', 'region_9'] 588.466
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+Recharge Battery ['base_2'] 54.814
+Go to picture ['base_2', 'region_3'] 649.546
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_2'] 649.546
+",0,journal,4,2,1,0.06,4437112,15529892
+468,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_9'] 588.466
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+Recharge Battery ['base_3'] 41.851
+Go to picture ['base_3', 'region_1'] 1174.531
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,4,2,1,0.06,4813026,16845591
+469,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Take Image ['region_3'] 285.714
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_4'] 212.943
+Recharge Battery ['base_4'] 42.089
+Go to picture ['base_4', 'region_9'] 377.531
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_4'] 377.531
+",0,journal,4,2,1,0.16,3231.4049999999997,11309.9175
+470,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Go to picture ['region_3', 'region_10'] 693.300
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_3'] 216.990
+Recharge Battery ['base_3'] 50.160
+Go to picture ['base_3', 'region_3'] 904.983
+Take Image ['region_3'] 285.714
+",0,journal,3,1,1,0.08,3800.0299999999997,13300105
+471,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_3'] 693.300
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_1'] 653.494
+Recharge Battery ['base_1'] 49.550
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.04,4100027,14350.0945
+472,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Go to picture ['region_3', 'region_10'] 693.300
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_2'] 596.994
+Recharge Battery ['base_2'] 57.611
+Go to picture ['base_2', 'region_3'] 649.546
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_2'] 649.546
+",0,journal,4,2,1,0.06,4582594,16039079
+473,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_10'] 693.300
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_3'] 216.990
+Recharge Battery ['base_3'] 41.867
+Go to picture ['base_3', 'region_1'] 1174.531
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,4,2,1,0.04,4813855,16848.4925
+474,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_1'] 996.740
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 54.596
+Go to picture ['base_4', 'region_3'] 212.943
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_4'] 212.943
+",0,journal,4,2,1,0.04,3552.5930000000003,12434.0755
+475,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Go to picture ['region_3', 'region_11'] 659.397
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_3'] 248.221
+Recharge Battery ['base_3'] 50.108
+Go to picture ['base_3', 'region_3'] 904.983
+Take Image ['region_3'] 285.714
+",0,journal,3,1,1,0.1,3797.3059999999996,13290.570999999998
+476,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_3'] 659.397
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_1'] 653.494
+Recharge Battery ['base_1'] 48.409
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.06,4040728,14142548
+477,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_3'] 458.589
+Go to picture ['region_3', 'region_11'] 659.397
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_2'] 572.783
+Recharge Battery ['base_2'] 56.472
+Go to picture ['base_2', 'region_3'] 649.546
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_2'] 649.546
+",0,journal,4,2,1,0.06,4523341,15831.693500000001
+478,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_11'] 659.397
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_3'] 248.221
+Recharge Battery ['base_3'] 41.815
+Go to picture ['base_3', 'region_1'] 1174.531
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,4,2,1,0.04,4811.130999999999,16838.958499999997
+479,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_1'] 962.086
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 53.441
+Go to picture ['base_4', 'region_3'] 212.943
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_4'] 212.943
+",0,journal,4,2,1,0.04,3492.5290000000005,12223.8515
+480,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_3'] 742.189
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_4'] 212.943
+Recharge Battery ['base_4'] 41.191
+Go to picture ['base_4', 'region_1'] 607.420
+Take Image ['region_1'] 285.714
+",0,journal,3,1,1,0.1,3036042,10626.146999999999
+481,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_3'] 742.189
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_1'] 653.494
+Recharge Battery ['base_1'] 49.829
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.04,4114543,14400.9005
+482,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_3'] 742.189
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_2'] 649.546
+Recharge Battery ['base_2'] 49.751
+Go to picture ['base_2', 'region_1'] 622.434
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+",0,journal,4,2,1,0.14,4119653,14418.785500000002
+483,"Go to picture ['base_1', 'region_3'] 653.494
+Take Image ['region_3'] 285.714
+Go to picture ['region_3', 'region_12'] 742.189
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_3'] 165.630
+Recharge Battery ['base_3'] 41.818
+Go to picture ['base_3', 'region_1'] 1174.531
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,4,2,1,0.06,4811335,16839.6725
+484,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_1'] 1012.520
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 54.226
+Go to picture ['base_4', 'region_3'] 212.943
+Take Image ['region_3'] 285.714
+Go to base ['region_3', 'base_4'] 212.943
+",0,journal,4,2,1,0.04,3533.3510000000006,12366.728500000001
+485,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+Recharge Battery ['base_4'] 45.555
+Go to picture ['base_4', 'region_5'] 319.414
+Take Image ['region_5'] 285.714
+",0,journal,3,1,1,0.04,2974974,10412409
+486,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_4'] 865.991
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+Recharge Battery ['base_1'] 58.160
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.04,4547.773999999999,15917.208999999999
+487,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_2'] 990.883
+Recharge Battery ['base_2'] 54.217
+Go to picture ['base_2', 'region_5'] 524.440
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_2'] 524.440
+",0,journal,4,2,1,0.06,4155.879000000001,14545.576500000003
+488,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_3'] 1242.123
+Recharge Battery ['base_3'] 59.143
+Go to picture ['base_3', 'region_5'] 377.277
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_3'] 377.277
+",0,journal,4,2,1,0.04,4117719,14412.0165
+489,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+Recharge Battery ['base_4'] 45.555
+Go to picture ['base_4', 'region_5'] 319.414
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+",0,journal,4,2,1,0.04,3295388,11533858
+490,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+Recharge Battery ['base_4'] 45.555
+Go to picture ['base_4', 'region_6'] 193.845
+Take Image ['region_6'] 285.714
+",0,journal,3,1,1,0.04,2849.4049999999997,9972.9175
+491,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_4'] 734.511
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+Recharge Battery ['base_1'] 53.727
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.04,4317.254999999999,15110.392499999998
+492,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_2'] 990.883
+Recharge Battery ['base_2'] 54.217
+Go to picture ['base_2', 'region_6'] 431.529
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_2'] 431.529
+",0,journal,4,2,1,0.04,3970.0570000000002,13895.1995
+493,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_3'] 1242.123
+Recharge Battery ['base_3'] 59.143
+Go to picture ['base_3', 'region_6'] 534.551
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_3'] 534.551
+",0,journal,4,2,1,0.04,4432267,15512.9345
+494,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+Recharge Battery ['base_4'] 45.555
+Go to picture ['base_4', 'region_6'] 193.845
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+",0,journal,4,2,1,0.04,3044.2499999999995,10654.874999999998
+495,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 47.900
+Go to picture ['base_4', 'region_4'] 549.106
+Take Image ['region_4'] 285.714
+",0,journal,3,1,1,0.02,3326.6279999999997,11643.197999999999
+496,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 48.105
+Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+",0,journal,4,2,1,0.04,4775351,16713.728499999997
+497,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 48.195
+Go to picture ['base_2', 'region_4'] 990.883
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_2'] 990.883
+",0,journal,4,2,1,0.04,4775597,16714.5895
+498,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 59.020
+Go to picture ['base_3', 'region_4'] 1242.123
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_3'] 1242.123
+",0,journal,4,2,1,0.04,5840999,20443.4965
+499,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+Recharge Battery ['base_4'] 45.555
+Go to picture ['base_4', 'region_7'] 214.180
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",0,journal,4,2,1,0.04,3084.9199999999996,10797.22
+500,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_1'] 584.891
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 54.055
+Go to picture ['base_4', 'region_8'] 356.080
+Take Image ['region_8'] 285.714
+",0,journal,3,1,1,0.04,3453.6769999999997,12087.869499999999
+501,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_1'] 584.891
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 54.260
+Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_1'] 827.331
+",0,journal,4,2,1,0.06,4763.91,16673.684999999998
+502,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_1'] 584.891
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 54.350
+Go to picture ['base_2', 'region_8'] 823.877
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_2'] 823.877
+",0,journal,4,2,1,0.04,4761.66,16665.809999999998
+503,"Go to picture ['base_1', 'region_4'] 993.089
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_1'] 584.891
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 65.175
+Go to picture ['base_3', 'region_8'] 1050.406
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_3'] 1050.406
+",0,journal,4,2,1,0.04,5777.64,20221.74
+504,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to picture ['region_4', 'region_8'] 193.111
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+",0,journal,4,2,1,0.04,2610.0899999999997,9135.314999999999
+505,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+Recharge Battery ['base_4'] 45.555
+Go to picture ['base_4', 'region_9'] 377.531
+Take Image ['region_9'] 285.714
+",0,journal,3,1,1,0.06,3033091,10615.8185
+506,"Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to picture ['region_9', 'region_4'] 921.137
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+Recharge Battery ['base_1'] 59.928
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.04,4639697,16238.9395
+507,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_2'] 990.883
+Recharge Battery ['base_2'] 54.217
+Go to picture ['base_2', 'region_9'] 559.143
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+",0,journal,4,2,1,0.06,4225285,14788.4975
+508,"Go to picture ['base_1', 'region_4'] 993.089
+Go to picture ['region_4', 'region_9'] 921.137
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+Recharge Battery ['base_3'] 49.430
+Go to picture ['base_3', 'region_4'] 1242.123
+Go to picture ['region_4', 'region_1'] 584.891
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 64.456
+Go to picture ['base_3', 'region_4'] 1242.123
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_3'] 1242.123
+",0,journal,4,2,1,0.1,8695.055999999999,30432.695999999996
+509,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+Recharge Battery ['base_4'] 45.555
+Go to picture ['base_4', 'region_9'] 377.531
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_4'] 377.531
+",0,journal,4,2,1,0.04,3411622,11940677
+510,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+Recharge Battery ['base_4'] 45.555
+Go to picture ['base_4', 'region_10'] 482.677
+Take Image ['region_10'] 285.714
+",0,journal,3,1,1,0.04,3138237,10983.8295
+511,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_4'] 1025.769
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+Recharge Battery ['base_1'] 62.727
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.06,4785268,16748.438000000002
+512,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_2'] 990.883
+Recharge Battery ['base_2'] 54.217
+Go to picture ['base_2', 'region_10'] 596.994
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_2'] 596.994
+",0,journal,4,2,1,0.04,4300987,15053.4545
+513,"Go to picture ['base_1', 'region_4'] 993.089
+Go to picture ['region_4', 'region_10'] 1025.769
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_3'] 216.990
+Recharge Battery ['base_3'] 49.442
+Go to picture ['base_3', 'region_4'] 1242.123
+Go to picture ['region_4', 'region_1'] 584.891
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 64.456
+Go to picture ['base_3', 'region_4'] 1242.123
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_3'] 1242.123
+",0,journal,4,2,1,0.16,8695679,30434.8765
+514,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_1'] 996.740
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 54.596
+Go to picture ['base_4', 'region_4'] 549.106
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+",0,journal,4,2,1,0.04,4224919,14787.216499999999
+515,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+Recharge Battery ['base_4'] 45.555
+Go to picture ['base_4', 'region_11'] 449.374
+Take Image ['region_11'] 285.714
+",0,journal,3,1,1,0.04,3104934,10867269
+516,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_4'] 993.900
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+Recharge Battery ['base_1'] 61.627
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.12,4728044,16548154
+517,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_2'] 990.883
+Recharge Battery ['base_2'] 54.217
+Go to picture ['base_2', 'region_11'] 572.783
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_2'] 572.783
+",0,journal,4,2,1,0.02,4252.5650000000005,14883.9775
+518,"Go to picture ['base_1', 'region_4'] 993.089
+Go to picture ['region_4', 'region_11'] 993.900
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_3'] 248.221
+Recharge Battery ['base_3'] 49.430
+Go to picture ['base_3', 'region_4'] 1242.123
+Go to picture ['region_4', 'region_1'] 584.891
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 64.456
+Go to picture ['base_3', 'region_4'] 1242.123
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_3'] 1242.123
+",0,journal,4,2,1,0.12,8695.028999999999,30432.601499999997
+519,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_1'] 962.086
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 53.441
+Go to picture ['base_4', 'region_4'] 549.106
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+",0,journal,4,2,1,0.04,4164855,14576.992499999998
+520,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+Recharge Battery ['base_4'] 45.555
+Go to picture ['base_4', 'region_12'] 536.431
+Take Image ['region_12'] 285.714
+",0,journal,3,1,1,0.04,3191991,11171.968499999999
+521,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_4'] 1084.526
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_1'] 993.089
+Recharge Battery ['base_1'] 63.200
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.06,4809.8460000000005,16834.461000000003
+522,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_4'] 584.891
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_2'] 990.883
+Recharge Battery ['base_2'] 54.217
+Go to picture ['base_2', 'region_12'] 562.349
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_2'] 562.349
+",0,journal,4,2,1,0.04,4231697,14810.9395
+523,"Go to picture ['base_1', 'region_4'] 993.089
+Go to picture ['region_4', 'region_12'] 1084.526
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_3'] 165.630
+Recharge Battery ['base_3'] 49.587
+Go to picture ['base_3', 'region_4'] 1242.123
+Go to picture ['region_4', 'region_1'] 584.891
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 64.456
+Go to picture ['base_3', 'region_4'] 1242.123
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_3'] 1242.123
+",0,journal,4,2,1,0.1,8703221,30461.2735
+524,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_1'] 1012.520
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 54.226
+Go to picture ['base_4', 'region_4'] 549.106
+Take Image ['region_4'] 285.714
+Go to base ['region_4', 'base_4'] 549.106
+",0,journal,4,2,1,0.04,4205677,14719.869499999999
+525,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 50.173
+Go to picture ['base_4', 'region_6'] 193.845
+Take Image ['region_6'] 285.714
+",0,journal,3,1,1,0.04,3089551,10813.4285
+526,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 50.378
+Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_1'] 441.054
+",0,journal,4,2,1,0.04,3789465,13263.1275
+527,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 50.467
+Go to picture ['base_2', 'region_6'] 431.529
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_2'] 431.529
+",0,journal,4,2,1,0.04,3775.0719999999997,13212.751999999999
+528,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 61.293
+Go to picture ['base_3', 'region_6'] 534.551
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_3'] 534.551
+",0,journal,4,2,1,0.04,4544039,15904.136499999999
+529,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_5'] 844.311
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+Recharge Battery ['base_4'] 46.138
+Go to picture ['base_4', 'region_6'] 193.845
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+",0,journal,4,2,1,0.04,3074.5609999999997,10760.963499999998
+531,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_7'] 531.446
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 54.846
+Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_1'] 723.294
+",0,journal,4,2,1,0.06,4586314,16052.099000000002
+532,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_7'] 540.766
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_2'] 718.457
+Recharge Battery ['base_2'] 48.010
+Go to picture ['base_2', 'region_5'] 524.440
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_2'] 524.440
+",0,journal,4,2,1,0.06,3833121,13415.9235
+533,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_7'] 540.766
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_3'] 908.231
+Recharge Battery ['base_3'] 51.731
+Go to picture ['base_3', 'region_5'] 377.277
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_3'] 377.277
+",0,journal,4,2,1,0.06,3732.2900000000004,13063.015000000001
+534,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_5'] 844.311
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+Recharge Battery ['base_4'] 46.138
+Go to picture ['base_4', 'region_7'] 214.180
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",0,journal,4,2,1,0.02,3115.2309999999998,10903.3085
+535,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_8'] 527.180
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+Recharge Battery ['base_4'] 40.638
+Go to picture ['base_4', 'region_5'] 319.414
+Take Image ['region_5'] 285.714
+",0,journal,3,1,1,0.04,2719.3199999999997,9517.619999999999
+536,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_8'] 673.720
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_1'] 827.331
+Recharge Battery ['base_1'] 51.140
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.04,4182725,14639.537500000002
+537,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_8'] 527.180
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_2'] 823.877
+Recharge Battery ['base_2'] 49.811
+Go to picture ['base_2', 'region_5'] 524.440
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_2'] 524.440
+",0,journal,4,2,1,0.02,3926756,13743.645999999999
+538,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_8'] 527.180
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_3'] 1050.406
+Recharge Battery ['base_3'] 54.253
+Go to picture ['base_3', 'region_5'] 377.277
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_3'] 377.277
+",0,journal,4,2,1,0.04,3863401,13521.9035
+539,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_5'] 844.311
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+Recharge Battery ['base_4'] 46.138
+Go to picture ['base_4', 'region_8'] 356.080
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+",0,journal,4,2,1,0.04,3399031,11896.6085
+540,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 50.173
+Go to picture ['base_4', 'region_9'] 377.531
+Take Image ['region_9'] 285.714
+",0,journal,3,1,1,0.06,3273237,11456.3295
+541,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 50.378
+Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_1'] 570.669
+",0,journal,4,2,1,0.06,4048.6949999999997,14170.432499999999
+542,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 50.467
+Go to picture ['base_2', 'region_9'] 559.143
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+",0,journal,4,2,1,0.04,4030.2999999999997,14106.05
+543,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 61.293
+Go to picture ['base_3', 'region_9'] 321.011
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+",0,journal,4,2,1,0.04,4116959,14409.3565
+544,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_5'] 844.311
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+Recharge Battery ['base_4'] 46.138
+Go to picture ['base_4', 'region_9'] 377.531
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_4'] 377.531
+",0,journal,4,2,1,0.04,3441933,12046.7655
+545,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 50.173
+Go to picture ['base_4', 'region_10'] 482.677
+Take Image ['region_10'] 285.714
+",0,journal,3,1,1,0.04,3378.3830000000003,11824.3405
+546,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 50.378
+Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_1'] 608.809
+",0,journal,4,2,1,0.06,4124975,14437.412500000002
+547,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 50.467
+Go to picture ['base_2', 'region_10'] 596.994
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_2'] 596.994
+",0,journal,4,2,1,0.04,4106.0019999999995,14371.006999999998
+548,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 61.293
+Go to picture ['base_3', 'region_10'] 216.990
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_3'] 216.990
+",0,journal,4,2,1,0.06,3908.9169999999995,13681.209499999997
+549,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_1'] 996.740
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 54.596
+Go to picture ['base_4', 'region_5'] 319.414
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+",0,journal,4,2,1,0.04,3765535,13179.3725
+550,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 50.173
+Go to picture ['base_4', 'region_11'] 449.374
+Take Image ['region_11'] 285.714
+",0,journal,3,1,1,0.04,3345.08,11707.779999999999
+551,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 50.378
+Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_1'] 584.554
+",0,journal,4,2,1,0.04,4076465,14267.6275
+552,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 50.467
+Go to picture ['base_2', 'region_11'] 572.783
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_2'] 572.783
+",0,journal,4,2,1,0.04,4057.5799999999995,14201.529999999999
+553,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 61.293
+Go to picture ['base_3', 'region_11'] 248.221
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_3'] 248.221
+",0,journal,4,2,1,0.04,3971379,13899.8265
+554,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_1'] 962.086
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 53.441
+Go to picture ['base_4', 'region_5'] 319.414
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+",0,journal,4,2,1,0.04,3705.4709999999995,12969.1485
+555,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_12'] 219.053
+Go to picture ['region_12', 'region_1'] 1012.520
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 57.766
+Go to picture ['base_4', 'region_12'] 536.431
+Take Image ['region_12'] 285.714
+",0,journal,3,1,1,0.08,3826992,13394.472000000002
+556,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_12'] 219.053
+Go to picture ['region_12', 'region_1'] 1012.520
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 57.971
+Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_1'] 574.157
+",0,journal,4,2,1,0.06,4450526,15576841
+557,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_12'] 219.053
+Go to picture ['region_12', 'region_1'] 1012.520
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 58.061
+Go to picture ['base_2', 'region_12'] 562.349
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_2'] 562.349
+",0,journal,4,2,1,0.06,4431568,15510.488000000001
+558,"Go to picture ['base_1', 'region_5'] 535.660
+Take Image ['region_5'] 285.714
+Go to picture ['region_5', 'region_1'] 844.311
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 61.293
+Go to picture ['base_3', 'region_12'] 165.630
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_3'] 165.630
+",0,journal,4,2,1,0.04,3806197,13321.6895
+559,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_1'] 1012.520
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 54.226
+Go to picture ['base_4', 'region_5'] 319.414
+Take Image ['region_5'] 285.714
+Go to base ['region_5', 'base_4'] 319.414
+",0,journal,4,2,1,0.04,3746.2929999999997,13112.0255
+560,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_6'] 668.243
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+Recharge Battery ['base_4'] 40.223
+Go to picture ['base_4', 'region_7'] 214.180
+Take Image ['region_7'] 285.714
+",0,journal,3,1,1,0.06,2592.4989999999993,9073.746499999997
+561,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_7'] 402.857
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.04,2860685,10012.3975
+562,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_6'] 668.243
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_2'] 431.529
+Recharge Battery ['base_2'] 44.884
+Go to picture ['base_2', 'region_7'] 718.457
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_2'] 718.457
+",0,journal,4,2,1,0.04,4058.5779999999995,14205.022999999997
+563,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_6'] 668.243
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_3'] 534.551
+Recharge Battery ['base_3'] 46.904
+Go to picture ['base_3', 'region_7'] 908.231
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_3'] 908.231
+",0,journal,4,2,1,0.04,4543168,15901088
+564,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_6'] 668.243
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+Recharge Battery ['base_4'] 40.223
+Go to picture ['base_4', 'region_7'] 214.180
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",0,journal,4,2,1,0.04,2807.678999999999,9826.876499999997
+565,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_8'] 527.180
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+Recharge Battery ['base_4'] 40.638
+Go to picture ['base_4', 'region_6'] 193.845
+Take Image ['region_6'] 285.714
+",0,journal,3,1,1,0.06,2593.7509999999993,9078.128499999997
+566,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_8'] 541.957
+Take Image ['region_8'] 285.714
+Go to picture ['region_8', 'region_1'] 527.180
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.04,2986.1989999999996,10451.696499999998
+567,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_8'] 527.180
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_2'] 823.877
+Recharge Battery ['base_2'] 49.811
+Go to picture ['base_2', 'region_6'] 431.529
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_2'] 431.529
+",0,journal,4,2,1,0.06,3740.9339999999997,13093.268999999998
+568,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_8'] 527.180
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_3'] 1050.406
+Recharge Battery ['base_3'] 54.253
+Go to picture ['base_3', 'region_6'] 534.551
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_3'] 534.551
+",0,journal,4,2,1,0.06,4177949,14622.821499999998
+569,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_6'] 668.243
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+Recharge Battery ['base_4'] 40.223
+Go to picture ['base_4', 'region_8'] 356.080
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+",0,journal,4,2,1,0.06,3091.4789999999994,10820.176499999998
+570,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_1'] 668.243
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 44.866
+Go to picture ['base_4', 'region_9'] 377.531
+Take Image ['region_9'] 285.714
+",0,journal,3,1,1,0.04,2997256,10490.395999999999
+571,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_1'] 668.243
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 45.070
+Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_1'] 570.669
+",0,journal,4,2,1,0.06,3772.7129999999997,13204.495499999999
+572,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_1'] 668.243
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 45.160
+Go to picture ['base_2', 'region_9'] 559.143
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+",0,journal,4,2,1,0.04,3754.3189999999995,13140.116499999998
+573,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_1'] 668.243
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 55.985
+Go to picture ['base_3', 'region_9'] 321.011
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+",0,journal,4,2,1,0.06,3840977,13443.4195
+574,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_6'] 668.243
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+Recharge Battery ['base_4'] 40.223
+Go to picture ['base_4', 'region_9'] 377.531
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_4'] 377.531
+",0,journal,4,2,1,0.06,3134.3809999999994,10970.333499999997
+575,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_10'] 334.740
+Go to picture ['region_10', 'region_1'] 996.740
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 57.870
+Go to picture ['base_4', 'region_10'] 482.677
+Take Image ['region_10'] 285.714
+",0,journal,3,1,1,0.12,3778643,13225.2505
+576,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_10'] 334.740
+Go to picture ['region_10', 'region_1'] 996.740
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 58.075
+Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_1'] 608.809
+",0,journal,4,2,1,0.1,4525235,15838.322499999998
+577,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_10'] 334.740
+Go to picture ['region_10', 'region_1'] 996.740
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 58.165
+Go to picture ['base_2', 'region_10'] 596.994
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_2'] 596.994
+",0,journal,4,2,1,0.08,4506263,15771.9205
+578,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_1'] 668.243
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 55.985
+Go to picture ['base_3', 'region_10'] 216.990
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_3'] 216.990
+",0,journal,4,2,1,0.04,3632.9349999999995,12715.2725
+579,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_1'] 996.740
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 54.596
+Go to picture ['base_4', 'region_6'] 193.845
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+",0,journal,4,2,1,0.06,3514.3969999999995,12300.389499999997
+580,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_11'] 299.623
+Go to picture ['region_11', 'region_1'] 962.086
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 56.502
+Go to picture ['base_4', 'region_11'] 449.374
+Take Image ['region_11'] 285.714
+",0,journal,3,1,1,0.14,3674201,12859.7035
+581,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_11'] 299.623
+Go to picture ['region_11', 'region_1'] 962.086
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 56.707
+Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_1'] 584.554
+",0,journal,4,2,1,0.1,4405586,15419.551000000001
+582,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_11'] 299.623
+Go to picture ['region_11', 'region_1'] 962.086
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 56.797
+Go to picture ['base_2', 'region_11'] 572.783
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_2'] 572.783
+",0,journal,4,2,1,0.08,4386702,15353457
+583,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_1'] 668.243
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 55.985
+Go to picture ['base_3', 'region_11'] 248.221
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_3'] 248.221
+",0,journal,4,2,1,0.06,3695397,12933.8895
+584,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_1'] 962.086
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 53.441
+Go to picture ['base_4', 'region_6'] 193.845
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+",0,journal,4,2,1,0.04,3454.3329999999996,12090.1655
+585,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_1'] 668.243
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 44.866
+Go to picture ['base_4', 'region_12'] 536.431
+Take Image ['region_12'] 285.714
+",0,journal,3,1,1,0.14,3156156,11046546
+586,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_1'] 668.243
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 45.070
+Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_1'] 574.157
+",0,journal,4,2,1,0.36,3779.6890000000003,13228.911500000002
+587,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_1'] 668.243
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 45.160
+Go to picture ['base_2', 'region_12'] 562.349
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_2'] 562.349
+",0,journal,4,2,1,0.34,3760.7309999999998,13162.5585
+588,"Go to picture ['base_1', 'region_6'] 441.054
+Take Image ['region_6'] 285.714
+Go to picture ['region_6', 'region_1'] 668.243
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 55.985
+Go to picture ['base_3', 'region_12'] 165.630
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_3'] 165.630
+",0,journal,4,2,1,0.06,3530215,12355.7525
+589,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_1'] 1012.520
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 54.226
+Go to picture ['base_4', 'region_6'] 193.845
+Take Image ['region_6'] 285.714
+Go to base ['region_6', 'base_4'] 193.845
+",0,journal,4,2,1,0.04,3495.1549999999997,12233.0425
+590,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 47.900
+Go to picture ['base_4', 'region_8'] 356.080
+Take Image ['region_8'] 285.714
+",0,journal,3,1,1,0.08,3133602,10967607
+591,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+Recharge Battery ['base_1'] 48.105
+Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_1'] 827.331
+",0,journal,4,2,1,0.04,4443835,15553.4225
+592,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_2'] 622.434
+Recharge Battery ['base_2'] 48.195
+Go to picture ['base_2', 'region_8'] 823.877
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_2'] 823.877
+",0,journal,4,2,1,0.06,4441.584999999999,15545.547499999997
+593,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 59.020
+Go to picture ['base_3', 'region_8'] 1050.406
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_3'] 1050.406
+",0,journal,4,2,1,0.06,5457565,19101.477499999997
+594,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_7'] 540.766
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_8'] 142.287
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+",0,journal,4,2,1,0.04,2515141,8802.9935
+596,"Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to picture ['region_9', 'region_7'] 587.557
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_1'] 723.294
+Recharge Battery ['base_1'] 48.097
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.06,4024491,14085.718499999999
+597,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_7'] 540.766
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_2'] 718.457
+Recharge Battery ['base_2'] 48.010
+Go to picture ['base_2', 'region_9'] 559.143
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+",0,journal,4,2,1,0.06,3902527,13658.8445
+598,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_9'] 587.557
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+Recharge Battery ['base_3'] 43.202
+Go to picture ['base_3', 'region_1'] 1174.531
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,4,2,1,0.04,4883268,17091.438000000002
+601,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_7'] 692.543
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_1'] 723.294
+Recharge Battery ['base_1'] 50.903
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.06,4170.422999999999,14596.480499999996
+602,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_7'] 540.766
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_2'] 718.457
+Recharge Battery ['base_2'] 48.010
+Go to picture ['base_2', 'region_10'] 596.994
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_2'] 596.994
+",0,journal,4,2,1,0.08,3978.2290000000003,13923.801500000001
+603,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_10'] 692.543
+Take Image ['region_10'] 285.714
+Go to base ['region_10', 'base_3'] 216.990
+Recharge Battery ['base_3'] 43.221
+Go to picture ['base_3', 'region_1'] 1174.531
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,4,2,1,0.06,4884252,17094882
+604,"Go to picture ['base_1', 'region_10'] 608.809
+Take Image ['region_10'] 285.714
+Go to picture ['region_10', 'region_1'] 996.740
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 54.596
+Go to picture ['base_4', 'region_7'] 214.180
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",0,journal,4,2,1,0.06,3555.0669999999996,12442.734499999999
+606,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_7'] 660.129
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_1'] 723.294
+Recharge Battery ['base_1'] 49.792
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.06,4112643,14394.2505
+607,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_7'] 540.766
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_2'] 718.457
+Recharge Battery ['base_2'] 48.010
+Go to picture ['base_2', 'region_11'] 572.783
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_2'] 572.783
+",0,journal,4,2,1,0.06,3929807,13754.324499999999
+608,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_11'] 660.129
+Take Image ['region_11'] 285.714
+Go to base ['region_11', 'base_3'] 248.221
+Recharge Battery ['base_3'] 43.197
+Go to picture ['base_3', 'region_1'] 1174.531
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,4,2,1,0.06,4883045,17090.6575
+609,"Go to picture ['base_1', 'region_11'] 584.554
+Take Image ['region_11'] 285.714
+Go to picture ['region_11', 'region_1'] 962.086
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 53.441
+Go to picture ['base_4', 'region_7'] 214.180
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",0,journal,4,2,1,0.06,3495.0029999999997,12232.510499999999
+611,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_7'] 749.666
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_1'] 723.294
+Recharge Battery ['base_1'] 51.344
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.06,4193335,14676.6725
+612,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_7'] 540.766
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_2'] 718.457
+Recharge Battery ['base_2'] 48.010
+Go to picture ['base_2', 'region_12'] 562.349
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_2'] 562.349
+",0,journal,4,2,1,0.06,3908.9390000000003,13681.286500000002
+613,"Go to picture ['base_1', 'region_7'] 723.294
+Take Image ['region_7'] 285.714
+Go to picture ['region_7', 'region_1'] 540.766
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+Recharge Battery ['base_3'] 59.020
+Go to picture ['base_3', 'region_12'] 165.630
+Take Image ['region_12'] 285.714
+Go to base ['region_12', 'base_3'] 165.630
+",0,journal,4,2,1,0.06,3688013,12908.0455
+614,"Go to picture ['base_1', 'region_12'] 574.157
+Take Image ['region_12'] 285.714
+Go to picture ['region_12', 'region_1'] 1012.520
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_4'] 607.420
+Recharge Battery ['base_4'] 54.226
+Go to picture ['base_4', 'region_7'] 214.180
+Take Image ['region_7'] 285.714
+Go to base ['region_7', 'base_4'] 214.180
+",0,journal,4,2,1,0.06,3535825,12375.387499999999
+615,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_8'] 527.180
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+Recharge Battery ['base_4'] 40.638
+Go to picture ['base_4', 'region_9'] 377.531
+Take Image ['region_9'] 285.714
+",0,journal,3,1,1,0.08,2777.4369999999994,9721.029499999999
+616,"Go to picture ['base_1', 'region_9'] 570.669
+Take Image ['region_9'] 285.714
+Go to picture ['region_9', 'region_8'] 729.620
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_1'] 827.331
+Recharge Battery ['base_1'] 52.923
+Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_1'] 617.866
+",0,journal,4,2,1,0.04,4275417,14963.9595
+617,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_8'] 527.180
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_2'] 823.877
+Recharge Battery ['base_2'] 49.811
+Go to picture ['base_2', 'region_9'] 559.143
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_2'] 559.143
+",0,journal,4,2,1,0.06,3996162,13986567
+618,"Go to picture ['base_1', 'region_8'] 827.331
+Take Image ['region_8'] 285.714
+Go to picture ['region_8', 'region_9'] 729.620
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_3'] 321.011
+Recharge Battery ['base_3'] 48.027
+Go to picture ['base_3', 'region_1'] 1174.531
+Take Image ['region_1'] 285.714
+Go to base ['region_1', 'base_3'] 1174.531
+",0,journal,4,2,1,0.08,5134.192999999999,17969.675499999998
+619,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_8'] 527.180
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+Recharge Battery ['base_4'] 40.638
+Go to picture ['base_4', 'region_9'] 377.531
+Take Image ['region_9'] 285.714
+Go to base ['region_9', 'base_4'] 377.531
+",0,journal,4,2,1,0.04,3155.9679999999994,11045.887999999997
+620,"Go to picture ['base_1', 'region_1'] 617.866
+Take Image ['region_1'] 285.714
+Go to picture ['region_1', 'region_8'] 527.180
+Take Image ['region_8'] 285.714
+Go to base ['region_8', 'base_4'] 356.080
+Recharge Battery ['base_4'] 40.638
+Go to picture ['base_4', 'region_10'] 482.677
+Take Image ['region_10'] 285.714
+",0,journal,3,1,1,0.06,2882.5829999999996,10089.0405

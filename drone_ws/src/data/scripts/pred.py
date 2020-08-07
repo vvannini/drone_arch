@@ -10,6 +10,7 @@ import math
 import json
 import time
 import os
+import csv
 from std_srvs.srv import Empty
 from rosplan_knowledge_msgs.srv import *
 from rosplan_knowledge_msgs.msg import *
@@ -25,7 +26,7 @@ class Actions:
 	def __init__(self, typeA,region, time):
 		self.typeA = typeA
 		self.region = region
-		self.time = time
+		self.time = time 
 
 class Region:
 	def __init__(self, idi, name, geo_points, cart_points, geo_center, cart_center):
@@ -177,16 +178,16 @@ def read_json(mission, mapa):
 
 #Calcula a probabilidade de chegar em uma regiao X dado que a bateria restante nela é Y
 def dist_prob(bateria):
-    if(0 <= bateria and bateria < 10):
-        return 0.10
-    elif(10 <= bateria and bateria < 30):
-        return 0.30
+    if(0 <= bateria and bateria < 15):
+        return 0.20
+    elif(15 <= bateria and bateria < 30):
+        return 0.50
     elif(30 <= bateria and bateria < 60):
-        return 0.60
+        return 0.75
     elif(60 <= bateria and bateria < 80):
-        return 0.80
+        return 0.85
     elif(80 <= bateria and bateria < 100):
-        return 0.90
+        return 0.95
     else:
         return 0
 
@@ -254,78 +255,186 @@ def main():
 
 	
 
-	substr = "go_to_"
+	substr = "go_to"
 	substr2 = "take_image"
 	substr3 = "recharge_battery"
+	substr4 = "pulverize_region"
+	substr5 = "go_to_base"
+	substr6 = "go_to_picture"
+
+	FLAG_passed = 0
 	for line in lines:
 		aux = 0
 		index = 0
 		prev = 0
-		while(index < len(line)):
-			index = line.find(substr,index)
-			if index == -1:
-				break
 
-			prev = index + len(substr)
-			index += len(substr)
+		if(FLAG_passed == 0 ):
 
-			string = ''
-			while(line[index] != ']'):
-				string += line[index]
-				index = index + 1
+			while(index < len(line)):
+				index = line.find(substr5,index)
+				if index == -1:
+					break
+				else:
+					FLAG_passed = 1
 
-			string = string+" 0"
-			wanted.append(string)
-		aux = 0
-		index = 0
-		prev = 0
+				prev = index + len(substr5)
+				index += len(substr5)
 
-		while(index < len(line)):
-			index = line.find(substr2, index)
-			if index == -1:
-				break
+				string = ''
+				while(line[index] != ']'):
+					string += line[index]
+					index = index + 1
 
-			prev = index + len(substr2)
-			index += len(substr2)
-
-			string = ''
-			while(line[index] != ']'):
-				string += line[index]
-				index = index + 1
-			
-			string = string+" 1"
-			wanted.append(string)
+				string = string+" 4"
+				wanted.append(string)
 
 		aux = 0
 		index = 0
 		prev = 0
 
-		while(index < len(line)):
-			index = line.find(substr3, index)
-			if index == -1:
-				break
+		if(FLAG_passed == 0 ):
 
-			prev = index + len(substr3)
-			index += len(substr3)
+			while(index < len(line)):
+				index = line.find(substr2, index)
+				if index == -1:
+					break
+				else:
+					FLAG_passed = 1
 
-			string = ''
-			while(line[index] != ']'):
-				string += line[index]
-				index = index + 1
-			
-			string = string+" 2"
-			wanted.append(string)
+				prev = index + len(substr2)
+				index += len(substr2)
+
+				string = ''
+				while(line[index] != ']'):
+					string += line[index]
+					index = index + 1
+				
+				string = string+" 1"
+				wanted.append(string)
+
+		aux = 0
+		index = 0
+		prev = 0
+
+		if(FLAG_passed == 0 ):
+
+			while(index < len(line)):
+				index = line.find(substr3, index)
+				if index == -1:
+					break
+				else:
+					FLAG_passed = 1
+
+				prev = index + len(substr3)
+				index += len(substr3)
+
+				string = ''
+				while(line[index] != ']'):
+					string += line[index]
+					index = index + 1
+				
+				string = string+" 2"
+				wanted.append(string)
+
+		aux = 0
+		index = 0
+		prev = 0
+
+		if(FLAG_passed == 0 ):
+
+			while(index < len(line)):
+				index = line.find(substr4, index)
+				if index == -1:
+					break
+				else:
+					FLAG_passed = 1
+
+				prev = index + len(substr4)
+				index += len(substr4)
+
+				string = ''
+				while(line[index] != ']'):
+					string += line[index]
+					index = index + 1
+				
+				string = string+" 3"
+				wanted.append(string)
+
+		aux = 0
+		index = 0
+		prev = 0
+
+		if(FLAG_passed == 0 ):
+
+			while(index < len(line)):
+				index = line.find(substr6, index)
+				if index == -1:
+					break
+				else:
+					FLAG_passed = 1
+
+				prev = index + len(substr6)
+				index += len(substr6)
+
+				string = ''
+				while(line[index] != ']'):
+					string += line[index]
+					index = index + 1
+				
+				string = string+" 6"
+				wanted.append(string)
+
+		aux = 0
+		index = 0
+		prev = 0
+
+		if(FLAG_passed == 0 ):
+
+			while(index < len(line)):
+				index = line.find(substr, index)
+				if index == -1:
+					break
+				else:
+					FLAG_passed = 1
+
+				prev = index + len(substr)
+				index += len(substr)
+
+				string = ''
+				while(line[index] != ']'):
+					string += line[index]
+					index = index + 1
+				
+				string = string+" 0"
+				wanted.append(string)
+
+		FLAG_passed = 0
+
+
+	# print()
+	# print(wanted)
+	# print()
 
 	for w in range(len(wanted)):
 		actions.append(wanted[w].split())
 		action = actions[w]
 
 		if(action[-1] == '0'):
-			ArrayActions.append(Actions("Go to", [action[1], action[2].rstrip(')')], action[3][1:]))
+		# 	under = action[0]
+		# 	if(under[0] == '_'):
+		# 		action[0] = under[1:]
+
+			ArrayActions.append(Actions("Go to", [action[0].rstrip('_'), action[1].rstrip(')')], action[2][1:]))
 		elif(action[-1] == '1'):
 			ArrayActions.append(Actions("Take Image", [action[0].rstrip(')')], action[1][1:]))
 		elif(action[-1] == '2'):
 			ArrayActions.append(Actions("Recharge Battery", [action[0].rstrip(')')], action[1][1:]))
+		elif(action[-1] == '3'):
+			ArrayActions.append(Actions("Pulverize", [action[0].rstrip(')')], action[1][1:]))
+		elif(action[-1] == '4'):
+			ArrayActions.append(Actions("Go to base", [action[0].rstrip('_'), action[1].rstrip(')')], action[2][1:]))
+		elif(action[-1] == '6'):
+			ArrayActions.append(Actions("Go to picture", [action[0].rstrip('_'), action[1].rstrip(')')], action[2][1:]))
 
 	# print(actions)
 	# print()
@@ -371,6 +480,7 @@ def main():
 	print("Discharge rate battery = "+ str(hardware["discharge-rate-battery"]))
 	print("Battery ammount = " + str(100))
 	print("Efficient velocity = " + str(hardware["efficient_velocity"]))
+	print("Name of the Battery = " + str(hardware["name"]))
 			# rostopic echo /rosplan_problem_interface/problem_instance -n 1
 
 	#read objects
@@ -394,12 +504,19 @@ def main():
 
 	#define bateria e consumo inicial
 	bateria_init = 100
-	consumo = hardware["discharge-rate-battery"]      
+
+	#Define qual o tipo de bateria
+	if(str(hardware["name"]) == "kenny"):
+		consumo = hardware["discharge-rate-battery"]    
+		recarga = hardware["recharge-rate-battery"]  
 
     #define os conjuntos de modelos e probabilidades
 	prob = []
 	model = []
 	ie = []
+
+	#flag do sistema
+	FLAG = 0
 
 	#Cria um contador para as regioes
 	count = 0
@@ -484,7 +601,8 @@ def main():
 	            print("------------------------- REPLANNING -----------------------------")
 	            print("------------------------------------------------------------------")
 	            print()
-	            return 0
+	            FLAG = 1
+	            return FLAG, ArrayActions
 	        else:
 	            print()
 	            print('--------------------- Atualmente em '+str(count+1)+' ---------------------')
@@ -501,7 +619,7 @@ def main():
 	        StringA = 'actions_' + str(count)
 	        StringDecisao = obj.typeA + str(obj.region)
 	        acao = gum.LabelizedVariable(StringA,'.',2)
-	        acao.changeLabel(0,"Force Landing")
+	        acao.changeLabel(0,"Replan")
 	        acao.changeLabel(1,StringDecisao)
 	        model[count].addDecisionNode(acao)
 
@@ -510,7 +628,7 @@ def main():
 	        print(StringA_ant)
 	        StringDecisao_ant = "Go to " + str(count-1)
 	        acao_ant = gum.LabelizedVariable(StringA_ant, '.', 2)
-	        acao_ant.changeLabel(0, "Force Landing")
+	        acao_ant.changeLabel(0, "Replan")
 	        acao_ant.changeLabel(1, StringDecisao_ant)
 	        model[count].addChanceNode(acao_ant)
 
@@ -573,8 +691,8 @@ def main():
 	            print("------------------------- REPLANNING -----------------------------")
 	            print("------------------------------------------------------------------")
 	            print()
-	            
-	            return 0
+	            FLAG = 1
+	            return FLAG, ArrayActions
 	        else:
 	            print()
 	            print('--------------------- Atualmente em '+str(count+1)+' ---------------------')
@@ -582,7 +700,129 @@ def main():
 	        count = count + 1
 	        print()
 
+	return FLAG, ArrayActions
+	        
+
+
 	########### FIM
 
+def get_domain():
+	rospy.wait_for_service("/rosplan_knowledge_base/domain/name")
+	try:
+		domain = rospy.ServiceProxy("/rosplan_knowledge_base/domain/name", GetDomainNameService)
+		srv = domain()
+		print(srv.domain_name)
+		return srv.domain_name
+	except rospy.ServiceException as e:
+		print("Service Call Failed %s"%e)
+		return ""
+
+def write_log(log, log_file):
+	with open(log_file, 'w') as outfile:
+		json.dump(log, outfile, indent=4)
+
+def parse_file_plan():
+	plan_path = '~/drone_arch/drone_ws/src/data/pddl/plan.pddl' #set 
+	plan_path = os.path.expanduser(plan_path)
+	plan = open(plan_path, 'r')
+	lines = plan.readlines()
+
+	sucsses = 0
+	cpu_time = float('Inf')
+	total_time = 0
+
+	for line in lines:
+		if 'Solution Found' in line: sucsses = 1
+		if '; Time' in line:
+			aux = line.split(' ')
+			cpu_time = eval(aux[-1].rstrip())
+		if ': (' in line:
+			aux = line.split(' ')
+			total_time += eval(aux[-1].rstrip())[0]
+	return sucsses, cpu_time, total_time
+
+
+# def get_exe_path(node_name):
+# 	ID = '/NODEINFO'
+# 	node_api = rosnode.get_api_uri(rospy.get_master(), node_name)
+# 	code, msg, pid = client.ServerProxy(node_api[2]).getPid(ID)
+# 	p = psutil.Process(pid)
+# 	#print(p.name())
+# 	return p.name()
+
+def get_total_distance(total_time):
+	# rosservice call /rosplan_knowledge_base/state/functions "predicate_name: 'velocity'"
+	instance = KnowledgeItem()
+	rospy.wait_for_service('/rosplan_knowledge_base/state/functions')
+	try:
+		print ("Calling Service get_function")
+		query_proxy = rospy.ServiceProxy('rosplan_knowledge_base/state/functions', GetAttributeService)
+		instance = query_proxy('velocity')
+		#instance = instance.attributes[0]
+		velocity = instance.attributes[0].function_value
+	except rospy.ServiceException as e:
+		print ("Service call failed: %s"%e)
+		velocity = float(Inf)
+	return velocity*total_time
+
+
+
+#rosservice call /rosplan_knowledge_base/domain/name
+
+'''
+This function should be a subscriver in a topic provide by another node, 
+but at the moment I'm to deep in POG (programação orientada a gambiarra), 
+so, I'm gonna do the wrong thing and reopen the file
+'''
+def goals(id_mission):
+	mission_filename = PATH + "missao.json"
+	mision = {}
+	with open(mission_filename, "r") as mission_file:
+			mission_file = json.load(mission_file)
+			mission = mission_file[mission_id]
+
+	obj = []
+	total_goals = 0
+	for step in mission["mission_execution"]:
+		total_goals += 1
+		if step["command"] not in obj: #should exclude goal 'end'?
+			obj.append(step["command"])
+	return total_goals, len(obj)
+
+
 if __name__ == '__main__':
-	main()
+	FLAG, ArrayActions = main()
+	PATH = '~/drone_arch/Data/' #set 
+	PATH = os.path.expanduser(PATH)
+	args = sys.argv
+	mission_id = int(args[1])
+	total_goals, type_qtd = goals(mission_id)
+	PATH = PATH + 'Noel/out.csv'
+	mission_total = ''
+
+	domain = get_domain()
+
+	sucsses, cpu_time, total_time = parse_file_plan()
+	total_distance = get_total_distance(total_time)
+
+	logs_list = []
+
+	with open(PATH, mode='r') as log:
+		logs = csv.reader(log, delimiter=',')
+		for row in logs:
+			logs_list.append(row)
+
+	with open(PATH, mode='w', newline='') as log_pt:
+		writer = csv.writer(log_pt, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
+
+		for log in logs_list:
+			writer.writerow(log)
+
+		for obj in ArrayActions:
+			mission_unit  = str(obj.typeA) + " " + str(obj.region) + " " + str(obj.time) + "\n"
+			mission_total = mission_total + mission_unit
+
+		if(FLAG == 1):
+			writer.writerow([mission_id, mission_total, 0,domain, total_goals, type_qtd, sucsses, cpu_time, total_time, total_distance])
+		else:
+			writer.writerow([mission_id, mission_total, 1	,domain, total_goals, type_qtd, sucsses, cpu_time, total_time, total_distance])

@@ -48,21 +48,21 @@
     (its-not-base region_11)
     (its-not-base region_12)
 
-
-    (picture-goal region_1)
-    (picture-goal region_2)
-    (picture-goal region_4)
-    (picture-goal region_6)
-    (picture-goal region_8)
-    (picture-goal region_9)
-    (picture-goal region_10)
-    (picture-goal region_11)
-    (picture-goal region_12)
-
+    (pulverize-goal region_1)
+    (pulverize-goal region_3)
+    (pulverize-goal region_4)
+    (pulverize-goal region_5)
+    (pulverize-goal region_6)
+    (pulverize-goal region_7)
+    (pulverize-goal region_9)
+    (pulverize-goal region_10)
+    (pulverize-goal region_12)
 
 
 
-    (has-picture-goal)
+
+    (has-pulverize-goal)
+
 
 
     (= (battery-amount) 100)
@@ -321,16 +321,16 @@
 
     (= (velocity) 3.5)
 
-    (= (picture-path-len region_1) 1000)
-    (= (picture-path-len region_2) 1000)
-    (= (picture-path-len region_4) 1000)
-    (= (picture-path-len region_6) 1000)
-    (= (picture-path-len region_8) 1000)
-    (= (picture-path-len region_9) 1000)
-    (= (picture-path-len region_10) 1000)
-    (= (picture-path-len region_11) 1000)
-    (= (picture-path-len region_12) 1000)
 
+    (= (pulverize-path-len region_1) 314)
+    (= (pulverize-path-len region_3) 314)
+    (= (pulverize-path-len region_4) 314)
+    (= (pulverize-path-len region_5) 314)
+    (= (pulverize-path-len region_6) 314)
+    (= (pulverize-path-len region_7) 314)
+    (= (pulverize-path-len region_9) 314)
+    (= (pulverize-path-len region_10) 314)
+    (= (pulverize-path-len region_12) 314)
 
     (= (total-goals) 9)
 
@@ -338,15 +338,16 @@
 
 )
 (:goal (and
-    (taken-image region_1)
-    (taken-image region_2)
-    (taken-image region_4)
-    (taken-image region_6)
-    (taken-image region_8)
-    (taken-image region_9)
-    (taken-image region_10)
-    (taken-image region_11)
-    (taken-image region_12)
+    (pulverized region_1)
+    (pulverized region_3)
+    (pulverized region_4)
+    (pulverized region_5)
+    (pulverized region_6)
+    (pulverized region_7)
+    (pulverized region_9)
+    (pulverized region_10)
+    (pulverized region_12)
+    (at base_1)
 ))
 (:metric minimize (total-time))
 )

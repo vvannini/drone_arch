@@ -1,0 +1,25 @@
+[
+    {
+        "id": 0,
+        "domain": "journal",
+        "planner": "popf_planner_interface",
+        "id_mission": 0,
+        "total_goals": 1,
+        "qtd_types_goals": 1,
+        "sucsses": 1,
+        "cpu_time": 0.02,
+        "total_time": 903.5799999999999,
+        "total_distance": 3162.5299999999997
+    },
+    {
+        "id": 1,
+        "domain": "journal",
+        "id_mission": 30000,
+        "total_goals": 6,
+        "qtd_types_goals": 1,
+        "sucsses": 1,
+        "cpu_time": 0.16,
+        "total_time": 3974.2009999999996,
+        "total_distance": 13909.703499999998
+    }
+]
