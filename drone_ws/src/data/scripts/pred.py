@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#@author Pedro Natali
+#@authors Pedro Natali and Veronica Vannini
 
 # Import libraries
 import pyAgrum as gum
@@ -21,6 +21,8 @@ PATH = os.path.expanduser(PATH)
 
 
 # Classes
+
+# Classe responsável pela ações do sistema.
 
 class Actions:
 	def __init__(self, typeA,region, time):
@@ -176,7 +178,7 @@ def read_json(mission, mapa):
 
 	return regions, names, labels, geo_home
 
-#Calcula a probabilidade de chegar em uma regiao X dado que a bateria restante nela é Y
+#Calcula a probabilidade de chegar em uma regiao X dado que a bateria restante nela é Y (lembrando que a bateria é inconsistente abaixo de 15%)
 def dist_prob(bateria):
     if(0 <= bateria and bateria < 15):
         return 0.20
@@ -191,7 +193,9 @@ def dist_prob(bateria):
     else:
         return 0
 
-#Rede Bayesiana definida no sistema
+#Rede Bayesiana definida no sistema que utiliza:
+## Bateria inicial, consumo definido à partir da bateria,
+## ArrayActions (vetor de objeto da classe ação) e as probabilidades definidas
 def bayesian_network(bateria_init, consumo, ArrayActions, prob) :
     bateria = []
     bateria.append(bateria_init)
@@ -213,7 +217,7 @@ def bayesian_network(bateria_init, consumo, ArrayActions, prob) :
         	print()
 
         elif(FLAG == 0): 
-            #calcula a probabilidade inicial
+            #calcula a probabilidade inicial = bateria inicial - consumo = prob(bateria restante) 
             bateria.append(bateria[len(bateria)-1] - consumo*float(obj.time))
             prob.append(dist_prob(bateria[len(bateria) - 1]))
             FLAG = 1
@@ -231,6 +235,7 @@ def bayesian_network(bateria_init, consumo, ArrayActions, prob) :
             print()
     return prob
 
+#Essa funcao determina se a ação acontece ou não, se seu valor for 0.1, significa que ações com 0.1 de probabilidade iriam contar como (SIM)
 def value(valor):
     if(valor >= 0.5):
         return 1;
@@ -241,6 +246,7 @@ def value(valor):
 
 def main():
 
+	#define umas parada
 	args = sys.argv
 	lines = []
 	wanted = []
@@ -254,6 +260,9 @@ def main():
 			lines.append(line.rstrip('\n'))
 
 	
+	#Aqui é onde o parseamento é feito, cada substring pega no arquivo pddl os termos seguintes à ela em uma linhas
+	#dividindo por fim nos modelos apresentados no resultado (Ou PATH em log)
+	#Opcao eh transformar isso em funcao (assim nao ficaria tanto codigo repetitivo)
 
 	substr = "go_to"
 	substr2 = "take_image"
@@ -415,6 +424,7 @@ def main():
 	# print(wanted)
 	# print()
 
+	#Aqui é onde as transformações finais são feitas para criar objetos de fato.
 	for w in range(len(wanted)):
 		actions.append(wanted[w].split())
 		action = actions[w]
@@ -505,7 +515,7 @@ def main():
 	#define bateria e consumo inicial
 	bateria_init = 100
 
-	#Define qual o tipo de bateria
+	#Define qual o tipo de bateria (AQUI SERIAM MUDADOS PARA OUTROS TIPOS DE BATERIA À PARTIR DE OUTROS IF's)
 	if(str(hardware["name"]) == "kenny"):
 		consumo = hardware["discharge-rate-battery"]    
 		recarga = hardware["recharge-rate-battery"]  
@@ -790,6 +800,7 @@ def goals(id_mission):
 	return total_goals, len(obj)
 
 
+#Observação: Os códigos retirados da Verônica não estão comentados pois não quis me arriscar.
 if __name__ == '__main__':
 	FLAG, ArrayActions = main()
 	PATH = '~/drone_arch/Data/' #set 
@@ -797,6 +808,7 @@ if __name__ == '__main__':
 	args = sys.argv
 	mission_id = int(args[1])
 	total_goals, type_qtd = goals(mission_id)
+	#Caminho do CSV
 	PATH = PATH + 'Noel/out.csv'
 	mission_total = ''
 
@@ -805,16 +817,23 @@ if __name__ == '__main__':
 	sucsses, cpu_time, total_time = parse_file_plan()
 	total_distance = get_total_distance(total_time)
 
+	#Nota: como nao eh possivel escrever em uma linha especifica com csv, copiamos tudo dele para um array, escrevemos esse array e soh
+	# ai eh feita a escrita do novo log. Por isso, deixar ele simulando para muitos casos nao eh muito proveitos (no caso onde ele vai ter que ler milhares de 
+	# linhas e escreve-las antes de reescrever uma nova).
 	logs_list = []
 
 	with open(PATH, mode='r') as log:
+		#Cria um reader
 		logs = csv.reader(log, delimiter=',')
+		#Guarda tudo em um array
 		for row in logs:
 			logs_list.append(row)
 
 	with open(PATH, mode='w', newline='') as log_pt:
+		#aqui eh feita a escrita repetitiva
 		writer = csv.writer(log_pt, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
 
+		#e aqui embaixo eh feita a escrita do novo log
 		for log in logs_list:
 			writer.writerow(log)
 
